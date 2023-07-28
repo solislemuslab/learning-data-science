@@ -4,8 +4,7 @@ First, we will need to think about what data and the type of data we want to col
 <br>
 [cartoon of continuous and categorical variables]
 [Link to Khan academy for-
-Video - https://www.khanacademy.org/math/statistics-probability/analyzing-categorical-data/one-categorical-variable/v/identifying-individuals-variables-and-categorical-variables-in-a-data-set 
-Quiz - https://www.khanacademy.org/math/statistics-probability/analyzing-categorical-data/one-categorical-variable/e/individuals-variables-categorical-quantitative-data ] <br>
+_italic text_ [For more info about reading charts, categorical, and continuous variables, see this video from Khan Academy][https://www.khanacademy.org/math/statistics-probability/analyzing-categorical-data/one-categorical-variable/v/identifying-individuals-variables-and-categorical-variables-in-a-data-set] <br>
 <br>
 Next, we will need to define how we assess our variables. Let’s say we wanted to determine the height of golden retrievers. We need to define how we measure height for golden retreivers. Should height be when a golden retriever is sitting down? Should it be when a golden retriever is laying down? Should it be measured from the end of the tale to the end of the snout? The answer will probably vary depending on whom you ask. In science, there can be some heated arguments on how to even define a term. This might seem silly (and sometimes it is), but a definition can have huge impacts. Imagine if NASA astronauts were fitted in suits according to their heights, but height was only measured from their ankles to their necks. These poorly fitting suits would likely not fit at all, and put their lives at risk. Indeed space exploration, roller coasters, and plane fights have been in jeopardy because of different groups measuring length in metric units (example-meters) versus empirical units (example- yards). <br>
 <br>
