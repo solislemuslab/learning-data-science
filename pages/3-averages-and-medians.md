@@ -4,7 +4,7 @@ First, we will need to think about what data and the type of data we want to col
 <br>
 [cartoon of continuous and categorical variables] <br>
 <br>
-[_For more info about reading charts, categorical, and continuous variables, see this video from Khan Academy_](https://www.khanacademy.org/math/statistics-probability/analyzing-categorical-data/one-categorical-variable/v/identifying-individuals-variables-and-categorical-variables-in-a-data-set) <br>
+[_For more info about reading charts, categorical, and continuous variables, see this video from Khan Academy._](https://www.khanacademy.org/math/statistics-probability/analyzing-categorical-data/one-categorical-variable/v/identifying-individuals-variables-and-categorical-variables-in-a-data-set) <br>
 <br>
 Next, we will need to define how we assess our variables. Let’s say we wanted to determine the height of golden retrievers. We need to define how we measure height for golden retreivers. Should height be when a golden retriever is sitting down? Should it be when a golden retriever is laying down? Should it be measured from the end of the tale to the end of the snout? The answer will probably vary depending on whom you ask. In science, there can be some heated arguments on how to even define a term. This might seem silly (and sometimes it is), but a definition can have huge impacts. Imagine if NASA astronauts were fitted in suits according to their heights, but height was only measured from their ankles to their necks. These poorly fitting suits would likely not fit at all, and put their lives at risk. Indeed space exploration, roller coasters, and plane fights have been in jeopardy because of different groups measuring length in metric units (example-meters) versus empirical units (example- yards). <br>
 <br>
@@ -34,17 +34,7 @@ In a perfect theoretical sample, the mean and median would be the same. As you c
 <br>
 Median’s are not perfect and still could hide how the data looks. Let’s say the billionaire’s adult son moves to Roseville, increasing its population to 1001 people. Inspired by websites about data science and her desire to make it easy for the writers of this website you are reading, the billionaire decides to adjust her yearly income in a new way. Through a strange lottery system, she ensures 500 people have an income of $100,000, her son earns $300,000, and the other 500 people of Roseville earn $2,000,000. The average income is $1,049,250 and the median income is $300,000. The middle value of our sample, our median, is $300,000, but is that value useful? It does not fully capture the spread of yearly incomes and really only reflects the son versus the strange incomes of folks in Roseville. <br>
 <br>
-[https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/mean-median-basics/v/statistics-intro-mean-median-and-mode] <br>
+[_For a more in depth refresher of means, medians, and modes, check out this video from Khan Acacdemy._](https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/mean-median-basics/v/statistics-intro-mean-median-and-mode) <br>
 <br>
 So, as you’ve seen, the mean and median are very useful and can give us good insight into a sample by summarizing something we are interested in into 2 numbers. But you could also see how the mean and median don’t always represent the full picture of a sample. For a better picture, let’s actually look at some pictures! Well, to be fancy scientists, we will call them figures. The next lesson will cover describing how a sample might vary and how we can visualize that sample to help us understand samples. <br>
-
-
-Average calculators
-https://www.calculator.net/average-calculator.html
-
-Visualizers
-https://www.desmos.com/calculator
-
-Averages
-Golden retriever females have an average height of 21.5 to 22.5 inches. 
 
