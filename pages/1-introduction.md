@@ -10,7 +10,7 @@ Is Rhonda actually taller than the other golden retrievers? You might have a gut
 <br>
 If you compared Rhonda’s height to only one other golden retriever, could you say Rhonda is taller than other retrievers? Probably not. What if that other golden retriever is the ripped, award winning Tank? You might even think she is smaller for her size. <br>
 <br>
-[image of comparing two dogs]
+[image of comparing two dogs] <br>
 <br>
 If you compared  Rhonda’s height to 5 other golden retrievers and found Rhonda was taller than 4 but still smaller than Tank, maybe you’d think she is only a little taller than other golden retrievers. What if you found Rhonda and Tank were taller than 30 other golden retrievers? You’d probably be a lot more confident that Rhonda is taller than most golden retrievers and that the next golden retriever you see would likely be smaller than Rhonda. (You might also conclude that Tank should get more hobbies than going to the gym- maybe he would love painting?). <br>
 <br>
