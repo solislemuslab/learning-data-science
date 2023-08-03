@@ -1,3 +1,5 @@
+# What goes up must go down, or up, or nowhere
+
 Correlations are one of the most frequently used statistical tests and for good reason. They allow comparisons between continuous variables and yield how strongly these variables are related to one another in a dataset. You can test to see how much happiness and income are correlated, how much rain is associated with the number of wildfires, and how much carbon dioxide that a country produces is associated with the country’s gross domestic product (a typical measure of a country’s economic health). Many correlation tests exist and we will discuss a basic yet powerful test- the Pearson correlation test, named after Karl Pearson. (Interestingly, this test has many names including the correlation-coefficient, Pearson’s correlation, Pearson correlation coefficient, Pearson’s product-moment correlation. We will call the test the Pearson correlation test for consistency). <br>
 <br>
 [ how to construct a scatter plot https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/introduction-to-scatterplots/v/constructing-scatter-plot ]]
@@ -27,3 +29,5 @@ In more advanced statistical analysis, researchers often use multiple regression
 To summarize, the Pearson correlation test is an incredibly valuable statistical tool used to assess the correlation between continuous variables. It, along with regression tests, are used frequently in business, agriculture, economics, psychology, medicine… really anything! (That’s also a bonus of having a job in statistics and data science- you are always useful and in demand!). Understanding how to use correlations and knowing that correlation does not mean causation, can help you be a savvy consumer of information, and even test if claims you see on the Internet are true. <br>
 <br>
 In our last lesson (hold back the tears), we’ll discuss how messy data can halt analyses and other considerations we should make to ensure the tests we run are a good and appropriate fit for our data. Maybe you’ve tried calculating germination rates of plants for a school project that should last a few days, but nothing sprouts for weeks! Often, it’s making sure the data is clean and ready to use that takes longer than the statistical tests to get results- we’ll see why. <br>
+
+
