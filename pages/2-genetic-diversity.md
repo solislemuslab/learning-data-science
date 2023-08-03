@@ -28,4 +28,4 @@ A typical height and growth rate for your fast plant is known, and so are typica
 <br>
 So, knowing the difference between a random observation and providing evidence for a pattern can save lives! That’s the power of statistics, which we dive back into on the next page. <br>
 
-| [Back](https://benrushscience.github.io/learning-data-science/) | Next |
+| [Back](https://benrushscience.github.io/learning-data-science/) | [Next](https://benrushscience.github.io/learning-data-science//pages/3-averages-and-medians.html) |
