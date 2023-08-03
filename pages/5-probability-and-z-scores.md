@@ -41,5 +41,5 @@ Chi-square distribution: <br>
 <br>
 The chi-square distribution is a continuous probability distribution that arises when working with categorical data or testing for independence or goodness-of-fit. It is positively skewed and takes only non-negative values. The shape of the chi-square distribution depends on the degrees of freedom, which are associated with the number of categories or variables in the test. The chi-square distribution is used in chi-square tests, such as the chi-square test for independence and chi-square goodness-of-fit test. <br>
 
-| [Back](https://benrushscience.github.io/learning-data-science/) | [Next](https://benrushscience.github.io/learning-data-science/pages/6-hypothesis-testing.html) |
+| [Home](https://benrushscience.github.io/learning-data-science/) | [Next](https://benrushscience.github.io/learning-data-science/pages/6-hypothesis-testing.html) |
 
