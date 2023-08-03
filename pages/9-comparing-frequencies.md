@@ -1,3 +1,5 @@
+# χ² marks the spot
+
 So far we’ve seen techniques to compare between group means, but what if we want to compare between groups using variables that aren’t continuous? What if we want to know that the dog park we brought Rhonda to has a higher number, or frequency, of golden retrievers than pugs and St. Bernards? Sure, we’ve seen 600 golden retrievers, but how do we really know that we aren’t just overlooking pugs because we hang out with the dogs that can run and don’t get winded from walking up 2 stairs? Maybe many pugs and St. Bernards don't know how to catch frisbees as well as golden retrievers? To answer these types of questions, we can use the chi-square test. The chi-square test is a statistical tool that helps us examine the relationship between categorical variables. (As a reminder, continuous variables change smoothly [like temperature], while categorical variables are divided into distinct groups [like dog breeds]). Chi-square is used to determine if there is a significant association or difference between categorical variables. <br>
 <br>
 [maybe good place to introduce the mosaic plot with a dog-related example] <br>
@@ -22,3 +24,5 @@ In conclusion, the chi-square test is a valuable statistical tool used to analyz
 <br>
 Post hoc calculation below <br>
 The chi square test of independence can yield results that suggest groups differ in frequency for a variable of interest, but the test does not yield which group has higher or lower frequencies than others. A post-hoc chi-square test can be done after a significant chi-square test of independence to determine which groups do differ from one another. We may find that golden retrievers and St. Bernards were able to catch frisbees at the same frequency, but pugs had lower frisbee catching frequency than both breeds. Although this is a silly example, a real world example could be determining  the frequency of units sold of our new peanut popcorn between chocolate popcorn Walmart, Target, and Whole Foods. We could find Target sells most of our chocolate popcorn, but Target and Whole Foods sell most of the peanut popcorn. If we were a business, the results of a post hoc test would help us decide who to part with more in the future to either strengthen existing relationships or try new avenues. <br>
+
+| [Back](https://benrushscience.github.io/learning-data-science/) | Next |
