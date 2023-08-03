@@ -30,4 +30,4 @@ Finding out all the differences and similarities using statistics is extremely h
 <br>
 Continue to the “genetic diversity page” to learn how this can happen…
 
-| [Back](https://benrushscience.github.io/learning-data-science/) | [Next](https://benrushscience.github.io/learning-data-science//pages/2-genetic-diversity.html) |
+| [Home](https://benrushscience.github.io/learning-data-science/) | [Next](https://benrushscience.github.io/learning-data-science//pages/2-genetic-diversity.html) |
