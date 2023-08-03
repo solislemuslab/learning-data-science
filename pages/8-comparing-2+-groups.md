@@ -1,3 +1,5 @@
+# _More_ things might be different now
+
 If we wanted to compare 2 group means, t-tests are great. To compare means of 3 or more groups, the ANOVA (ANalysis Of VAriance) test is the way to go. ANOVA is a statistical tool that helps us compare the means of 3 or more groups (it can also be used to compare 2 groups, but t-tests are more common for that). It is used to determine if there are any significant differences between group means of a continuous variable (height) and the several groups defined by a categorical variable (dogs breeds: golden retrievers, pugs, and St. Bernards). <br>
 <br>
 [cartoon of three dog samples converted into box plot] <br>
@@ -30,3 +32,5 @@ Tukey post-hoc analysis below <br>
 In conclusion, the ANOVA test is a valuable statistical tool used to compare means between three or more groups. By assessing assumptions, formulating null and alternative hypotheses, calculating p-values and test statistics, and comparing them to critical thresholds, we can draw meaningful conclusions from data. Want to know if a company is significantly charging you more for certain products? With the right data, now you can tell. Want to see if your invention is faster and safer than the competition? Collect and analyze that data and you’ll be able to tell. And most importantly, you can compare heights between so many things! Dog breeds, plant breeds, buildings in countries- the world is your height comparison oyster! <br>
 <br>
 ANOVA CALCULATION Section
+
+| [Back](https://benrushscience.github.io/learning-data-science/) | Next |
