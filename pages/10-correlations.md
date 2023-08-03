@@ -35,4 +35,4 @@ To summarize, the Pearson correlation test is an incredibly valuable statistical
 <br>
 In our last lesson (hold back the tears), we’ll discuss how messy data can halt analyses and other considerations we should make to ensure the tests we run are a good and appropriate fit for our data. Maybe you’ve tried calculating germination rates of plants for a school project that should last a few days, but nothing sprouts for weeks! Often, it’s making sure the data is clean and ready to use that takes longer than the statistical tests to get results- we’ll see why. <br>
 
-| [Back](https://benrushscience.github.io/learning-data-science/) | Next |
+| [Home](https://benrushscience.github.io/learning-data-science/) | [Next](https://benrushscience.github.io/learning-data-science/pages/10-correlations.html) |
