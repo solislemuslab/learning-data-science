@@ -1,3 +1,5 @@
+#I've never seen a dog
+
 Imagine seeing a dog for the first time. Rhonda, the dog, is a golden retriever. She is friendly, loves fetching tennis balls, and wants to eat all of your food. Rhonda needs a home and fortunately you are able to take her home with you. You observe more about her over time including her brown eyes, how she takes up half of the couch when sitting on it, the mole on her nose, and her stinky breath. Despite her stinky breath, Rhonda is a great dog. For the first dog you’ve ever met, she is a good accidental find. <br>
 <br>
 [photo of Rhonda here, maybe as a cartoon!] <br>
@@ -27,3 +29,5 @@ Finding out all the differences and similarities using statistics is extremely h
 [add a paragraph specific about Fast Plants. For example, In Fast Plants, we are interested in finding out if the amount of fertilizer is connected to the height of the plant….and other examples, like different plant height by species of plant that are very connected to Rhonda, but specific to fast plants] <br>
 <br>
 Continue to the “genetic diversity page” to learn how this can happen…
+
+| [Back](https://benrushscience.github.io/learning-data-science/) | Next |
