@@ -1,3 +1,5 @@
+#In the a world of possibilities...
+
 You know dogs come in all shapes, sizes, and personalities, yet they are still one species- domesticated dog (or if you prefer fancy Greek, Canis familiaris). How is this possible? The answer lies in dog DNA. DNA is the recipe book for any living thing. You have it. Dogs have it. Plants, your favorite TikToker- we all have DNA. Within our huge cookbook of DNA are individual recipes, or genes. Genes are the recipes for specific proteins, which are microscopic molecules that do all sorts of different things in our bodies. Proteins are like the foods from the recipes. Sometimes you want tacos for lunch. Sometimes you might want pizza. Each gene has the recipe for our food, but obviously we don’t want to cook every food all of the time, so any organism must control when a gene is turned on, or in biology speak - expressed. If the recipe is open and being cooked, just like a gene in our DNA is on and expressed, we get our food item and our protein. <br>
 <br>
 [harder time to visualize something here: maybe a youtube video explaining these same ideas after each paragraph?] <br>
@@ -25,3 +27,5 @@ To help illustrate the genetic diversity of the brassicas (and also what can hap
 A typical height and growth rate for your fast plant is known, and so are typical growth rates for crops, dogs, and humans. Although many factors influence the typical growth rate, if a parent has a human baby that is smaller than the “typical” baby at a certain age, doctors may be able to intervene to address a nutritional deficiency, disease, or toxin that could be affecting the growth. <br>
 <br>
 So, knowing the difference between a random observation and providing evidence for a pattern can save lives! That’s the power of statistics, which we dive back into on the next page. <br>
+
+| [Back](https://benrushscience.github.io/learning-data-science/) | Next |
