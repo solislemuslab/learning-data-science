@@ -2,12 +2,14 @@
 
 Correlations are one of the most frequently used statistical tests and for good reason. They allow comparisons between continuous variables and yield how strongly these variables are related to one another in a dataset. You can test to see how much happiness and income are correlated, how much rain is associated with the number of wildfires, and how much carbon dioxide that a country produces is associated with the country’s gross domestic product (a typical measure of a country’s economic health). Many correlation tests exist and we will discuss a basic yet powerful test- the Pearson correlation test, named after Karl Pearson. (Interestingly, this test has many names including the correlation-coefficient, Pearson’s correlation, Pearson correlation coefficient, Pearson’s product-moment correlation. We will call the test the Pearson correlation test for consistency). <br>
 <br>
-_Scatter plots are a great way to visualize if two continuous variables are associated. You can learn more about constructing a scatter plot and visualizing correlations via the videos below from Khan Academy_
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=sHbX58y5D4U&t=0s" frameborder="0" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=F5uiFXECnVY&t=0s" frameborder="0" allowfullscreen></iframe>
-
-Scatter plot video - https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/introduction-to-scatterplots/v/trends-in-smoking-scatter-plot ] <br>
+_Scatter plots are a great way to visualize if two continuous variables might be correlated. You can Learn more about constructing a scatter plot and visualizing correlations via the videos below from Khan Academy:_
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sHbX58y5D4U" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F5uiFXECnVY" frameborder="0" allowfullscreen></iframe>
 <br>
+[_Visualizing two continuous variables via a scatterplot_](https://www.khanacademy.org/math/probability/regression/prob-stats-scatter-plots/e/constructing-scatter-plots?utm_source=YT&utm_medium=Desc&utm_campaign=ProbabilityandStatistics) <br>
+[_Identifying correlations video_](https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-data/cc-8th-interpreting-scatter-plots/v/trends-in-smoking-scatter-plot) <br>
+<br>
+
 The Pearson correlation test is a statistical tool used to examine the strength and direction of the linear relationship between two continuous variables. An important note is that this test cannot tell us causation! We cannot say what variable causes the other, or if there is causation at all. A good example of this is that the number of churches and fast food restaurants are correlated with one another in a city, but do more churches cause more fast food restaurants? No, instead the population of a city is the likely cause of church and fast food restaurants numbers, even though churches and bars could be correlated with one another. <br>
 <br>
 Correlations are still very helpful as we can’t always determine causation. In health research, we can’t force people to smoke to determine the effects of cigarettes, so we might look at the number of cigarettes someone smokes and how long they live. One study doesn’t prove smoking causes a shorter lifespan, but if we repeat the study many times and combine it with other research (maybe testing the effect of smoke on human lung cells), we get closer to the fact that smoking leads to shorter lifespans. If we go back to our favorite hypothetical scenario- the one we all voted on that was the absolute best ever –dogs– we can investigate if the amount of water a dog drinks correlates with the amount of saliva it produces. <br>
