@@ -1,3 +1,5 @@
+#Seeing (data) is believing (data)
+
 So we’ve seen the use of means and medians, but could still get fooled by these one number summaries. You may have experienced this with concert tickets. A seller might list the average ticket price of a concert of $20, then on the website you see the best seats are actually $100 with terrible seats at $5. The seller could easily change the number and price of tickets in all sorts of ways to make the average seem affordable. That’s why having an idea of the spread of ticket prices, or the spread of whatever data we might be interested in, can help us be smarter buyers.<br> 
 <br>
 In the world of statistics, two important measures called variance and standard deviation help us understand how data points differ from the average and how much the data is spread from the average. Let’s think about Rhonda’s 30 inch height again.<br>
@@ -29,3 +31,5 @@ Histograms, like the two pictures above, are visual representations that help us
 [_If you want more info on creating histograms, check out this video by Khan Academy._](https://www.khanacademy.org/math/statistics-probability/displaying-describing-data/quantitative-data-graphs/v/histograms-intro) <br>
 <br>
 To summarize, variance and standard deviation help us measure how data points differ from the average and give us an idea of how our continuous data is spread. These measures are important tools in statistics that allow us to better understand and analyze data in many different fields and trends. They can even help us be smarter shoppers and buyers (or visitors to restaurants in busy areas!). The spread of data is often the first step of interpreting data and is also useful for when you begin to analyze data. <br>
+
+| [Back](https://benrushscience.github.io/learning-data-science/) | Next |
