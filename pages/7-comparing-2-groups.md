@@ -1,3 +1,5 @@
+# Things might be different now
+
 Finally! We’ve arrived at comparing a specific variable between two groups- we will compare heights between golden retrievers and pugs. The statistical test we will use to do this is called a t-test. Like other statistical tests, t-tests are a statistical tool that can help us compare data and determine if there are any significant differences. <br>
 <br> 
 [cartoon image of the samples with heights] <br>
@@ -26,3 +28,5 @@ In our example, let's say the t-value is 5.2, and the corresponding p-value is 0
 [good moment to introduce box plots??] <br>
 <br>
 The t-test is a versatile tool that can be applied to various scenarios. It can be used to compare the effectiveness of two different medications, see resource investments between neighborhoods, or analyze if there are any disparities in plant growth between two applied fertilizers. Of course, the world is not full of variables split evenly in two groups. There will be plenty of applications of wanting to compare multiple groups to one another, like comparing golden retriever height to pug height and to St. Bernard height. T-Tests are not designed to do this, but another test, called an ANOVA, is perfect for this scenario! That’s why we will explore in the next lesson. <br>
+
+| [Back](https://benrushscience.github.io/learning-data-science/) | Next |
