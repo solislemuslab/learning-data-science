@@ -33,4 +33,4 @@ In conclusion, the ANOVA test is a valuable statistical tool used to compare mea
 <br>
 ANOVA CALCULATION Section
 
-| [Back](https://benrushscience.github.io/learning-data-science/) | Next |
+| [Back](https://benrushscience.github.io/learning-data-science/) | [Next](https://benrushscience.github.io/learning-data-science/pages/10-correlations.html) |
