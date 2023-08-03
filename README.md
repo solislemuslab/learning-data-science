@@ -19,7 +19,7 @@ Learning materials for Data Science within biological applications such as [WI F
 | 5. Probability and z-scores | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/5-probability-and-z-scores.html) |
 | 6. Hypothesis testing | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/6-hypothesis-testing.html) |
 | 7. Comparing 2 groups (t-tests) | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/7-comparing-2-groups.html) |
-| 8. Comparing 2+ groups (ANOVA) | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/8-compring-2+-groups.html) |
+| 8. Comparing 2+ groups (ANOVA) | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/8-comparing-2+-groups.html) |
 | 9. Comparing frequencies (chi-square) | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/9-comparing-frequencies.html) |
 | 10. Correlations | i)   |  [notes](https://benrushscience.github.io/learning-data-science/pages/10-correlations.html) |
 | 11. Statistics in the real world | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/11-statistics-in-the-real-world.html) |
