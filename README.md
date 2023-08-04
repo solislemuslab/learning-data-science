@@ -7,6 +7,7 @@ For a list of learning objectives by lesson, visit this [page](https://benrushsc
 Learning materials for Data Science within biological applications such as [WI Fast Plants](https://fastplants.org )
 
 ## Table of contents
+
 | Topic | Key take-away points | Webpage |
 | :---:   | :---: | :---:       |
 | 1. Introduction to data science | The field of statistics is helpful for determing patterns versus random chance | [page](https://benrushscience.github.io/learning-data-science//pages/1-introduction.html) | 
