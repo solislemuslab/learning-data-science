@@ -6,9 +6,7 @@ For a list of learning objectives by lesson, visit this [page](https://benrushsc
 ## How to use this website
 Learning materials for Data Science within biological applications such as [WI Fast Plants](https://fastplants.org )
 
-
-
-
+## Table of contents
 | Topic | Key take-away points | Webpage |
 | :---:   | :---: | :---:       |
 | 1. Introduction to data science | The field of statistics is helpful for determing patterns versus random chance | [page](https://benrushscience.github.io/learning-data-science//pages/1-introduction.html) | 
@@ -22,3 +20,5 @@ Learning materials for Data Science within biological applications such as [WI F
 | 9. Comparing frequencies (chi-square) | We can compare if groups differ in frequency of observations or groups differ in a categorical variable (hair color) via a Chi-Square test |  [page](https://benrushscience.github.io/learning-data-science/pages/9-comparing-frequencies.html) |
 | 10. Correlations | We can determine how much two continuous variables are related based on their correlation strength and the formula of how they relate with a regression equation |  [page](https://benrushscience.github.io/learning-data-science/pages/10-correlations.html) |
 | 11. Statistics in the real world | Data analysis is fast. Data cleaning can be lengthy and tricky with factors like power, effect size, and normality to consider |  [page](https://benrushscience.github.io/learning-data-science/pages/11-statistics-in-the-real-world.html) |
+
+_Images on this website are a mix of original and AI-generated images (from [Dalle2](https://openai.com/dall-e-2). Images that have a row of multicolored squares are generated with Dalle_
