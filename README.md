@@ -1,22 +1,24 @@
-dfsdfsd
-# learning-data-science
+# An introduction to data science
 
 ## Learning Outcomes
 learn good
 
 ## Syllabus
-Learning materials for Data Science within biological applications such as WI Fast Plants: https://fastplants.org/
+Learning materials for Data Science within biological applications such as [WI Fast Plants](https://fastplants.org )
 
-| Topic | Key take-away points | Lecture notes |
+
+
+
+| Topic | Key take-away points | Webpage |
 | :---:   | :---: | :---:       |
-| 1. Introduction to data science | i) When it comes to probabilities, we do not trust our gut, we trust the formulas; <br> <br>  ii) We estimate population probabilities from observed frequencies in samples; <br> <br> iii) The chosen sample is very important | [notes](https://github.com/benrushscience/learning-data-science/blob/main/pages/Introduction.md) | 
-| 2. Genetic Diversity | i) Product rule: we can calculate the probability of simultaneous events when they are independent; <br> <br> ii) Addition rule: we can calculate the probability of different disjoint events  |  [notes](https://github.com/benrushscience/learning-data-science/blob/main/pages/genetic-diversity.md) | 
-| 3. Averages and medians | i) The conditional probability allows us to update a probability with new information; <br> <br> ii) Very important not to confuse the conditioning event as probabilities would change  |  [notes](https://github.com/benrushscience/learning-data-science/blob/main/pages/Introduction2.md) |
-| 4. Variance and distributions | i)   |  [notes](https://crsl4.github.io/forensic-stat//lecture-notes/3updating-probs.html) |
-| 5. Probability and z-score | i)   |  [notes](https://crsl4.github.io/forensic-stat//lecture-notes/3updating-probs.html) |
-| 6. Hypothesis testing | i)   |  [notes](https://crsl4.github.io/forensic-stat//lecture-notes/3updating-probs.html) |
-| 7. Comparing 2 groups (t-tests) | i)   |  [notes](https://crsl4.github.io/forensic-stat//lecture-notes/3updating-probs.html) |
-| 8. Comparing 2+ groups (ANOVA) | i)   |  [notes](https://crsl4.github.io/forensic-stat//lecture-notes/3updating-probs.html) |
-| 9. Comparing frequencies (chi-square) | i)   |  [notes](https://crsl4.github.io/forensic-stat//lecture-notes/3updating-probs.html) |
-| 10. Correlations | i)   |  [notes](https://crsl4.github.io/forensic-stat//lecture-notes/3updating-probs.html) |
-| 11. Statistics in the real world | i)   |  [notes](https://crsl4.github.io/forensic-stat//lecture-notes/3updating-probs.html) |
+| 1. Introduction to data science | i) When it comes to probabilities, we do not trust our gut, we trust the formulas; <br> <br>  ii) We | [page](https://benrushscience.github.io/learning-data-science//pages/1-introduction.html) | 
+| 2. Genetic Diversity | i)   |  [page](https://benrushscience.github.io/learning-data-science//pages/2-genetic-diversity.html) | 
+| 3. Averages and medians | i)   |  [page](https://benrushscience.github.io/learning-data-science//pages/3-averages-and-medians.html) |
+| 4. Variance and distributions | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/4-variance-and-distributions.html) |
+| 5. Probability and z-scores | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/5-probability-and-z-scores.html) |
+| 6. Hypothesis testing | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/6-hypothesis-testing.html) |
+| 7. Comparing 2 groups (t-tests) | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/7-comparing-2-groups.html) |
+| 8. Comparing 2+ groups (ANOVA) | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/8-comparing-2+-groups.html) |
+| 9. Comparing frequencies (chi-square) | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/9-comparing-frequencies.html) |
+| 10. Correlations | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/10-correlations.html) |
+| 11. Statistics in the real world | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/11-statistics-in-the-real-world.html) |
