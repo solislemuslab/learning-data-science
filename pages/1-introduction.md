@@ -3,7 +3,7 @@
 Imagine seeing a dog for the first time. Rhonda, the dog, is a golden retriever. She is friendly, loves fetching tennis balls, and wants to eat all of your food. Rhonda needs a home and fortunately you are able to take her home with you. You observe more about her over time including her brown eyes, how she takes up half of the couch when sitting on it, the mole on her nose, and her stinky breath. Despite her stinky breath, Rhonda is a great dog. For the first dog you’ve ever met, she is a good accidental find. <br>
 <br>
 
-<img src="images/introduction_rhonda.png" alt="Rhonda, a golden retriever, trying to catch a tennis ball" width="300" height="300">
+<div style="text-align:center"><img src="../images/introduction_rhonda.png" height="300" width="300"/></div>
 
 <br>
 Rhonda seems like the perfect dog, so why not show her off? The “National Competition for Best Golden Retriever” is just around the corner. You teach Rhonda how to sit, speak, and even salsa dance. She is ready for the competition. You arrive to find dozens of golden retrievers. Some have blue eyes, no moles, and maybe delightfully minty breath.  Although these are the first dogs you are seeing besides Rhonda, you can accept golden retrievers might vary in height when sitting. When Rhonda stands on all fours, she is 30 inches tall. As the golden retrievers dart around, you start to notice that most seem smaller than Rhonda. Maybe one is taller than Rhonda? Oh, that massive golden retriever is named Tank. He has won multiple awards for pulling cars… he loves those gains. <br>
