@@ -1,16 +1,16 @@
 # An introduction to data science
 
 ## Learning Objectives
-For a list of learning objectives by lesson, visit this [page](https://benrushscience.github.io/learning-data-science//pages/learning-objectives.html)
+For a list of learning objectives by lesson, visit this [page](https://benrushscience.github.io/learning-data-science//pages/learning-objectives.html).
 
 ## How to use this website
-Learning materials for Data Science within biological applications such as [WI Fast Plants](https://fastplants.org )
+Learning materials for Data Science within biological applications such as [WI Fast Plants](https://fastplants.org ).
 
 ## Table of contents
 
 | Topic | Key take-away points | Webpage |
 | :---:   | :---: | :---:       |
-| 1. Introduction to data science | The field of statistics is helpful for determing patterns versus random chance | [page](https://benrushscience.github.io/learning-data-science//pages/1-introduction.html) | 
+| 1. Why data science? | The field of statistics is helpful for determing patterns versus random chance | [page](https://benrushscience.github.io/learning-data-science//pages/1-introduction.html) | 
 | 2. Genetic Diversity | DNA and its expression causes the wide variety among living things and physical traits we see in the world |  [page](https://benrushscience.github.io/learning-data-science//pages/2-genetic-diversity.html) | 
 | 3. Averages and medians | Averages, or means, and medians are a fundamental metric to inform us about continuous variables in our data |  [page](https://benrushscience.github.io/learning-data-science//pages/3-averages-and-medians.html) |
 | 4. Variance and distributions | The spread of data is also valuable to determine if the spread is normal or skewed. Histograms are very helpful for us to visualize this |  [page](https://benrushscience.github.io/learning-data-science/pages/4-variance-and-distributions.html) |
