@@ -11,7 +11,7 @@ When we talk about variance, we're talking about how much the individual heights
 <br>
 Now, standard deviation is a measure that is easier to understand. It's like the "average amount of difference" from the average height. We can think of it as a typical or average distance that golden retriever heights deviate from the mean. Standard deviation spreads of continuous variables typically follow a similar bell-shaped curve pattern. By knowing the standard deviation and mean of golden retrievers' heights, we can understand a lot about the spread of height data. If the average height of golden retrievers is 24 inches and the standard deviation is 2 inches, we can expect most golden retrievers to have heights that range from 22 to 26 inches. In a bell shaped curve, we can use the mean and standard deviation to figure out the proportion of the sample that have certain heights. <br>
 <br>
-<div style="text-align:center"><img src="../images/Demohistogram_of_Golden_Retrievers.png" height="300" width="300"/></div>
+<div style="text-align:center"><img src="../images/Demohistogram_of_Golden_Retrievers.png" height="300" width="600"/></div>
 [Bell shaped curve plus example of proportions. Calculate Rhonda’s probability of being that tall] <br>
 <br>
 Understanding the variance and standard deviation of Golden Retriever heights can be helpful for different reasons. Breeders can use standard deviations for expectations of a dog breed’s heights. For veterinarians, standard deviation helps determine if a Golden Retriever's height is within a normal range for its age and breed, which can be important for monitoring their health. For us, standard deviation lets us know Rhonda is amazing and we should give her too many toys. <br>
