@@ -6,7 +6,7 @@ For a list of learning objectives by lesson, visit this [page](https://benrushsc
 ## How to use this website
 Learning materials for Data Science within biological applications such as [WI Fast Plants](https://fastplants.org ).
 
-## Table of contents
+## <p align="Table of Contents">Center-aligned text</p>
 
 | Topic | Key take-away points | Webpage |
 | :---:   | :---: | :---:       |
