@@ -27,7 +27,7 @@ This is exactly the same thinking that is used in statistics. We are trying to m
 <br>
 Finding out all the differences and similarities using statistics is extremely helpful in all sorts of applications- studying the brain, how humans behave, how plants might be related, discovering new pharmaceuticals, determining fair housing practices, and so much more. This is especially true when genetics can produce widely different appearances, yet keep the genetic makeup of a species similar. Imagine the only species of dog you’ve ever seen is a golden retriever… and then you see a pug “running” at a dog park. What?! That’s a dog?!? <br>
 <br>
-[maybe a dog cartoon histogram wil many golden retrievers and a pug as outlier] <br>
+<div style="text-align:center"><img src="../images/pug_and_golden.png" height="300" width="300"/></div>
 <br>
 [add a paragraph specific about Fast Plants. For example, In Fast Plants, we are interested in finding out if the amount of fertilizer is connected to the height of the plant….and other examples, like different plant height by species of plant that are very connected to Rhonda, but specific to fast plants] <br>
 <br>
