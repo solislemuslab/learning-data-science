@@ -1,4 +1,5 @@
 # _More_ things might be different now
+## 8. Comparing 2+ groups (ANOVA)
 
 If we wanted to compare 2 group means, t-tests are great. To compare means of 3 or more groups, the ANOVA (ANalysis Of VAriance) test is the way to go. ANOVA is a statistical tool that helps us compare the means of 3 or more groups (it can also be used to compare 2 groups, but t-tests are more common for that). It is used to determine if there are any significant differences between group means of a continuous variable (height) and the several groups defined by a categorical variable (dogs breeds: golden retrievers, pugs, and St. Bernards). <br>
 <br>
