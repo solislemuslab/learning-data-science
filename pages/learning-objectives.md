@@ -84,4 +84,4 @@ Students will understand: <br>
 * Messiness and cleaning
 * Analysis is fast, prep and collection are the long game
 
-[Back to home page](https://benrushscience.github.io/learning-data-science//pages/learning-objectives.html)
+[Back to home page](https://benrushscience.github.io/learning-data-science)
