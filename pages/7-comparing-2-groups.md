@@ -1,4 +1,5 @@
 # Things might be different now
+## 7. Comparing 2 groups (t-tests)
 
 Finally! We’ve arrived at comparing a specific variable between two groups- we will compare heights between golden retrievers and pugs. The statistical test we will use to do this is called a t-test. Like other statistical tests, t-tests are a statistical tool that can help us compare data and determine if there are any significant differences. <br>
 <br> 
