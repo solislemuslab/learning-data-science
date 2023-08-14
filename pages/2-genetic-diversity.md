@@ -1,4 +1,5 @@
 # In the a world of possibilities...
+## 2. Genetic diversity
 
 You know dogs come in all shapes, sizes, and personalities, yet they are still one species- domesticated dog (or if you prefer fancy Greek, Canis familiaris). How is this possible? The answer lies in dog DNA. DNA is the recipe book for any living thing. You have it. Dogs have it. Plants, your favorite TikToker- we all have DNA. Within our huge cookbook of DNA are individual recipes, or genes. Genes are the recipes for specific proteins, which are microscopic molecules that do all sorts of different things in our bodies. Proteins are like the foods from the recipes. Sometimes you want tacos for lunch. Sometimes you might want pizza. Each gene has the recipe for our food, but obviously we don’t want to cook every food all of the time, so any organism must control when a gene is turned on, or in biology speak - expressed. If the recipe is open and being cooked, just like a gene in our DNA is on and expressed, we get our food item and our protein. <br>
 <br>
