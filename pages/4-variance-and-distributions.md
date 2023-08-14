@@ -13,7 +13,7 @@ Now, standard deviation is a measure that is easier to understand. It's like the
 <br>
 <div style="text-align:center"><img src="../images/Demohistogram_of_Golden_Retrievers.png" height="300" width="500"/></div>
 
-<div style="text-align:center"><img src="https://en.wikipedia.org/wiki/Normal_distribution#/media/File:Standard_deviation_diagram_micro.svg" height="300" width="500" altext="Work by Ainali on Wikipedia- CC-BY-SA 3.0" /></div>
+<div style="text-align:center"><img src="../images/Standard_deviation_diagram_micro.svg.png" height="300" width="500" altext="Work by Ainali on Wikipedia- CC-BY-SA 3.0" /></div>
 [Bell shaped curve plus example of proportions. Calculate Rhonda’s probability of being that tall] <br>
 <br>
 Understanding the variance and standard deviation of Golden Retriever heights can be helpful for different reasons. Breeders can use standard deviations for expectations of a dog breed’s heights. For veterinarians, standard deviation helps determine if a Golden Retriever's height is within a normal range for its age and breed, which can be important for monitoring their health. For us, standard deviation lets us know Rhonda is amazing and we should give her too many toys. <br>
