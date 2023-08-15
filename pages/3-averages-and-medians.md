@@ -24,9 +24,9 @@ Next, we will need to define how we assess our variables. Let’s say we wanted 
 <br>
 
 <div style="text-align:center"><img src="../images/Golden_Retriever_height_2.png" height="300" width="300"/></div>
-Is this height?
+Is this height? <br> 
 <div style="text-align:center"><img src="../images/Golden_Retriever_height.png" height="300" width="300"/></div> 
-Or is this height?
+Or is this height? <br> 
 <br> 
 The American Kennel Club defines a dog’s height in inches from the bottom of its front paws to the top of its shoulder, not taking into account the head (the head could be up or down when measured, so the height could vary drastically!). Now that we have a definition of height, we can start measuring the height of the golden retrievers. <br>
 <br>
