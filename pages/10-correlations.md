@@ -1,4 +1,5 @@
 # What goes up must go down, or up, or nowhere
+## 10. Correlations
 
 Correlations are one of the most frequently used statistical tests and for good reason. They allow comparisons between continuous variables and yield how strongly these variables are related to one another in a dataset. You can test to see how much happiness and income are correlated, how much rain is associated with the number of wildfires, and how much carbon dioxide that a country produces is associated with the country’s gross domestic product (a typical measure of a country’s economic health). Many correlation tests exist and we will discuss a basic yet powerful test- the Pearson correlation test, named after Karl Pearson. (Interestingly, this test has many names including the correlation-coefficient, Pearson’s correlation, Pearson correlation coefficient, Pearson’s product-moment correlation. We will call the test the Pearson correlation test for consistency). <br>
 <br>

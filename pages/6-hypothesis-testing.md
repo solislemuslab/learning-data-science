@@ -1,4 +1,5 @@
 # I love being rejected!
+## 6. Hypothesis testing
 
 We will be able to answer the most important question of the century- are golden retrievers taller than those strange things called pugs? We will gather evidence to answer this question through a method in statistics called hypothesis testing. A hypothesis is an educated guess or statement about a population or observation. It is often based on previous knowledge or observations (we saw a lot of golden retrievers that were taller than the one pug). In statistics, we determine support for evidence by hypothesis testing. In hypothesis testing, we start with two hypotheses: the null hypothesis (H0) and the alternative hypothesis (Ha). The null hypothesis represents the assumption that there is no significant difference or relationship between variables, while the alternative hypothesis suggests that there is a significant difference or relationship. In our example of comparing golden retriever and pug height, this means the null hypothesis is that there is no difference in heights between the two breeds. Our alternative hypothesis is that a difference in heights between the two breeds does exist. <br>
 <br>

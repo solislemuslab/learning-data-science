@@ -1,4 +1,5 @@
 # With great power comes maybe good effect size
+## 11. Statistics in the real world
 
 As you’ve seen, choosing the right statistical test can depend on what question you are asking, the variables you have, and meeting the assumptions of each test. However, there are additional considerations that statisticians and data scientists take into account to ensure accurate and meaningful results. It’s also important to mention that all statistical tests help provide evidence for a hypothesis being tested, but real world data is messy. Data collection and cleaning take up a significant amount of time in statistical work. Collecting accurate and representative data is crucial for meaningful analysis. Researchers must design appropriate experiments or surveys, gather data systematically, and ensure data quality by checking for errors or inconsistencies. Cleaning and preparing the data for analysis can be a time-consuming process, involving removing outliers (extreme values), resolving missing data problems, and organizing the variables. <br>
 <br>

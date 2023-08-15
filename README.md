@@ -1,24 +1,25 @@
 # An introduction to data science
 
-## Learning Outcomes
-learn good
+## Learning Objectives
+For a list of learning objectives by lesson, visit this [page](https://benrushscience.github.io/learning-data-science//pages/learning-objectives.html).
 
-## Syllabus
-Learning materials for Data Science within biological applications such as [WI Fast Plants](https://fastplants.org )
+## How to use this website
+This website is intended for middle and high school students learning to apply statistics for the first time. Each lesson covers a basic overview of concepts and aims to provide the theoretical take aways without being bogged down by the math. Each lesson does have resources for students to learn more about the math behind each concept, but the main purpose of the website is to teach how to think about statistics. This website covers the basic statistical concepts and tests that are covered in an introductory statistics course. This website was developed in conjuction with the [Wisconsin Fast Plants](https://fastplants.org), but the knowledge can be applied for any statistics introductory course. 
 
-
-
+<p align="center">Table of Contents</p>
 
 | Topic | Key take-away points | Webpage |
 | :---:   | :---: | :---:       |
-| 1. Introduction to data science | i) When it comes to probabilities, we do not trust our gut, we trust the formulas; <br> <br>  ii) We | [page](https://benrushscience.github.io/learning-data-science//pages/1-introduction.html) | 
-| 2. Genetic Diversity | i)   |  [page](https://benrushscience.github.io/learning-data-science//pages/2-genetic-diversity.html) | 
-| 3. Averages and medians | i)   |  [page](https://benrushscience.github.io/learning-data-science//pages/3-averages-and-medians.html) |
-| 4. Variance and distributions | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/4-variance-and-distributions.html) |
-| 5. Probability and z-scores | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/5-probability-and-z-scores.html) |
-| 6. Hypothesis testing | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/6-hypothesis-testing.html) |
-| 7. Comparing 2 groups (t-tests) | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/7-comparing-2-groups.html) |
-| 8. Comparing 2+ groups (ANOVA) | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/8-comparing-2+-groups.html) |
-| 9. Comparing frequencies (chi-square) | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/9-comparing-frequencies.html) |
-| 10. Correlations | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/10-correlations.html) |
-| 11. Statistics in the real world | i)   |  [page](https://benrushscience.github.io/learning-data-science/pages/11-statistics-in-the-real-world.html) |
+| 1. Why data science? | The field of statistics is helpful for determing patterns versus random chance | [page](https://benrushscience.github.io/learning-data-science//pages/1-introduction.html) | 
+| 2. Genetic Diversity | DNA and its expression causes the wide variety among living things and physical traits we see in the world |  [page](https://benrushscience.github.io/learning-data-science//pages/2-genetic-diversity.html) | 
+| 3. Averages and medians | Averages, or means, and medians are a fundamental metric to inform us about continuous variables in our data |  [page](https://benrushscience.github.io/learning-data-science//pages/3-averages-and-medians.html) |
+| 4. Variance and distributions | The spread of data is also valuable to determine if the spread is normal or skewed. Histograms are very helpful for us to visualize this |  [page](https://benrushscience.github.io/learning-data-science/pages/4-variance-and-distributions.html) |
+| 5. Probability and z-scores | We can use probability and a standardized score of probabilty, z-scores, to inform us how rare and observation is  |  [page](https://benrushscience.github.io/learning-data-science/pages/5-probability-and-z-scores.html) |
+| 6. Hypothesis testing | We generate ideas about patterns in the world, called hypothesis, that we test via statistics for build evidence for our idea |  [page](https://benrushscience.github.io/learning-data-science/pages/6-hypothesis-testing.html) |
+| 7. Comparing 2 groups (t-tests) | We can compare if two groups are different using a statistical test called a t-test |  [page](https://benrushscience.github.io/learning-data-science/pages/7-comparing-2-groups.html) |
+| 8. Comparing 2+ groups (ANOVA) | We can compare if two or more groups are different using a statistical test called an analysis of variance (ANOVA) test |  [page](https://benrushscience.github.io/learning-data-science/pages/8-comparing-2+-groups.html) |
+| 9. Comparing frequencies (chi-square) | We can compare if groups differ in frequency of observations or groups differ in a categorical variable (hair color) via a Chi-Square test |  [page](https://benrushscience.github.io/learning-data-science/pages/9-comparing-frequencies.html) |
+| 10. Correlations | We can determine how much two continuous variables are related based on their correlation strength and the formula of how they relate with a regression equation |  [page](https://benrushscience.github.io/learning-data-science/pages/10-correlations.html) |
+| 11. Statistics in the real world | Data analysis is fast. Data cleaning can be lengthy and tricky with factors like power, effect size, and normality to consider |  [page](https://benrushscience.github.io/learning-data-science/pages/11-statistics-in-the-real-world.html) |
+
+_Images on this website are a mix of original and AI-generated images (from [Dalle2](https://openai.com/dall-e-2). Images that have a row of multicolored squares are generated with Dalle_

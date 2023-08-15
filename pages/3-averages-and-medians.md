@@ -1,4 +1,5 @@
 # Finding middle (and average) ground
+## 3. Averages and medians
 
 So now we know that we should expect some genetic variation in DNA among any population of organisms- plants, dogs, humans, koalas, yeast, worms- and that the environment will play a part in how much those organisms’ genes are expressed. We know that genetic variation, gene expression, and the environment will affect those organisms’ morphologies, which is important as that could influence crop yields, disease risk, survival, and even start-up businesses. So how do we know the “typical” value of a trait we are interested in? This could be like asking how many potatoes should we get per purple potato plant? How many purple cauliflower plants should germinate from seed? We could guess whatever we wanted, but we could also be completely wrong. If we start collecting data, we can get closer to the truth. Although we want to get to the truth of a “typical” value for some trait or variable of interest, you will see it is an impossible but highly valuable and rewarding task. <br>
 <br>
