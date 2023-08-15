@@ -5,7 +5,18 @@ So now we know that we should expect some genetic variation in DNA among any pop
 <br>
 First, we will need to think about what data and the type of data we want to collect. We generally have two types of data, or variables, we could select. One type of data is called a continuous variable. Continuous variables can have infinite possibilities like a smooth spectrum, where you can find values in between any two points. In our case, our continuous variable is height. Height does not have discrete, integer values (0, 1, 2) and varies along a big spectrum (0 to whatever is limited in biology) with values that can be in between integers (23.445, 10.5, 45.009 inches, which are all acceptable for a continuous variable). The other type of data is called a categorical variable. Categorical variables have discrete values that do not make any sense to have values in between the values (there is not a half pug, half golden retriever, or half New York City or half Milwaukee group). In statistics, continuous variables change smoothly (like temperature), while categorical variables are divided into distinct groups (like golden retrievers or  pugs). <br>
 <br>
-[cartoon of continuous and categorical variables] <br>
+| Continuous Variables| Categorical Variables |
+| :---:   | :---: |
+| Height | Gender |
+| Weight | Blood Type |
+| Temperature | Nationality |
+| Age | Hair Color |
+| Salary | Car Brand |
+| Distance | Relationship Status |
+| Speed | Education Level |
+| Volume | Animal Species |
+| Time | Movie Genre |
+| Pressure | Operating System |
 <br>
 [_For more info about reading charts, categorical, and continuous variables, see this video from Khan Academy._](https://www.khanacademy.org/math/statistics-probability/analyzing-categorical-data/one-categorical-variable/v/identifying-individuals-variables-and-categorical-variables-in-a-data-set) <br>
 <br>
