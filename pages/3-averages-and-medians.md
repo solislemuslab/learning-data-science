@@ -5,6 +5,7 @@ So now we know that we should expect some genetic variation in DNA among any pop
 <br>
 First, we will need to think about what data and the type of data we want to collect. We generally have two types of data, or variables, we could select. One type of data is called a continuous variable. Continuous variables can have infinite possibilities like a smooth spectrum, where you can find values in between any two points. In our case, our continuous variable is height. Height does not have discrete, integer values (0, 1, 2) and varies along a big spectrum (0 to whatever is limited in biology) with values that can be in between integers (23.445, 10.5, 45.009 inches, which are all acceptable for a continuous variable). The other type of data is called a categorical variable. Categorical variables have discrete values that do not make any sense to have values in between the values (there is not a half pug, half golden retriever, or half New York City or half Milwaukee group). In statistics, continuous variables change smoothly (like temperature), while categorical variables are divided into distinct groups (like golden retrievers or  pugs). <br>
 <br>
+
 | Continuous Variables| Categorical Variables |
 | :---:   | :---: |
 | Height | Gender |
@@ -17,15 +18,15 @@ First, we will need to think about what data and the type of data we want to col
 | Volume | Animal Species |
 | Time | Movie Genre |
 | Pressure | Operating System |
+
 <br>
 [_For more info about reading charts, categorical, and continuous variables, see this video from Khan Academy._](https://www.khanacademy.org/math/statistics-probability/analyzing-categorical-data/one-categorical-variable/v/identifying-individuals-variables-and-categorical-variables-in-a-data-set) <br>
 <br>
 Next, we will need to define how we assess our variables. Let’s say we wanted to determine the height of golden retrievers. We need to define how we measure height for golden retreivers. Should height be when a golden retriever is sitting down? Should it be when a golden retriever is laying down? Should it be measured from the end of the tale to the end of the snout? The answer will probably vary depending on whom you ask. In science, there can be some heated arguments on how to even define a term. This might seem silly (and sometimes it is), but a definition can have huge impacts. Imagine if NASA astronauts were fitted in suits according to their heights, but height was only measured from their ankles to their necks. These poorly fitting suits would likely not fit at all, and put their lives at risk. Indeed space exploration, roller coasters, and plane fights have been in jeopardy because of different groups measuring length in metric units (example-meters) versus empirical units (example- yards). <br>
 <br>
-
-<div style="text-align:center"><img src="../images/Golden_Retriever_height_2.png" height="300" width="300"/></div>
+<div style="text-align:center"><img src="../images/Golden_Retriever_height_2.png" height="300" width="300"/></div> <br>
 Is this height? <br> 
-<div style="text-align:center"><img src="../images/Golden_Retriever_height.png" height="300" width="300"/></div> 
+<div style="text-align:center"><img src="../images/Golden_Retriever_height.png" height="300" width="300"/></div> <br>
 Or is this height? <br> 
 <br> 
 The American Kennel Club defines a dog’s height in inches from the bottom of its front paws to the top of its shoulder, not taking into account the head (the head could be up or down when measured, so the height could vary drastically!). Now that we have a definition of height, we can start measuring the height of the golden retrievers. <br>
