@@ -13,7 +13,7 @@ Of course, we humans vary in lots of ways – hair color, height, what we taste,
 <br>
 Genetic variation is the concept that our genes (the recipes) can vary even though the genes might be for creating the same protein (the food). This is like getting recipes for mac and cheese from different friends’ families. One family might put breadcrumbs on top, another might cover theirs in hot sauce. In the end, the families cook mac and cheese even if the recipes cause some variation in the mac and cheese. This is exactly like genetic variation! Genetic variation can even explain why some individuals taste soap when eating cilantro and why people have different types of ear wax. <br>
 
-<div style="text-align:center"><img src="images/DNA_Cookbook_Flowcharts.svg" height="300" width="300"/></div>
+<div style="text-align:center"><img src="images/DNA_Cookbook_Flowcharts.png" height="300" width="300"/></div>
 <br>
 Gene expression refers to how much of a gene is read to make a protein. This is like having a recipe for tamales (the gene), but choosing how many tamales you actually make (the amount of protein made). This could lead to genes being highly expressed or not expressed at all! Humans have the gene to make vitamin C, but through eating so much food with vitamin C in our ancestry, our bodies turned the expression of the vitamin C gene to zero to save on energy and resources that goes into making vitamin C. <br>
 <br>
