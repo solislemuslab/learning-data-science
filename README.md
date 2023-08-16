@@ -22,4 +22,4 @@ This website is intended for middle and high school students learning to apply s
 | 10. Correlations | We can determine how much two continuous variables are related based on their correlation strength and the formula of how they relate with a regression equation |  [page](https://benrushscience.github.io/learning-data-science/pages/10-correlations.html) |
 | 11. Statistics in the real world | Data analysis is fast. Data cleaning can be lengthy and tricky with factors like power, effect size, and normality to consider |  [page](https://benrushscience.github.io/learning-data-science/pages/11-statistics-in-the-real-world.html) |
 
-_Images on this website are a mix of original and AI-generated images (from [Dalle2](https://openai.com/dall-e-2). Images that have a row of multicolored squares are generated with Dalle_
+_Images on this website are a mix of original and AI-generated images (from [Dalle2](https://openai.com/dall-e-2). Images that have a row of multicolored squares are generated with Dalle2._
