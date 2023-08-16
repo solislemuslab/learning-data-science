@@ -23,8 +23,6 @@ If you compared  Rhonda’s height to 5 other golden retrievers and found Rhonda
 <br>
 This is exactly the same thinking that is used in statistics. We are trying to make conclusions about an observation we saw- are Rhonda and a group of 30 other golden retrievers different? Using statistics can help us answer those questions. Statistics can also help us see if other dog attributes tend to change with one another. For example, we might be curious to see if the amount of food a golden retriever eats as a puppy is related to its height. Statistics can determine differences among characteristics of golden retrievers: Are golden retrievers with stinky breath like Rhonda just as popular as golden retrievers with minty fresh breath? Do golden retrievers with blue eyes have a higher rate of having stinky breath versus golden retrievers with brown eyes? <br>
 <br>
-[do we want to hint future ideas by starting with a cartoon of scatterplot here?] <br>
-<br>
 Finding out all the differences and similarities using statistics is extremely helpful in all sorts of applications- studying the brain, how humans behave, how plants might be related, discovering new pharmaceuticals, determining fair housing practices, and so much more. This is especially true when genetics can produce widely different appearances, yet keep the genetic makeup of a species similar. Imagine the only species of dog you’ve ever seen is a golden retriever… and then you see a pug “running” at a dog park. What?! That’s a dog?!? <br>
 <br>
 <div style="text-align:center"><img src="../images/pug_and_golden.png" height="300" width="300"/></div>
