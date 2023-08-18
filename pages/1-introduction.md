@@ -27,6 +27,8 @@ Finding out all the differences and similarities using statistics is extremely h
 <br>
 <div style="text-align:center"><img src="../images/pug_and_golden.png" height="300" width="300"/></div>
 <br>
+<div style="text-align:center"><img src="../images/first_pug_vbarchart.png" height="300" width="450"/></div>
+<br>
 [add a paragraph specific about Fast Plants. For example, In Fast Plants, we are interested in finding out if the amount of fertilizer is connected to the height of the plant….and other examples, like different plant height by species of plant that are very connected to Rhonda, but specific to fast plants] <br>
 <br>
 Continue to the “genetic diversity page” to learn how this can happen…
