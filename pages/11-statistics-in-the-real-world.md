@@ -17,4 +17,16 @@ It is possible to have a statically significant result, but low impact. We could
 <br>
 To summarize all these lessons, statistical tests are incredibly important to gain insight and evidence into the hypotheses we have about the world. Our beliefs about dog breeds, crop production, health, finances, and so much more rely on decisions, which can be informed from research that rely on statistics for evidence. Statistical tests are amazing tools that can be leveraged for clearer interpretation of the world, but keep in mind that 1 result does not establish a pattern and that any study will have its strengths and weaknesses. One quote from a British statistician, George Box, is helpful to remember- “All models are wrong, some are useful.” Statistics can yield insightful results but they should be taken into the context of the subject being studied. Were there other studies that contradicted the results? Why could that be? Who and what were being studied? When and where? It’s impossible to create the perfect study, but using statistics helps us gain more knowledge about the world and unlock the hidden patterns behind everything! <br>
 
+Get inspired about how statistics can help change the world with the videos below:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hVimVzgtD6w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eE4qCJBgfIk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z1-AHywHi4w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_2u_eHHzRto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oUs1uvsz0Ok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 | [Home](https://benrushscience.github.io/learning-data-science/) |
