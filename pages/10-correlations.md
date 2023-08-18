@@ -4,8 +4,8 @@
 Correlations are one of the most frequently used statistical tests and for good reason. They allow comparisons between continuous variables and yield how strongly these variables are related to one another in a dataset. You can test to see how much happiness and income are correlated, how much rain is associated with the number of wildfires, and how much carbon dioxide that a country produces is associated with the country’s gross domestic product (a typical measure of a country’s economic health). Many correlation tests exist and we will discuss a basic yet powerful test- the Pearson correlation test, named after Karl Pearson. (Interestingly, this test has many names including the correlation-coefficient, Pearson’s correlation, Pearson correlation coefficient, Pearson’s product-moment correlation. We will call the test the Pearson correlation test for consistency <br>
 
 _Scatter plots are a great way to visualize if two continuous variables might be correlated. You can Learn more about constructing a scatter plot and visualizing correlations via the videos below from Khan Academy:_
-*[_Visualizing two continuous variables via a scatterplot_](https://www.youtube.com/embed/sHbX58y5D4U) <br>
-*[_Identifying correlations video_](https://www.youtube.com/embed/F5uiFXECnVY) <br>
+- [_Visualizing two continuous variables via a scatterplot_](https://www.youtube.com/embed/sHbX58y5D4U) <br>
+- [_Identifying correlations video_](https://www.youtube.com/embed/F5uiFXECnVY) <br>
 <br>
 
 The Pearson correlation test is a statistical tool used to examine the strength and direction of the linear relationship between two continuous variables. An important note is that this test cannot tell us causation! We cannot say what variable causes the other, or if there is causation at all. A good example of this is that the number of churches and fast food restaurants are correlated with one another in a city, but do more churches cause more fast food restaurants? No, instead the population of a city is the likely cause of church and fast food restaurants numbers, even though churches and bars could be correlated with one another. <br>
@@ -19,7 +19,7 @@ Before we determine if the increase in water consumption is correlated with an i
 Next, we establish our hypotheses. As you may have guessed by now, the null hypothesis (H0) in Pearson's correlation test states that there is no correlation between the two continuous  variables, as in there would be no correlation between the amount of water consumed by dogs and the amount of saliva they make. (Maybe all the wet puddles around the kitchen are just drips from the dog’s mouth after they drink water and not technically saliva). The alternative hypothesis (Ha) suggests that there is a significant linear relationship- water consumed and saliva production for dogs is correlated. <br>
 <br>
 Like all other statistical tests, we calculate a test statistic and match that to a p-value. The test statistic in the Pearson correlation test is the correlation coefficient, denoted as r. The correlation coefficient ranges from -1 to +1, where -1 indicates a perfect negative linear relationship, +1 indicates a perfect positive linear relationship, and 0 indicates no linear relationship. A negative correlation would mean as one variable increases, the other decreases- more water consumed is correlated with less saliva production in dogs. A correlation of 0 means the variables are not correlated with one another- more water consumed has no pattern with saliva production in dogs. A positive correlation indicates an increase in one variable matches an increase in the other variable - more water consumption is correlated with more saliva production. 
-[_Boost your correlation coefficient intuition_](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/scatterplots-and-correlation/v/correlation-coefficient-intuition-examples ) <br>
+[_Boost your correlation coefficient intuition._](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/scatterplots-and-correlation/v/correlation-coefficient-intuition-examples ) <br>
 <br>
 [_To learn how to calculate correlation coefficient, check out yet another video from Khan Academy_](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/scatterplots-and-correlation/v/calculating-correlation-coefficient-r) <br>
 <br>
@@ -28,9 +28,6 @@ Once we have our test statistic, the r-value, we can compare it to the t-distrib
 [_To learn how to calculate a regression line, learn from our friends at Khan Academy_](https://www.khanacademy.org/math/statistics-probability/advanced-regression-inference-transforming/inference-on-slope/v/intro-inference-slope) <br>
 <br>
 In more advanced statistical analysis, researchers often use multiple regression techniques. Multiple regression allows us to predict or estimate the value of one outcome variable based on the value of one or more variables. Linear regression is a highly used technique in business, science, engineering, math- almost any field!- and it examines how one variable (the dependent variable) changes as one or more variables (the independent variables) changes. This technique provides more detailed information about the relationship between variables, including the impact of other factors and the ability to make predictions. Instead of just seeing if water consumption and saliva are correlated in dogs, we could test if age of a dog, the breed, time exercising, and/or water consumption is associated with saliva production at the same time! Or, you could compare how your education, age, and years of experience can be used to estimate how much you should make in a future job and make sure you get paid to your liking! <br>
-
-
-
 
 |Hypothetical Multiple Regression Analysis Results | 
 | :---: |
