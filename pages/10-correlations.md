@@ -29,15 +29,16 @@ Once we have our test statistic, the r-value, we can compare it to the t-distrib
 <br>
 In more advanced statistical analysis, researchers often use multiple regression techniques. Multiple regression allows us to predict or estimate the value of one outcome variable based on the value of one or more variables. Linear regression is a highly used technique in business, science, engineering, math- almost any field!- and it examines how one variable (the dependent variable) changes as one or more variables (the independent variables) changes. This technique provides more detailed information about the relationship between variables, including the impact of other factors and the ability to make predictions. Instead of just seeing if water consumption and saliva are correlated in dogs, we could test if age of a dog, the breed, time exercising, and/or water consumption is associated with saliva production at the same time! Or, you could compare how your education, age, and years of experience can be used to estimate how much you should make in a future job and make sure you get paid to your liking! <br>
 
-----------------------------------------------------------
-                         Multiple Regression Analysis                            
+
+
+
+|Multiple Regression Analysis Results |                          
 ----------------------------------------------------------
 Dependent Variable: Saliva Production
 R-squared: 0.65 
-Adjusted R-squared: 0.62
 ----------------------------------------------------------
-                           | Coefficient | Std. Error | t-value | p-value |
-----------------------------------------------------------
+| | Coefficient | Std. Error | t-value | p-value |
+| :---: | :---:   | :---: | :---: | :---: |
 Intercept                  |    10.50    |    0.80    |  13.13  |  <0.001 |
 Dog Age (in years)         |    -0.25    |    0.05    |  -5.00  |  <0.001 |
 Dog Breed (Breed B vs A)   |     1.20    |    0.40    |   3.00  |   0.003 |
