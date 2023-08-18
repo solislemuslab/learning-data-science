@@ -32,10 +32,11 @@ In more advanced statistical analysis, researchers often use multiple regression
 
 
 
-|Multiple Regression Analysis Results | 
+|Hypothetical Multiple Regression Analysis Results | 
 | :---: |
 |Dependent Variable: Saliva Production |
 | R-squared: 0.65 |
+
 | | Coefficient | Std. Error | t-value | p-value |
 | :---: | :---:   | :---: | :---: | :---: |
 Intercept                  |    10.50    |    0.80    |  13.13  |  <0.001 |
@@ -43,7 +44,6 @@ Dog Age (in years)         |    -0.25    |    0.05    |  -5.00  |  <0.001 |
 Dog Breed (Breed B vs A)   |     1.20    |    0.40    |   3.00  |   0.003 |
 Time Exercising (in hours) |     2.75    |    0.30    |   9.17  |  <0.001 |
 Water Consumption (in ml)  |     0.05    |    0.01    |   5.00  |  <0.001 |
-----------------------------------------------------------
 
 Note: 
 - The variable "Dog Breed" is a categorical variable. In this illustration, it's been dummy coded comparing Breed B to a reference Breed A.
