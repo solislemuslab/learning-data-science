@@ -33,10 +33,8 @@ In more advanced statistical analysis, researchers often use multiple regression
 
 
 |Multiple Regression Analysis Results |                          
-----------------------------------------------------------
-Dependent Variable: Saliva Production
-R-squared: 0.65 
-----------------------------------------------------------
+|Dependent Variable: Saliva Production |
+| R-squared: 0.65 |
 | | Coefficient | Std. Error | t-value | p-value |
 | :---: | :---:   | :---: | :---: | :---: |
 Intercept                  |    10.50    |    0.80    |  13.13  |  <0.001 |
