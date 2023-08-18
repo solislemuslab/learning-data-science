@@ -29,7 +29,8 @@ Finding out all the differences and similarities using statistics is extremely h
 <br>
 <div style="text-align:center"><img src="../images/first_pug_vbarchart.png" height="300" width="450"/></div>
 <br>
-[add a paragraph specific about Fast Plants. For example, In Fast Plants, we are interested in finding out if the amount of fertilizer is connected to the height of the plant….and other examples, like different plant height by species of plant that are very connected to Rhonda, but specific to fast plants] <br>
+You might be working on a project using [Wisconsin Fast Plants](https://fastplants.org/) for an interactive journey cultivating of Brassica rapa plants. Fast Plants provides a unique platform for teaching basic statistical concepts through hands-on observation of plant traits like height, germination time, leaf number, and flowering time. You can collect data to calculate averages, dispersions, and correlations, fostering a practical understanding of statistical analysis within the context of biological growth and genetics. We will touch on all the statistics involved in Fast Plants on this website, but other projects can still benefit from this website, too! This project engages students in both scientific exploration and statistical learning, offering a comprehensive educational experience.
+<br>
 <br>
 Continue to the “genetic diversity page” to learn how this can happen…
 
