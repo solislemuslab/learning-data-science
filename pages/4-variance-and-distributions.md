@@ -41,5 +41,5 @@ To summarize, variance and standard deviation help us measure how data points di
 If you'd like to play around with visualizing distributions, and other plots and statistics, you can play one with the Wisconsin Fast Stats app which can give you sample data about plant baby leaf numbers (AKA cotyledons) by generation. <br>
 <iframe src="https://wi-fast-stats.wid.wisc.edu/cotyledon/" width="600" height="500"></iframe>
 <br>
-
+<br>
 | [Home](https://benrushscience.github.io/learning-data-science/) | [Next](https://benrushscience.github.io/learning-data-science/pages/5-probability-and-z-scores.html) |
