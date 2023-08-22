@@ -4,7 +4,7 @@
 For a list of learning objectives by lesson, visit this [page](https://benrushscience.github.io/learning-data-science//pages/learning-objectives.html).
 
 ## How to use this website
-This website is intended for middle and high school students learning to apply statistics for the first time. Each lesson covers a basic overview of concepts and aims to provide the theoretical take aways without being bogged down by the math. Each lesson does have resources for students to learn more about the math behind each concept, but the main purpose of the website is to teach how to think about statistics. This website covers the basic statistical concepts and tests that are covered in an introductory statistics course. This website was developed in conjuction with the [Wisconsin Fast Plants](https://fastplants.org), but the knowledge can be applied for any statistics introductory course. 
+This website is intended for middle and high school students learning to apply statistics for the first time. Each lesson covers a basic overview of concepts and aims to provide the theoretical take aways without being bogged down by the math. Each lesson does have resources for students to learn more about the math behind each concept, but the main purpose of the website is to teach how to think about statistics. This website covers the basic statistical concepts and tests that are covered in an introductory statistics course. This website was developed in conjuction with the [Wisconsin Fast Plants](https://fastplants.org), but the knowledge can be applied for any statistics introductory course. If you want more statistical information in a free textbook, check out the digital library called [openstax](https://openstax.org/) and the textbook [Free Introductory Business Statistics](https://openstax.org/details/books/introductory-business-statistics).
 
 <p align="center">Table of Contents</p>
 
@@ -22,4 +22,4 @@ This website is intended for middle and high school students learning to apply s
 | 10. Correlations | We can determine how much two continuous variables are related based on their correlation strength and the formula of how they relate with a regression equation |  [page](https://benrushscience.github.io/learning-data-science/pages/10-correlations.html) |
 | 11. Statistics in the real world | Data analysis is fast. Data cleaning can be lengthy and tricky with factors like power, effect size, and normality to consider |  [page](https://benrushscience.github.io/learning-data-science/pages/11-statistics-in-the-real-world.html) |
 
-_Images on this website are a mix of original and AI-generated images (from [Dalle2](https://openai.com/dall-e-2). Images that have a row of multicolored squares are generated with Dalle_
+_Images on this website are a mix of original and AI-generated images (from [Dalle2](https://openai.com/dall-e-2). Images that have a row of multicolored squares are generated with Dalle2._
