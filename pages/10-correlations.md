@@ -13,7 +13,7 @@ Of course, we can plot all the dogs we sampled. We happened to sample 30, which 
 <div style="text-align:center"><img src="../images/thirtypoint_scatter.png" height="400" width="550"/></div> <br>
 <br>
 
-[_Scatter plots are a great way to visualize if two continuous variables might be correlated. You can Learn more about constructing a scatter plot and visualizing correlations via the videos below from Khan Academy:_]
+_Scatter plots are a great way to visualize if two continuous variables might be correlated. You can Learn more about constructing a scatter plot and visualizing correlations via the videos below from Khan Academy:_
 - [_Visualizing two continuous variables via a scatterplot_](https://www.youtube.com/embed/sHbX58y5D4U) <br>
 - [_Identifying correlations video_](https://www.youtube.com/embed/F5uiFXECnVY) <br>
 <br>
