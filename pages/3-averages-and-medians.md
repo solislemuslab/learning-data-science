@@ -44,7 +44,7 @@ For example, let's find the average of the test scores: 85, 92, 78, 90, and 88.
 
 So, the average test score is 86.6.
 <br>
-<div style="text-align:left"><img src="../images/dotplot_average_example.png" height="300" width="500"/></div> <br>
+<div style="text-align:left"><img src="../images/dotplot_average_example.png" height="400" width="600"/></div> <br>
 <br>
 The median is the middle measurement of the sample we took. To do this, we would sort all of our measurements from lowest to highest and then start crossing off the outer numbers (eliminate measurement 1 then 30 then 2 then 29) until we are left with 1 number in the middle, In our case with 30 numbers, we will not have one middle number. Instead, we would have measurements 15 and 16, and in this case, we would average the values of these numbers together to create the median. For example, if the 15th measurement was 21 inches and the 16th measurement was 22 inches, we would average those measurement values to achieve a median of 21.5 inches. You could imagine this process would take a long time for larger samples (and samples could be in millions)- fortunately computers are great at finding medians. <br>
 <br> 
