@@ -21,18 +21,20 @@ The Z-distribution, is an example of a standard normal distribution, is a contin
 <br>
 <div style="text-align:center"><img src="../images/Z_distribution.png" height="300" width="400"/></div>
 <br>
-Z-score / probability table <br>
-<div style="text-align:center"><img src="../images/zscore_wiki.png" height="600" width="250"/></div>
 
-for more z-score tables visit this [Wikipedia page](https://en.wikipedia.org/wiki/Standard_normal_table)
+That's wonderful that we can have a standardized z-score, but the usefulness of a z-score comes from translation the z-score into a probability value (p-value). In the table below, you can see that as you increase the z-score by 0.1 (i the rows) or by 0.01 (for each column) the values inside the tables decrease. The values inside the table are indeed p-values! Let's say we had a z-score of 2.14- would first go down the row until we see 2.1, then go right to the +0.04 column (in total we have 2.1 + 0.04, for a z-score of 2.14). Inside that cell, we have a p-vale of 0.01618. This means that the probability of a z-score being higher than our z-score is 0.01618 or a 1.618% chance. That chance is pretty low!
+
+<div style="text-align:center"><img src="../images/zscore_wiki.png" height="600" width="300"/></div> <br>
+Click on the image for clearer scores. <br>
+
+You can also use z-scores tables, or other distrubtion tables, can have more rows for larger z-scores. We would simiilarly see the p-values become much smaller as the rows continue. Z-scores of 4 or more have p-values of 0.00003 or less. SUPER small likelihood of another z-score being larger than the one we just calculated. For more z-score tables visit this [Wikipedia page](https://en.wikipedia.org/wiki/Standard_normal_table)
 
 [_For a more in depth understanding on how to compare z-scores and probability, check out this video from Khan Academy_](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/normal-distribution-calculation/v/z-table-for-proportion-below) AND
 [_to determine the percentile of a score..._](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/normal-distribution-calculation/v/finding-z-score-for-a-percentile) <br>
 <br>
 Now, we have a tool that can help us determine the probability of a data point having a specific value- essentially how rare or common one data point is. But what if we want to know if groups are different? In our absurd scenario, you’ve never seen a pug before until the dog park. You can guess that pugs might be smaller than golden retrievers, but we can use statistics to have a much more informed decision. <br>
 <br>
-<br>
-## Bonus content <br>
+### Bonus content <br>
 
 We will see that there are a different types of distributions that aren't all exactly the same and correspond with different statistical tests. Below are a few examples and you can dig deeper with this [Khan Academy video](https://www.khanacademy.org/math/statistics-probability/sampling-distributions-library/what-is-a-sampling-distribution/v/introduction-to-sampling-distributions)
 <br>
