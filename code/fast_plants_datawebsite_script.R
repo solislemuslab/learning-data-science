@@ -1,7 +1,8 @@
 # Creating random samples for Learning Data Science website
+install.packages("ggplot2")
+library(ggplot2)
 
-
-
+version
 
 ############################## Histograms #####################################
 ###############################################################################
@@ -307,3 +308,18 @@ ggplot(data = data.frame(water_consumption, saliva_production), aes(x = water_co
 
 # Print the calculated correlation coefficient
 cat("Pearson correlation coefficient:", correlation)
+
+
+### Statistics in the Real World
+
+# Generate random bimodal data
+bimodal_data <- c(rnorm(100, mean = 30, sd = 5), rnorm(100, mean = 70, sd = 10))
+
+# Create a data frame for plotting
+df <- data.frame(x = bimodal_data)
+
+# Create a histogram to visualize the bimodal distribution
+ggplot(data = df, aes(x = x)) +
+  geom_histogram(binwidth = 5, fill = "lightblue", color = "black") +
+  labs(title = "Income distribution", x = "Income in thousands", y = "Frequency") +
+  theme_minimal()
