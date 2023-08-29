@@ -7,8 +7,7 @@ Some of the assumptions that are needed by each test may not be perfectly met bu
 
 If you sampled a small tech company about their employee's incomes, you might have a distriubtion like the one below. This bimodal distribution indicates suggests there are two possible groups occurring in the data. Perhaps the spike on the left is reflecting to employees who have worked for the company for less than 5 years while the spike on the right is reflecting senior management. Perhaps measuring employee income isn't the best variable to assess then, but it might be useful if looking only at newer employers, senior employers, or you have the ability of comparing these two groups with a t-test, but income distribution like it is below would not be a good variable to use for correlation testing.<br>
 <br>
-<div style="text-align:center"><img src="../images/bimodal_dist.png" height="300" width="500"/></div>
-images/bimodal_dist.png <br>
+<div style="text-align:center"><img src="../images/bimodal_dist.png" height="300" width="500"/></div> <br>
 <br>
 Beyond choosing the right test, making sure you have a large enough sample size is also an important consideration. Sample size plays a key role in statistical analysis. A larger sample size generally leads to more reliable and accurate results. With a larger sample, we can better understand the characteristics of the sample we are studying and make better predictions. However, collecting a large sample can be time-consuming and costly, so researchers must strike a balance between the practicality of getting the work done and the need for accurate conclusions. We can calculate what size of sample is needed using a technique called power calculations.<br>
 <br>
