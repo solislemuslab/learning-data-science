@@ -17,19 +17,11 @@ So, we know p-values need to be smaller than the critical value for a significan
 <br>
 [_Understand p-values more with this Khan Academy video_](https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample/idea-of-significance-tests/v/p-values-and-significance-tests) <br>
 <br> AND
-[ Dive into statistical significance meanings more with this Khan Academy video_](https://www.khanacademy.org/math/statistics-probability/significance-tests-confidence-intervals-two-samples/comparing-two-means/v/statistical-significance-experiment) <br>
+[_Dive into statistical significance meanings more with this Khan Academy video_](https://www.khanacademy.org/math/statistics-probability/significance-tests-confidence-intervals-two-samples/comparing-two-means/v/statistical-significance-experiment) <br>
 <br>
-We’ve been discussing the idea of comparing golden retrievers and pugs for a while now, and to actually do it, we can use a statistical test called a t-test (more on that later). The t-test will generate a test statistic when comparing the means of two groups called the t-statistic (they really tried in naming, didn’t they?). The t-statistics follows the following formula. <br>
+We’ve been discussing the idea of comparing golden retrievers and pugs for a while now, and to actually do it, we can use a statistical test called a t-test (more on that later). So enough talk, let's do it! 
 <br>
-and we know that this t-statistics follows the t distribution. [image of the distribution with the t-statistics]. <br>
-<br> 
-For example, if we have 30 golden retrievers sampled with heights (...) and 30 pugs sampled with heights (....), we can calculate the t-statistics for this t-test as 
-xxxx <br>
-<br>
-To know which hypothesis this t-statistics favors, we need to compare it to the t distribution. Values close to zero favor the null hypothesis, and values far from zero favor the alternative hypothesis (because they are associated to very different height means in the two groups). We’ll learn more about t-test in the next module. <br>
-<br>
-Once we do the calculations for a t-test, we then compare t-statistic to its corresponding p-value determined from distributions calculated by nerds (and very proud nerds are wrote these pages and are changing the world). If the corresponding p-value is less than the critical value, we reject the null hypothesis. If the corresponding p-value is above the critical value, we fail to reject the null hypothesis. <br>
-<br>
-You’ve just read a lot of technical terms that leave you confused. You are not alone! Even the experts in statistics and data science have struggled with these concepts. Experts still need to go back and refresh their memories of how hypothesis testing, critical values, and test statistics work together. To help solidify these terms, we will put these into practice with step by step instructions so you can understand the whole process of turning data into evidence that supports or rejects a hypothesis. In the next section, we finally get to compare golden retriever heights with pug heights, and move on from that example! <br>
+
+PS- You’ve just read a lot of technical terms that leave you confused. You are not alone! Even the experts in statistics and data science have struggled with these concepts. Experts still need to go back and refresh their memories of how hypothesis testing, critical values, and test statistics work together. To help solidify these terms, we will put these into practice with step by step instructions so you can understand the whole process of turning data into evidence that supports or rejects a hypothesis. In the next section, we finally get to compare golden retriever heights with pug heights, and move on from that example! <br>
 
 | [Home](https://benrushscience.github.io/learning-data-science/) | [Next](https://benrushscience.github.io/learning-data-science/pages/7-comparing-2-groups.html) |
