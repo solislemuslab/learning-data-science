@@ -11,15 +11,13 @@ Like any other statistical test,  we need to satisfy certain assumptions to prop
 <br>
 Next, we establish our hypotheses. The null hypothesis (H0) in ANOVA states that there are no significant differences between the group means. The alternative hypothesis (Ha) suggests that at least one group mean is significantly different from the others (remember the ANOVA itself cannot tell you which is smaller or greater than the others). <br>
 <br>
-Just like a t-test, an ANOVA uses the means, standard deviations, and degrees of freedom to create a test statistic. To calculate the test statistic in ANOVA, we use the F-statistic. The F-statistic compares the variability and differences between a combined mean of all groups and each group. A higher F-statistic usually signals higher group differences in means and lower group variability. How to calculate the F-score is explained in the Khan Academy videos below. Let's say we obtained an F-score of VALUE. With the standardized F-statistic calculated, we can look at the standardized F-distribution to get a p-value. <br>
+Just like a t-test, an ANOVA uses the means, standard deviations, and two degrees of freedom (n -1 and number of groups -1) to create a test statistic. To calculate the test statistic in ANOVA, we use the F-statistic. The F-statistic compares the variability and differences between a combined mean of all groups and each group. A higher F-statistic usually signals higher group differences in means and lower group variance. How to calculate the F-score is explained in the Khan Academy videos below. Let's say we obtained an F-score of 3.2. <br>
 <br>
 <br>
 <div style="text-align:center"><img src="../images/F_distribution.png" height="300" width="400"/></div> <br>
 <br>
 
-[F-Table]
-
-We then compare the p-value against the critical threshold (commonly set at 0.05). If the p-value is less than the critical threshold (p < 0.05), we reject the null hypothesis in favor of the alternative hypothesis. This indicates that there is evidence to support the claim that there are significant differences between the group means. Conversely, if the p-value is greater than or equal to the critical threshold (p ≥ 0.05), we fail to reject the null hypothesis. This means that the evidence does not provide strong support for significant differences between the group means. <br>
+We can compare the F-score in a [F-score probability table](http://socr.ucla.edu/Applets.dir/F_Table.html) or use a statistical software to obtain a p-value and compare it against the critical threshold (commonly set at 0.05). If the p-value is less than the critical threshold (p < 0.05), we reject the null hypothesis in favor of the alternative hypothesis. This indicates that there is evidence to support the claim that there are significant differences between the group means. Conversely, if the p-value is greater than or equal to the critical threshold (p ≥ 0.05), we fail to reject the null hypothesis. This means that the evidence does not provide strong support for significant differences between the group means. <br>
 <br>
 
 _Running through an ANOVA test calculations in 3 Parts with Khan Academy videos_
@@ -29,9 +27,9 @@ _Running through an ANOVA test calculations in 3 Parts with Khan Academy videos_
 
 Post-hoc analysis <br>
 <br>
-Because ANOVA does not yield results about which group is greater or smaller in means than others, we often conduct another analysis to determine which groups differ from one another. A post-hoc analysis is performed when we reject the null hypothesis from an ANOVA test. The post-hoc analysis helps us identify which specific group means are significantly different from each other. For example, if our ANOVA test yields a significant result when comparing our three dog breeds, we can use post-hoc tests, such as the Tukey test or Bonferroni test, to compare each pair of breeds ( golden retrievers versus pugs, pugs versus St. Bernards, St Bernards vs golden retrievers) to one another to determine which groups significantly differ in height. <br>
+Because ANOVA does not yield results about which group is greater or smaller in means than others, we often conduct another analysis to determine which groups differ from one another. A post-hoc analysis is performed when we reject the null hypothesis from an ANOVA test. The post-hoc analysis helps us identify which specific group means are significantly different from each other. For example, if our ANOVA test yields a significant result when comparing our three dog breeds, we can use post-hoc tests, such as the Tukey HSD test (HSD stands for Hoenstly Significant Difference) or Bonferroni test, to compare each pair of breeds ( golden retrievers versus pugs, pugs versus St. Bernards, St Bernards vs golden retrievers) to one another to determine which groups significantly differ in height. <br>
 <br> 
-Tukey post-hoc analysis below <br>
+For a video on more about the Tukey Honestly Significiant Difference and how to calculate it, check out this [video](https://www.youtube.com/watch?v=P1j2CkOjWtM)<br>
 <br>
 In conclusion, the ANOVA test is a valuable statistical tool used to compare means between three or more groups. By assessing assumptions, formulating null and alternative hypotheses, calculating p-values and test statistics, and comparing them to critical thresholds, we can draw meaningful conclusions from data. Want to know if a company is significantly charging you more for certain products? With the right data, now you can tell. Want to see if your invention is faster and safer than the competition? Collect and analyze that data and you’ll be able to tell. And most importantly, you can compare heights between so many things! Dog breeds, plant breeds, buildings in countries- the world is your height comparison oyster! <br>
 <br>
