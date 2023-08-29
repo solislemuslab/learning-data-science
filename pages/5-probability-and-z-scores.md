@@ -22,7 +22,10 @@ The Z-distribution, is an example of a standard normal distribution, is a contin
 <div style="text-align:center"><img src="../images/Z_distribution.png" height="300" width="400"/></div>
 <br>
 Z-score / probability table <br>
-<br>
+<div style="text-align:center"><img src="../images/zscore_wiki.png" height="600" width="250"/></div>
+
+for more z-score tables visit this [Wikipedia page](https://en.wikipedia.org/wiki/Standard_normal_table)
+
 [_For a more in depth understanding on how to compare z-scores and probability, check out this video from Khan Academy_](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/normal-distribution-calculation/v/z-table-for-proportion-below) AND
 [_to determine the percentile of a score..._](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/normal-distribution-calculation/v/finding-z-score-for-a-percentile) <br>
 <br>
