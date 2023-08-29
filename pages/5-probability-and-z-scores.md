@@ -24,7 +24,7 @@ The Z-distribution, is an example of a standard normal distribution, is a contin
 
 That's wonderful that we can have a standardized z-score, but the usefulness of a z-score comes from translation the z-score into a probability value (p-value). In the table below, you can see that as you increase the z-score by 0.1 (i the rows) or by 0.01 (for each column) the values inside the tables decrease. The values inside the table are indeed p-values! Let's say we had a z-score of 2.14- would first go down the row until we see 2.1, then go right to the +0.04 column (in total we have 2.1 + 0.04, for a z-score of 2.14). Inside that cell, we have a p-vale of 0.01618. This means that the probability of a z-score being higher than our z-score is 0.01618 or a 1.618% chance. That chance is pretty low!
 
-<div style="text-align:center"><img src="../images/zscore_wiki.png" height="600" width="300"/></div> <br>
+<div style="text-align:center"><img src="../images/zscore_wiki.png" height="600" width="450"/></div> <br>
 Click on the image for clearer scores. <br>
 
 You can also use z-scores tables, or other distrubtion tables, can have more rows for larger z-scores. We would simiilarly see the p-values become much smaller as the rows continue. Z-scores of 4 or more have p-values of 0.00003 or less. SUPER small likelihood of another z-score being larger than the one we just calculated. For more z-score tables visit this [Wikipedia page](https://en.wikipedia.org/wiki/Standard_normal_table)
