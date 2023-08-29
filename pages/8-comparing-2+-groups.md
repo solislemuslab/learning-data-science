@@ -3,7 +3,7 @@
 
 If we wanted to compare 2 group means, t-tests are great. To compare means of 3 or more groups, the ANOVA (ANalysis Of VAriance) test is the way to go. ANOVA is a statistical tool that helps us compare the means of 3 or more groups (it can also be used to compare 2 groups, but t-tests are more common for that). It is used to determine if there are any significant differences between group means of a continuous variable (height) and the several groups defined by a categorical variable (dogs breeds: golden retrievers, pugs, and St. Bernards). <br>
 <br>
-[cartoon of three dog samples converted into box plot] <br>
+<div style="text-align:center"><img src="../images/histograms_3breeds.png" height="300" width="500"/></div> <br>
 <br>
 With ANOVA, we will see if there is a statistically significant difference between ALL groups. ANOVA could tell us golden retrievers, pugs, and St. Bernard’s have different heights from one another, but not that St. Bernards are taller than pugs or golden retrievers. ANOVA by itself does not tell us which group is greater or smaller than the others. There are methods to do this, and we will mention that, too! <br>
 <br>
@@ -13,7 +13,10 @@ Next, we establish our hypotheses. The null hypothesis (H0) in ANOVA states that
 <br>
 Just like a t-test, an ANOVA uses the means, standard deviations, and degrees of freedom to create a test statistic. To calculate the test statistic in ANOVA, we use the F-statistic. The F-statistic compares the variability and differences between a combined mean of all groups and each group. A higher F-statistic usually signals higher group differences in means and lower group variability. How to calculate the F-score is explained in the Khan Academy videos below. Let's say we obtained an F-score of VALUE. With the standardized F-statistic calculated, we can look at the standardized F-distribution to get a p-value. <br>
 <br>
-[F-distrubtion]
+<br>
+<div style="text-align:center"><img src="../images/F_distribution.png" height="300" width="400"/></div> <br>
+<br>
+
 [F-Table]
 
 We then compare the p-value against the critical threshold (commonly set at 0.05). If the p-value is less than the critical threshold (p < 0.05), we reject the null hypothesis in favor of the alternative hypothesis. This indicates that there is evidence to support the claim that there are significant differences between the group means. Conversely, if the p-value is greater than or equal to the critical threshold (p ≥ 0.05), we fail to reject the null hypothesis. This means that the evidence does not provide strong support for significant differences between the group means. <br>
