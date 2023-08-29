@@ -26,7 +26,7 @@ That's wonderful that we can have a standardized z-score, but the usefulness of 
 
 <div style="text-align:center"><img src="../images/zscore_wiki.png" height="600" width="500"/></div> <br>
 
-You can also use z-scores tables, or other distrubtion tables, can have more rows for larger z-scores. We would simiilarly see the p-values become much smaller as the rows continue. Z-scores of 4 or more have p-values of 0.00003 or less. SUPER small likelihood of another z-score being larger than the one we just calculated. For more z-score tables visit this [Wikipedia page](https://en.wikipedia.org/wiki/Standard_normal_table)
+You can also use z-scores tables, or other distrubtion tables, can have more rows for larger z-scores. We would simiilarly see the p-values become much smaller as the rows continue. Z-scores of 4 or more have p-values of 0.00003 or less.This means there is a SUPER small likelihood of another z-score being larger than the one we just calculated. For more z-score tables visit this [Wikipedia page](https://en.wikipedia.org/wiki/Standard_normal_table)
 
 [_For a more in depth understanding on how to compare z-scores and probability, check out this video from Khan Academy_](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/normal-distribution-calculation/v/z-table-for-proportion-below) AND
 [_to determine the percentile of a score..._](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/normal-distribution-calculation/v/finding-z-score-for-a-percentile) <br>
