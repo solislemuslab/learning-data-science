@@ -43,8 +43,8 @@ The sample's height variance $s^2$ for the data set is $10$. These is a decent a
 
 Now, standard deviation is a measure that is easier to understand. It's like the "average amount of difference" amonng the variation in a continuous variable. We can think of it as a typical or average distance that golden retriever heights deviate from the mean. To obtain standard deviation, you complete the all the steps of calculating variance and then take the square root.
 
-**Calculate the standard deviation ($s$):**
-$ s = \sqrt{10} \approx 3.16 $
+**Calculate the standard deviation ($s$):** <br> <br>
+$s = \sqrt{10} \approx 3.16$
 
 The standard deviation ($s$) for the data set is approximately $3.16$. Standard deviation may also be appreviated SD or STD in research and statistics.
 
