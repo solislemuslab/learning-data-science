@@ -36,8 +36,8 @@ $(8-6)^2 = 4$ , <br>
 <br>
 $(10-6)^2 = 16$ <br> <br>
 
-4. **Calculate the average of those squared differences:** <br> <br>
-$\[ s^2 = \frac{16 + 4 + 0 + 4 + 16}{5-1} = \frac{40}{4} = 10 \]$
+3. **Calculate the average of those squared differences:** <br> <br>
+$\[s^2=\frac{16 + 4 + 0 + 4 + 16}{5-1} = \frac{40}{4} = 10 \]$
 
 The sample's height variance $s^2$ for the data set is $10$.
 
