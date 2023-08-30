@@ -28,9 +28,13 @@ There are cases when values for a variable we are interested in do not follow a 
 <br>
 [_For more on skewness on curves, check out this videom from Khan Academy._](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/density-curve/v/median-mean-and-skew-from-density-curves) <br>
 <br>
-Example non-normal- Weds at the McDonald's on time square  as of 7-17-23 <br>
+An example of a non-normal distribution is customer frequency on Thurdays at the McDonald's on Time Square in New York, according to Google Maps as of 8-30-23. You can see there is a customer rush around lunch time and around dinner. <br>
 <br>
-Example skewed left - Saturdays at the Mc Donald’s on time square as of 7-17-23 <br>
+<div style="text-align:center"><img src="../images/mcdonalds_thursdays.png" height="150" width="200"/></div>
+<br>
+A distriubtion closer to normal is customer frequency on Saturdays at the McDonald's on Time Square in New York, according to Google Maps as of 8-30-23. You can see there may eb the first customer rush around lunch time but then the customer frequency continues to grow! <br>
+<br>
+<div style="text-align:center"><img src="../images/mcdonalds_satursdays.png" height="150" width="200"/></div> <br>
 <br>
 Histograms, like the two pictures above, are visual representations that help us understand the distribution of continuous data. Histograms display data in organized bars or columns on a graph. Each bar represents a range of values, and the height of the bar shows how many data points fall within that range. Histograms allow us to see patterns, such as the most common values or any outliers. They help us understand the shape of the data, whether it is symmetric, skewed, or has other unique characteristics. By using histograms, we can analyze and interpret data more easily, making it a valuable tool in understanding information visually. <br>
 <br>
