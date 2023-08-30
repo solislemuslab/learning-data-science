@@ -25,7 +25,7 @@ $2, 4, 6, 8, 10$
 1. **Calculate the mean ($ \bar{x} $):** <br>
 $\bar{x} = \frac{2 + 4 + 6 + 8 + 10}{5} = 6$
 
-2. **Subtract the mean and square the result for each data point:** <br>
+2. **Subtract the mean and square the result for each data point:** <br> <br>
 $(2-6)^2 = 16$
 $(4-6)^2 = 4$
 $(6-6)^2 = 0$
