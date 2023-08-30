@@ -8,7 +8,7 @@ In the world of statistics, two important measures called variance and standard 
 When we talk about variance, we're talking about how much the individual heights of golden retrievers in our dataset differ from the average height of all golden retrievers. It helps us understand if the heights of the dogs are mostly similar or if there is a wide range of heights. Variance is calculated by taking the squared difference between each height and the average height, adding them up, and then dividing by the number of measurements in our sample. <br>
 <br>
 
-### For a Sample's Variance:
+For a Sample's Variance:
 
 \[ s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1} \]
 
@@ -19,7 +19,7 @@ Where:
 - \( N \) is the total number of data points in the population.
 - \( n \) is the total number of data points in the sample.
 
-## Example:
+Example:
 
 Let's calculate a made up sample of golden retreiver height variance for the following data set: 
 \[ 2, 4, 6, 8, 10 \]
