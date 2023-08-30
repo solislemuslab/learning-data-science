@@ -23,7 +23,7 @@ Let's calculate a made up sample of golden retriever height variance for the fol
 $2, 4, 6, 8, 10$
 
 1. **Calculate the mean ($ \bar{x} $):**
-$\bar{x}$ = $\frac{2 + 4 + 6 + 8 + 10}{5} = 6$
+$\bar{x} = \frac{2 + 4 + 6 + 8 + 10}{5} = 6$
 
 2. **Subtract the mean and square the result for each data point:**
 $(2-6)^2 = 16$
