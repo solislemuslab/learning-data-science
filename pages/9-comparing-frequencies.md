@@ -5,8 +5,8 @@ So far we’ve seen techniques to compare between group means, but what if we wa
 <br>
 Let's say we did some more strange sampling at the dog park and found the following information about frisbee catching among our 3 dog breeeds.
 
-|               | Golden Retrievers | Pugs | Saint Bernards |
-|---------------|-------------------|------|----------------|
+|   | Golden Retrievers | Pugs | Saint Bernards |
+| :---:   | :---: | :---: | :---: |
 | Catches Frisbee | 52                | 12   | 18             |
 | Drops Frisbee   | 8                 | 48   | 42             |
 <br>
