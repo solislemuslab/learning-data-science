@@ -3,7 +3,8 @@
 
 So far we’ve seen techniques to compare between group means, but what if we want to compare between groups using variables that aren’t continuous? What if we want to know that the dog park we brought Rhonda to has a higher number, or frequency, of golden retrievers than pugs and St. Bernards? Sure, we’ve seen 600 golden retrievers, but how do we really know that we aren’t just overlooking pugs because we hang out with the dogs that can run and don’t get winded from walking up 2 stairs? Maybe many pugs and St. Bernards don't know how to catch frisbees as well as golden retrievers? To answer these types of questions, we can use the chi-square test. The chi-square test is a statistical tool that helps us examine the relationship between categorical variables. (As a reminder, continuous variables change smoothly [like temperature], while categorical variables are divided into distinct groups [like dog breeds]). Chi-square is used to determine if there is a significant association or difference between categorical variables. <br>
 <br>
-Let's say we did some more strange sampling at the dog park and found the following information about frisbee catching among our 3 dog breeeds/
+Let's say we did some more strange sampling at the dog park and found the following information about frisbee catching among our 3 dog breeeds.
+
 |               | Golden Retrievers | Pugs | Saint Bernards |
 |---------------|-------------------|------|----------------|
 | Catches Frisbee | 52                | 12   | 18             |
