@@ -14,8 +14,8 @@ $s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1}$
 
 Where:
 - $x_i$ represents each individual data point.
-- $ \bar{x} $ is the mean of the sample.
-- $ n $ is the total number of data points in the sample.
+- $bar{x}$ is the mean of the sample.
+- $n$ is the total number of data points in the sample.
 
 Example:
 
