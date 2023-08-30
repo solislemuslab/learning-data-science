@@ -4,8 +4,3 @@ description: A website to learn about the useful and interesting world of data s
 show_downloads: false
 google_analytics: false
 theme: jekyll-theme-minimal
-<head>
-  <script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-</head>
