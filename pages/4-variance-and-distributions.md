@@ -14,23 +14,23 @@ $s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1}$
 
 Where:
 - $x_i$ represents each individual data point.
-- $bar{x}$ is the mean of the sample.
+- $\bar{x}$ is the mean of the sample.
 - $n$ is the total number of data points in the sample.
 
 Example:
 
-Let's calculate a made up sample of golden retreiver height variance for the following data set: 
-\[ 2, 4, 6, 8, 10 \]
+Let's calculate a made up sample of golden retriever height variance for the following data set: 
+$2, 4, 6, 8, 10$
 
-1. **Calculate the mean (\( \bar{x} \)):**
-\[ \bar{x} = \frac{2 + 4 + 6 + 8 + 10}{5} = 6 \]
+1. **Calculate the mean ($ \bar{x} $):**
+$\bar{x} = \frac{2 + 4 + 6 + 8 + 10}{5} = 6$
 
 2. **Subtract the mean and square the result for each data point:**
-\[ (2-6)^2 = 16 \]
-\[ (4-6)^2 = 4 \]
-\[ (6-6)^2 = 0 \]
-\[ (8-6)^2 = 4 \]
-\[ (10-6)^2 = 16 \]
+$(2-6)^2 = 16$
+$(4-6)^2 = 4$
+$(6-6)^2 = 0$
+$(8-6)^2 = 4$
+$(10-6)^2 = 16$
 
 3. **Calculate the average of those squared differences:**
 \[ s^2 = \frac{16 + 4 + 0 + 4 + 16}{5-1} = \frac{40}{4} = 10 \]
