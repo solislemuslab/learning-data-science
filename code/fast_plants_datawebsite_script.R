@@ -1,6 +1,8 @@
 # Creating random samples for Learning Data Science website
 install.packages("ggplot2")
+install.packages("vcd")
 library(ggplot2)
+library(vcd)
 
 version
 
@@ -187,11 +189,12 @@ tukey_result <- TukeyHSD(anova_result)
 print(tukey_result)
 
 
+
 ### Chi-square test
 # Create a contingency table
-chidemo <- matrix(c(40, 10, 20, 50), ncol = 2)
-colnames(data) <- c("Golden retreivers", "Pugs")
-rownames(data) <- c("Catches frisbee", "Drops frisbee")
+chidemo <- matrix(c(52, 8, 12, 48, 18, 42), ncol = 3)
+colnames(chidemo) <- c("Golden retrievers", "Pugs", "Saint Bernards")
+rownames(chidemo) <- c("Catches frisbee", "Drops frisbee")
 
 # Perform chi-square test
 chi_square_result <- chisq.test(chidemo)
@@ -199,10 +202,26 @@ chi_square_result <- chisq.test(chidemo)
 # Display the chi-square test result
 print(chi_square_result)
 
+#display the data in table form
+chidemo
+
+# Define custom colors for each group
+custom_colors <- c("Golden Retrievers" = "gold", "Pugs" = "lightblue", "Saint Bernards" = "magenta")
+
+
+options(repr.plot.width = 15) 
+
+#create a mosaic plot
+mosaic(chidemo, shade = TRUE, legend = FALSE, color = custom_colors,
+       main = "Mosaic Plot of Frisbee Catch/Drop by Dog Breeds")
+
+
+
+
+
+
 ### Correlations and Regression
-# Install and load necessary libraries
-install.packages("ggplot2")
-library(ggplot2)
+
 
 # Create a data frame with a single point
 data <- data.frame(x = 3, y = 1)
