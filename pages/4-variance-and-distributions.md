@@ -13,8 +13,8 @@ For a Sample's Variance:
 $s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1}$
 
 Where:
-- \( x_i \) represents each individual data point.
-- \( \mu \) is the mean of the population.
+- $x_i$ represents each individual data point.
+- $mu$ is the mean of the population.
 - \( \bar{x} \) is the mean of the sample.
 - \( N \) is the total number of data points in the population.
 - \( n \) is the total number of data points in the sample.
