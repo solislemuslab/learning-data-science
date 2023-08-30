@@ -52,8 +52,8 @@ Standard deviation spreads of continuous variables typically follow a similar be
 
 <div style="text-align:center"><img src="../images/Standard_deviation_diagram_micro.svg.png" height="300" width="500" text="Work by Ainali on Wikipedia- CC-BY-SA 3.0" /></div>
 
-<div style="text-align:center"><img src="../images/Demohistogram_of_Golden_Retrievers.png" height="300" width="500"/></div>
-
+<div style="text-align:center"><img src="../images/Demohistogram_of_Golden_Retrievers.png" height="300" width="500"/></div> <br>
+<br>
 Based on the curves aboves, we can see that the likelihood of a golden retriever being Rhonda's height is very low! In fact, she is past the 3 standard deviations mark, so the probably of randomly finding a golden retriever with her height is around 0.1% ! <br>
 <br>
 Understanding the variance and standard deviation of Golden Retriever heights can be helpful for different reasons. Breeders can use standard deviations for expectations of a dog breed’s heights. For veterinarians, standard deviation helps determine if a Golden Retriever's height is within a normal range for its age and breed, which can be important for monitoring their health. For us, standard deviation lets us know Rhonda is amazing and we should give her too many toys. <br>
