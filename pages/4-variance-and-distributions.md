@@ -54,7 +54,7 @@ Standard deviation spreads of continuous variables typically follow a similar be
 
 <div style="text-align:center"><img src="../images/Demohistogram_of_Golden_Retrievers.png" height="300" width="500"/></div>
 
-[Bell shaped curve plus example of proportions. Calculate Rhonda’s probability of being that tall] <br>
+Based on the curves aboves, we can see that the likelihood of a golden retriever being Rhonda's height is very low! In fact, she is past the 3 standard deviations mark, so the probably of randomly finding a golden retriever with her height is around 0.1% ! <br>
 <br>
 Understanding the variance and standard deviation of Golden Retriever heights can be helpful for different reasons. Breeders can use standard deviations for expectations of a dog breed’s heights. For veterinarians, standard deviation helps determine if a Golden Retriever's height is within a normal range for its age and breed, which can be important for monitoring their health. For us, standard deviation lets us know Rhonda is amazing and we should give her too many toys. <br>
 <br>
@@ -64,7 +64,7 @@ We could get an idea of what a sample of data looks like based on means and stan
 <br>
 There are cases when values for a variable we are interested in do not follow a “normal distribution”. Sometimes extreme values, or just the way a variable is, leads to skewed data distributions. Skewness is a concept that helps us understand the shape and symmetry of data. When data is skewed, it means that it is not evenly or normally distributed. Skewed data distributions can be skewed to the left, where the longer tail is on the left side, or skewed to the right, where the longer tail is on the right side. Skewness tells us if our data leans more towards one side or if it is balanced. Understanding skewness helps us recognize different patterns in data and interpret information accurately. <br>
 <br>
-[_For more on skewness on curves, check out this videom from Khan Academy._](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/density-curve/v/median-mean-and-skew-from-density-curves) <br>
+[_For more on skewness on curves, check out this video from Khan Academy._](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/density-curve/v/median-mean-and-skew-from-density-curves) <br>
 <br>
 An example of a non-normal distribution is customer frequency on Thurdays at the McDonald's on Time Square in New York, according to Google Maps as of 8-30-23. You can see there is a customer rush around lunch time and around dinner. <br>
 <br>
