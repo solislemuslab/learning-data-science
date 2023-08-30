@@ -22,17 +22,17 @@ Example:
 Let's calculate a made up sample of golden retriever height variance for the following data set: 
 $2, 4, 6, 8, 10$
 
-1. **Calculate the mean ($ \bar{x} $):**
+1. **Calculate the mean ($ \bar{x} $):** <br>
 $\bar{x} = \frac{2 + 4 + 6 + 8 + 10}{5} = 6$
 
-2. **Subtract the mean and square the result for each data point:**
+2. **Subtract the mean and square the result for each data point:** <br>
 $(2-6)^2 = 16$
 $(4-6)^2 = 4$
 $(6-6)^2 = 0$
 $(8-6)^2 = 4$
 $(10-6)^2 = 16$
 
-3. **Calculate the average of those squared differences:**
+3. **Calculate the average of those squared differences:** <br>
 $\[ s^2 = \frac{16 + 4 + 0 + 4 + 16}{5-1} = \frac{40}{4} = 10 \]$
 
 The sample's height variance $s^2$ for the data set is $10$.
