@@ -9,9 +9,9 @@ When we talk about variance, we're talking about how much the individual heights
 <br>
 
 For a Sample's Variance:
-
+$$
 \[ s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1} \]
-
+$$
 Where:
 - \( x_i \) represents each individual data point.
 - \( \mu \) is the mean of the population.
