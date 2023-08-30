@@ -5,9 +5,39 @@ So we’ve seen the use of means and medians, but could still get fooled by thes
 <br>
 In the world of statistics, two important measures called variance and standard deviation help us understand how data points differ from the average and how much the data is spread from the average. Let’s think about Rhonda’s 30 inch height again.<br>
 <br>
-When we talk about variance, we're talking about how much the individual heights of golden retrievers in our dataset differ from the average height. It helps us understand if the heights of the dogs are mostly similar or if there is a wide range of heights. Variance is calculated by taking the squared difference between each height and the average height, adding them up, and then dividing by the number of measurements in our sample. <br>
+When we talk about variance, we're talking about how much the individual heights of golden retrievers in our dataset differ from the average height of all golden retrievers. It helps us understand if the heights of the dogs are mostly similar or if there is a wide range of heights. Variance is calculated by taking the squared difference between each height and the average height, adding them up, and then dividing by the number of measurements in our sample. <br>
 <br>
-[Formula] <br>
+
+### For a Sample's Variance:
+
+\[ s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1} \]
+
+Where:
+- \( x_i \) represents each individual data point.
+- \( \mu \) is the mean of the population.
+- \( \bar{x} \) is the mean of the sample.
+- \( N \) is the total number of data points in the population.
+- \( n \) is the total number of data points in the sample.
+
+## Example:
+
+Let's calculate a made up sample of golden retreiver height variance for the following data set: 
+\[ 2, 4, 6, 8, 10 \]
+
+1. **Calculate the mean (\( \bar{x} \)):**
+\[ \bar{x} = \frac{2 + 4 + 6 + 8 + 10}{5} = 6 \]
+
+2. **Subtract the mean and square the result for each data point:**
+\[ (2-6)^2 = 16 \]
+\[ (4-6)^2 = 4 \]
+\[ (6-6)^2 = 0 \]
+\[ (8-6)^2 = 4 \]
+\[ (10-6)^2 = 16 \]
+
+3. **Calculate the average of those squared differences:**
+\[ s^2 = \frac{16 + 4 + 0 + 4 + 16}{5-1} = \frac{40}{4} = 10 \]
+
+The sample's height variance (\( s^2 \)) for the data set is 10.
 <br>
 Now, standard deviation is a measure that is easier to understand. It's like the "average amount of difference" from the average height. We can think of it as a typical or average distance that golden retriever heights deviate from the mean. Standard deviation spreads of continuous variables typically follow a similar bell-shaped curve pattern. By knowing the standard deviation and mean of golden retrievers' heights, we can understand a lot about the spread of height data. If the average height of golden retrievers is 24 inches and the standard deviation is 2 inches, we can expect most golden retrievers to have heights that range from 22 to 26 inches. In a bell shaped curve, we can use the mean and standard deviation to figure out the proportion of the sample that have certain heights. <br>
 <br>
