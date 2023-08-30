@@ -35,7 +35,7 @@ $(10-6)^2 = 16$
 3. **Calculate the average of those squared differences:**
 $\[ s^2 = \frac{16 + 4 + 0 + 4 + 16}{5-1} = \frac{40}{4} = 10 \]$
 
-The sample's height variance $(\( s^2 \))$ for the data set is $10$.
+The sample's height variance $s^2$ for the data set is $10$.
 
 Now, standard deviation is a measure that is easier to understand. It's like the "average amount of difference" from the average height. We can think of it as a typical or average distance that golden retriever heights deviate from the mean. Standard deviation spreads of continuous variables typically follow a similar bell-shaped curve pattern. By knowing the standard deviation and mean of golden retrievers' heights, we can understand a lot about the spread of height data. If the average height of golden retrievers is 24 inches and the standard deviation is 2 inches, we can expect most golden retrievers to have heights that range from 22 to 26 inches. In a bell shaped curve, we can use the mean and standard deviation to figure out the proportion of the sample that have certain heights. <br>
 <br>
