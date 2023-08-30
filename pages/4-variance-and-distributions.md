@@ -1,3 +1,9 @@
+<head>
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+
 # Seeing (data) is believing (data)
 ## 4. Variance and distributions
 
@@ -7,10 +13,6 @@ In the world of statistics, two important measures called variance and standard 
 <br>
 When we talk about variance, we're talking about how much the individual heights of golden retrievers in our dataset differ from the average height of all golden retrievers. It helps us understand if the heights of the dogs are mostly similar or if there is a wide range of heights. Variance is calculated by taking the squared difference between each height and the average height, adding them up, and then dividing by the number of measurements in our sample. <br>
 <br>
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-</script> <br>
-
 For a Sample's Variance:
 
 $s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1}$
