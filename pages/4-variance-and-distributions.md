@@ -14,38 +14,38 @@ $$s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1}$$
 Where:
 - $$x_i$$ represents each individual data point.
 - $$\bar{x}$$ is the mean of the sample.
-- $n$ is the total number of data points in the sample.
+- $$n$$ is the total number of data points in the sample.
 
 Example:
 
 Let's calculate a made up sample of golden retriever height variance for the following data set: <br> <br>
-$2, 4, 6, 8, 10$
+$$2, 4, 6, 8, 10$$
 
-**1. Calculate the mean ($\bar{x}$):** <br> <br>
-$\bar{x}=\frac{2 + 4 + 6 + 8 + 10}{5} = 6$
+**1. Calculate the mean ($$\bar{x}$$):** <br> <br>
+$$\bar{x}=\frac{2 + 4 + 6 + 8 + 10}{5} = 6$$
 
 **2. Subtract the mean and square the result for each data point:** <br> <br>
-$(2-6)^2 = 16$  <br>
+$$(2-6)^2 = 16$$  <br>
 <br>
-$(4-6)^2 = 4$  <br>
+$$(4-6)^2 = 4$$  <br>
 <br>
-$(6-6)^2 = 0$  <br>
+$$(6-6)^2 = 0$$  <br>
 <br>
-$(8-6)^2 = 4$, <br>
+$$(8-6)^2 = 4$$, <br>
 <br>
-$(10-6)^2 = 16$ <br> <br>
+$$(10-6)^2 = 16$$ <br> <br>
 
 **3. Calculate the average of those squared differences:** <br> <br>
-$s^2=\frac{16 + 4 + 0 + 4 + 16}{5-1} = \frac{40}{4} = 10$
+$$s^2=\frac{16 + 4 + 0 + 4 + 16}{5-1} = \frac{40}{4} = 10$$
 
-The sample's height variance $s^2$ for the data set is $10$. These is a decent amount of work doing these calculations by hand, so for data sets that have thousands or millions of data points, you can probably appreciate having a computer to help with these tasks!
+The sample's height variance $s^2$ for the data set is $$10$$. These is a decent amount of work doing these calculations by hand, so for data sets that have thousands or millions of data points, you can probably appreciate having a computer to help with these tasks!
 
 Now, standard deviation is a measure that is easier to understand. It's like the "average amount of difference" amonng the variation in a continuous variable. We can think of it as a typical or average distance that golden retriever heights deviate from the mean. To obtain standard deviation, you complete the all the steps of calculating variance and then take the square root.
 
 **Calculate the standard deviation ($s$):** <br> <br>
-$s = \sqrt{10} \approx 3.16$
+$$s = \sqrt{10} \approx 3.16$$
 
-The standard deviation ($s$) for the data set is approximately $3.16$. Standard deviation may also be appreviated SD or STD in research and statistics.
+The standard deviation ($$s$$) for the data set is approximately $$3.16$$. Standard deviation may also be appreviated SD or STD in research and statistics.
 
 Standard deviation spreads of continuous variables typically follow a similar bell-shaped curve pattern. By knowing the standard deviation and mean of golden retrievers' heights, we can understand a lot about the spread of height data. If the average height of golden retrievers is 24 inches and the standard deviation is 2 inches, we can expect most golden retrievers to have heights that range from 22 to 26 inches. In a bell shaped curve, we can use the mean and standard deviation to figure out the proportion of the sample that have certain heights. <br>
 <br>
