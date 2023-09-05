@@ -1,7 +1,7 @@
-# In the a world of possibilities...
+# In a world of possibilities...
 ## 2. Genetic diversity
 
-You know dogs come in all shapes, sizes, and personalities, yet they are still one species- domesticated dog (or if you prefer fancy Greek, Canis familiaris). How is this possible? The answer lies in dog DNA. DNA is the recipe book for any living thing. You have it. Dogs have it. Plants, your favorite TikToker- we all have DNA. Within our huge cookbook of DNA are individual recipes, or genes. Genes are the recipes for specific proteins, which are microscopic molecules that do all sorts of different things in our bodies. Proteins are like the foods from the recipes. Sometimes you want tacos for lunch. Sometimes you might want pizza. Each gene has the recipe for our food, but obviously we don’t want to cook every food all of the time, so any organism must control when a gene is turned on, or in biology speak - expressed. If the recipe is open and being cooked, just like a gene in our DNA is on and expressed, we get our food item and our protein. <br>
+You know dogs come in all shapes, sizes, and personalities, yet they are still one species- the domesticated dog (or if you prefer fancy Greek, Canis familiaris). How is this possible? The answer lies in dog DNA. DNA is the recipe book for any living thing. You have it. Dogs have it. Plants, your favorite TikToker- we all have DNA. Within our huge cookbook of DNA are individual recipes, or genes. Genes are the recipes for specific proteins, which are microscopic molecules that do all sorts of different things in our bodies. Proteins are like the foods from the recipes. Sometimes you want tacos for lunch. Sometimes you might want pizza. Each gene has the recipe for our food, but obviously we don’t want to cook every food all of the time, so any organism must control when a gene is turned on, or in biology speak - expressed. If the recipe is open and being cooked, just like a gene in our DNA is on and expressed, we get our food item and our protein. <br>
 <br>
 [_For a brief overview of DNA to protein, check out the video from Professor Dave_](https://www.youtube.com/watch?v=bKIpDtJdK8Q)  <br>
 <br>
@@ -11,7 +11,7 @@ So how are proteins created? Going back to the cookbook example, the recipe for 
 
 <div style="text-align:center"><img src="../images/DNA_Cookbook_Flowcharts.png" height="300" width="300"/></div>
 <br>
-Of course, we humans vary in lots of ways – hair color, height, what we taste, the freckles, and even the colors we can see (see tetrachromacy for a rare way some humans are able to perceive color) ! This happens because of two main reasons- genetic variation and gene expression. <br>
+Of course, we humans vary in lots of ways – hair color, height, what we taste, the freckles, and even the colors we can see (see tetrachromacy for a rare way some humans are able to perceive color)! This happens because of two main reasons- genetic variation and gene expression. <br>
 <br>
 Genetic variation is the concept that our genes (the recipes) can vary even though the genes might be for creating the same protein (the food). This is like getting recipes for mac and cheese from different friends’ families. One family might put breadcrumbs on top, another might cover theirs in hot sauce. In the end, the families cook mac and cheese even if the recipes cause some variation in the mac and cheese. This is exactly like genetic variation! Genetic variation can even explain why some individuals taste soap when eating cilantro and why people have different types of ear wax. <br>
 
