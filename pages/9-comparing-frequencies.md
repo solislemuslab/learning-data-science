@@ -9,7 +9,7 @@ Let's say we did some more strange sampling at the dog park and found the follow
 | :---:   | :---: | :---: | :---: |
 | Catches Frisbee | 52                | 12   | 18             |
 | Drops Frisbee   | 8                 | 48   | 42             |
-<br>
+
 
 This might gives us an idea that golden retrievers seem to catch frisbees at a heigher rate than pugs and saint bernards. If you aren't a fan of tables, we can also visualize this through a mosaic plot shown below. The top row of the mosaic plot shows rectangles among the dog breeds and these rectangles are proportional to the size of catching frisbee ability among the breeds. Golden retreivers have the highest proportion and frequency of catching frisbees, so the blue rectagle is largest for golden retrievers in the first row of the plot. The opposite is true in the drops frisbee row, where golden retreivers make up the smallest proportion of this group, so are represented by a small pink rectangle. <br>
 <br>
