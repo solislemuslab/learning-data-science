@@ -38,7 +38,7 @@ $$(10-6)^2 = 16$$ <br> <br>
 **3. Calculate the average of those squared differences:** <br> <br>
 $$s^2=\frac{16 + 4 + 0 + 4 + 16}{5-1} = \frac{40}{4} = 10$$
 
-The sample's height variance $s^2$ for the data set is $$10$$. These is a decent amount of work doing these calculations by hand, so for data sets that have thousands or millions of data points, you can probably appreciate having a computer to help with these tasks!
+The sample's height variance $$s^2$$ for the data set is $$10$$. These is a decent amount of work doing these calculations by hand, so for data sets that have thousands or millions of data points, you can probably appreciate having a computer to help with these tasks!
 
 Now, standard deviation is a measure that is easier to understand. It's like the "average amount of difference" amonng the variation in a continuous variable. We can think of it as a typical or average distance that golden retriever heights deviate from the mean. To obtain standard deviation, you complete the all the steps of calculating variance and then take the square root.
 
