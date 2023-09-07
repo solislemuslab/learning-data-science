@@ -3,7 +3,7 @@
 
 You’ve probably, most likely, heard of the concept of probability. Probability helps us understand the likelihood or chance of an event occurring. It plays a crucial role in statistics and allows us to make informed decisions based on data. Probability represents the likelihood of an event happening and is expressed as a number between 0 and 1. A probability of 0 means an event is impossible, while a probability of 1 means it is certain to occur. Most probabilities in life are not 0 or 1. The probability of flipping a coin and getting heads is 0.5 since there are two equally likely outcomes, heads and tails. The probability that you might become the CEO of a business in Indiana is not 0, but might be low, especially if you never see yourself living in Indiana. On the other hand, the probability of Rhonda, our hypothetical golden retriever, being a good girl is 0.99 (she chases after squirrels periodically). <br>
 <br>
-[_For a more in depth introducton to probability, check out this video from Khan Academy_](https://www.khanacademy.org/math/statistics-probability/probability-library/basic-theoretical-probability/v/basic-probability) <br>
+[_For a more in depth introduction to probability, check out this video from Khan Academy_](https://www.khanacademy.org/math/statistics-probability/probability-library/basic-theoretical-probability/v/basic-probability) <br>
 <br>
 Thinking about Rhonda and her height, how can we score her against the other golden retriever heights? Z-scores are a statistical tool that allows us to standardize and compare data. They help us understand how far a data point is from the mean, in terms of standard deviations. A positive z-score indicates a value above the mean, while a negative z-score indicates a value below the mean. The further distance a data point’s z-score is from the mean indicates how uncommon the data point’s value is. <br>
 <br>
@@ -17,7 +17,7 @@ But how does probability come into play? Well, probability helps us determine th
 <br>
 For the Golden Retriever with a z-score of 3, we find that the probability associated with this z-score is approximately 0.997. This means that there is a 99.7% chance of randomly selecting a Golden Retriever with a height smaller than Rhonda's. We can also say there is a 0.13% chance that a randomly selected Golden Retriever would have a height larger than Rhonda’s. As we thought, Rhonda is a special dog. <br>
 
-The Z-distribution is an example of a standard normal distribution, is a continuous probability distribution with a mean of 0 and a standard deviation of 1. It is symmetric and bell-shaped. The Z-distribution is derived from the normal distribution and is used when working with sample means or proportions, often in the context of hypothesis testing or constructing confidence intervals. The Z-distribution is standardized, meaning any normal distribution can be converted to a Z-distribution by subtracting the mean and dividing by the standard deviation. <br>
+The Z-distribution, an example of a standard normal distribution, is a continuous probability distribution with a mean of 0 and a standard deviation of 1. It is symmetric and bell-shaped. The Z-distribution is derived from the normal distribution and is used when working with sample means or proportions, often in the context of hypothesis testing or constructing confidence intervals. The Z-distribution is standardized, meaning any normal distribution can be converted to a Z-distribution by subtracting the mean and dividing by the standard deviation. <br>
 <br>
 <div style="text-align:center"><img src="../images/Z_distribution.png" height="300" width="400"/></div>
 <br>
@@ -26,7 +26,7 @@ That's wonderful that we can have a standardized z-score, but the usefulness of 
 
 <div style="text-align:center"><img src="../images/zscore_wiki.png" height="600" width="500"/></div> <br>
 
-You can also use z-scores tables, or other distribution tables, can have more rows for larger z-scores. We would simiilarly see the p-values become much smaller as the rows continue. Z-scores of 4 or more have p-values of 0.00003 or less.This means there is a SUPER small likelihood of another z-score being larger than the one we just calculated. For more z-score tables visit this [Wikipedia page](https://en.wikipedia.org/wiki/Standard_normal_table)
+You can also use z-scores tables, or other distribution tables, can have more rows for larger z-scores. We would similarly see the p-values become much smaller as the rows continue. Z-scores of 4 or more have p-values of 0.00003 or less.This means there is a SUPER small likelihood of another z-score being larger than the one we just calculated. For more z-score tables visit this [Wikipedia page](https://en.wikipedia.org/wiki/Standard_normal_table)
 
 [_For a more in depth understanding on how to compare z-scores and probability, check out this video from Khan Academy_](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/normal-distribution-calculation/v/z-table-for-proportion-below) AND
 [_to determine the percentile of a score..._](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/normal-distribution-calculation/v/finding-z-score-for-a-percentile) <br>
@@ -35,11 +35,11 @@ Now, we have a tool that can help us determine the probability of a data point h
 <br>
 ### Bonus content <br>
 
-We will see that there are a different types of distributions that aren't all exactly the same and correspond with different statistical tests. Below are a few examples and you can dig deeper with this [Khan Academy video](https://www.khanacademy.org/math/statistics-probability/sampling-distributions-library/what-is-a-sampling-distribution/v/introduction-to-sampling-distributions)
+We will see that there are different types of distributions that aren't all exactly the same and correspond with different statistical tests. Below are a few examples and you can dig deeper with this [Khan Academy video](https://www.khanacademy.org/math/statistics-probability/sampling-distributions-library/what-is-a-sampling-distribution/v/introduction-to-sampling-distributions)
 <br>
 T-distribution: <br>
 <br>
-The t-distribution, also known as Student's t-distribution, is a continuous probability distribution commonly used for estimating population parameters, especially when the sample size is small or the population standard deviation is unknown. It is symmetric and bell-shaped, resembling the normal distribution but with heavier tails. The shape of the t-distribution depends on the degrees of freedom, which represent the sample size minus one. As the degrees of freedom increase, the t-distribution approaches the standard normal distribution. T-distributions are frequently used in hypothesis testing and confidence interval estimation when dealing with small sample sizes. They allow us to make inferences about population parameters from sample data. <br>
+The t-distribution, also known as Student's t-distribution, is a continuous probability distribution commonly used for estimating population parameters, especially when the sample size is small or the population standard deviation is unknown. It is symmetric and bell-shaped, resembling the normal distribution, but with heavier tails. The shape of the t-distribution depends on the degrees of freedom, which represent the sample size minus one. As the degrees of freedom increase, the t-distribution approaches the standard normal distribution. T-distributions are frequently used in hypothesis testing and confidence interval estimation when dealing with small sample sizes. They allow us to make inferences about population parameters from sample data. <br>
 <br>
 <div style="text-align:center"><img src="../images/T_distribution.png" height="300" width="400"/></div> <br>
 
