@@ -30,8 +30,6 @@ Get inspired about how statistics can help change the world with the videos belo
 <br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eE4qCJBgfIk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
 <br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z1-AHywHi4w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
-<br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_2u_eHHzRto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
 <br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oUs1uvsz0Ok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
