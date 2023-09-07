@@ -1,13 +1,13 @@
 # _More_ things might be different now
 ## 8. Comparing 2+ groups (ANOVA)
 
-If we wanted to compare 2 group means, t-tests are great. To compare means of 3 or more groups, the ANOVA (ANalysis Of VAriance) test is the way to go. ANOVA is a statistical tool that helps us compare the means of 3 or more groups (it can also be used to compare 2 groups, but t-tests are more common for that). It is used to determine if there are any significant differences between group means of a continuous variable (height) and the several groups defined by a categorical variable (dogs breeds: golden retrievers, pugs, and St. Bernards). <br>
+If we wanted to compare 2 group means, t-tests are great. To compare means of 3 or more groups, the ANOVA (ANalysis Of VAriance) test is the way to go. ANOVA is a statistical tool that helps us compare the means of 3 or more groups (it can also be used to compare 2 groups, but t-tests are more common for that). It is used to determine if there are any significant differences between group means of a continuous variable (height) and the several groups defined by a categorical variable (dog breeds: golden retrievers, pugs, and St. Bernards). <br>
 <br>
 <div style="text-align:center"><img src="../images/histograms_3breeds.png" height="300" width="500"/></div> <br>
 <br>
-With ANOVA, we will see if there is a statistically significant difference between ALL groups. ANOVA could tell us golden retrievers, pugs, and St. Bernard’s have different heights from one another, but not that St. Bernards are taller than pugs or golden retrievers. ANOVA by itself does not tell us which group is greater or smaller than the others. There are methods to do this, and we will mention that, too! <br>
+With ANOVA, we will see if there is a statistically significant difference between ALL groups. ANOVA could tell us golden retrievers, pugs, and Saint Bernards have different heights from one another, but not that St. Bernards are taller than pugs or golden retrievers. ANOVA by itself does not tell us which group is greater or smaller than the others. There are methods to do this, and we will mention those methods, too! <br>
 <br>
-Like any other statistical test,  we need to satisfy certain assumptions to properly run an ANOVA test. Firstly, we assume that the data within each group follows a normal distribution. Secondly, the variances within each group should be equal. Lastly, the observations in each group should be independent. These are the same as the t-test assumptions! <br>
+Like any other statistical test, we need to satisfy certain assumptions to properly run an ANOVA test. Firstly, we assume that the data within each group follows a normal distribution. Secondly, the variances within each group should be equal. Lastly, the observations in each group should be independent. These are the same as the t-test assumptions! <br>
 <br>
 Next, we establish our hypotheses. The null hypothesis (H0) in ANOVA states that there are no significant differences between the group means. The alternative hypothesis (Ha) suggests that at least one group mean is significantly different from the others (remember the ANOVA itself cannot tell you which is smaller or greater than the others). <br>
 <br>
