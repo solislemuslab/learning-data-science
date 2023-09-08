@@ -23,9 +23,9 @@ First, we will need to think about what data and the type of data we want to col
 <br>
 Next, we will need to define how we assess our variables. Let’s say we wanted to determine the height of golden retrievers. We need to define how we measure height for golden retrievers. Should height be when a golden retriever is sitting down? Should it be when a golden retriever is laying down? Should it be measured from the end of the tale to the end of the snout? The answer will probably vary depending on whom you ask. In science, there can be some heated arguments on how to even define a term. This might seem silly (and sometimes it is), but a definition can have huge impacts. Imagine if NASA astronauts were fitted in suits according to their heights, but height was only measured from their ankles to their necks. These poorly fitting suits would likely not fit at all, and put their lives at risk. Indeed space exploration, roller coasters, and plane flights have been in jeopardy because of different groups measuring length in metric units (example-meters) versus imperial units (example- yards). <br>
 <br>
-<div style="text-align:left"><img src="../images/Golden_Retriever_height_2.png" height="300" width="500"/></div> <br>
+<div style="text-align:left"><img src="../images/Golden_Retriever_height_2.png" height="300" width="300"/></div> <br>
 Is this height? <br> 
-<div style="text-align:left"><img src="../images/Golden_Retriever_height.png" height="350" width="550"/></div> <br>
+<div style="text-align:left"><img src="../images/Golden_Retriever_height.png" height="300" width="300"/></div> <br>
 Or is this height? <br> 
 <br> 
 The American Kennel Club defines a dog’s height in inches from the bottom of its front paws to the top of its shoulder, not taking into account the head (the head could be up or down when measured, so the height could vary drastically!). Now that we have a definition of height, we can start measuring the height of the golden retrievers. <br>
@@ -44,7 +44,7 @@ For example, let's find the average of the test scores: 85, 92, 78, 90, and 88.
 
 So, the average test score is 86.6.
 <br>
-<div style="text-align:left"><img src="../images/dotplot_average_example.png" height="300" width=""/450></div> <br>
+<div style="text-align:left"><img src="../images/dotplot_average_example.png" height="300" width="450"/></div> <br>
 <br>
 The median is the middle measurement of the sample we took. To do this, we would sort all of our measurements from lowest to highest and then start crossing off the outer numbers (eliminate measurement 1 then 30 then 2 then 29) until we are left with 1 number in the middle, In our case with 30 numbers, we will not have one middle number. Instead, we would have measurements 15 and 16, and in this case, we would average the values of these numbers together to create the median. For example, if the 15th measurement was 21 inches and the 16th measurement was 22 inches, we would average those measurement values to achieve a median of 21.5 inches. You could imagine this process would take a long time for larger samples (and samples could be in millions)- fortunately computers are great at finding medians. <br>
 <br> 
