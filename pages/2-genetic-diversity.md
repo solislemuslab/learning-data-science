@@ -3,13 +3,16 @@
 
 You know dogs come in all shapes, sizes, and personalities, yet they are still one species- the domesticated dog (or if you prefer fancy Greek, Canis familiaris). How is this possible? The answer lies in dog DNA. DNA is the recipe book for any living thing. You have it. Dogs have it. Plants, your favorite TikToker- we all have DNA. Within our huge cookbook of DNA are individual recipes, or genes. Genes are the recipes for specific proteins, which are microscopic molecules that do all sorts of different things in our bodies. Proteins are like the foods from the recipes. Sometimes you want tacos for lunch. Sometimes you might want pizza. Each gene has the recipe for our food, but obviously we don’t want to cook every food all of the time, so any organism must control when a gene is turned on, or in biology speak - expressed. If the recipe is open and being cooked, just like a gene in our DNA is on and expressed, we get our food item and our protein. <br>
 <br>
-[_For a brief overview of DNA to protein, check out the video from Professor Dave_](https://www.youtube.com/watch?v=bKIpDtJdK8Q).  <br>
+[_For a brief overview of going from DNA to protein, check out the video from Professor Dave._](https://www.youtube.com/watch?v=bKIpDtJdK8Q) <br>
 <br>
 Why should you care about proteins? Well, you wouldn’t be reading this, or breathing, or doing any sports, playing any video games, studying, or anything you could possibly imagine without proteins. Proteins make up our muscles, capture light in our eyes, make up our hair, help us sweat, and so much more. Proteins are part of the building blocks that allow our body to do what it does- let us exist. <br>
 <br>
 So how are proteins created? Going back to the cookbook example, the recipe for a food instructs how to make the food. The recipe for a protein in our body is called a gene. Many genes together form our DNA, and DNA is like our own, personalized cookbook. So, our bodies read the genes (recipes) in our DNA (cookbook) to create proteins (the food), which allow us to function in the world.<br>
 
-<div style="text-align:center"><img src="../images/DNA_Cookbook_Flowcharts.png" height="300" width="300"/></div>
+<div style="text-align:center"><img src="../images/DNA_Cookbook_Flowcharts.png" height="300" width="300"/></div> <br>
+<br>
+
+[_If you want to dive even further, check out this video from Khan Academy._](https://www.youtube.com/watch?v=6gUY5NoX1Lk) <br>
 <br>
 Of course, we humans vary in lots of ways – hair color, height, what we taste, the freckles, and even the colors we can see (see tetrachromacy for a rare way some humans are able to perceive color)! This happens because of two main reasons- genetic variation and gene expression. <br>
 <br>
