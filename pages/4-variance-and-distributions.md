@@ -51,7 +51,8 @@ Standard deviation spreads of continuous variables typically follow a similar be
 <br>
 
 <div style="text-align:center"><img src="../images/Standard_deviation_diagram_micro.svg.png" height="325" width="525" /></div>
-_Figure by Ainali on Wikipedia- CC-BY-SA 3.0_
+_Figure by Ainali on Wikipedia- CC-BY-SA 3.0_ <br>
+<br>
 
 <div style="text-align:center"><img src="../images/Demohistogram_of_Golden_Retrievers.png" height="350" width="525"/></div> <br>
 <br>
