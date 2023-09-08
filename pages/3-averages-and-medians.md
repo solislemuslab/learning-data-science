@@ -44,11 +44,11 @@ For example, let's find the average of the test scores: 85, 92, 78, 90, and 88.
 
 So, the average test score is 86.6.
 <br>
-<div style="text-align:left"><img src="../images/dotplot_average_example.png" height="300" width="450"/></div> <br>
+<div style="text-align:left"><img src="../images/dotplot_average_example.png" height="350" width="525"/></div> <br>
 <br>
 The median is the middle measurement of the sample we took. To do this, we would sort all of our measurements from lowest to highest and then start crossing off the outer numbers (eliminate measurement 1 then 30 then 2 then 29) until we are left with 1 number in the middle, In our case with 30 numbers, we will not have one middle number. Instead, we would have measurements 15 and 16, and in this case, we would average the values of these numbers together to create the median. For example, if the 15th measurement was 21 inches and the 16th measurement was 22 inches, we would average those measurement values to achieve a median of 21.5 inches. You could imagine this process would take a long time for larger samples (and samples could be in millions)- fortunately computers are great at finding medians. <br>
 <br> 
-<div style="text-align:left"><img src="../images/dotplot_median_example.png" height="300" width="450"/></div> <br>
+<div style="text-align:left"><img src="../images/dotplot_median_example.png" height="350" width="525"/></div> <br>
 <br>
 In a perfect theoretical sample, the mean and median would be the same. As you can guess, the world, the samples we measure, and the results from attempting to train cats are imperfect. The mean and median are usually close, but both can be influenced by the data we collect in our sample. Imagine we collect the salaries of adults in an imaginary small town of 1,000 people. The town, Roseville, has a grocery store, a few small businesses, and is largely surrounded by farmland. Almost all 999 people earn around $60,000 per year except the 1 billionaire who wanted to escape the city and move to a country town. She earns $2,300,000,000 per year. Her massive income massively increases the average income of people in Roseville. The average income of a person living in Roseville is $2,359,940 despite 99% of people making $60,000 per year. The billionaire’s income skews the average substantially. However, the median income would still be $60,000. The median of a dataset tends to be less sensitive to outliers, or extreme values, like the billionaire’s income. <br>
 <br>
