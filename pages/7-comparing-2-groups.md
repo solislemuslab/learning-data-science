@@ -3,7 +3,7 @@
 
 Finally! We’ve arrived at comparing a specific variable between two groups- we will compare heights between golden retrievers and pugs. The statistical test we will use to do this is called a t-test. Like other statistical tests, t-tests are a statistical tool that can help us compare data and determine if there are any significant differences. Below we can see what our samples look like with a height histogram of golden retrievers and pugs. <br>
 <br> 
-<div style="text-align:center"><img src="../images/golden_pug_histograms.png" height="300" width="500"/></div> <br>
+<div style="text-align:center"><img src="../images/golden_pug_histograms.png" height="350" width="525"/></div> <br>
 <br>
 There are also two types of t-tests: One-tailed and two-tailed t-tests. In a one-tailed t-test, we are interested in whether one group is significantly higher or lower than the other (are golden retrievers significantly taller than pugs?). For a real world example, we could be testing whether a new drug improves test scores and we might only care if scores are higher. In a two-tailed t-test, we're looking for any significant difference, whether one group is higher or lower (are pugs and golden retrievers different in height?). This is useful when we're investigating if a new drug affects test scores in any way. The choice between one-tailed and two-tailed t-tests depends on your research question and what you want to conclude from your data analysis.
 
@@ -11,7 +11,7 @@ Two-tailed T-tests are specifically designed to analyze the means of two groups 
 <br>
 This might not mean much at this point, but the figure below, known as a box and whiskers plot (often just called a box plot), can help show how two groups look like they could possible vary. Box plots show the ranges of a continuous variable by a categorical variable. The main box filled with color indicates the two 25% quarters of the data around the median value for a group, with the "whiskers" indicating the other two 25% groups further from the median. The box plot indicates that golden retrievers in the gold color do have a median height around 24 inches, while pugs have a median height around 12. We might have an educated guess that golden retrievers and pug heights are different, but a t-test would give us a much stronger validation in supporting our hypothesis that golden retrievers and pug heights differ. <br>
 <br>
-<div style="text-align:center"><img src="../images/golden_pug_boxplot.png" height="300" width="500"/></div> <br>
+<div style="text-align:center"><img src="../images/golden_pug_boxplot.png" height="350" width="525"/></div> <br>
 <br>
 To perform a t-test, we make several assumptions and should make sure the assumptions are met (we can have these assumptions be a bit lighter when just learning how to apply these statistical tests). These include having independent samples, approximately normally distributed data, and homogeneity of variances between the two groups. These are some fancy sounding words- we’ll break them down. Independent samples mean that there is no relationship between the groups we are comparing, ie, we are not collecting the data points of each dog twice and the height of a pug does not affect the height of a golden retriever. We’ve seen normally distributed data before, and this assumption of needing normally distributed data means that the heights within each group should follow a bell-shaped curve. Homogeneity of variances implies that the variability in heights should be similar between the two groups. This means that pugs should vary in height similarly to golden retriever height. There should not be pugs that are 2 to 50 inches tall while golden retrievers vary from 20-28 inches tall. We also need to know our **degrees of freedom**, which is how many important parameters are varying (and are specific to each statistical test). T-tests have degrees of freedom equal to the sample size minus 1. <br>
 <br>
@@ -24,7 +24,7 @@ Next, we calculate the average (mean) height for each group. Let's assume (from 
 <br>
 The t-test generates a test statistic, the t-statistic value, which indicates the magnitude of the difference between the two groups. Additionally, the t-value corresponds to a p-value. The p-value represents the probability of obtaining the observed mean heights between groups. If the t-value is far enough away from 0 (both positive and negative t-values could indicate significance), we would obtain a small p-value, and then reject the null hypothesis. This would suggest there is a difference in heights between golden retrievers and pugs. We can see that t-scores that are further away from zero are rarer (less dense on y-axis), and thus correspond with a lower p-value <br> 
 <br>
-<div style="text-align:center"><img src="../images/T_distribution.png" height="300" width="500"/></div> <br>
+<div style="text-align:center"><img src="../images/T_distribution.png" height="350" width="525"/></div> <br>
 
 [_For more in depth T-score formula and calculations, check out this Khan Academy Video_](https://www.khanacademy.org/math/statistics-probability/significance-tests-confidence-intervals-two-samples/comparing-two-means/v/difference-of-sample-means-distribution) <br>
 <br>
