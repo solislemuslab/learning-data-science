@@ -15,9 +15,8 @@ On the other hand, if the p-value is greater than or equal to the critical thres
 <br>
 So, we know p-values need to be smaller than the critical value for a significant result, but how do we get a p-value? Each statistical test generates something called a test statistic that corresponds to a p-value. Test statistics play a crucial role in hypothesis testing. A test statistic is a numerical value that summarizes the data and helps us make comparisons. The main advantage of the test statistics is that it follows a known distribution so we can make easy probability calculations (as we did for the z-score). Different tests have different formulas (we’ll see some below and in future sections), but the reason to have test statistics is to have a standardized value that we can compare to certain thresholds or critical values and so we can get a p-value. <br>
 <br>
-[_Understand p-values more with this Khan Academy video_](https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample/idea-of-significance-tests/v/p-values-and-significance-tests) <br>
-<br> AND
-[_Dive into statistical significance meanings more with this Khan Academy video_](https://www.khanacademy.org/math/statistics-probability/significance-tests-confidence-intervals-two-samples/comparing-two-means/v/statistical-significance-experiment). <br>
+[_Understand p-values more with this Khan Academy video_](https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample/idea-of-significance-tests/v/p-values-and-significance-tests) and
+[_dive into statistical significance meanings more with this Khan Academy video_](https://www.khanacademy.org/math/statistics-probability/significance-tests-confidence-intervals-two-samples/comparing-two-means/v/statistical-significance-experiment). <br>
 <br>
 We’ve been discussing the idea of comparing golden retrievers and pugs for a while now, and to actually do it, we can use a statistical test called a t-test (more on that later). So enough talk, let's do it! 
 <br>
