@@ -19,7 +19,7 @@ For the Golden Retriever with a z-score of 3, we find that the probability assoc
 
 The Z-distribution, an example of a standard normal distribution, is a continuous probability distribution with a mean of 0 and a standard deviation of 1. It is symmetric and bell-shaped. The Z-distribution is derived from the normal distribution and is used when working with sample means or proportions, often in the context of hypothesis testing or constructing confidence intervals. The Z-distribution is standardized, meaning any normal distribution can be converted to a Z-distribution by subtracting the mean and dividing by the standard deviation. <br>
 <br>
-<div style="text-align:center"><img src="../images/Z_distribution.png" height="300" width="400"/></div>
+<div style="text-align:center"><img src="../images/Z_distribution.png" height="350" width="525"/></div>
 <br>
 
 That's wonderful that we can have a standardized z-score, but the usefulness of a z-score comes from translating the z-score into a probability value (p-value). In the table below, you can see that as you increase the z-score by 0.1 (in the rows) or by 0.01 (for each column) the values inside the table decreases. The values inside the table are indeed p-values! Let's say we had a z-score of 2.14- would first go down the row until we see 2.1, then go right to the +0.04 column (in total we have 2.1 + 0.04, for a z-score of 2.14). Inside that cell, we have a p-value of 0.01618. This means that the probability of a z-score being higher than our z-score is 0.01618 or a 1.618% chance. That chance is pretty low!
@@ -41,20 +41,20 @@ T-distribution: <br>
 <br>
 The t-distribution, also known as Student's t-distribution, is a continuous probability distribution commonly used for estimating population parameters, especially when the sample size is small or the population standard deviation is unknown. It is symmetric and bell-shaped, resembling the normal distribution, but with heavier tails. The shape of the t-distribution depends on the degrees of freedom, which represent the sample size minus one. As the degrees of freedom increase, the t-distribution approaches the standard normal distribution. T-distributions are frequently used in hypothesis testing and confidence interval estimation when dealing with small sample sizes. They allow us to make inferences about population parameters from sample data. <br>
 <br>
-<div style="text-align:center"><img src="../images/T_distribution.png" height="300" width="400"/></div> <br>
+<div style="text-align:center"><img src="../images/T_distribution.png" height="350" width="525"/></div> <br>
 
 <br>
 F-distribution: <br>
 <br>
 The F-distribution is a continuous probability distribution that arises when comparing variances or performing analysis of variance (ANOVA). It is positively skewed and takes only positive values. The F-distribution has two parameters, known as degrees of freedom, which correspond to the number of groups or categories being compared. The shape of the F-distribution changes with the degrees of freedom for the numerator and denominator. The F-distribution is used in F-tests, which evaluate differences between group means or variances. <br>
 <br>
-<div style="text-align:center"><img src="../images/F_distribution.png" height="300" width="400"/></div> <br>
+<div style="text-align:center"><img src="../images/F_distribution.png" height="350" width="525"/></div> <br>
 <br>
 Chi-square distribution: <br>
 <br>
 The chi-square distribution is a continuous probability distribution that arises when working with categorical data or testing for independence or goodness-of-fit. It is positively skewed and takes only non-negative values. The shape of the chi-square distribution depends on the degrees of freedom, which are associated with the number of categories or variables in the test. The chi-square distribution is used in chi-square tests, such as the chi-square test for independence and chi-square goodness-of-fit test. <br>
 <br>
-<div style="text-align:center"><img src="../images/chi_distribution.png" height="300" width="400"/></div> <br>
+<div style="text-align:center"><img src="../images/chi_distribution.png" height="350" width="525"/></div> <br>
 <br>
 | [Home](https://benrushscience.github.io/learning-data-science/) | [Next](https://benrushscience.github.io/learning-data-science/pages/6-hypothesis-testing.html) |
 
