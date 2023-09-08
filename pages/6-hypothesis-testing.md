@@ -5,7 +5,7 @@ We will be able to answer the most important question of the century- are golden
 <br>
 To conduct hypothesis testing, we collect data and analyze it using statistical tests, of which there are many different kinds. The goal is to either reject or fail to reject the null hypothesis, based on the statistical tests that analyze our data. This process helps us draw conclusions and make informed decisions, and perhaps go on to even bigger projects (are golden retrievers also better swimming dogs than pugs?). So, how do we decide when to reject the null hypothesis?. <br>
 <br> 
-[_Dig deeper into hypothesis testing with a Khan Academy video_](https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample/idea-of-significance-tests/v/simple-hypothesis-testing) <br>
+[_Dig deeper into hypothesis testing with a Khan Academy video_](https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample/idea-of-significance-tests/v/simple-hypothesis-testing). <br>
 <br> 
 We make a decision based on the concept of a probability value, or a p-value. A p-value is a measure that quantifies the likelihood of evidence against the null hypothesis. It tells us the probability (from 0 to 1) of obtaining our result based on the observed data. The statistical field has generally landed on p-values less than 0.05 being “statistically significant”, which means that a p-value of 0.05 provides evidence to reject the null hypothesis. This equates to us saying that we are 95% confident that the null hypothesis should be rejected. It also means that we could be wrong in rejecting the null hypothesis in 5% of scenarios. So, a significant p-value provides evidence in favor of our alternative hypothesis, but it doesn’t mean it’s fact. We would need to repeat the experiments in different conditions to see if this is true. If we are interested in seeing a difference in golden retriever and pug height differences, we should compare these dogs in New York City, Los Angeles, Tokyo, Cape Town, Buenos Aires, Mumbai, and more cities. Of course we can’t compare pugs and golden retrievers in every city, so we take an incredibly small risk of being wrong by saying pugs are shorter than golden retrievers, but it certainly beats all the time and money it would take to measure and compare all pugs and all golden retrievers in every city since the beginning of time to all eternity. <br>
 <br>
@@ -17,7 +17,7 @@ So, we know p-values need to be smaller than the critical value for a significan
 <br>
 [_Understand p-values more with this Khan Academy video_](https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample/idea-of-significance-tests/v/p-values-and-significance-tests) <br>
 <br> AND
-[_Dive into statistical significance meanings more with this Khan Academy video_](https://www.khanacademy.org/math/statistics-probability/significance-tests-confidence-intervals-two-samples/comparing-two-means/v/statistical-significance-experiment) <br>
+[_Dive into statistical significance meanings more with this Khan Academy video_](https://www.khanacademy.org/math/statistics-probability/significance-tests-confidence-intervals-two-samples/comparing-two-means/v/statistical-significance-experiment). <br>
 <br>
 We’ve been discussing the idea of comparing golden retrievers and pugs for a while now, and to actually do it, we can use a statistical test called a t-test (more on that later). So enough talk, let's do it! 
 <br>
