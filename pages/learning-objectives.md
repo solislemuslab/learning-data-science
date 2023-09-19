@@ -49,9 +49,9 @@ By the end of this lesson, students will be able to: <br>
 * Demonstratethe value of testing two groups statistically
 * Explain when and how to apply t-tests
 * Demonstrate how to and critique an interpretation of a t-test including:
-  1.  _Test results_
-  2. _T statistic_
-  3. _How to reject the null hypothesis and its meaning_
+  1. Test results
+  2. T statistic
+  3. How to reject the null hypothesis and its meaning
 
 
 ### 8. Comparing 2+ groups (ANOVA)
@@ -59,9 +59,9 @@ By the end of this lesson, students will be able to: <br>
 * Discuss the value of testing multiple groups statistically
 * Explain when and how to apply ANOVA
 * Demonstrate how to and critique an interpretation of an ANOVA test including:
-  1.  _Test results_
-  2. _F statistic_
-  3. _How to reject the null hypothesis, and that this means there is a global group difference, but can’t tell which groups are different_
+  1. Test results
+  2. F statistic
+  3. How to reject the null hypothesis, and that this means there is a global group difference, but can’t tell which groups are different
 * Define a post-hoc analysis and explain how a post-hoc analysis yields additional results about multiple group comparisons
 
 
@@ -70,9 +70,9 @@ By the end of this lesson, students will be able to: <br>
 * Discuss the value of testing frequencies statistically for both goodness of fit and tests of independence
 * Explain when and how to apply chi-squared tests
 * Demonstrate how to and critique an interpretation of Chi-Square test including:
-  1. _Test results_
-  2. _Chi-square statistic_
-  3. _How to reject the null hypothesis, and that this means there is a global group difference, but can’t tell which groups are different_
+  1. Test results
+  2. Chi-square statistic
+  3. How to reject the null hypothesis, and that this means there is a global group difference, but can’t tell which groups are different
 
 
 ### 10. Correlations
@@ -80,9 +80,9 @@ By the end of this lesson, students will be able to: <br>
 * Discuss the value of testing two continuous variables statistically
 * Explain the difference between correlation and causation
 * Demonstrate how to and critique an interpretation of Pearson correlation and multiple regression test including:
-  1. _How to interpret an r-value_
-  2. _How to interpret the results of a multiple regression test_
-  3. _How to reject the null hypothesis and understand that rejecting the null hypothesis for a correlational test still means no causation_
+  1. How to interpret an r-value
+  2. How to interpret the results of a multiple regression test
+  3. How to reject the null hypothesis and understand that rejecting the null hypothesis for a correlational test still means no causation
 
 
 ### 11. Statistics in the real world
