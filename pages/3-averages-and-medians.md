@@ -55,6 +55,9 @@ In a perfect theoretical sample, the mean and median would be the same. As you c
 [_For a more in depth refresher of means, medians, and modes, check out this video from Khan Academy._](https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/mean-median-basics/v/statistics-intro-mean-median-and-mode) <br>
 <br>
 Medians are not perfect and still could hide how the data looks. Let’s say the billionaire’s adult son moves to Roseville, increasing its population to 1001 people. Inspired by websites about data science and her desire to make it easy for the writers of this website you are reading, the billionaire decides to adjust her yearly income in a new way. Through a strange lottery system, she ensures 500 people have an income of $100,000, her son earns $300,000, and the other 500 people of Roseville earn $2,000,000. The average income is $1,049,250 and the median income is $300,000. The middle value of our sample, our median, is $300,000, but is that value useful? It does not fully capture the spread of yearly incomes and really only reflects the son versus the strange incomes of folks in Roseville. <br>
+
+> *Explore more in the webapp below created with RShiny* 
+<iframe src="https://istats.shinyapps.io/MeanvsMedian/" width="100%" height="600"></iframe>
 <br>
 So, as you’ve seen, the mean and median are very useful and can give us good insight into a sample by summarizing something we are interested in into 2 numbers. But you could also see how the mean and median don’t always represent the full picture of a sample. For a better picture, let’s actually look at some pictures! Well, to be fancy scientists, we will call them figures. The next lesson will cover describing how a sample might vary and how we can visualize that sample to help us understand samples. <br>
 

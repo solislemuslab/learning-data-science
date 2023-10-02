@@ -18,6 +18,11 @@ _Scatterplots are a great way to visualize if two continuous variables might be 
 - [_Identifying correlations_](https://www.youtube.com/embed/F5uiFXECnVY) <br>
 <br>
 
+> Visualize scatterplots with real data (Internet use, carbon footprint, *sandwiches*) with another [R Shiny app](https://istats.shinyapps.io/Association_Quantitative/) <br>
+
+> Create your own scatterplot below!
+<iframe src="https://your-shiny-app-url.com](https://istats.shinyapps.io/ExploreLinReg/" width="100%" height="600"></iframe> <br>
+<br>
 The scatterplots can give us an intuition about how water consumption might be related, but not by how much. This is the reason we use the Pearson correlation test! The Pearson correlation test is a statistical tool used to examine the strength and direction of the linear relationship between two continuous variables. An important note is that this test cannot tell us causation! We cannot say what variable causes the other, or if there is causation at all. A good example of this is that the number of churches and fast food restaurants are correlated with one another in a city, but do more churches cause more fast food restaurants? No, instead the population of a city is the likely cause of church and fast food restaurants numbers, even though churches and fast food could be correlated with one another. <br>
 <br>
 Correlations are still very helpful as we can’t always determine causation. In health research, we can’t force people to smoke to determine the effects of cigarettes, so we might look at the number of cigarettes someone smokes and their lifespan. One study doesn’t prove smoking causes a shorter lifespan, but if we repeat the study many times and combine it with other research (maybe testing the effect of smoke on human lung cells), we get closer to the fact that smoking leads to shorter lifespans. If we go back to our favorite hypothetical scenario- the one we all voted on that was the absolute best ever –dogs– we can investigate if the amount of water a dog drinks correlates with the amount of saliva it produces. <br>
@@ -45,6 +50,9 @@ Here, x is your independent variable and y is your dependent variable, with m be
 
  [_To learn how to calculate a regression line, learn from our friends at Khan Academy._](https://www.khanacademy.org/math/statistics-probability/advanced-regression-inference-transforming/inference-on-slope/v/intro-inference-slope) <br>
 <br>
+> Visualize regressions with real data below!
+<iframe src="https://istats.shinyapps.io/LinearRegression/" width="100%" height="600"></iframe> <br>
+
 In more advanced statistical analysis, researchers often use multiple regression techniques. Multiple regression allows us to predict or estimate the value of one outcome variable based on the value of one or more variables. Linear regression is a highly used technique in business, science, engineering, math- almost any field!- and it examines how one variable (the dependent variable) changes as one or more variables (the independent variables) change. This technique provides more detailed information about the relationship between variables, including the impact of other factors and the ability to make predictions. Instead of just seeing if water consumption and saliva are correlated in dogs, we could test if age of a dog, the breed, time exercising, and/or water consumption is associated with saliva production at the same time! Or, you could compare how your education, age, and years of experience can be used to estimate how much you should make in a future job and make sure you get paid to your liking! <br>
 
 |Hypothetical Multiple Regression Analysis Results | 
