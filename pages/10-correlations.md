@@ -21,9 +21,8 @@ _Scatterplots are a great way to visualize if two continuous variables might be 
 > Visualize scatterplots with real data (Internet use, carbon footprint, *sandwiches*) with another [R Shiny app](https://istats.shinyapps.io/Association_Quantitative/) <br>
 
 > Create your own scatterplot below!
-<iframe src="[https://your-shiny-app-url.com](https://istats.shinyapps.io/ExploreLinReg/)" width="100%" height="600"></iframe>
-
-
+<iframe src="https://your-shiny-app-url.com](https://istats.shinyapps.io/ExploreLinReg/" width="100%" height="600"></iframe> <br>
+<br>
 The scatterplots can give us an intuition about how water consumption might be related, but not by how much. This is the reason we use the Pearson correlation test! The Pearson correlation test is a statistical tool used to examine the strength and direction of the linear relationship between two continuous variables. An important note is that this test cannot tell us causation! We cannot say what variable causes the other, or if there is causation at all. A good example of this is that the number of churches and fast food restaurants are correlated with one another in a city, but do more churches cause more fast food restaurants? No, instead the population of a city is the likely cause of church and fast food restaurants numbers, even though churches and fast food could be correlated with one another. <br>
 <br>
 Correlations are still very helpful as we can’t always determine causation. In health research, we can’t force people to smoke to determine the effects of cigarettes, so we might look at the number of cigarettes someone smokes and their lifespan. One study doesn’t prove smoking causes a shorter lifespan, but if we repeat the study many times and combine it with other research (maybe testing the effect of smoke on human lung cells), we get closer to the fact that smoking leads to shorter lifespans. If we go back to our favorite hypothetical scenario- the one we all voted on that was the absolute best ever –dogs– we can investigate if the amount of water a dog drinks correlates with the amount of saliva it produces. <br>
