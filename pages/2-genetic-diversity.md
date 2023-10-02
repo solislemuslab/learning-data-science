@@ -24,7 +24,7 @@ Gene expression refers to how much of a gene is read to make a protein. This is 
 
 So how does this all relate to Rhonda and the pug at the dog park? Despite looking extremely different, Rhonda and the pug have almost the same exact DNA! The small amount of gene variation and gene expression between the two dogs leads to the variation in height, snout length, and coat color (and more). Perhaps that even explains Rhonda’s stinky breath? <br>
 
-<div style="text-align:center"><img src="../images/Dog breed evolutionary tree.png" height="300" width="300"/></div> <br>
+<div style="text-align:center"><img src="../images/Dog breed evolutionary tree.png" height="500" width="500"/></div> <br>
 
 *A DNA comparison helped put 161 dog breeds into larger groups (various colors) based on their common ancestries from this [article from the American Association for the Advancement of Science](https://www.science.org/content/article/where-did-your-dog-come-new-tree-breeds-may-hold-answer). Image credit: H. G.PARKER ET. AL. CELL REPORTS 19 (25 APRIL 2017) © ELSEVIER INC.* <br>
 
