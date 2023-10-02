@@ -84,6 +84,7 @@ Histograms, like the two pictures above, are visual representations that help us
 <br>
 <iframe src="https://your-shiny-app-url.com](https://istats.shinyapps.io/MeanvsMedian/" width="100%" height="600"></iframe>
 <br>
+
 To summarize, variance and standard deviation help us measure how data points differ from the average and give us an idea of how our continuous data is spread. These measures are important tools in statistics that allow us to better understand and analyze data in many different fields and trends. They can even help us be smarter shoppers and buyers (or visitors to restaurants in busy areas!). The spread of data is often the first step of interpreting data and is also useful for when you begin to analyze data. <br>
 
 If you'd like to play around with visualizing distributions, and other plots and statistics, you can play with the Wisconsin Fast Stats app which can give you sample data about plant baby leaf numbers (AKA cotyledons) by generation. <br>
