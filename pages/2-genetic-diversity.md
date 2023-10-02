@@ -35,6 +35,7 @@ Plants, just like humans and dogs, have DNA and that DNA has genetic variation a
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2g9Fn8NTedA" frameborder="0" allowfullscreen></iframe> <br>
 <br>
 To help illustrate the genetic diversity of the brassicas (and also what can happen in dogs and humans), you may have completed activities to count and measure physical characteristics of a plant.. The physical characteristics, like hairiness, leaf size, leaf color, number of seeds, and more can be the morphological traits, or physical traits that we can observe, of an organism. The morphological traits are influenced by both the genetics of an organism and its environment. A species may typically grow to a certain size, but if it can’t find enough food, it might not be able to grow to the typical height. As you’ve learned a bit now and will continue to learn, what a “typical” height is takes some measuring and statistics to find out, but it can help us know if an organism is healthy. <br>
+<br>
 
 > Want to see if you can successfully create and advance a new animal species? Check out the game [Niche](https://niche-game.com/) <br>
 
