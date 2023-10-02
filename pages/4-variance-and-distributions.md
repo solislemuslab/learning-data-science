@@ -66,8 +66,8 @@ We could get an idea of what a sample of data looks like based on means and stan
 <br>
 There are cases when values for a variable we are interested in do not follow a “normal distribution”. Sometimes extreme values, or just the way a variable is, leads to skewed data distributions. Skewness is a concept that helps us understand the shape and symmetry of data. When data is skewed, it means that it is not evenly or normally distributed. Skewed data distributions can be skewed to the left, where the longer tail is on the left side, or skewed to the right, where the longer tail is on the right side. Skewness tells us if our data leans more towards one side or if it is balanced. Understanding skewness helps us recognize different patterns in data and interpret information accurately. <br>
 <br>
-[_For more on skewness on curves, check out this video from Khan Academy._](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/density-curve/v/median-mean-and-skew-from-density-curves) <br>
-<br>
+> [_For more on skewness on curves, check out this video from Khan Academy._](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/density-curve/v/median-mean-and-skew-from-density-curves) <br>
+
 An example of a non-normal distribution is customer frequency on Thursdays at the McDonald's on Time Square in New York, according to Google Maps as of 8-30-23. You can see there is a customer rush around lunch time and around dinner. <br>
 <br>
 <div style="text-align:center"><img src="../images/mcdonalds_thursdays.png" height="250" width="450"/></div>
@@ -78,17 +78,18 @@ A distribution closer to normal is customer frequency on Saturdays at the McDona
 <br>
 Histograms, like the two pictures above, are visual representations that help us understand the distribution of continuous data. Histograms display data in organized bars or columns on a graph. Each bar represents a range of values, and the height of the bar shows how many data points fall within that range. Histograms allow us to see patterns, such as the most common values or any outliers. They help us understand the shape of the data, whether it is symmetric, skewed, or has other unique characteristics. By using histograms, we can analyze and interpret data more easily, making it a valuable tool in understanding information visually. <br>
 <br>
-[_If you want more info on creating histograms, check out this video by Khan Academy._](https://www.khanacademy.org/math/statistics-probability/displaying-describing-data/quantitative-data-graphs/v/histograms-intro) <br>
-<br>
->You can also play with distributions and how the median and mean are affected in the webapp below! <br>
+> [_If you want more info on creating histograms, check out this video by Khan Academy._](https://www.khanacademy.org/math/statistics-probability/displaying-describing-data/quantitative-data-graphs/v/histograms-intro) <br>
+
+> You can also play with distributions and how the median and mean are affected in the webapp below! <br>
 <br>
 <iframe src="https://istats.shinyapps.io/MeanvsMedian/" width="100%" height="600"></iframe>
 <br>
 
 To summarize, variance and standard deviation help us measure how data points differ from the average and give us an idea of how our continuous data is spread. These measures are important tools in statistics that allow us to better understand and analyze data in many different fields and trends. They can even help us be smarter shoppers and buyers (or visitors to restaurants in busy areas!). The spread of data is often the first step of interpreting data and is also useful for when you begin to analyze data. <br>
 
-If you'd like to play around with visualizing distributions, and other plots and statistics, you can play with the Wisconsin Fast Stats app which can give you sample data about plant baby leaf numbers (AKA cotyledons) by generation. <br>
-<iframe src="https://wi-fast-stats.wid.wisc.edu/cotyledon/" width="600" height="500"></iframe>
+> If you'd like to play around with visualizing distributions, and other plots and statistics, you can play with the Wisconsin Fast Stats app which can give you sample data about plant baby leaf numbers (AKA cotyledons) by generation. <br>
+
+<iframe src="https://wi-fast-stats.wid.wisc.edu/cotyledon/" width="600" height="500"></iframe> <br>
 <br>
-<br>
+
 | [Home](https://benrushscience.github.io/learning-data-science/) | [Next](https://benrushscience.github.io/learning-data-science/pages/5-probability-and-z-scores.html) |
