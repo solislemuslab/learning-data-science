@@ -23,7 +23,7 @@ Gene expression refers to how much of a gene is read to make a protein. This is 
 So how does this all relate to Rhonda and the pug at the dog park? Despite looking extremely different, Rhonda and the pug have almost the same exact DNA! The small amount of gene variation and gene expression between the two dogs leads to the variation in height, snout length, and coat color (and more). Perhaps that even explains Rhonda’s stinky breath? <br>
 
 > Genetic variation with time can lead to big things- like blue whales. Learn about their [land-dwelling ancestors](wisconsin.pbslearningmedia.org/resource/79bd6aff-db2d-4f87-9cd1-fe855806b460/when-whales-walked-journeys-in-deep-time/?student=true&focus=true) <br>
-<br>
+
 So now we’ve talked about dogs and humans… but you may be learning about plants. It’s finally time to bring it all together. It’s the moment you’ve been waiting for. Just as soon as this sentence is over, it will all make sense. Just as soon as this sentence is over, too. Maybe another one to really build the tension. Okay. Are you ready? You’re still reading this, so you probably are. Good for you for reading this sentence as well and not just skipping this paragraph. <br>
 <br>
 Plants, just like humans and dogs, have DNA and that DNA has genetic variation and those genes vary in their expression. This is a deliciously wonderful fact! Because of genetic variation and gene expression, that little [brassica plant](https://en.wikipedia.org/wiki/Brassica_oleracea) you might be growing has almost identical DNA to broccoli, Brussel sprouts, bok choy, collard greens, mustard, and cauliflower. Your little brassica plant might be the pug in this case, but its relatives can carry intense flavor (mustard), be used to produce cooking oil (canola), or be a vegetable in foods around the world (broccoli). <br>
@@ -33,7 +33,7 @@ Plants, just like humans and dogs, have DNA and that DNA has genetic variation a
 To help illustrate the genetic diversity of the brassicas (and also what can happen in dogs and humans), you may have completed activities to count and measure physical characteristics of a plant.. The physical characteristics, like hairiness, leaf size, leaf color, number of seeds, and more can be the morphological traits, or physical traits that we can observe, of an organism. The morphological traits are influenced by both the genetics of an organism and its environment. A species may typically grow to a certain size, but if it can’t find enough food, it might not be able to grow to the typical height. As you’ve learned a bit now and will continue to learn, what a “typical” height is takes some measuring and statistics to find out, but it can help us know if an organism is healthy. <br>
 
 > Want to see if you can successfully create and advance a new animal species? Check out the game [Niche](https://niche-game.com/) <br>
-<br>
+
 A typical height and growth rate for your fast plant is known [watch a beautiful time lapse of a fast plant growing](https://www.youtube.com/watch?v=kDpqafwz9pI), and so are typical growth rates for crops, dogs, and humans. Although many factors influence the typical growth rate, if a parent has a human baby that is smaller than the “typical” baby at a certain age, doctors may be able to intervene to address a nutritional deficiency, disease, or toxin that could be affecting the growth. <br>
 <br>
 So, knowing the difference between a random observation and providing evidence for a pattern can save lives! That’s the power of statistics, which we dive back into on the next page. <br>
