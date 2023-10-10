@@ -26,12 +26,12 @@ The t-test generates a test statistic, the t-statistic value, which indicates th
 <div style="text-align:center"><img src="../images/T_distribution.png" height="350" width="525"/></div> <br>
 <br>
 
-[_For more in depth T-score formula and calculations, check out this Khan Academy Video_](https://www.khanacademy.org/math/statistics-probability/significance-tests-confidence-intervals-two-samples/comparing-two-means/v/difference-of-sample-means-distribution). <br>
-<br>
+> [_For more in depth T-score formula and calculations, check out this Khan Academy Video_](https://www.khanacademy.org/math/statistics-probability/significance-tests-confidence-intervals-two-samples/comparing-two-means/v/difference-of-sample-means-distribution). <br>
+
 In our example, let's say the t-statistic is 5.2 and our degrees of freedom (or df) are 59. Using a one- or two-sided [t-statistic table](https://www.scribbr.com/statistics/students-t-table/) (just like the z-score table) or statistical software, we find the corresponding p-value is < 0.001. This would be a t-statistic on the far right of the t distribution above. The t-statistic suggests there is a difference between the heights of Golden Retrievers and Pugs. The p-value of < 0.001 suggests that there is less than a 0.1% chance of observing such a difference by random chance alone. Based on the p-value of < 0.001 being smaller than the critical threshold of 0.05, we reject the null hypothesis that states there is no difference between heights of golden retrievers and pugs. Instead, with a statistically significant p-value, we accept the alternative hypothesis- there is a difference in average heights between golden retrievers and pugs. We now have evidence that the groups differ and by looking at the mean heights between groups, we can now say we have evidence to support our intuition of pugs being shorter than golden retrievers. <br>
 <br>
-[_For more in depth p-value and conversion to p-values, check out this video from Khan Academy_](https://www.khanacademy.org/math/statistics-probability/significance-tests-confidence-intervals-two-samples/comparing-two-means/v/hypothesis-test-for-difference-of-means). <br>
-<br>
+> [_For more in depth p-value and conversion to p-values, check out this video from Khan Academy_](https://www.khanacademy.org/math/statistics-probability/significance-tests-confidence-intervals-two-samples/comparing-two-means/v/hypothesis-test-for-difference-of-means). <br>
+
 The t-test is a versatile tool that can be applied to various scenarios. It can be used to compare the effectiveness of two different medications, see resource investments between neighborhoods, or analyze if there are any disparities in plant growth between two applied fertilizers. Of course, the world is not full of variables split evenly in two groups. There will be plenty of applications of wanting to compare multiple groups to one another, like comparing golden retriever height to pug height and to Saint Bernard height. T-Tests are not designed to do this, but another test, called an ANOVA, is perfect for this scenario! That’s why we will explore in the next lesson. <br>
 
 | [Home](https://benrushscience.github.io/learning-data-science/) | [Next](https://benrushscience.github.io/learning-data-science/pages/8-comparing-2+-groups.html) |

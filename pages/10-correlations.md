@@ -13,15 +13,14 @@ Of course, we can plot all the data for the dogs we sampled. We happened to samp
 <div style="text-align:center"><img src="../images/thirtypoint_scatter.png" height="350" width="525"/></div> <br>
 <br>
 
-_Scatterplots are a great way to visualize if two continuous variables might be correlated. You can Learn more about constructing a scatterplot and visualizing correlations in the videos below from Khan Academy:_
-- [_Visualizing two continuous variables via a scatterplot_](https://www.youtube.com/embed/sHbX58y5D4U) <br>
-- [_Identifying correlations_](https://www.youtube.com/embed/F5uiFXECnVY) <br>
-<br>
+> _Scatterplots are a great way to visualize if two continuous variables might be correlated. You can Learn more about constructing a scatterplot and visualizing correlations in the videos below from Khan Academy:_
+> - [_Visualizing two continuous variables via a scatterplot_](https://www.youtube.com/embed/sHbX58y5D4U) <br>
+> - [_Identifying correlations_](https://www.youtube.com/embed/F5uiFXECnVY) <br>
 
 > Visualize scatterplots with real data (Internet use, carbon footprint, *sandwiches*) with another [R Shiny app](https://istats.shinyapps.io/Association_Quantitative/) <br>
 
 > Create your own scatterplot below!
-<iframe src="https://your-shiny-app-url.com](https://istats.shinyapps.io/ExploreLinReg/" width="100%" height="600"></iframe> <br>
+<iframe src="https://istats.shinyapps.io/ExploreLinReg/" width="100%" height="600"></iframe> <br>
 <br>
 The scatterplots can give us an intuition about how water consumption might be related, but not by how much. This is the reason we use the Pearson correlation test! The Pearson correlation test is a statistical tool used to examine the strength and direction of the linear relationship between two continuous variables. An important note is that this test cannot tell us causation! We cannot say what variable causes the other, or if there is causation at all. A good example of this is that the number of churches and fast food restaurants are correlated with one another in a city, but do more churches cause more fast food restaurants? No, instead the population of a city is the likely cause of church and fast food restaurants numbers, even though churches and fast food could be correlated with one another. <br>
 <br>
@@ -37,10 +36,10 @@ Next, we establish our hypotheses. As you may have guessed by now, the null hypo
 <br>
 As with all other statistical tests, we calculate a test statistic and match that to a p-value. The test statistic in the Pearson correlation test is the correlation coefficient, denoted as r. The correlation coefficient ranges from -1 to +1, where -1 indicates a perfect negative linear relationship, +1 indicates a perfect positive linear relationship, and 0 indicates no linear relationship. A negative correlation would mean as one variable increases, the other decreases- more water consumed is correlated with less saliva production in dogs. A correlation of 0 means the variables are not correlated with each another- more water consumed has no pattern with saliva production in dogs. A positive correlation indicates an increase in one variable matches an increase in the other variable - increased water consumption is correlated with increased saliva production. 
 
-[_Boost your correlation coefficient intuition._](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/scatterplots-and-correlation/v/correlation-coefficient-intuition-examples ) <br>
-<br>
-[_To learn how to calculate correlation coefficient, check out yet another video from Khan Academy._](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/scatterplots-and-correlation/v/calculating-correlation-coefficient-r) <br>
-<br>
+> [_Boost your correlation coefficient intuition._](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/scatterplots-and-correlation/v/correlation-coefficient-intuition-examples ) <br>
+>
+> [_To learn how to calculate correlation coefficient, check out yet another video from Khan Academy._](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/scatterplots-and-correlation/v/calculating-correlation-coefficient-r) <br>
+
 Once we have our test statistic, the r-value, we can compare it to the t-distribution to find a p-value. Interpreting the p-value involves comparing it to a predetermined critical threshold, commonly set at 0.05 (5%). If the p-value is less than the critical threshold (p < 0.05), we reject the null hypothesis in favor of the alternative hypothesis. This indicates that there is evidence to support the claim that the amount of water consumption is significantly correlated with saliva production in dogs. If the p-value is greater than or equal to the critical threshold (p ≥ 0.05), we fail to reject the null hypothesis. <br>
 <br>
 Let's say we do the calculations and find there is a significant association at r=0.8 between water consumption and saliva production for our 30 dogs. That's great! It's probably what we would expect. That gives us the strength of the association AKA correlation between water consumption and saliva production, but the rate of change. You may want to predict how much a dog will drool on average depending on it's water consumption. This is where regression lines come into play! For linear relationships, the rate of change between your independent variable, water consumption, and dependent variable, saliva production, is a line equation - y = M(x) + b. 
@@ -48,8 +47,8 @@ Here, x is your independent variable and y is your dependent variable, with m be
 
 <div style="text-align:center"><img src="../images/regression_example.png" height="350" width="525"/></div> <br>
 
- [_To learn how to calculate a regression line, learn from our friends at Khan Academy._](https://www.khanacademy.org/math/statistics-probability/advanced-regression-inference-transforming/inference-on-slope/v/intro-inference-slope) <br>
-<br>
+> [_To learn how to calculate a regression line, learn from our friends at Khan Academy._](https://www.khanacademy.org/math/statistics-probability/advanced-regression-inference-transforming/inference-on-slope/v/intro-inference-slope) <br>
+
 > Visualize regressions with real data below!
 <iframe src="https://istats.shinyapps.io/LinearRegression/" width="100%" height="600"></iframe> <br>
 
