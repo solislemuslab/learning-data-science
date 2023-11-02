@@ -1,9 +1,10 @@
 # Creating random samples for Learning Data Science website
 install.packages("ggplot2")
 install.packages("vcd")
+install.packages("report")
 library(ggplot2)
 library(vcd)
-
+library(report)
 version
 
 ############################## Histograms #####################################
@@ -100,6 +101,7 @@ t_test_result <- t.test(goldens,pugs)
 
 # Display the t-test result
 print(t_test_result)
+report(t_test_result)
 
 # box plot figure
 boxplot(goldens, pugs, names = breeds, main="Dog breed heights", ylab="Height in inches", 
@@ -148,7 +150,8 @@ data <- data.frame(
   value = c(goldens, pugs, saints),
   group = factor(rep(c("Golden Retreivers", "Pugs", "Saint Bernards"), each = 30))
 )
-
+report(data)
+as.data.frame(report(data))
 
 # Set up the plot
 par(mfrow=c(1,1)) # Ensure a single plot
@@ -184,11 +187,11 @@ legend("topright", legend = breeds, fill = c("gold", "lightblue", "orchid"),
 anova_result <- aov(value ~ group, data = data)
 print(summary(anova_result))
 
+print(report(anova_result))
+
 # Perform Tukey HSD post hoc test
 tukey_result <- TukeyHSD(anova_result)
 print(tukey_result)
-
-
 
 ### Chi-square test
 # Create a contingency table
@@ -342,3 +345,4 @@ ggplot(data = df, aes(x = x)) +
   geom_histogram(binwidth = 5, fill = "lightblue", color = "black") +
   labs(title = "Income distribution", x = "Income in thousands", y = "Frequency") +
   theme_minimal()
+
