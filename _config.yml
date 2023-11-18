@@ -9,6 +9,7 @@ footer_content: "Copyright Solis-Lemus lab &copy; 2023. Distributed by an <a hre
 exclude:
    - readme.md
    - code/
+   - lecture-notes/learning-objectives.md
 callouts_level: quiet # or loud
 callouts:
   highlight:
