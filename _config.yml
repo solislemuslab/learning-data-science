@@ -2,8 +2,9 @@ remote_theme: just-the-docs/just-the-docs
 title: An introduction to data science
 logo: /images/goldenretriever_logo.png
 description: A website to learn about the useful and interesting world of data science.
-show_downloads: false
-google_analytics: false
+aux_links:
+  "Materials on GitHub":
+    - "//github.com/crsl/learning-data-science"
 footer_content: "Copyright Solis-Lemus lab &copy; 2023. Distributed by an <a href=\"https://github.com/crsl4/learning-data-science/tree/master/LICENSE\">MIT license.</a>"
 exclude:
    - readme.md

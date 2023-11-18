@@ -1,3 +1,9 @@
+---
+layout: default
+title: About
+nav_order: 1
+---
+
 # An introduction to data science
 
 ## Learning objectives
