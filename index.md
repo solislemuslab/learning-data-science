@@ -52,4 +52,4 @@ If you want more statistical information in a free textbook, check out the digit
 ## AI-generated artwork within the website
 Images on this website are a mix of original and [AI-generated](https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-generative-ai) images. Images that have a row of multicolored squares are from [Dalle2](https://openai.com/dall-e-2). Graphs and figures, unless noted, are generated with Rstudio which you can download [here](https://posit.co/download/rstudio-desktop/) You can create all the graphs and figures without needing any data with [this code](https://github.com/benrushscience/learning-data-science/blob/main/code/fast_plants_datawebsite_script.R). Feel free to adapt it for your own use! 
 
-<div style="text-align:center"><img src="../images/goldenretriever_logo.png" height="300" width="300"/></div>
+<div style="text-align:center"><img src="images/goldenretriever_logo.png" height="300" width="300"/></div>
