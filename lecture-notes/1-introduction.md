@@ -1,3 +1,9 @@
+---
+layout: default
+title: I've never seen a dog
+nav_order: 2
+---
+
 # I've never seen a dog
 
 > "Is Rhonda a good girl? Do we need food to survive? The answers to these questions are undoubtely the same" - Socrates, year never
