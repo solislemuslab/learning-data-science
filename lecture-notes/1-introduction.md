@@ -57,4 +57,4 @@ You might be working on a project using [Wisconsin Fast Plants](https://fastplan
 <br>
 <br>
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next](https://benrushscience.github.io/learning-data-science//pages/2-genetic-diversity.html) |
+| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Genetic Diversity](https://benrushscience.github.io/learning-data-science//pages/2-genetic-diversity.html) |
