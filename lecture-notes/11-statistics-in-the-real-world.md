@@ -1,3 +1,9 @@
+---
+layout: default
+title: With great power comes maybe good effect size
+nav_order: 12
+---
+
 # With great power comes maybe good effect size
 ## 11. Statistics in the real world
 
