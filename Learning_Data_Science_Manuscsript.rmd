@@ -44,6 +44,19 @@ bibliography: paper.bib
 - Create bibliography
 - Name of software product (maybe PonderStats... ponderstats.wid.wisc.edu)
 
+# Summary
+We created a website for containing intrductory statistics learning materials accompanied by engaging media and R scripts that students can use. 
+The website and scripts are designed to mirror an introductory course to statistics and tie it to serveral realworld
+examples, like genetic diversity. The website, which is hosted on GitHub pages, starts with an introduction that
+middle school, high school, and undergraduate students can grasp- the diversity of dog breeds. We introduce the 
+character of Rhonda, a tall female golden retriever. We lead readers through the thinking "how do we actually know Rhonda
+is tall?". We lead readers through comparisons of Rhonda to other golden retreivers based on personal observations, defining
+a metric of "tallness", ie height, comparing Rhonda to other golden retreivers (z-score introduction), and eventually other 
+bog breeds (for t-tests, ANOVAs, correlations, and beyond). We lead the readers through these concepts all while providing
+humorous examples and comments, links for further learning, RShiny Apps for readers to learn experientially, visuals, embedded 
+videos, and the scripts for students to follow along. In total, readers have access to 11 different lessons to learn about 
+introductory statistics and data science at their own pace.
+
 # Statement of Need
 In our experience, the introduction to statistics and data science rely heavily on the mathematical
 formulas instead of the versatile and useful applications of these formulas. In fact, one of the authors 
@@ -59,17 +72,18 @@ generated many of the figures are available for students to interact with. We be
 serve to provide an intriguing first encounter with statistics and data scientists, especially for those students
 who might be conditioned to be math averse.
 
-# Learning modules
-The website and scripts are designed to mirror an introductory course to statistics and tie it to serveral realworld
-examples, like genetic diversity. The website, which is hosted on GitHub pages, starts with an introduction that
-middle school, high school, and undergraduate students can grasp- the diversity of dog breeds. We introduce the 
-character of Rhonda, a tall female golden retriever. We lead readers through the thinking "how do we actually know Rhonda
-is tall?". We lead readers through comparisons of Rhonda to other golden retreivers based on personal observations, defining
-a metric of "tallness", ie height, comparing Rhonda to other golden retreivers (z-score introduction), and eventually other 
-bog breeds (for t-tests, ANOVAs, correlations, and beyond). We lead the readers through these concepts all while providing
-humorous examples and comments, links for further learning, RShiny Apps for readers to learn experientially, visuals, embedded 
-videos, and the scripts for students to follow along. In total, readers have access to 11 different lessons to learn about 
-introductory statistics and data science at their own pace.
+# Website description
+
+## Subjects Covered
+
+## Learning objectives
+
+
+## Activities & Media
+mix here
+
+# Active Script Learning via PonderStats
+
 
 # eligibility for JOSE (think software instruction and web content, Multimedia, etc)
 teachers for learning goals,
@@ -77,7 +91,12 @@ maybe lead through one lesson specifically for how a reader could use It
 possible applications (fast plants, high school bio, intro college level bio)
 feedback from instructors and teachers?
 
-# Example paper Summary
+
+
+
+
+
+############################## Example paper ################################33
 
 The forces on stars, galaxies, and dark matter under external gravitational
 fields lead to the dynamical evolution of structures in the universe. The orbits
