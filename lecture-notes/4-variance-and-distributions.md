@@ -1,9 +1,18 @@
+---
+layout: default
+title: Seeing (data) is believing (data)
+nav_order: 5
+---
+
 # Seeing (data) is believing (data)
 ## 4. Variance and distributions
 
-We’ve seen the use of means and medians, but could still get fooled by these one number summaries. You may have experienced this with concert tickets. A seller might list the average ticket price of a concert of $20, then on the website you see the best seats are actually $100 with terrible seats at $5. The seller could easily change the number and price of tickets in all sorts of ways to make the average seem affordable. That’s why understanding the spread of ticket prices, or the spread of whatever data we might be interested in, can help us be smarter buyers.<br> 
-<br>
-In the world of statistics, two important measures called variance and standard deviation help us understand how data points differ from the average and how much the data is spread from the average. Let’s think about Rhonda’s 30 inch height again.<br>
+We’ve seen the use of means and medians, but could still get fooled by these one number summaries. You may have experienced this with concert tickets. A seller might list the average ticket price of a concert of \$20, then on the website you see the best seats are actually \$100 with terrible seats at \$5. The seller could easily change the number and price of tickets in all sorts of ways to make the average seem affordable. That’s why understanding the spread of ticket prices, or the spread of whatever data we might be interested in, can help us be smarter buyers.<br> 
+
+{: .key }
+In the world of statistics, two important measures called variance and standard deviation help us understand how data points differ from the average and how much the data is spread from the average. 
+
+Let’s think about Rhonda’s 30 inch height again.<br>
 <br>
 When we talk about variance, we're talking about how much the individual heights of golden retrievers in our dataset differ from the average height of all golden retrievers. It helps us understand if the heights of the dogs are mostly similar or if there is a wide range of heights. Variance is calculated by taking the squared difference between each height and the average height, adding them up, and then dividing by the number of measurements in our sample. <br>
 <br>
@@ -16,9 +25,11 @@ Where:
 - $$\bar{x}$$ is the mean of the sample.
 - $$n$$ is the total number of data points in the sample.
 
-Example:
+{: .highlight}
+Example: Let's calculate a made up sample of golden retriever height variance!
 
-Let's calculate a made up sample of golden retriever height variance for the following data set: <br> <br>
+Imagine we have the following data of golden retriever heights:
+
 $$2, 4, 6, 8, 10$$
 
 **1. Calculate the mean ($$\bar{x}$$):** <br> <br>
@@ -59,14 +70,26 @@ _Figure by Ainali on Wikipedia- CC-BY-SA 3.0_ <br>
 Based on the curves above, we can see that the likelihood of a golden retriever being Rhonda's height is very low! In fact, she is past the 3 standard deviations mark, so the probability of randomly finding a golden retriever with her height is around 0.1% ! <br>
 <br>
 Understanding the variance and standard deviation of Golden Retriever heights can be helpful for different reasons. Breeders can use standard deviations for expectations of a dog breed’s heights. For veterinarians, standard deviation helps determine if a Golden Retriever's height is within a normal range for its age and breed, which can be important for monitoring their health. For us, standard deviation lets us know Rhonda is amazing and we should give her too many toys. <br>
+
+{: .youtube }
+For more about visualizing data curves, check out this [video from Khan Academy](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/density-curve/v/density-curves).
+
+We could get an idea of what a sample of data looks like based on means and standard deviations alone, but it can be easier to fully visualize what our data looks like based on its spread, or distribution. 
+
+{: .youtube }
+More visualization [here](https://www.khanacademy.org/math/statistics-probability/displaying-describing-data/quantitative-data-graphs/v/ways-to-represent-data). 
+
+In many cases of how data is distributed, the pattern follows a concept called a “normal distribution”. Normal distributions are patterns that often appear in data and we have seen one already! They have a special bell-shaped curve, with the highest point in the middle. In a normal distribution, data is evenly spread around the average, with most values near the middle and fewer values as we move away from the average. Many real-world things, like heights for golden retrievers or humans, tend to follow a normal distribution. Understanding normal distributions helps us make predictions and compare data. <br>
 <br>
-[_For more about visualizing data curves, check out this video from Khan Academy._](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/density-curve/v/density-curves) <br>
-<br>
-We could get an idea of what a sample of data looks like based on means and standard deviations alone, but it can be easier to fully visualize what our data looks like based on its spread, or distribution. (More visualization [here](https://www.khanacademy.org/math/statistics-probability/displaying-describing-data/quantitative-data-graphs/v/ways-to-represent-data)). In many cases of how data is distributed, the pattern follows a concept called a “normal distribution”. Normal distributions are patterns that often appear in data and we have seen one already! They have a special bell-shaped curve, with the highest point in the middle. In a normal distribution, data is evenly spread around the average, with most values near the middle and fewer values as we move away from the average. Many real-world things, like heights for golden retrievers or humans, tend to follow a normal distribution. Understanding normal distributions helps us make predictions and compare data. <br>
-<br>
-There are cases when values for a variable we are interested in do not follow a “normal distribution”. Sometimes extreme values, or just the way a variable is, leads to skewed data distributions. Skewness is a concept that helps us understand the shape and symmetry of data. When data is skewed, it means that it is not evenly or normally distributed. Skewed data distributions can be skewed to the left, where the longer tail is on the left side, or skewed to the right, where the longer tail is on the right side. Skewness tells us if our data leans more towards one side or if it is balanced. Understanding skewness helps us recognize different patterns in data and interpret information accurately. <br>
-<br>
-> [_For more on skewness on curves, check out this video from Khan Academy._](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/density-curve/v/median-mean-and-skew-from-density-curves) <br>
+There are cases when values for a variable we are interested in do not follow a “normal distribution”. Sometimes extreme values, or just the way a variable is, leads to skewed data distributions. 
+
+{: .key }
+Skewness is a concept that helps us understand the shape and symmetry of data. When data is skewed, it means that it is not evenly or normally distributed. Skewed data distributions can be skewed to the left, where the longer tail is on the left side, or skewed to the right, where the longer tail is on the right side. 
+
+Skewness tells us if our data leans more towards one side or if it is balanced. Understanding skewness helps us recognize different patterns in data and interpret information accurately.
+
+{: .youtube }
+For more on skewness on curves, check out [this video from Khan Academy](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/density-curve/v/median-mean-and-skew-from-density-curves).
 
 An example of a non-normal distribution is customer frequency on Thursdays at the McDonald's on Time Square in New York, according to Google Maps as of 8-30-23. You can see there is a customer rush around lunch time and around dinner. <br>
 <br>
@@ -77,19 +100,26 @@ A distribution closer to normal is customer frequency on Saturdays at the McDona
 <div style="text-align:center"><img src="../images/mcdonalds_saturdays.png" height="250" width="450"/></div> <br>
 <br>
 Histograms, like the two pictures above, are visual representations that help us understand the distribution of continuous data. Histograms display data in organized bars or columns on a graph. Each bar represents a range of values, and the height of the bar shows how many data points fall within that range. Histograms allow us to see patterns, such as the most common values or any outliers. They help us understand the shape of the data, whether it is symmetric, skewed, or has other unique characteristics. By using histograms, we can analyze and interpret data more easily, making it a valuable tool in understanding information visually. <br>
-<br>
-> [_If you want more info on creating histograms, check out this video by Khan Academy._](https://www.khanacademy.org/math/statistics-probability/displaying-describing-data/quantitative-data-graphs/v/histograms-intro) <br>
 
-> You can also play with distributions and how the median and mean are affected in the webapp below! <br>
+{: .youtube }
+If you want more info on creating histograms, check out [this video by Khan Academy](https://www.khanacademy.org/math/statistics-probability/displaying-describing-data/quantitative-data-graphs/v/histograms-intro).
+
+{: .highlight }
+You can also play with distributions and how the median and mean are affected in the webapp below! 
+
 <br>
 <iframe src="https://istats.shinyapps.io/MeanvsMedian/" width="100%" height="600"></iframe>
 <br>
 
-To summarize, variance and standard deviation help us measure how data points differ from the average and give us an idea of how our continuous data is spread. These measures are important tools in statistics that allow us to better understand and analyze data in many different fields and trends. They can even help us be smarter shoppers and buyers (or visitors to restaurants in busy areas!). The spread of data is often the first step of interpreting data and is also useful for when you begin to analyze data. <br>
+{: .key }
+To summarize, variance and standard deviation help us measure how data points differ from the average and give us an idea of how our continuous data is spread. These measures are important tools in statistics that allow us to better understand and analyze data in many different fields and trends. 
+ 
+Variance and standard deviation can even help us be smarter shoppers and buyers (or visitors to restaurants in busy areas!). The spread of data is often the first step of interpreting data and is also useful for when you begin to analyze data.
 
-> If you'd like to play around with visualizing distributions, and other plots and statistics, you can play with the Wisconsin Fast Stats app which can give you sample data about plant baby leaf numbers (AKA cotyledons) by generation. <br>
+{: .highlight }
+If you'd like to play around with visualizing distributions, and other plots and statistics, you can play with the Wisconsin Fast Stats app which can give you sample data about plant baby leaf numbers (AKA cotyledons) by generation.
 
 <iframe src="https://wi-fast-stats.wid.wisc.edu/cotyledon/" width="600" height="500"></iframe> <br>
 <br>
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next](https://benrushscience.github.io/learning-data-science/pages/5-probability-and-z-scores.html) |
+| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Probability and Z scores](https://benrushscience.github.io/learning-data-science/pages/5-probability-and-z-scores.html) |

@@ -1,7 +1,18 @@
+---
+layout: default
+title: χ² marks the spot
+nav_order: 10
+---
+
 # χ² marks the spot
 ## 9. Comparing frequencies (chi-square)
 
-So far we’ve seen techniques to compare between group means, but what if we want to compare between groups using variables that aren’t continuous? What if we want to know that the hypothetical dog park has a higher number, or frequency, of golden retrievers than pugs and St. Bernards? Sure, we’ve seen 600 golden retrievers, but how do we really know that we aren’t just overlooking pugs because we hang out with the dogs that can run and don’t get winded from walking up 2 stairs? Maybe many pugs and St. Bernards don't know how to catch frisbees as well as golden retrievers? To answer these types of questions, we can use the chi-square test. The chi-square test is a statistical tool that helps us examine the relationship between categorical variables. (As a reminder, continuous variables change smoothly [like temperature], while categorical variables are divided into distinct groups [like dog breeds]). Chi-square is used to determine if there is a significant association or difference between categorical variables. <br>
+So far we’ve seen techniques to compare between group means, but what if we want to compare between groups using variables that aren’t continuous? What if we want to know that the hypothetical dog park has a higher number, or frequency, of golden retrievers than pugs and St. Bernards? Sure, we’ve seen 600 golden retrievers, but how do we really know that we aren’t just overlooking pugs because we hang out with the dogs that can run and don’t get winded from walking up 2 stairs? Maybe many pugs and St. Bernards don't know how to catch frisbees as well as golden retrievers? To answer these types of questions, we can use the chi-square test. 
+
+{: .key }
+The chi-square test is a statistical tool that helps us examine the relationship between categorical variables. (As a reminder, continuous variables change smoothly [like temperature], while categorical variables are divided into distinct groups [like dog breeds]). 
+
+Chi-square is used to determine if there is a significant association or difference between categorical variables. <br>
 <br>
 Let's say we did some more strange sampling at the dog park and found the following information about frisbee catching among our 3 dog breeds.
 
@@ -29,6 +40,7 @@ For either chi-square test, the test generates the chi-square statistic (χ²). 
 <br>
 In conclusion, the chi-square test is a valuable statistical tool used to analyze the relationship within and between categorical variables. The chi square test can help us determine differences between types of cars between competing dealerships, the number of endorsements between influencers, and if plants that are fertilized are different colors than plants that aren’t fertilized. The tests are extremely useful and are used frequently in data science. Another extremely common and useful statistical tool is the correlation. That is the topic of our next lesson!
 
-> [_You can find out how to calculte a chi-square test wit this video From Khan Academy._](https://www.khanacademy.org/math/statistics-probability/inference-categorical-data-chi-square-tests/chi-square-goodness-of-fit-tests/v/chi-square-distribution-introduction) <br>
+{: .youtube }
+You can find out how to calculate a chi-square test with [this video from Khan Academy._](https://www.khanacademy.org/math/statistics-probability/inference-categorical-data-chi-square-tests/chi-square-goodness-of-fit-tests/v/chi-square-distribution-introduction).
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next](https://benrushscience.github.io/learning-data-science/pages/10-correlations.html) |
+| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Correlations](https://benrushscience.github.io/learning-data-science/pages/10-correlations.html) |
