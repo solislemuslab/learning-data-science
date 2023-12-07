@@ -6,18 +6,6 @@ nav_order: 1
 
 # An introduction to data science
 
-## Learning objectives
-
-This website serves as an introduction to Data Science for middle and high school students and their teachers. Among the main topics, this website focuses on:
-
-- Why Statistics is useful in the real world
-- Statistics to understand genetic diversity
-- Mean, variances, correlations and other summary measures from data
-- Probability distributions
-- Hypothesis tests (t tests, ANOVA, chi square tests)
-
-For a list of specific learning objectives by lesson, visit this [page](https://benrushscience.github.io/learning-data-science//pages/learning-objectives.html).
-
 ## How to use this website
 
 This website
