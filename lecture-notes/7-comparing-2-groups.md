@@ -42,4 +42,4 @@ For more in depth p-value and conversion to p-values, check out [this video from
 
 The t-test is a versatile tool that can be applied to various scenarios. It can be used to compare the effectiveness of two different medications, see resource investments between neighborhoods, or analyze if there are any disparities in plant growth between two applied fertilizers. Of course, the world is not full of variables split evenly in two groups. There will be plenty of applications of wanting to compare multiple groups to one another, like comparing golden retriever height to pug height and to Saint Bernard height. T-Tests are not designed to do this, but another test, called an ANOVA, is perfect for this scenario! That’s why we will explore in the next lesson. <br>
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Comparing more than 2 groups](https://benrushscience.github.io/learning-data-science/pages/8-comparing-2+-groups.html) |
+| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Comparing more than 2 groups](https://benrushscience.github.io/learning-data-science/lecture-notes/8-comparing-2+-groups.html) |
