@@ -66,5 +66,5 @@ The chi-square distribution is a continuous probability distribution that arises
 <br>
 <div style="text-align:center"><img src="../images/chi_distribution.png" height="350" width="525"/></div> <br>
 <br>
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Hypothesis testing](https://benrushscience.github.io/learning-data-science/pages/6-hypothesis-testing.html) |
+| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Hypothesis testing](https://benrushscience.github.io/learning-data-science/lecture-notes/6-hypothesis-testing.html) |
 
