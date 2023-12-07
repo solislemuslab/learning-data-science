@@ -71,12 +71,12 @@ Based on the curves above, we can see that the likelihood of a golden retriever 
 <br>
 Understanding the variance and standard deviation of Golden Retriever heights can be helpful for different reasons. Breeders can use standard deviations for expectations of a dog breed’s heights. For veterinarians, standard deviation helps determine if a Golden Retriever's height is within a normal range for its age and breed, which can be important for monitoring their health. For us, standard deviation lets us know Rhonda is amazing and we should give her too many toys. <br>
 
-{: .youtube }
+{: .note }
 For more about visualizing data curves, check out this [video from Khan Academy](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/density-curve/v/density-curves).
 
 We could get an idea of what a sample of data looks like based on means and standard deviations alone, but it can be easier to fully visualize what our data looks like based on its spread, or distribution. 
 
-{: .youtube }
+{: .note }
 More visualization [here](https://www.khanacademy.org/math/statistics-probability/displaying-describing-data/quantitative-data-graphs/v/ways-to-represent-data). 
 
 In many cases of how data is distributed, the pattern follows a concept called a “normal distribution”. Normal distributions are patterns that often appear in data and we have seen one already! They have a special bell-shaped curve, with the highest point in the middle. In a normal distribution, data is evenly spread around the average, with most values near the middle and fewer values as we move away from the average. Many real-world things, like heights for golden retrievers or humans, tend to follow a normal distribution. Understanding normal distributions helps us make predictions and compare data. <br>
@@ -88,7 +88,7 @@ Skewness is a concept that helps us understand the shape and symmetry of data. W
 
 Skewness tells us if our data leans more towards one side or if it is balanced. Understanding skewness helps us recognize different patterns in data and interpret information accurately.
 
-{: .youtube }
+{: .note }
 For more on skewness on curves, check out [this video from Khan Academy](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/density-curve/v/median-mean-and-skew-from-density-curves).
 
 An example of a non-normal distribution is customer frequency on Thursdays at the McDonald's on Time Square in New York, according to Google Maps as of 8-30-23. You can see there is a customer rush around lunch time and around dinner. <br>
@@ -101,7 +101,7 @@ A distribution closer to normal is customer frequency on Saturdays at the McDona
 <br>
 Histograms, like the two pictures above, are visual representations that help us understand the distribution of continuous data. Histograms display data in organized bars or columns on a graph. Each bar represents a range of values, and the height of the bar shows how many data points fall within that range. Histograms allow us to see patterns, such as the most common values or any outliers. They help us understand the shape of the data, whether it is symmetric, skewed, or has other unique characteristics. By using histograms, we can analyze and interpret data more easily, making it a valuable tool in understanding information visually. <br>
 
-{: .youtube }
+{: .note }
 If you want more info on creating histograms, check out [this video by Khan Academy](https://www.khanacademy.org/math/statistics-probability/displaying-describing-data/quantitative-data-graphs/v/histograms-intro).
 
 {: .highlight }
@@ -121,5 +121,9 @@ If you'd like to play around with visualizing distributions, and other plots and
 
 <iframe src="https://wi-fast-stats.wid.wisc.edu/cotyledon/" width="600" height="500"></iframe> <br>
 <br>
+
+{: .important }
+This space is a hold for a summary. This page is still evolving!
+
 
 | [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Probability and Z scores](https://benrushscience.github.io/learning-data-science/lecture-notes/5-probability-and-z-scores.html) |
