@@ -23,7 +23,7 @@ To perform a t-test, we make several assumptions and should make sure the assump
 <br>
 Another thing to consider (though not a formal assumption) is our sample size. The sample size is crucial, as it affects the reliability of our results. The larger the sample size, the more accurate our conclusions will be, but the larger the sample size could be costly For simplicity, let's say we measure the heights of 30 golden retrievers and 30 pugs (a total sample size of 60, or shorthand n=60). This also means our degrees of freedom is 59 (t-test degrees of freedom = n -1). <br>
 <br> 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Uyd_Fk9cDjA" frameborder="0" allowfullscreen></iframe><br>
+<iframe width="560" height="315" src="https://www.note.com/embed/Uyd_Fk9cDjA" frameborder="0" allowfullscreen></iframe><br>
 <br> 
 Next, we calculate the average (mean) height for each group. Let's assume (from the American Kennel Club)  the average height of the golden retrievers is 24 inches with a standard deviation of ∓ 2 inches, while the average height of the Pugs is 11.5 inches ∓ 1.5 inches. Now comes the exciting part - the one you’ve been waiting for what seems like years- performing the t-test! We will use this test to determine if the difference in average heights between the two breeds is statistically significant (meaning we are more certain than not that the differences are not due to chance). <br>
 <br>
@@ -32,14 +32,18 @@ The t-test generates a test statistic, the t-statistic value, which indicates th
 <div style="text-align:center"><img src="../images/T_distribution.png" height="350" width="525"/></div> <br>
 <br>
 
-{: .youtube }
+{: .note }
 For more in depth T-score formula and calculations, check out [this Khan Academy Video](https://www.khanacademy.org/math/statistics-probability/significance-tests-confidence-intervals-two-samples/comparing-two-means/v/difference-of-sample-means-distribution).
 
 In our example, let's say the t-statistic is 5.2 and our degrees of freedom (or df) are 59. Using a one- or two-sided [t-statistic table](https://www.scribbr.com/statistics/students-t-table/) (just like the z-score table) or statistical software, we find the corresponding p-value is < 0.001. This would be a t-statistic on the far right of the t distribution above. The t-statistic suggests there is a difference between the heights of Golden Retrievers and Pugs. The p-value of < 0.001 suggests that there is less than a 0.1% chance of observing such a difference by random chance alone. Based on the p-value of < 0.001 being smaller than the critical threshold of 0.05, we reject the null hypothesis that states there is no difference between heights of golden retrievers and pugs. Instead, with a statistically significant p-value, we accept the alternative hypothesis- there is a difference in average heights between golden retrievers and pugs. We now have evidence that the groups differ and by looking at the mean heights between groups, we can now say we have evidence to support our intuition of pugs being shorter than golden retrievers. <br>
 
-{: .youtube }
+{: .note }
 For more in depth p-value and conversion to p-values, check out [this video from Khan Academy](https://www.khanacademy.org/math/statistics-probability/significance-tests-confidence-intervals-two-samples/comparing-two-means/v/hypothesis-test-for-difference-of-means).
 
 The t-test is a versatile tool that can be applied to various scenarios. It can be used to compare the effectiveness of two different medications, see resource investments between neighborhoods, or analyze if there are any disparities in plant growth between two applied fertilizers. Of course, the world is not full of variables split evenly in two groups. There will be plenty of applications of wanting to compare multiple groups to one another, like comparing golden retriever height to pug height and to Saint Bernard height. T-Tests are not designed to do this, but another test, called an ANOVA, is perfect for this scenario! That’s why we will explore in the next lesson. <br>
+
+{: .important }
+This space is a hold for a summary. This page is still evolving!
+
 
 | [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Comparing more than 2 groups](https://benrushscience.github.io/learning-data-science/lecture-notes/8-comparing-2+-groups.html) |
