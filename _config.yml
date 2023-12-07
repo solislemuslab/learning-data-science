@@ -28,7 +28,7 @@ callouts:
     color: red
   youtube:
     title: YouTube
-    color: gray
+    color: red
   summary:
     title: Summary
     color: orange
