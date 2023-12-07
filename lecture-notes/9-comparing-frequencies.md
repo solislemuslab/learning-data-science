@@ -43,4 +43,4 @@ In conclusion, the chi-square test is a valuable statistical tool used to analyz
 {: .youtube }
 You can find out how to calculate a chi-square test with [this video from Khan Academy._](https://www.khanacademy.org/math/statistics-probability/inference-categorical-data-chi-square-tests/chi-square-goodness-of-fit-tests/v/chi-square-distribution-introduction).
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Correlations](https://benrushscience.github.io/learning-data-science/pages/10-correlations.html) |
+| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Correlations](https://benrushscience.github.io/learning-data-science/lecture-notes/10-correlations.html) |
