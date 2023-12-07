@@ -74,4 +74,4 @@ Explore more in the webapp below created with RShiny, an app that can be built i
 <br>
 So, as you’ve seen, the mean and median are very useful and can give us good insight into a sample by summarizing something we are interested in into 2 numbers. But you could also see how the mean and median don’t always represent the full picture of a sample. For a better picture, let’s actually look at some pictures! Well, to be fancy scientists, we will call them figures. The next lesson will cover describing how a sample might vary and how we can visualize that sample to help us understand samples. <br>
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Variance and distributions](https://benrushscience.github.io/learning-data-science/pages/4-variance-and-distributions.html) |
+| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Variance and distributions](https://benrushscience.github.io/learning-data-science/lecture-notes/4-variance-and-distributions.html) |
