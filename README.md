@@ -15,9 +15,10 @@ For a list of specific learning objectives by lesson, visit this [page](https://
 ## How to use this website
 
 This website
-- is intended for middle and high school students learning to apply statistics for the first time, 
-- covers the basic statistical concepts and tests that are covered in an introductory statistics course,
+- is intended for middle and high school students learning to apply statistics for the first time
+- covers the basic statistical concepts and tests that are covered in an introductory statistics course
 - was developed to accompany the learning materials of [Wisconsin Fast Plants](https://fastplants.org), but the knowledge can be applied for any statistics introductory course
+- has code you can follow with [RStudio](https://posit.co/download/rstudio-desktop/) to generate similar figures & graphs as the website. Find the code [here](https://github.com/benrushscience/learning-data-science/blob/main/code/fast_plants_datawebsite_script.R). 
 
 Each lesson 
 - covers a basic overview of concepts and aims to provide the theoretical take aways without being bogged down by the math,
@@ -39,4 +40,4 @@ This website serves as an introduction to Data Science for middle and high schoo
 For a list of specific learning objectives by lesson, visit this [page](https://benrushscience.github.io/learning-data-science//pages/learning-objectives.html).
 
 ## AI-generated artwork within the website
-Images on this website are a mix of original and [AI-generated](https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-generative-ai) images. Images that have a row of multicolored squares are from [Dalle2](https://openai.com/dall-e-2). Graphs and figures, unless noted, are generated with Rstudio which you can download [here](https://posit.co/download/rstudio-desktop/) You can create all the graphs and figures without needing any data with [this code](https://github.com/benrushscience/learning-data-science/blob/main/code/fast_plants_datawebsite_script.R). Feel free to adapt it for your own use! 
+Images on this website are a mix of original and [AI-generated](https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-generative-ai) images. Images that have a row of multicolored squares are from [Dalle2](https://openai.com/dall-e-2). Graphs and figures, unless noted, are generated with Rstudio which you can download [here](https://posit.co/download/rstudio-desktop/) 
