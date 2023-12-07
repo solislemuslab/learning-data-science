@@ -40,7 +40,10 @@ For either chi-square test, the test generates the chi-square statistic (χ²). 
 <br>
 In conclusion, the chi-square test is a valuable statistical tool used to analyze the relationship within and between categorical variables. The chi square test can help us determine differences between types of cars between competing dealerships, the number of endorsements between influencers, and if plants that are fertilized are different colors than plants that aren’t fertilized. The tests are extremely useful and are used frequently in data science. Another extremely common and useful statistical tool is the correlation. That is the topic of our next lesson!
 
-{: .youtube }
+{: .note }
 You can find out how to calculate a chi-square test with [this video from Khan Academy._](https://www.khanacademy.org/math/statistics-probability/inference-categorical-data-chi-square-tests/chi-square-goodness-of-fit-tests/v/chi-square-distribution-introduction).
+
+{: .important }
+This space is a hold for a summary. This page is still evolving!
 
 | [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Correlations](https://benrushscience.github.io/learning-data-science/lecture-notes/10-correlations.html) |
