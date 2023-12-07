@@ -13,13 +13,13 @@ exclude:
 callouts_level: quiet # or loud
 callouts:
   highlight:
-    color: #90EE90
+    color: yellow
   important:
     title: Important
     color: blue
   key:
     title: Key
-    color: yellow
+    color: green
   note:
     title: Note
     color: purple
@@ -28,10 +28,10 @@ callouts:
     color: red
   youtube:
     title: YouTube
-    color: #FFB6C1
+    color: pink
   summary:
     title: Summary
-    color: #C8A2C8
+    color: orange
 compress_html:
   blanklines: true
 # LaTeX rendering via "katex" (KaTeX, default) or "mathjax" (MathJax) or "none" / "off" (NO rendering)
