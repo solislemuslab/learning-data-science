@@ -19,7 +19,7 @@ Of course, we can plot all the data for the dogs we sampled. We happened to samp
 <div style="text-align:center"><img src="../images/thirtypoint_scatter.png" height="350" width="525"/></div> <br>
 <br>
 
-{: .highlight }
+{: .key }
 Scatterplots are a great way to visualize if two continuous variables might be correlated. 
 
 {: .youtube }
