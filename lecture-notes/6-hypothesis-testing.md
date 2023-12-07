@@ -46,4 +46,4 @@ We’ve been discussing the idea of comparing golden retrievers and pugs for a w
 
 PS- You’ve just read a lot of technical terms that leave you confused. You are not alone! Even the experts in statistics and data science have struggled with these concepts. Experts still need to go back and refresh their memories of how hypothesis testing, critical values, and test statistics work together. To help solidify these terms, we will put these into practice with step by step instructions so you can understand the whole process of turning data into evidence that supports or rejects a hypothesis. In the next section, we finally get to compare golden retriever heights with pug heights, and move on from that example! <br>
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Comparing two groups](https://benrushscience.github.io/learning-data-science/pages/7-comparing-2-groups.html) |
+| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Comparing two groups](https://benrushscience.github.io/learning-data-science/lecture-notes/7-comparing-2-groups.html) |
