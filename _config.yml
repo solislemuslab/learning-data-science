@@ -29,6 +29,9 @@ callouts:
   youtube:
     title: YouTube
     color: #FFB6C1
+  summary:
+    title: Summary
+    color: #C8A2C8
 compress_html:
   blanklines: true
 # LaTeX rendering via "katex" (KaTeX, default) or "mathjax" (MathJax) or "none" / "off" (NO rendering)
