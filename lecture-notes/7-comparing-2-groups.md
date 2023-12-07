@@ -23,7 +23,7 @@ To perform a t-test, we make several assumptions and should make sure the assump
 <br>
 Another thing to consider (though not a formal assumption) is our sample size. The sample size is crucial, as it affects the reliability of our results. The larger the sample size, the more accurate our conclusions will be, but the larger the sample size could be costly For simplicity, let's say we measure the heights of 30 golden retrievers and 30 pugs (a total sample size of 60, or shorthand n=60). This also means our degrees of freedom is 59 (t-test degrees of freedom = n -1). <br>
 <br> 
-<iframe width="560" height="315" src="https://www.note.com/embed/Uyd_Fk9cDjA" frameborder="0" allowfullscreen></iframe><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Uyd_Fk9cDjA" frameborder="0" allowfullscreen></iframe><br>
 <br> 
 Next, we calculate the average (mean) height for each group. Let's assume (from the American Kennel Club)  the average height of the golden retrievers is 24 inches with a standard deviation of ∓ 2 inches, while the average height of the Pugs is 11.5 inches ∓ 1.5 inches. Now comes the exciting part - the one you’ve been waiting for what seems like years- performing the t-test! We will use this test to determine if the difference in average heights between the two breeds is statistically significant (meaning we are more certain than not that the differences are not due to chance). <br>
 <br>
