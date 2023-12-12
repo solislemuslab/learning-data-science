@@ -16,7 +16,7 @@ In our example of comparing golden retriever and pug height, this means the null
 <br>
 To conduct hypothesis testing, we collect data and analyze it using statistical tests, of which there are many different kinds. The goal is to either reject or fail to reject the null hypothesis, based on the statistical tests that analyze our data. This process helps us draw conclusions and make informed decisions, and perhaps go on to even bigger projects (are golden retrievers also better swimming dogs than pugs?). So, how do we decide when to reject the null hypothesis?. <br>
 
-{: .youtube }
+{: .note }
 Dig deeper into hypothesis testing with a [Khan Academy video](https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample/idea-of-significance-tests/v/simple-hypothesis-testing).
 
 We make a decision based on the concept of a probability value, or a p-value. A p-value is a measure that quantifies the likelihood of evidence against the null hypothesis. It tells us the probability (from 0 to 1) of obtaining our result based on the observed data. The statistical field has generally landed on p-values less than 0.05 being “statistically significant”, which means that a p-value of 0.05 provides evidence to reject the null hypothesis. This equates to us saying that we are 95% confident that the null hypothesis should be rejected. It also means that we could be wrong in rejecting the null hypothesis in 5% of scenarios. 
@@ -37,7 +37,7 @@ Test statistics play a crucial role in hypothesis testing! A test statistic is a
 
 The main advantage of the test statistics is that it follows a known distribution so we can make easy probability calculations (as we did for the z-score). Different tests have different formulas (we’ll see some below and in future sections), but the reason to have test statistics is to have a standardized value that we can compare to certain thresholds or critical values and so we can get a p-value. 
 
-{: .youtube }
+{: .note }
 Understand p-values more with this [Khan Academy video](https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample/idea-of-significance-tests/v/p-values-and-significance-tests) and
 dive into statistical significance meanings more with this [Khan Academy video](https://www.khanacademy.org/math/statistics-probability/significance-tests-confidence-intervals-two-samples/comparing-two-means/v/statistical-significance-experiment).
 
@@ -46,4 +46,7 @@ We’ve been discussing the idea of comparing golden retrievers and pugs for a w
 
 PS- You’ve just read a lot of technical terms that leave you confused. You are not alone! Even the experts in statistics and data science have struggled with these concepts. Experts still need to go back and refresh their memories of how hypothesis testing, critical values, and test statistics work together. To help solidify these terms, we will put these into practice with step by step instructions so you can understand the whole process of turning data into evidence that supports or rejects a hypothesis. In the next section, we finally get to compare golden retriever heights with pug heights, and move on from that example! <br>
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Comparing two groups](https://benrushscience.github.io/learning-data-science/pages/7-comparing-2-groups.html) |
+{: .important }
+This space is a hold for a summary. This page is still evolving!
+
+| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Comparing two groups](https://benrushscience.github.io/learning-data-science/lecture-notes/7-comparing-2-groups.html) |

@@ -7,8 +7,76 @@ library(vcd)
 library(report)
 version
 
-############################## Histograms #####################################
-###############################################################################
+########################################################################
+# Lesson 1: I've never seen a dog
+# Why Data science?
+
+### Example data for dog counting in lesson 1. Why Data science
+dog_types <- c("Pug", "Golden Retriever")
+dog_counts <- c(1, 30)
+
+# Create a vertical bar chart
+barplot(dog_counts, names.arg = dog_types, col = c("red", "blue"), main = "Dog Count by Breed", xlab = "Dog Breed",
+          ylab = "Count", width=0.1)
+
+
+########################################################################
+# Lesson 3: Finding middle (and average) ground
+# Averages and Medians
+
+### Example data for averages and medians
+# Set random seed for reproducibility
+set.seed(123)
+
+# Generate example data with averages
+n <- 30
+x <- rnorm(n, mean = 2, sd = 0.5)
+y <- rnorm(n, mean = 1, sd = 0.3)
+
+# Create a data frame with test scores for averages examples
+test_scores <- c(85, 92, 78, 90, 88)
+freq <- c(1)
+average <- sum(test_scores) / length(test_scores)
+
+# Create a dot plot for averages examples
+
+ggplot(data = data.frame(test_scores), aes(x = test_scores)) +
+  geom_dotplot(binwidth = 2, stackdir = "center", fill = "blue", color = "black") +
+  geom_vline(xintercept = average, color = "red", linetype = "dashed", size = 1) +
+  labs(title = "Dot Plot of Test Scores", x = "Test Scores") +
+  annotate("text", x = average + 1, y = 0.5, label = paste("Average =", round(average, 1)), color = "red") +
+  theme_minimal() +
+  theme(axis.title.y = element_blank(),  # Remove y-axis title
+        axis.text.y = element_blank(),   # Remove y-axis labels
+        axis.ticks.y = element_blank())  # Remove y-axis ticks
+
+# Create example datas et for median visualization
+measurements <- c(19, 22, 20, 18, 23, 17, 21, 24, 25, 30,
+                  27, 26, 29, 28, 22, 24, 20, 21, 23, 22,
+                  21, 20, 23, 23, 18, 24, 19, 20, 23, 22)
+
+# Calculate median
+sorted_measurements <- sort(measurements)
+median_value <- mean(sorted_measurements[15:16])
+
+# Create a dot plot for medians
+ggplot(data = data.frame(measurements), aes(x = measurements)) +
+  geom_dotplot(binwidth = 1, stackdir = "center", fill = "blue", color = "black") +
+  geom_segment(aes(x = median_value, xend = median_value, y = 0, yend = 1), color = "red", size = 1) +
+  geom_text(aes(x = median_value + 0.5, y = 1.2, label = paste("Median =", round(median_value, 1))), color = "red") +
+  labs(title = "Dot Plot with Median Calculation", x = "Measurements", y = "") +
+  theme_minimal() +
+  theme(axis.title.y = element_blank(),  # Remove y-axis title
+        axis.text.y = element_blank(),   # Remove y-axis labels
+        axis.ticks.y = element_blank())  # Remove y-axis ticks
+
+
+
+########################################################################
+# Lesson 4: Seeing (data) is believing (data)
+# Variance and Distributions
+
+### Histograms Creation
 
 # Set the parameters for a demonstration to visualize distributions
 sample_size <- 1000
@@ -17,7 +85,6 @@ sd_value <- 2
 
 # Generate a demo histogram
 demohist <- rnorm(sample_size, mean = mean_value, sd = sd_value)
-
 
 #histogram for golden retrievers
 hist(demohist, breaks=30, main = "Histogram of Golden Retriever Heights", 
@@ -35,17 +102,9 @@ golden <- rnorm(sample_size, mean = mean_value, sd = sd_value)
 hist(golden, breaks=15, main = "Histogram of Golden Retriever Heights", xlab= "Height", ylab = "Frequency")
 
 
-
-# Example data for dog counting in lesson 1. Why Data science
-dog_types <- c("Pug", "Golden Retriever")
-dog_counts <- c(1, 30)
-
-# Create a vertical bar chart
-barplot(dog_counts, names.arg = dog_types, col = c("red", "blue"), main = "Dog Count by Breed", xlab = "Dog Breed",
-          ylab = "Count", width=0.1)
-
-################################ Generating Stats Test Distributions ################################
-##########################################################################################
+#######################################################################################
+# Lesson 5: Catching Z's
+# Probability and Z-scores
 
 ### Generate data with a z-score distribution
 # Define the degrees of freedom
@@ -83,14 +142,15 @@ x <- seq(min(tdist), max(tdist), length = 1000)
 y <- dnorm(x, mean(tdist), sd(tdist))
 lines(x, y, col = "blue", lwd = 2)
 
-#T-test
+###################################################################################################
+# Lesson 7: Things might be different now
+# Comparing 2 groups (t-tests)
+
+###T-test for 2 groups comparing a continuous variable
+
 # Set random seed for reproducibility
 set.seed(123)
 
-################################# Statistical Testing #############################
-###################################################################################
-
-### T-test - 2 groups
 # Generate two sets of data with a significant difference
 goldens <- rnorm(30, mean = 24, sd = 2)
 pugs <- rnorm(35, mean = 11.5, sd = 1.5)
@@ -131,19 +191,20 @@ legend("topright", legend = breeds, fill = c("gold", "lightblue"),
        col = c("darkgoldenrod3", "dodgerblue3"), lwd = 2)
 
 
+#############################################################################################
+# Lesson 8: More things might be different now
+# Comparing 2+ groups (ANOVA)
 
+### ANOVA - 2+ groups comparing a continuous variable
 
-### ANOVA - 2+ groups
 # Set random seed for reproducibility
 set.seed(123)
 
 # Generate data height data for three groups
-
 goldens <- rnorm(30, mean = 24, sd = 2)
 pugs <- rnorm(30, mean = 11.5, sd = 1.5)
 saints <- rnorm(30, mean = 28, sd = 2)
 breeds <-c("Golden Retreivers", "Pugs", "Saints")
-
 
 # Combine the data into a data frame
 data <- data.frame(
@@ -193,7 +254,14 @@ print(report(anova_result))
 tukey_result <- TukeyHSD(anova_result)
 print(tukey_result)
 
-### Chi-square test
+
+
+#############################################################################################
+# Lesson 9: X2 marks the spot
+# Comparing frequencies (Chi-square)
+
+### Chi-square test for 2+ groups comparing a categorical variable
+
 # Create a contingency table
 chidemo <- matrix(c(52, 8, 12, 48, 18, 42), ncol = 3)
 colnames(chidemo) <- c("Golden retrievers", "Pugs", "Saint Bernards")
@@ -219,12 +287,11 @@ mosaic(chidemo, shade = TRUE, legend = FALSE, color = custom_colors,
        main = "Mosaic Plot of Frisbee Catch/Drop by Dog Breeds")
 
 
-
-
-
+#############################################################################################
+# Lesson 10: What goes up must go down, or up, or nowhere
+# Correlations
 
 ### Correlations and Regression
-
 
 # Create a data frame with a single point
 data <- data.frame(x = 3, y = 1)
@@ -234,53 +301,6 @@ ggplot(data, aes(x = x, y = y)) +
   geom_point(shape = 19, color = "blue", size=10) +
   labs(title = "Scatter Plot with a Single Point", x = "Water consumed in liters", y = "Saliva produced in liters") +
   theme_minimal()
-
-# Set random seed for reproducibility
-set.seed(123)
-
-# Generate example data with averages
-n <- 30
-x <- rnorm(n, mean = 2, sd = 0.5)
-y <- rnorm(n, mean = 1, sd = 0.3)
-
-# Create a data frame with test scores for averages examples
-test_scores <- c(85, 92, 78, 90, 88)
-freq <- c(1)
-average <- sum(test_scores) / length(test_scores)
-
-# Create a dot plot for averages examples
-
-ggplot(data = data.frame(test_scores), aes(x = test_scores)) +
-  geom_dotplot(binwidth = 2, stackdir = "center", fill = "blue", color = "black") +
-  geom_vline(xintercept = average, color = "red", linetype = "dashed", size = 1) +
-  labs(title = "Dot Plot of Test Scores", x = "Test Scores") +
-  annotate("text", x = average + 1, y = 0.5, label = paste("Average =", round(average, 1)), color = "red") +
-  theme_minimal() +
-  theme(axis.title.y = element_blank(),  # Remove y-axis title
-        axis.text.y = element_blank(),   # Remove y-axis labels
-        axis.ticks.y = element_blank())  # Remove y-axis ticks
-
-# Create example datas et for median visualization
-measurements <- c(19, 22, 20, 18, 23, 17, 21, 24, 25, 30,
-                  27, 26, 29, 28, 22, 24, 20, 21, 23, 22,
-                  21, 20, 23, 23, 18, 24, 19, 20, 23, 22)
-
-# Calculate median
-sorted_measurements <- sort(measurements)
-median_value <- mean(sorted_measurements[15:16])
-
-# Create a dot plot for medians
-ggplot(data = data.frame(measurements), aes(x = measurements)) +
-  geom_dotplot(binwidth = 1, stackdir = "center", fill = "blue", color = "black") +
-  geom_segment(aes(x = median_value, xend = median_value, y = 0, yend = 1), color = "red", size = 1) +
-  geom_text(aes(x = median_value + 0.5, y = 1.2, label = paste("Median =", round(median_value, 1))), color = "red") +
-  labs(title = "Dot Plot with Median Calculation", x = "Measurements", y = "") +
-  theme_minimal() +
-  theme(axis.title.y = element_blank(),  # Remove y-axis title
-        axis.text.y = element_blank(),   # Remove y-axis labels
-        axis.ticks.y = element_blank())  # Remove y-axis ticks
-
-
 
 # Generate example data with a linear relationship
 x <- seq(1, 10, by = 1)
@@ -304,6 +324,7 @@ ggplot(data = data.frame(x, y), aes(x = x, y = y)) +
   labs(title = "Non-Linear Correlation Example", x = "X", y = "Y") +
   theme_minimal()
 
+### Creating another scatter plot with a regression line
 # Set random seed for reproducibility
 set.seed(123)
 
@@ -327,12 +348,14 @@ ggplot(data = data.frame(water_consumption, saliva_production), aes(x = water_co
   labs(title = "Water consumption vs Saliva Production", x = "Water Consumption", y = "Saliva Production") +
   theme_minimal()
 
-
 # Print the calculated correlation coefficient
 cat("Pearson correlation coefficient:", correlation)
 
+#############################################################################################
+# Lesson 11: With great power comes maybe good effect size
+# Statistics in the real world
 
-### Statistics in the Real World
+### Create bimodal distrubution
 
 # Generate random bimodal data
 bimodal_data <- c(rnorm(100, mean = 30, sd = 5), rnorm(100, mean = 70, sd = 10))

@@ -32,7 +32,7 @@ If you compared Rhonda’s height to only one other golden retriever, could you 
 If you compared  Rhonda’s height to 5 other golden retrievers and found Rhonda was taller than 4 but still smaller than Tank, maybe you’d think she is only a little taller than other golden retrievers. What if you found Rhonda and Tank were taller than 30 other golden retrievers? You’d probably be a lot more confident that Rhonda is taller than most golden retrievers and that the next golden retriever you see would likely be smaller than Rhonda. (You might also conclude that Tank should get more hobbies than going to the gym- maybe he would love painting?). <br>
 <br>
 
-{: .highlight }
+{: .key }
 This is exactly the same thinking that is used in Statistics. We are trying to make conclusions about an observation we saw: are Rhonda and a group of 30 other golden retrievers different? 
 
 
@@ -43,7 +43,7 @@ Statistics can
 - can determine differences among characteristics of golden retrievers: Are golden retrievers with stinky breath like Rhonda just as popular as golden retrievers with minty fresh breath? Do golden retrievers with blue eyes have a higher rate of having stinky breath versus golden retrievers with brown eyes?
 
 
-{: .highlight }
+{: .key }
 Finding out all the differences and similarities using Statistics is extremely helpful in all sorts of applications- studying the brain, how humans behave, how plants might be related, discovering new pharmaceuticals, determining fair housing practices, and so much more. This is especially true when genetics can produce widely different appearances, yet keep the genetic makeup of a species similar. 
 
 
@@ -55,6 +55,10 @@ Imagine the only species of dog you’ve ever seen is a golden retriever… and 
 <br>
 You might be working on a project using [Wisconsin Fast Plants](https://fastplants.org/) for an interactive journey cultivating _Brassica rapa_ plants. Fast Plants provides a unique platform for teaching basic statistical concepts through hands-on observation of plant traits like height, germination time, leaf number, and flowering time. You can collect data to calculate averages, dispersions, and correlations, fostering a practical understanding of statistical analysis within the context of biological growth and genetics. We will touch on all the Statistics involved in Fast Plants on this website, but other projects can still benefit from this website, too! This project engages students in both scientific exploration and statistical learning, offering a comprehensive educational experience.
 <br>
-<br>
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Genetic Diversity](https://benrushscience.github.io/learning-data-science//pages/2-genetic-diversity.html) |
+{: .note}
+This is a holder for a summary. This space is still evolving!
+
+
+
+| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Genetic Diversity](https://benrushscience.github.io/learning-data-science//lecture-notes/2-genetic-diversity.html) |

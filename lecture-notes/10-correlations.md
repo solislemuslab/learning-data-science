@@ -19,11 +19,11 @@ Of course, we can plot all the data for the dogs we sampled. We happened to samp
 <div style="text-align:center"><img src="../images/thirtypoint_scatter.png" height="350" width="525"/></div> <br>
 <br>
 
-{: .highlight }
+{: .key }
 Scatterplots are a great way to visualize if two continuous variables might be correlated. 
 
-{: .youtube }
-You can learn more about constructing a scatterplot and visualizing correlations in the videos below from Khan Academy: [Visualizing two continuous variables via a scatterplot](https://www.youtube.com/embed/sHbX58y5D4U) and [Identifying correlations](https://www.youtube.com/embed/F5uiFXECnVY).
+{: .note }
+You can learn more about constructing a scatterplot and visualizing correlations in the videos below from Khan Academy: [Visualizing two continuous variables via a scatterplot](https://www.note.com/embed/sHbX58y5D4U) and [Identifying correlations](https://www.youtube.com/embed/F5uiFXECnVY).
 
 Visualize scatterplots with real data (Internet use, carbon footprint, *sandwiches*) with another [R Shiny app](https://istats.shinyapps.io/Association_Quantitative/) <br>
 
@@ -50,7 +50,7 @@ Next, we establish our hypotheses. As you may have guessed by now, the null hypo
 <br>
 As with all other statistical tests, we calculate a test statistic and match that to a p-value. The test statistic in the Pearson correlation test is the correlation coefficient, denoted as r. The correlation coefficient ranges from -1 to +1, where -1 indicates a perfect negative linear relationship, +1 indicates a perfect positive linear relationship, and 0 indicates no linear relationship. A negative correlation would mean as one variable increases, the other decreases- more water consumed is correlated with less saliva production in dogs. A correlation of 0 means the variables are not correlated with each another- more water consumed has no pattern with saliva production in dogs. A positive correlation indicates an increase in one variable matches an increase in the other variable - increased water consumption is correlated with increased saliva production. 
 
-{: .youtube}
+{: .note}
 Boost your correlation coefficient intuition with this [video](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/scatterplots-and-correlation/v/correlation-coefficient-intuition-examples ) and learn how to calculate correlation coefficient with yet another [video from Khan Academy](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/scatterplots-and-correlation/v/calculating-correlation-coefficient-r).
 
 Once we have our test statistic, the r-value, we can compare it to the t-distribution to find a p-value. Interpreting the p-value involves comparing it to a predetermined critical threshold, commonly set at 0.05 (5%). If the p-value is less than the critical threshold (p < 0.05), we reject the null hypothesis in favor of the alternative hypothesis. This indicates that there is evidence to support the claim that the amount of water consumption is significantly correlated with saliva production in dogs. If the p-value is greater than or equal to the critical threshold (p ≥ 0.05), we fail to reject the null hypothesis. <br>
@@ -60,7 +60,7 @@ Here, x is your independent variable and y is your dependent variable, with m be
 
 <div style="text-align:center"><img src="../images/regression_example.png" height="350" width="525"/></div> <br>
 
-{: .youtube }
+{: .note }
 To learn how to calculate a regression line, learn from our [friends at Khan Academy](https://www.khanacademy.org/math/statistics-probability/advanced-regression-inference-transforming/inference-on-slope/v/intro-inference-slope).
 
 Visualize regressions with real data below:
@@ -90,4 +90,7 @@ To summarize, the Pearson correlation test is an incredibly valuable statistical
 <br>
 In our last lesson (hold back the tears), we’ll discuss how messy data can halt analysis and other considerations we should make to ensure the tests we run are a good and appropriate fit for our data. Maybe you’ve tried calculating germination rates of plants for a school project that should last a few days, but nothing sprouts for weeks! Often, it’s making sure the data is clean and ready to use that takes longer than the statistical tests to get results- we’ll see why. <br>
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Statistics in the real world](https://benrushscience.github.io/learning-data-science/pages/11-statistics-in-the-real-world.html) |
+{: .important }
+This space is a hold for a summary. This page is still evolving!
+
+| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Statistics in the real world](https://benrushscience.github.io/learning-data-science/lecture-notes/11-statistics-in-the-real-world.html) |

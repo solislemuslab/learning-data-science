@@ -9,12 +9,12 @@ nav_order: 3
 
 You know dogs come in all shapes, sizes, and personalities, yet they are still one species- the domesticated dog (or if you prefer fancy Greek, _Canis familiaris_). How is this possible? The answer lies in dog DNA. DNA is the recipe book for any living thing. You have it. Dogs have it. Plants, your favorite TikToker- we all have DNA. Within our huge cookbook of DNA are individual recipes, or genes. 
 
-{: .highlight}
+{: .key}
 Genes are the recipes for specific proteins, which are microscopic molecules that do all sorts of different things in our bodies. 
 
 Proteins are like the foods from the recipes. Sometimes you want tacos for lunch. Sometimes you might want pizza. Each gene has the recipe for our food, but obviously we don’t want to cook every food all of the time, so any organism must control when a gene is turned on, or in biology speak - expressed. If the recipe is open and being cooked, just like a gene in our DNA is on and expressed, we get our food item and our protein. <br>
 
-{: .youtube }
+{: .note }
 For a brief overview of going from DNA to protein, check out the [video from Professor Dave](https://www.youtube.com/watch?v=bKIpDtJdK8Q).
 
 Why should you care about proteins? Well, you wouldn’t be reading this, or breathing, or doing any sports, playing any video games, studying, or anything you could possibly imagine without proteins. Proteins make up our muscles, capture light in our eyes, make up our hair, help us sweat, and so much more. Proteins are part of the building blocks that allow our body to do what it does- let us exist. <br>
@@ -24,14 +24,14 @@ So how are proteins created? Going back to the cookbook example, the recipe for 
 <div style="text-align:center"><img src="../images/DNA_Cookbook_Flowcharts.png" height="300" width="300"/></div> <br>
 <br>
 
-{: .youtube }
+{: .note }
 If you want to dive even further into DNA, check out this [video from Khan Academy](https://www.youtube.com/watch?v=6gUY5NoX1Lk).
 
 Of course, we humans vary in lots of ways – hair color, height, what we taste, the freckles, and even the colors we can see (see tetrachromacy for a rare way some humans are able to perceive color)! This happens because of two main reasons- genetic variation and gene expression. <br>
 <br>
 Genetic variation is the concept that our genes (the recipes) can vary even though the genes might be for creating the same protein (the food). This is like getting recipes for mac and cheese from different friends’ families. One family might put breadcrumbs on top, another might cover theirs in hot sauce. In the end, the families cook mac and cheese even if the recipes cause some variation in the mac and cheese. This is exactly like genetic variation! Genetic variation can even explain why some individuals taste soap when eating cilantro and why people have different types of ear wax. <br>
 
-{: .highlight}
+{: .key}
 Genetic variation with time can lead to big things - like blue whales. Learn about their land-dwelling ancestors [in here](wisconsin.pbslearningmedia.org/resource/79bd6aff-db2d-4f87-9cd1-fe855806b460/when-whales-walked-journeys-in-deep-time/?student=true&focus=true).
 
 Gene expression refers to how much of a gene is read to make a protein. This is like having a recipe for tamales (the gene), but choosing how many tamales you actually make (the amount of protein made). This could lead to genes being highly expressed or not expressed at all! Humans have the gene to make vitamin C, but through eating so much food with vitamin C in our ancestry, our bodies turned the expression of the vitamin C gene to zero to save on energy and resources that goes into making vitamin C. <br>
@@ -57,4 +57,9 @@ A typical height and growth rate for your fast plant is known [watch a beautiful
 {: .key}
 So, knowing the difference between a random observation and providing evidence for a pattern can save lives! That’s the power of Statistics!
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Averages and medians](https://benrushscience.github.io/learning-data-science//pages/3-averages-and-medians.html) |
+{: .important}
+This is an example summary. This text is still evolving!
+
+
+
+| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Averages and medians](https://benrushscience.github.io/learning-data-science//lecture-notes/3-averages-and-medians.html) |
