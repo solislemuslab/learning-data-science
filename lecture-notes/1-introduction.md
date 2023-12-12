@@ -56,7 +56,7 @@ Imagine the only species of dog you’ve ever seen is a golden retriever… and 
 You might be working on a project using [Wisconsin Fast Plants](https://fastplants.org/) for an interactive journey cultivating _Brassica rapa_ plants. Fast Plants provides a unique platform for teaching basic statistical concepts through hands-on observation of plant traits like height, germination time, leaf number, and flowering time. You can collect data to calculate averages, dispersions, and correlations, fostering a practical understanding of statistical analysis within the context of biological growth and genetics. We will touch on all the Statistics involved in Fast Plants on this website, but other projects can still benefit from this website, too! This project engages students in both scientific exploration and statistical learning, offering a comprehensive educational experience.
 <br>
 
-{: .note}
+{: .important}
 This is a holder for a summary. This space is still evolving!
 
 
