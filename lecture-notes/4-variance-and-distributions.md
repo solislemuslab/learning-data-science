@@ -7,7 +7,7 @@ nav_order: 5
 # Seeing (data) is believing (data)
 ## 4. Variance and distributions
 
-We’ve seen the use of means and medians, but could still get fooled by these one number summaries. You may have experienced this with concert tickets. A seller might list the average ticket price of a concert of \$20\then on the website you see the best seats are actually \$100\  with terrible seats at \$5\. The seller could easily change the number and price of tickets in all sorts of ways to make the average seem affordable. That’s why understanding the spread of ticket prices, or the spread of whatever data we might be interested in, can help us be smarter buyers.<br> 
+We’ve seen the use of means and medians, but could still get fooled by these one number summaries. You may have experienced this with concert tickets. A seller might list the average ticket price of a concert of \$20\ then on the website you see the best seats are actually \$100\ with terrible seats at \$5\ . The seller could easily change the number and price of tickets in all sorts of ways to make the average seem affordable. That’s why understanding the spread of ticket prices, or the spread of whatever data we might be interested in, can help us be smarter buyers.<br> 
 
 {: .key }
 In the world of statistics, two important measures called variance and standard deviation help us understand how data points differ from the average and how much the data is spread from the average. 
