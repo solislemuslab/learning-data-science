@@ -58,7 +58,7 @@ A typical height and growth rate for your fast plant is known [watch a beautiful
 So, knowing the difference between a random observation and providing evidence for a pattern can save lives! That’s the power of Statistics!
 
 {: .important}
-This is an example summary. This text is still evolving!
+Genetic diversity means that even though all dogs, like Rhonda and a pug, are the same species, they can look and act very differently because of variations in their DNA and genes. These genes determine different traits like height, snout length, and even stinky breath. Similarly, plants like brassicas have almost identical DNA but show different traits due to this genetic variation and how much of each gene is expressed, affecting things like taste and appearance. This diversity in genes and their expression is what makes each organism unique.
 
 
 
