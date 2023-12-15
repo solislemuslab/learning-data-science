@@ -42,7 +42,7 @@ The American Kennel Club defines a dog’s height in inches from the bottom of i
 Let’s say we sampled and measured the heights of 30 golden retrievers (which hopefully didn’t take much time, but waiting and collecting data can often be the longest part of a scientific experiment!). How can we get a summary of the data we collected? Two main ways of trying to summarize a central point in data are with averages (also called means) and medians. You’ve probably heard of both averages and medians, and in a statistical and data science context, they are very important!  <br>
 
 
-As a refresher, the average of measurements is the sum of all of the measurements divided by the number of measurements taken. The average height of golden retrievers in our example would be the sum of the heights of all 30 golden retrievers divided by 30.This helps us summarize the data from 30 data points into 1 number. An average is a number that represents the "typical" value in a set of numbers and data samples. Averages can help us center our focal point on what ranges of values could be possible. To find the average, follow these steps:
+As a refresher, the average of measurements is the sum of all of the measurements divided by the number of measurements taken. The average height of golden retrievers in our example would be the sum of the heights of all 30 golden retrievers divided by 30. This helps us summarize the data from 30 data points into 1 number. An average is a number that represents the "typical" value in a set of numbers and data samples. Averages can help us center our focal point on what ranges of values could be possible. To find the average, follow these steps:
 
 1. **Add** all the numbers together.
 2. **Divide** the sum by the total number of numbers.
