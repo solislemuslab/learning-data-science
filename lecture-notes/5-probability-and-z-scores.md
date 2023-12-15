@@ -68,7 +68,7 @@ The chi-square distribution is a continuous probability distribution that arises
 <br>
 
 {: .important }
-This space is a hold for a summary. This page is still evolving!
+Probability measures the likelihood of something happening, like flipping a coin, and is expressed as a number between 0 and 1. Z-scores help us understand how far a data point, like a dog's height, is from the average in terms of standard deviations, and can be used to determine how rare or common that data point is.
 
 | [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Hypothesis testing](https://benrushscience.github.io/learning-data-science/lecture-notes/6-hypothesis-testing.html) |
 
