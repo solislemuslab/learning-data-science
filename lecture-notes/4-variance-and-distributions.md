@@ -123,7 +123,7 @@ If you'd like to play around with visualizing distributions, and other plots and
 <br>
 
 {: .important }
-This space is a hold for a summary. This page is still evolving!
+In statistics, variance and standard deviation are measures used to understand how much data points differ from the average and the overall spread of the data. They help us see if data points are close together or spread out, like the range of heights in dogs or prices of concert tickets.
 
 
 | [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Probability and Z scores](https://benrushscience.github.io/learning-data-science/lecture-notes/5-probability-and-z-scores.html) |
