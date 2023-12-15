@@ -57,7 +57,7 @@ You might be working on a project using [Wisconsin Fast Plants](https://fastplan
 <br>
 
 {: .important}
-This is a holder for a summary. This space is still evolving!
+Statistics is about using data to make conclusions, like figuring out if a dog, Rhonda, is taller than other golden retrievers by comparing her height with many others, rather than just one or a few. It helps us understand patterns and differences in things like dog heights or other traits, by looking at a lot of examples and analyzing the information.
 
 
 
