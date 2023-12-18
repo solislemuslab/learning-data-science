@@ -47,6 +47,6 @@ We’ve been discussing the idea of comparing golden retrievers and pugs for a w
 PS- You’ve just read a lot of technical terms that leave you confused. You are not alone! Even the experts in statistics and data science have struggled with these concepts. Experts still need to go back and refresh their memories of how hypothesis testing, critical values, and test statistics work together. To help solidify these terms, we will put these into practice with step by step instructions so you can understand the whole process of turning data into evidence that supports or rejects a hypothesis. In the next section, we finally get to compare golden retriever heights with pug heights, and move on from that example! <br>
 
 {: .important }
-This space is a hold for a summary. This page is still evolving!
+Hypothesis testing in statistics is like making an educated guess about something (like whether golden retrievers are taller than pugs) and then using data to see if the guess is probably true. It involves comparing a 'null hypothesis' (no difference) with an 'alternative hypothesis' (there is a difference), and using a p-value to decide if the results are significant enough to support the alternative hypothesis.
 
 | [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Comparing two groups](https://benrushscience.github.io/learning-data-science/lecture-notes/7-comparing-2-groups.html) |

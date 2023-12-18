@@ -45,7 +45,6 @@ For a video on more about the Tukey Honestly Significant Difference and how to c
 In conclusion, the ANOVA test is a valuable statistical tool used to compare means between three or more groups. By assessing assumptions, formulating null and alternative hypotheses, calculating p-values and test statistics, and comparing them to critical thresholds, we can draw meaningful conclusions from data. Want to know if a company is significantly charging you more for certain products? With the right data, now you can tell. Want to see if your invention is faster and safer than the competition? Collect and analyze that data and you’ll be able to tell. And most importantly, you can compare heights between so many things! Dog breeds, plant breeds, buildings in different countries- the world is your height comparison oyster! <br>
 
 {: .important }
-This space is a hold for a summary. This page is still evolving!
-
+ANOVA (Analysis Of Variance) is a statistical test used to compare the average (mean) of a variable, like height, across three or more different groups, such as different dog breeds. It helps us determine if there are any significant differences between these groups, but it doesn't tell us which specific groups are higher or lower than the others without additional analysis.
 
 | [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Comparing frequencies](https://benrushscience.github.io/learning-data-science/lecture-notes/9-comparing-frequencies.html) |

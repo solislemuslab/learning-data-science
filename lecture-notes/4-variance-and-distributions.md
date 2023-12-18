@@ -7,7 +7,7 @@ nav_order: 5
 # Seeing (data) is believing (data)
 ## 4. Variance and distributions
 
-We’ve seen the use of means and medians, but could still get fooled by these one number summaries. You may have experienced this with concert tickets. A seller might list the average ticket price of a concert of \$20 then on the website you see the best seats are actually \$100 with terrible seats at \$5. The seller could easily change the number and price of tickets in all sorts of ways to make the average seem affordable. That’s why understanding the spread of ticket prices, or the spread of whatever data we might be interested in, can help us be smarter buyers.<br> 
+We’ve seen the use of means and medians, but could still get fooled by these one number summaries. You may have experienced this with concert tickets. A seller might list the average ticket price of a concert of 20 USD then on the website you see the best seats are actually 100 USD with terrible seats at 5 USD. The seller could easily change the number and price of tickets in all sorts of ways to make the average seem affordable. That’s why understanding the spread of ticket prices, or the spread of whatever data we might be interested in, can help us be smarter buyers.<br> 
 
 {: .key }
 In the world of statistics, two important measures called variance and standard deviation help us understand how data points differ from the average and how much the data is spread from the average. 
@@ -123,7 +123,7 @@ If you'd like to play around with visualizing distributions, and other plots and
 <br>
 
 {: .important }
-This space is a hold for a summary. This page is still evolving!
+In statistics, variance and standard deviation are measures used to understand how much data points differ from the average and the overall spread of the data. They help us see if data points are close together or spread out, like the range of heights in dogs or prices of concert tickets.
 
 
 | [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Probability and Z scores](https://benrushscience.github.io/learning-data-science/lecture-notes/5-probability-and-z-scores.html) |
