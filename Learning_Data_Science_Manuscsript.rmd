@@ -1,0 +1,163 @@
+---
+title: 'Learning Data Science website'
+tags:
+  - Statistics
+  - Data Science
+  - R
+  - Education
+  - Multimedia
+authors:
+  - name: Ben Rush
+    orcid: 0000-0002-9530-1927
+    affiliation: "1,2" # (Multiple affiliations must be quoted)
+  - name: Claudia Solis-Lemus
+    orcid: 0000-0002-9789-8915
+    affiliation: "1, 3, 4"
+affiliations:
+ - name: Institute for Discovery, University of Wisconsin-Madison
+   index: 1
+ - name: Department of Radiology, University of Wisconsin-Madison School of Medicine and Public Health
+   index: 2
+ - name: Department of Plant Pathology, University of Wisconsin-Madison
+   index: 3
+- name: Department of Statistics, University of Wisconsin-Madison
+   index: 4
+date: 16 October 2023
+bibliography: paper.bib
+---
+
+# JOSE papers should include:
+
+-List all authors and affiliations.
+# Maybe Heidi in here too?
+-Describe the submission, and explain its eligibility for JOSE.
+-Include a “Statement of Need” section, explaining how the submitted artifacts contribute to computationally 
+  enabled teaching and learning, and describing how they might be adopted by others.
+-For software submissions, describe the functionality of the software, usage and recent experience of use
+ in teaching and learning situations.
+-For learning modules, describe the learning objectives, content, instructional design, and experience of 
+  use in teaching and learning situations.
+-Tell us the “story” of the project: how did it come to be?
+-Cite key references, including a link to the open archive of the sofware or the learning module.
+-JOSE welcomes submissions with diverse educational contexts. You should write your paper for a non-specialist reader. 
+  Your submission should probably be around 1000 words (or around two pages).
+- Create bibliography
+- Name of software product (maybe PonderStats... ponderstats.wid.wisc.edu)
+
+# Summary
+We created a website for containing intrductory statistics learning materials accompanied by engaging media and R scripts that students can use. 
+The website and scripts are designed to mirror an introductory course to statistics and tie it to serveral realworld
+examples, like genetic diversity. The website, which is hosted on GitHub pages, starts with an introduction that
+middle school, high school, and undergraduate students can grasp- the diversity of dog breeds. We introduce the 
+character of Rhonda, a tall female golden retriever. We lead readers through the thinking "how do we actually know Rhonda
+is tall?". We lead readers through comparisons of Rhonda to other golden retreivers based on personal observations, defining
+a metric of "tallness", ie height, comparing Rhonda to other golden retreivers (z-score introduction), and eventually other 
+bog breeds (for t-tests, ANOVAs, correlations, and beyond). We lead the readers through these concepts all while providing
+humorous examples and comments, links for further learning, RShiny Apps for readers to learn experientially, visuals, embedded 
+videos, and the scripts for students to follow along. In total, readers have access to 11 different lessons to learn about 
+introductory statistics and data science at their own pace.
+
+# Statement of Need
+In our experience, the introduction to statistics and data science rely heavily on the mathematical
+formulas instead of the versatile and useful applications of these formulas. In fact, one of the authors 
+struggled in calculus because the applications to the realworld seemed extremely distant. He stopped taking
+math classes until forced to take statistics to complete his undergraduate degree. Despite his hesitation,
+he fell in love with statistics and absorbed all of the information possible. The authors hope that 
+this website might be able to connect with and inspire younger learners to pursue the applied mathematics
+fields of statistics and data science. The website and open scripts are aimed to be fun, engaging, and a mix 
+of media that focus on why these fields are important for individual decision making and how they can be 
+potential career paths as well. The option to delve further into the formulas in statics are available, but the
+interpretations of statistical tests to realworld applications are prioritized. Rshiny apps and the code that
+generated many of the figures are available for students to interact with. We believe this website and script can
+serve to provide an intriguing first encounter with statistics and data scientists, especially for those students
+who might be conditioned to be math averse.
+
+# Website description
+
+## Subjects Covered
+
+## Learning objectives
+
+
+## Activities & Media
+mix here
+
+# Active Script Learning via PonderStats
+
+
+# eligibility for JOSE (think software instruction and web content, Multimedia, etc)
+teachers for learning goals,
+maybe lead through one lesson specifically for how a reader could use It
+possible applications (fast plants, high school bio, intro college level bio)
+feedback from instructors and teachers?
+
+
+
+
+
+
+############################## Example paper ################################33
+
+The forces on stars, galaxies, and dark matter under external gravitational
+fields lead to the dynamical evolution of structures in the universe. The orbits
+of these bodies are therefore key to understanding the formation, history, and
+future state of galaxies. The field of "galactic dynamics," which aims to model
+the gravitating components of galaxies to study their structure and evolution,
+is now well-established, commonly taught, and frequently used in astronomy.
+Aside from toy problems and demonstrations, the majority of problems require
+efficient numerical tools, many of which require the same base code (e.g., for
+performing numerical orbit integration).
+
+``Gala`` is an Astropy-affiliated Python package for galactic dynamics. Python
+enables wrapping low-level languages (e.g., C) for speed without losing
+flexibility or ease-of-use in the user-interface. The API for ``Gala`` was
+designed to provide a class-based and user-friendly interface to fast (C or
+Cython-optimized) implementations of common operations such as gravitational
+potential and force evaluation, orbit integration, dynamical transformations,
+and chaos indicators for nonlinear dynamics. ``Gala`` also relies heavily on and
+interfaces well with the implementations of physical units and astronomical
+coordinate systems in the ``Astropy`` package [@astropy] (``astropy.units`` and
+``astropy.coordinates``).
+
+``Gala`` was designed to be used by both astronomical researchers and by
+students in courses on gravitational dynamics or astronomy. It has already been
+used in a number of scientific publications [@Pearson:2017] and has also been
+used in graduate courses on Galactic dynamics to, e.g., provide interactive
+visualizations of textbook material [@Binney:2008]. The combination of speed,
+design, and support for Astropy functionality in ``Gala`` will enable exciting
+scientific explorations of forthcoming data releases from the *Gaia* mission
+[@gaia] by students and experts alike.
+
+# Mathematics
+
+Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
+
+Double dollars make self-standing equations:
+
+$$\Theta(x) = \left\{\begin{array}{l}
+0\textrm{ if } x < 0\cr
+1\textrm{ else}
+\end{array}\right.$$
+
+
+# Citations
+
+Citations to entries in paper.bib should be in
+[rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
+format.
+
+For a quick reference, the following citation commands can be used:
+- `@author:2001`  ->  "Author et al. (2001)"
+- `[@author:2001]` -> "(Author et al., 2001)"
+- `[@author1:2001; @author2:2001]` -> "(Author1 et al., 2001; Author2 et al., 2002)"
+
+# Figures
+
+Figures can be included like this: ![Example figure.](figure.png)
+
+# Acknowledgements
+
+We acknowledge contributions from Brigitta Sipocz, Syrtis Major, and Semyeong
+Oh, and support from Kathryn Johnston during the genesis of this project.
+
+# References
