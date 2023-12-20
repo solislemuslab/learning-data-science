@@ -73,8 +73,25 @@ serve to provide an intriguing first encounter with statistics and data scientis
 who might be conditioned to be math averse.
 
 # Website description
+The website provides an introduction to statistics and data science for middle school, high school, and undergraduate students. 
+The writing and multiple media are designed to be engaging and fun while still covering the topics of an introductory statistics
+course. The website is focused much more on the reasoning behind the statistics and data science than the mathematical formulas.
+The website is hosted on GitHub pages and can be found at ponderstats.wid.wisc.edu. The website is divided into 11 lessons, which
+can be navigated to from the home page. The lessons are as follows:
 
-## Subjects Covered
+| Lesson Name | Topic |
+|:---------|:---------|
+| I've never seen a dog before    | Why data science?    |
+| In a world of possibilities   | Genetic diversity     |
+| Finding average ground | Averages and medians |
+| Seeing (data) is believing (data) | Variance and distributions |
+| Catching Z's | Probabilities and z-scores |
+| I love being rejected | Hypothesis testing |
+| Things might be different now | Comparing two groups (t-tests) |
+| More things might be different now | Comparing more than two groups (ANOVA) |
+| χ<sup>2</sup> marks the spot | Comparing frequencies (χ<sup>2</sup> tests) |
+| What goes up must go down, or up, or nowhere | Correlations |
+| With great power comes maybe good effect size | Statistics in the real world |
 
 ## Learning objectives
 
