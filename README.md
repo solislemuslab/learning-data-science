@@ -6,7 +6,7 @@ This website
 - is intended for middle and high school students learning to apply statistics for the first time
 - covers the basic statistical concepts and tests that are covered in an introductory statistics course
 - was developed to accompany the learning materials of [Wisconsin Fast Plants](https://fastplants.org), but the knowledge can be applied for any statistics introductory course
-- has code you can follow with [RStudio](https://posit.co/download/rstudio-desktop/) to generate similar figures & graphs as the website. Find the code [here](https://github.com/benrushscience/learning-data-science/blob/main/code/fast_plants_datawebsite_script.R). 
+- has code you can follow with [RStudio](https://posit.co/download/rstudio-desktop/) to generate similar figures & graphs as the website. Find the code [here](https://github.com/benrushscience/learning-data-science/blob/main/code/PonderStats_script.R).
 
 Each lesson 
 - covers a basic overview of concepts and aims to provide the theoretical take aways without being bogged down by the math,
