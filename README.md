@@ -28,4 +28,4 @@ This website serves as an introduction to Data Science for middle and high schoo
 For a list of specific learning objectives by lesson, visit this [page](https://benrushscience.github.io/learning-data-science/lecture-notes/learning-objectives.html).
 
 ## AI-generated artwork within the website
-Images on this website are a mix of original and [AI-generated](https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-generative-ai) images. Images that have a row of multicolored squares are from [Dalle2](https://openai.com/dall-e-2). There are many more and newer generative AI platforms out there!
+Images on this website are a mix of original and [AI-generated](https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-generative-ai) images. Images that have a row of multicolored squares are from [Dalle2](https://openai.com/dall-e-2). There are many more and newer generative AI platforms out there, including an updated Dalle!
