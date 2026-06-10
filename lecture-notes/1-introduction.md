@@ -1,6 +1,6 @@
 ---
 layout: default
-title: I've never seen a dog
+title: Introduction
 nav_order: 2
 ---
 
@@ -20,7 +20,8 @@ Rhonda seems like the perfect dog, so why not show her off? The “National Comp
 <br>
 <div style="text-align:center"><img src="../images/introduction_goldenretriever_line.png" height="300" width="300"/></div>
 <br>
-Is Rhonda actually taller than the other golden retrievers? You might have a gut feeling that she is, but how do you provide evidence for her being taller? Can you compare Rhonda to every golden retriever in the world? Can you compare her to every golden retriever in the past? How about the ones that will exist in the future? Most likely you aren’t able to do this, unless you have the powers of time travel and also a lot of time on your hands (which if you have the power of time travel, you probably would). Trying to figure out if an observation or pattern is due to chance or not is where the field of Statistics can help. Based on some of the traditional rules in Statistics, we can provide evidence for whether Rhonda really is taller than the other dogs. <br>
+
+Is Rhonda actually taller than the other golden retrievers? You might have a gut feeling that she is, but how do you provide evidence for her being taller? **Can you compare Rhonda to every golden retriever in the world?** Can you compare her to every golden retriever in the past? How about the ones that will exist in the future? Most likely you aren’t able to do this, unless you have the powers of time travel and also a lot of time on your hands (which if you have the power of time travel, you probably would). Trying to figure out if an observation or pattern is due to chance or not is where the field of Statistics can help. Based on some of the traditional rules in Statistics, we can provide evidence for whether Rhonda really is taller than the other dogs. <br>
 
 {: .key }
 How can you tell if Rhonda is taller than other golden retrievers? Statistics can help answer this question! We can make observations from data collected on samples of golden retrievers.
@@ -53,12 +54,14 @@ Imagine the only species of dog you’ve ever seen is a golden retriever… and 
 <br>
 <div style="text-align:center"><img src="../images/first_pug_vbarchart.png" height="350" width="525"/></div>
 <br>
+
+{: .plants }
 You might be working on a project using [Wisconsin Fast Plants](https://fastplants.org/) for an interactive journey cultivating _Brassica rapa_ plants. Fast Plants provides a unique platform for teaching basic statistical concepts through hands-on observation of plant traits like height, germination time, leaf number, and flowering time. You can collect data to calculate averages, dispersions, and correlations, fostering a practical understanding of statistical analysis within the context of biological growth and genetics. We will touch on all the Statistics involved in Fast Plants on this website, but other projects can still benefit from this website, too! This project engages students in both scientific exploration and statistical learning, offering a comprehensive educational experience.
-<br>
+
 
 {: .important}
 Statistics is about using data to make conclusions, like figuring out if a dog, Rhonda, is taller than other golden retrievers by comparing her height with many others, rather than just one or a few. It helps us understand patterns and differences in things like dog heights or other traits, by looking at a lot of examples and analyzing the information.
 
 
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Genetic Diversity](https://benrushscience.github.io/learning-data-science//lecture-notes/2-genetic-diversity.html) |
+| [Home](https://solislemuslab.github.io/learning-data-science/) | [Next: Genetic Diversity](https://solislemuslab.github.io/learning-data-science//lecture-notes/2-genetic-diversity.html) |

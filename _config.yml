@@ -20,13 +20,13 @@ callouts:
     color: blue
   key:
     title: Key
-    color: green
-  note:
-    title: Note
     color: purple
-  warning:
-    title: Warning
+  note:
+    title: Learn more
     color: red
+  plants:
+    title: WI Fast Plants
+    color: green
   youtube:
     title: YouTube
     color: red
