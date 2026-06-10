@@ -8,7 +8,7 @@ nav_order: 2
 
 > "Is Rhonda a good girl? Do we need food to survive? The answers to these questions are undoubtely the same" - Socrates, year never
 
-<iframe src="assets/videos/lesson1-intro-slideshow.html" 
+<iframe src="../assets/videos/lesson1-intro-slideshow.html" 
         width="100%" height="520" 
         style="border:none; border-radius:16px;">
 </iframe>
