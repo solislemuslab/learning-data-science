@@ -1,10 +1,16 @@
 ---
 layout: default
-title: More things might be different now
+title: Comparing 2+ groups
 nav_order: 9 
 ---
 
 # _More_ things might be different now
+
+<iframe src="../assets/videos/lesson8-anova-slideshow.html" 
+        width="100%" height="520" 
+        style="border:none; border-radius:16px;">
+</iframe>
+
 ## 8. Comparing 2+ groups (ANOVA)
 
 If we wanted to compare 2 group means, t-tests are great. To compare means of 3 or more groups, the ANOVA (ANalysis Of VAriance) test is the way to go. 

@@ -86,7 +86,7 @@ Among the main topics, this website focuses on:
             1. Test results
             2. T statistic
             3. How to reject the null hypothesis and its meaning
-8. [More things might be different now](https://solislemuslab.github.io/learning-data-science/lecture-notes/8-comparing-2+-groups.html): Comparing more than 2 groups
+8. [Comparing 2+ groups](https://solislemuslab.github.io/learning-data-science/lecture-notes/8-comparing-2+-groups.html):
     - By the end of this lesson, students will be able to:
         * Discuss the value of testing multiple groups statistically
         * Explain when and how to apply ANOVA
