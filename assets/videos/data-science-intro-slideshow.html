@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>An Introduction to Data Science</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --teal:   #2a9d8f;
+    --navy:   #1a2b4a;
+    --gold:   #e9c46a;
+    --coral:  #e76f51;
+    --light:  #f4f9f8;
+    --white:  #ffffff;
+    --text:   #1a2b4a;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* ── Deck container ── */
+  #deck {
+    width: 900px;
+    height: 506px;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(0,0,0,.6);
+  }
+
+  /* ── Individual slides ── */
+  .slide {
+    position: absolute;
+    inset: 0;
+    padding: 54px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity .55s ease, transform .55s ease;
+    pointer-events: none;
+  }
+  .slide.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+  }
+  .slide.exit {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity .4s ease, transform .4s ease;
+  }
+
+  /* ── Slide themes ── */
+  .slide-title   { background: var(--navy); color: var(--white); }
+  .slide-who     { background: var(--teal); color: var(--white); }
+  .slide-how     { background: var(--light); color: var(--text); }
+  .slide-lessons { background: var(--navy); color: var(--white); }
+  .slide-plants  { background: var(--gold); color: var(--text); }
+  .slide-cta     { background: var(--coral); color: var(--white); }
+
+  /* ── Typography ── */
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    opacity: .65;
+    margin-bottom: 14px;
+  }
+  h1 { font-size: 46px; font-weight: 800; line-height: 1.1; }
+  h2 { font-size: 34px; font-weight: 700; line-height: 1.2; margin-bottom: 22px; }
+  .subtitle { font-size: 18px; opacity: .8; margin-top: 14px; line-height: 1.5; max-width: 600px; }
+  .tagline   { font-size: 22px; font-weight: 600; margin-top: 18px; opacity: .9; }
+
+  /* ── Pill tags ── */
+  .pills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  .pill {
+    background: rgba(255,255,255,.18);
+    border: 1.5px solid rgba(255,255,255,.35);
+    border-radius: 100px;
+    padding: 7px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    backdrop-filter: blur(4px);
+  }
+  .slide-how .pill {
+    background: rgba(42,157,143,.12);
+    border-color: rgba(42,157,143,.4);
+    color: var(--teal);
+  }
+  .slide-plants .pill {
+    background: rgba(26,43,74,.1);
+    border-color: rgba(26,43,74,.3);
+    color: var(--navy);
+  }
+
+  /* ── Lesson grid ── */
+  .lesson-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 16px;
+  }
+  .lesson-item {
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .lesson-item .num {
+    font-size: 10px;
+    font-weight: 700;
+    opacity: .5;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  /* ── Decorative accent ── */
+  .accent-bar {
+    width: 56px; height: 5px;
+    border-radius: 3px;
+    background: var(--gold);
+    margin-bottom: 20px;
+  }
+  .slide-who .accent-bar, .slide-lessons .accent-bar { background: var(--gold); }
+  .slide-how .accent-bar  { background: var(--teal); }
+  .slide-plants .accent-bar { background: var(--navy); }
+  .slide-cta .accent-bar  { background: rgba(255,255,255,.6); }
+
+  /* ── Icon circle ── */
+  .icon-row { display: flex; gap: 24px; margin-top: 22px; }
+  .icon-box {
+    display: flex; align-items: center; gap: 12px;
+    background: rgba(255,255,255,.12);
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-size: 13px; font-weight: 600;
+  }
+  .icon-box .ico { font-size: 22px; }
+
+  /* ── URL badge ── */
+  .url-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,.2);
+    border: 1.5px solid rgba(255,255,255,.4);
+    border-radius: 100px;
+    padding: 9px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 24px;
+    letter-spacing: .02em;
+  }
+
+  /* ── Progress bar ── */
+  #progress-wrap {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 4px;
+    background: rgba(255,255,255,.15);
+  }
+  #progress-bar {
+    height: 100%;
+    background: var(--gold);
+    width: 0%;
+    transition: width linear;
+  }
+
+  /* ── Dot nav ── */
+  #dots {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+  }
+  .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.35);
+    cursor: pointer;
+    transition: background .3s, transform .3s;
+  }
+  .dot.active { background: var(--gold); transform: scale(1.35); }
+
+  /* ── Controls ── */
+  #controls {
+    position: absolute;
+    top: 16px; right: 20px;
+    display: flex; gap: 8px;
+  }
+  .ctrl-btn {
+    background: rgba(255,255,255,.15);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 14px;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition: background .2s;
+  }
+  .ctrl-btn:hover { background: rgba(255,255,255,.28); }
+
+  /* ── Slide counter ── */
+  #counter {
+    position: absolute;
+    top: 19px; left: 22px;
+    font-size: 12px;
+    color: rgba(255,255,255,.5);
+    font-weight: 600;
+    letter-spacing: .05em;
+  }
+
+  /* enter animation for child elements */
+  .slide.active .accent-bar   { animation: fadeUp .5s .1s both; }
+  .slide.active h1,
+  .slide.active h2            { animation: fadeUp .5s .18s both; }
+  .slide.active .subtitle,
+  .slide.active .tagline      { animation: fadeUp .5s .28s both; }
+  .slide.active .pills,
+  .slide.active .icon-row,
+  .slide.active .lesson-grid,
+  .slide.active .url-badge    { animation: fadeUp .5s .38s both; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+
+<div id="deck">
+
+  <!-- Slide 1: Title -->
+  <div class="slide slide-title active" data-duration="7000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">Welcome</p>
+    <h1>An Introduction<br>to Data Science</h1>
+    <p class="subtitle">A free, beginner-friendly course for middle &amp; high school students — no math anxiety required.</p>
+  </div>
+
+  <!-- Slide 2: Who is this for? -->
+  <div class="slide slide-who" data-duration="9000">
+    <div class="accent-bar"></div>
+    <h2>Who is this for?</h2>
+    <div class="pills">
+      <span class="pill">🏫 Middle school students</span>
+      <span class="pill">🎓 High school students</span>
+      <span class="pill">👩‍🏫 Teachers &amp; educators</span>
+      <span class="pill">🌱 Anyone curious about data</span>
+    </div>
+    <p class="subtitle" style="margin-top:22px;">
+      No prior statistics knowledge needed. The focus is on <strong>thinking</strong> about data, not on complex formulas.
+    </p>
+  </div>
+
+  <!-- Slide 3: What you'll learn -->
+  <div class="slide slide-how" data-duration="10000">
+    <div class="accent-bar"></div>
+    <h2>What you'll learn</h2>
+    <div class="pills">
+      <span class="pill">📊 Why statistics matter in real life</span>
+      <span class="pill">🧬 Genetic diversity &amp; variation</span>
+      <span class="pill">📐 Means, medians &amp; distributions</span>
+      <span class="pill">🎲 Probability &amp; z-scores</span>
+      <span class="pill">🔬 Hypothesis testing</span>
+      <span class="pill">📉 t-tests, ANOVA, chi-square</span>
+      <span class="pill">🔗 Correlations &amp; regression</span>
+    </div>
+  </div>
+
+  <!-- Slide 4: How lessons work -->
+  <div class="slide slide-plants" data-duration="9000">
+    <div class="accent-bar"></div>
+    <h2>How each lesson works</h2>
+    <div class="icon-row">
+      <div class="icon-box"><span class="ico">💡</span> Concept-first — big ideas before the math</div>
+      <div class="icon-box"><span class="ico">📖</span> Deep-dive resources if you want more</div>
+      <div class="icon-box"><span class="ico">💻</span> R code to reproduce every figure</div>
+    </div>
+    <p class="subtitle" style="margin-top:20px;">
+      Developed alongside <strong>Wisconsin Fast Plants</strong> experiments — real science, real data.
+    </p>
+  </div>
+
+  <!-- Slide 5: 11 Lessons -->
+  <div class="slide slide-lessons" data-duration="14000">
+    <div class="accent-bar"></div>
+    <h2 style="font-size:26px; margin-bottom:14px;">11 Lessons to explore</h2>
+    <div class="lesson-grid">
+      <div class="lesson-item"><span class="num">Lesson 1</span>Why data science?</div>
+      <div class="lesson-item"><span class="num">Lesson 2</span>Genetic diversity</div>
+      <div class="lesson-item"><span class="num">Lesson 3</span>Means &amp; medians</div>
+      <div class="lesson-item"><span class="num">Lesson 4</span>Variance &amp; distributions</div>
+      <div class="lesson-item"><span class="num">Lesson 5</span>Probability &amp; z-scores</div>
+      <div class="lesson-item"><span class="num">Lesson 6</span>Hypothesis testing</div>
+      <div class="lesson-item"><span class="num">Lesson 7</span>Comparing 2 groups</div>
+      <div class="lesson-item"><span class="num">Lesson 8</span>Comparing 2+ groups</div>
+      <div class="lesson-item"><span class="num">Lesson 9</span>Comparing frequencies</div>
+      <div class="lesson-item"><span class="num">Lesson 10</span>Correlations</div>
+      <div class="lesson-item"><span class="num">Lesson 11</span>Stats in the real world</div>
+    </div>
+  </div>
+
+  <!-- Slide 6: CTA -->
+  <div class="slide slide-cta" data-duration="8000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">Ready to start?</p>
+    <h1 style="font-size:38px;">Explore the course<br>— it's completely free.</h1>
+    <a class="url-badge" href="https://solislemuslab.github.io/learning-data-science/" target="_blank">
+      🔗 solislemuslab.github.io/learning-data-science
+    </a>
+  </div>
+
+  <!-- Progress bar -->
+  <div id="progress-wrap"><div id="progress-bar"></div></div>
+
+  <!-- Dot nav -->
+  <div id="dots"></div>
+
+  <!-- Slide counter -->
+  <div id="counter">1 / 6</div>
+
+  <!-- Controls -->
+  <div id="controls">
+    <button class="ctrl-btn" id="btn-prev">‹ Prev</button>
+    <button class="ctrl-btn" id="btn-pause">⏸ Pause</button>
+    <button class="ctrl-btn" id="btn-next">Next ›</button>
+  </div>
+</div>
+
+<script>
+  const slides   = Array.from(document.querySelectorAll('.slide'));
+  const dots     = document.getElementById('dots');
+  const bar      = document.getElementById('progress-bar');
+  const counter  = document.getElementById('counter');
+  const btnPause = document.getElementById('btn-pause');
+  const btnNext  = document.getElementById('btn-next');
+  const btnPrev  = document.getElementById('btn-prev');
+
+  let current  = 0;
+  let paused   = false;
+  let timer    = null;
+  let startAt  = null;
+  let elapsed  = 0;
+
+  // Build dots
+  slides.forEach((_, i) => {
+    const d = document.createElement('div');
+    d.className = 'dot' + (i === 0 ? ' active' : '');
+    d.addEventListener('click', () => goTo(i));
+    dots.appendChild(d);
+  });
+
+  function duration(i) {
+    return parseInt(slides[i].dataset.duration, 10) || 6000;
+  }
+
+  function updateDots() {
+    document.querySelectorAll('.dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+    counter.textContent = `${current + 1} / ${slides.length}`;
+  }
+
+  function startBar(remaining) {
+    const total = duration(current);
+    bar.style.transition = 'none';
+    bar.style.width = ((total - remaining) / total * 100) + '%';
+    // force reflow
+    bar.getBoundingClientRect();
+    bar.style.transition = `width ${remaining}ms linear`;
+    bar.style.width = '100%';
+  }
+
+  function goTo(index, resetElapsed = true) {
+    clearTimeout(timer);
+    slides[current].classList.remove('active');
+    slides[current].classList.add('exit');
+    const prev = current;
+    setTimeout(() => slides[prev].classList.remove('exit'), 450);
+
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    updateDots();
+
+    if (resetElapsed) elapsed = 0;
+    if (!paused) scheduleNext();
+  }
+
+  function scheduleNext() {
+    clearTimeout(timer);
+    const remaining = duration(current) - elapsed;
+    startAt = Date.now();
+    startBar(remaining);
+    timer = setTimeout(() => {
+      elapsed = 0;
+      goTo(current + 1);
+    }, remaining);
+  }
+
+  function pause() {
+    if (paused) return;
+    paused = true;
+    elapsed += Date.now() - startAt;
+    clearTimeout(timer);
+    bar.style.transition = 'none';
+    bar.style.width = (elapsed / duration(current) * 100) + '%';
+    btnPause.textContent = '▶ Play';
+  }
+
+  function play() {
+    if (!paused) return;
+    paused = false;
+    btnPause.textContent = '⏸ Pause';
+    scheduleNext();
+  }
+
+  btnPause.addEventListener('click', () => paused ? play() : pause());
+  btnNext.addEventListener('click', () => { elapsed = 0; goTo(current + 1); });
+  btnPrev.addEventListener('click', () => { elapsed = 0; goTo(current - 1); });
+
+  // Keyboard nav
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ') { elapsed = 0; goTo(current + 1); }
+    if (e.key === 'ArrowLeft')  { elapsed = 0; goTo(current - 1); }
+    if (e.key === 'p' || e.key === 'P') paused ? play() : pause();
+  });
+
+  // Kick off
+  scheduleNext();
+</script>
+</body>
+</html>

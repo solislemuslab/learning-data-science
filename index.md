@@ -6,6 +6,11 @@ nav_order: 1
 
 # An Introduction to Data Science
 
+<iframe src="assets/videos/data-science-intro-slideshow.html" 
+        width="100%" height="520" 
+        style="border:none; border-radius:16px;">
+</iframe>
+
 ## How to use this website
 
 This website
