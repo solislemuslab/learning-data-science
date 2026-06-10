@@ -62,7 +62,7 @@ To help illustrate the genetic diversity of the brassicas (and also what can hap
 
 A typical height and growth rate for your fast plant is known. Watch the time lapse of a fast plant:
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=kDpqafwz9pI" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v=kDpqafwz9pI" frameborder="0" allowfullscreen></iframe>
 
 and so are typical growth rates for crops, dogs, and humans. Although many factors influence the typical growth rate, if a parent has a human baby that is smaller than the “typical” baby at a certain age, doctors may be able to intervene to address a nutritional deficiency, disease, or toxin that could be affecting the growth. <br>
 <br>
