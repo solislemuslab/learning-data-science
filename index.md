@@ -11,6 +11,10 @@ nav_order: 1
         style="border:none; border-radius:16px;">
 </iframe>
 
+<a href="https://solislemuslab.github.io/learning-data-science/lecture-notes/1-introduction.html" class="btn btn-outline">
+  Start Lesson 1 →
+</a>
+
 
 ## How to use this website
 
