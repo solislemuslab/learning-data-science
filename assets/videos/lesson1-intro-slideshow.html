@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lesson 1: Why Data Science?</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --teal:  #2a9d8f;
+    --navy:  #1a2b4a;
+    --gold:  #e9c46a;
+    --coral: #e76f51;
+    --sand:  #f4f1e8;
+    --white: #ffffff;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  #deck {
+    width: 900px;
+    height: 506px;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(0,0,0,.6);
+  }
+
+  .slide {
+    position: absolute;
+    inset: 0;
+    padding: 52px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity .55s ease, transform .55s ease;
+    pointer-events: none;
+  }
+  .slide.active  { opacity: 1; transform: translateX(0); pointer-events: all; }
+  .slide.exit    { opacity: 0; transform: translateX(-60px); transition: opacity .4s ease, transform .4s ease; }
+
+  /* themes */
+  .s-title   { background: var(--navy); color: var(--white); }
+  .s-hook    { background: #2d5016; color: var(--white); }
+  .s-problem { background: var(--coral); color: var(--white); }
+  .s-sample  { background: var(--teal); color: var(--white); }
+  .s-power   { background: var(--sand); color: var(--navy); }
+  .s-plants  { background: var(--gold); color: var(--navy); }
+
+  /* typography */
+  .eyebrow {
+    font-size: 11px; font-weight: 700;
+    letter-spacing: .18em; text-transform: uppercase;
+    opacity: .6; margin-bottom: 12px;
+  }
+  h1 { font-size: 44px; font-weight: 800; line-height: 1.1; }
+  h2 { font-size: 32px; font-weight: 700; line-height: 1.2; margin-bottom: 18px; }
+  .sub { font-size: 17px; opacity: .85; line-height: 1.6; margin-top: 12px; max-width: 620px; }
+
+  .accent-bar {
+    width: 52px; height: 5px; border-radius: 3px;
+    background: var(--gold); margin-bottom: 18px;
+  }
+  .s-problem .accent-bar { background: rgba(255,255,255,.5); }
+  .s-sample .accent-bar  { background: var(--gold); }
+  .s-power .accent-bar   { background: var(--teal); }
+  .s-plants .accent-bar  { background: var(--navy); }
+
+  /* big emoji display */
+  .big-emoji { font-size: 64px; margin-bottom: 16px; line-height: 1; }
+
+  /* step cards */
+  .steps { display: flex; gap: 14px; margin-top: 20px; }
+  .step {
+    flex: 1;
+    background: rgba(255,255,255,.12);
+    border: 1.5px solid rgba(255,255,255,.2);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+  }
+  .step .n {
+    font-size: 28px; font-weight: 800;
+    display: block; margin-bottom: 6px;
+    color: var(--gold);
+  }
+  .step p { font-size: 13px; line-height: 1.5; opacity: .9; }
+
+  /* power list */
+  .power-list { list-style: none; margin-top: 16px; display: flex; flex-direction: column; gap: 10px; }
+  .power-list li {
+    display: flex; align-items: flex-start; gap: 12px;
+    background: rgba(42,157,143,.1);
+    border: 1.5px solid rgba(42,157,143,.25);
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 14px; line-height: 1.5;
+  }
+  .power-list li .ico { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+
+  /* quote */
+  .quote-box {
+    background: rgba(255,255,255,.1);
+    border-left: 4px solid var(--gold);
+    border-radius: 0 10px 10px 0;
+    padding: 14px 20px;
+    margin-top: 18px;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.6;
+    max-width: 680px;
+  }
+
+  /* url badge */
+  .url-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(26,43,74,.15);
+    border: 1.5px solid rgba(26,43,74,.3);
+    border-radius: 100px;
+    padding: 9px 22px;
+    font-size: 13px; font-weight: 600;
+    margin-top: 20px; text-decoration: none;
+    color: var(--navy);
+  }
+
+  /* progress + dots + controls (same as landing) */
+  #progress-wrap { position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: rgba(255,255,255,.15); }
+  #progress-bar  { height: 100%; background: var(--gold); width: 0%; transition: width linear; }
+  #dots { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; }
+  .dot  { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,.35); cursor: pointer; transition: background .3s, transform .3s; }
+  .dot.active { background: var(--gold); transform: scale(1.35); }
+  #controls { position: absolute; top: 16px; right: 20px; display: flex; gap: 8px; }
+  .ctrl-btn { background: rgba(255,255,255,.15); border: none; border-radius: 8px; color: #fff; font-size: 13px; font-weight: 600; padding: 6px 14px; cursor: pointer; backdrop-filter: blur(4px); transition: background .2s; }
+  .ctrl-btn:hover { background: rgba(255,255,255,.28); }
+  #counter { position: absolute; top: 19px; left: 22px; font-size: 12px; color: rgba(255,255,255,.5); font-weight: 600; letter-spacing: .05em; }
+
+  /* enter animations */
+  .slide.active .accent-bar  { animation: fadeUp .5s .10s both; }
+  .slide.active .eyebrow     { animation: fadeUp .5s .10s both; }
+  .slide.active h1,
+  .slide.active h2           { animation: fadeUp .5s .18s both; }
+  .slide.active .sub,
+  .slide.active .big-emoji,
+  .slide.active .quote-box   { animation: fadeUp .5s .28s both; }
+  .slide.active .steps,
+  .slide.active .power-list,
+  .slide.active .url-badge   { animation: fadeUp .5s .38s both; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+<div id="deck">
+
+  <!-- Slide 1: Title -->
+  <div class="slide s-title active" data-duration="7000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">Lesson 1 &mdash; Introduction</p>
+    <h1>Why Data Science?</h1>
+    <p class="sub">How a golden retriever named Rhonda teaches us everything we need to know about statistics.</p>
+  </div>
+
+  <!-- Slide 2: Meet Rhonda -->
+  <div class="slide s-hook" data-duration="9000">
+    <div class="accent-bar"></div>
+    <h2>Meet Rhonda 🐕</h2>
+    <p class="sub">Rhonda is a golden retriever — the first dog you've ever seen. She's friendly, loves tennis balls, and is 30 inches tall.</p>
+    <div class="quote-box">
+      "Is Rhonda taller than other golden retrievers? You might have a gut feeling... but how do you provide <strong>evidence</strong>?"
+    </div>
+  </div>
+
+  <!-- Slide 3: The Problem -->
+  <div class="slide s-problem" data-duration="9000">
+    <div class="accent-bar"></div>
+    <h2>The core problem</h2>
+    <p class="sub">Can you compare Rhonda to <em>every</em> golden retriever in the world? Past, present, and future?</p>
+    <p class="sub" style="margin-top:12px; font-size:22px; font-weight:700;">No &mdash; and that's exactly why we need statistics.</p>
+    <p class="sub" style="font-size:14px; opacity:.75; margin-top:10px;">Statistics lets us draw conclusions from a <strong>sample</strong> without measuring the entire world.</p>
+  </div>
+
+  <!-- Slide 4: Sample size matters -->
+  <div class="slide s-sample" data-duration="12000">
+    <div class="accent-bar"></div>
+    <h2>Sample size matters</h2>
+    <div class="steps">
+      <div class="step">
+        <span class="n">1</span>
+        <p>Compare Rhonda to <strong>1 dog</strong><br>Not convincing at all</p>
+      </div>
+      <div class="step">
+        <span class="n">5</span>
+        <p>Compare to <strong>5 dogs</strong><br>A little more confident</p>
+      </div>
+      <div class="step">
+        <span class="n">30</span>
+        <p>Compare to <strong>30 dogs</strong><br>Now we can draw real conclusions!</p>
+      </div>
+    </div>
+    <p class="sub" style="font-size:14px; margin-top:18px;">More data = more confidence in our conclusions.</p>
+  </div>
+
+  <!-- Slide 5: What statistics can do -->
+  <div class="slide s-power" data-duration="11000">
+    <div class="accent-bar"></div>
+    <h2>What statistics can do</h2>
+    <ul class="power-list">
+      <li><span class="ico">🔍</span> Detect patterns and differences in data</li>
+      <li><span class="ico">🔗</span> Find relationships between variables (e.g. diet &amp; height)</li>
+      <li><span class="ico">🌍</span> Apply to medicine, genetics, behavior, plants, and more</li>
+    </ul>
+    <p class="sub" style="font-size:14px; margin-top:16px;">Statistics is about using data to make conclusions — not just gut feelings.</p>
+  </div>
+
+  <!-- Slide 6: Fast Plants connection -->
+  <div class="slide s-plants" data-duration="9000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">Real-world application</p>
+    <h2>Wisconsin Fast Plants 🌱</h2>
+    <p class="sub">Throughout this course, we'll apply statistics to real plant data — height, germination time, leaf number — to build hands-on intuition for every concept.</p>
+    <a class="url-badge" href="https://fastplants.org" target="_blank">
+      fastplants.org
+    </a>
+  </div>
+
+  <div id="progress-wrap"><div id="progress-bar"></div></div>
+  <div id="dots"></div>
+  <div id="counter">1 / 6</div>
+  <div id="controls">
+    <button class="ctrl-btn" id="btn-prev">&#8249; Prev</button>
+    <button class="ctrl-btn" id="btn-pause">&#9646;&#9646; Pause</button>
+    <button class="ctrl-btn" id="btn-next">Next &#8250;</button>
+  </div>
+</div>
+
+<script>
+  const slides   = Array.from(document.querySelectorAll('.slide'));
+  const dotsEl   = document.getElementById('dots');
+  const bar      = document.getElementById('progress-bar');
+  const counter  = document.getElementById('counter');
+  const btnPause = document.getElementById('btn-pause');
+  const btnNext  = document.getElementById('btn-next');
+  const btnPrev  = document.getElementById('btn-prev');
+
+  let current = 0, paused = false, timer = null, startAt = null, elapsed = 0;
+
+  slides.forEach((_, i) => {
+    const d = document.createElement('div');
+    d.className = 'dot' + (i === 0 ? ' active' : '');
+    d.addEventListener('click', () => goTo(i));
+    dotsEl.appendChild(d);
+  });
+
+  function duration(i) { return parseInt(slides[i].dataset.duration, 10) || 6000; }
+
+  function updateDots() {
+    document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === current));
+    counter.textContent = `${current + 1} / ${slides.length}`;
+  }
+
+  function startBar(remaining) {
+    const total = duration(current);
+    bar.style.transition = 'none';
+    bar.style.width = ((total - remaining) / total * 100) + '%';
+    bar.getBoundingClientRect();
+    bar.style.transition = `width ${remaining}ms linear`;
+    bar.style.width = '100%';
+  }
+
+  function goTo(index, resetElapsed = true) {
+    clearTimeout(timer);
+    slides[current].classList.remove('active');
+    slides[current].classList.add('exit');
+    const prev = current;
+    setTimeout(() => slides[prev].classList.remove('exit'), 450);
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    updateDots();
+    if (resetElapsed) elapsed = 0;
+    if (!paused) scheduleNext();
+  }
+
+  function scheduleNext() {
+    clearTimeout(timer);
+    const remaining = duration(current) - elapsed;
+    startAt = Date.now();
+    startBar(remaining);
+    timer = setTimeout(() => { elapsed = 0; goTo(current + 1); }, remaining);
+  }
+
+  function pause() {
+    if (paused) return;
+    paused = true;
+    elapsed += Date.now() - startAt;
+    clearTimeout(timer);
+    bar.style.transition = 'none';
+    bar.style.width = (elapsed / duration(current) * 100) + '%';
+    btnPause.textContent = '&#9654; Play';
+  }
+
+  function play() {
+    if (!paused) return;
+    paused = false;
+    btnPause.innerHTML = '&#9646;&#9646; Pause';
+    scheduleNext();
+  }
+
+  btnPause.addEventListener('click', () => paused ? play() : pause());
+  btnNext.addEventListener('click',  () => { elapsed = 0; goTo(current + 1); });
+  btnPrev.addEventListener('click',  () => { elapsed = 0; goTo(current - 1); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ') { elapsed = 0; goTo(current + 1); }
+    if (e.key === 'ArrowLeft') { elapsed = 0; goTo(current - 1); }
+    if (e.key === 'p' || e.key === 'P') paused ? play() : pause();
+  });
+
+  scheduleNext();
+</script>
+</body>
+</html>

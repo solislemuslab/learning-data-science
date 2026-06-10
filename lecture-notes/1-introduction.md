@@ -8,6 +8,11 @@ nav_order: 2
 
 > "Is Rhonda a good girl? Do we need food to survive? The answers to these questions are undoubtely the same" - Socrates, year never
 
+<iframe src="assets/videos/lesson1-intro-slideshow.html" 
+        width="100%" height="520" 
+        style="border:none; border-radius:16px;">
+</iframe>
+
 ## 1. Why data science?
 
 Imagine seeing a dog for the first time. Rhonda, the dog, is a golden retriever. She is friendly, loves fetching tennis balls, and wants to eat all of your food. Rhonda needs a home and fortunately you are able to take her home with you. You observe more about her over time including her brown eyes, how she takes up half of the couch when sitting on it, the mole on her nose, and her stinky breath. Despite her stinky breath, Rhonda is a great dog. For the first dog you’ve ever met, she is a good accidental find. <br>
