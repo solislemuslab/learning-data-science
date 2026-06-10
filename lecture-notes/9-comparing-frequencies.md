@@ -56,7 +56,7 @@ The chi-square test is a statistical method used to compare frequencies or count
 {: .plants }
 If you'd like to play around with chi square tests and mosaic plots, you can play with the Wisconsin Fast Stats app which can give you sample data about plant baby leaf numbers (AKA cotyledons) by generation.
 
-<iframe src="https://wi-fast-stats.wid.wisc.edu/" width="600" height="500"></iframe> <br>
+<iframe src="https://wi-fast-stats.wid.wisc.edu/cotyledon/" width="600" height="500"></iframe> <br>
 <br>
 
 | [Home](https://solislemuslab.github.io/learning-data-science/) | [Next: Correlations](https://solislemuslab.github.io/learning-data-science/lecture-notes/10-correlations.html) |
