@@ -18,6 +18,8 @@ nav_order: 1
   Start Lesson 1
 </a>
 
+<details markdown="1">
+<summary>Read more about this course</summary>
 
 ## How to use this website
 
@@ -127,5 +129,5 @@ Images on this website are a mix of original and [AI-generated](https://www.mcki
 
 <div style="text-align:center"><img src="images/goldenretriever_logo.png" height="300" width="300"/></div>
 
-
+</details>
 
