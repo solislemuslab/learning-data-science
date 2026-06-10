@@ -111,7 +111,7 @@ Among the main topics, this website focuses on:
             1. How to interpret an r-value
             2. How to interpret the results of a multiple regression test
             3. How to reject the null hypothesis and understand that rejecting the null hypothesis for a correlational test still means no causation
-11. [With great power comes maybe good effect size](https://solislemuslab.github.io/learning-data-science/lecture-notes/11-statistics-in-the-real-world.html): Statistics in the real world
+11. [Statistics in the real world](https://solislemuslab.github.io/learning-data-science/lecture-notes/11-statistics-in-the-real-world.html): 
     - By the end of this lesson, students will be able to:
         * Discuss sample size and power
         * Identify when to use and the value of non-parametric tests

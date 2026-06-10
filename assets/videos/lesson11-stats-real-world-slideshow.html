@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lesson 11: Statistics in the Real World</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1a2b4a;--gold:#e9c46a;--slate:#2c3e50;--steel:#34495e;--silver:#ecf0f1;--teal:#2a9d8f;--coral:#e76f51;--white:#ffffff}
+body{font-family:'Inter',sans-serif;background:#111;display:flex;align-items:center;justify-content:center;height:100vh;overflow:hidden}
+#deck{width:900px;height:506px;position:relative;border-radius:16px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.slide{position:absolute;inset:0;padding:50px 64px;display:flex;flex-direction:column;justify-content:center;opacity:0;transform:translateX(60px);transition:opacity .55s ease,transform .55s ease;pointer-events:none}
+.slide.active{opacity:1;transform:translateX(0);pointer-events:all}
+.slide.exit{opacity:0;transform:translateX(-60px);transition:opacity .4s ease,transform .4s ease}
+.s-title{background:var(--slate);color:var(--white)}
+.s-data{background:var(--navy);color:var(--white)}
+.s-assume{background:#1a2b1a;color:var(--white)}
+.s-power{background:#2b1a0d;color:var(--white)}
+.s-nonparam{background:#1a1a2b;color:var(--white)}
+.s-effect{background:var(--teal);color:var(--white)}
+.s-quote{background:var(--silver);color:var(--navy)}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;opacity:.6;margin-bottom:12px}
+h1{font-size:42px;font-weight:800;line-height:1.1}
+h2{font-size:32px;font-weight:700;line-height:1.2;margin-bottom:16px}
+.sub{font-size:15px;opacity:.88;line-height:1.65;margin-top:10px;max-width:660px}
+.accent-bar{width:52px;height:5px;border-radius:3px;background:var(--gold);margin-bottom:18px}
+.s-data .accent-bar{background:var(--gold)}
+.s-assume .accent-bar{background:var(--teal)}
+.s-power .accent-bar{background:var(--gold)}
+.s-nonparam .accent-bar{background:var(--coral)}
+.s-effect .accent-bar{background:rgba(255,255,255,.5)}
+.s-quote .accent-bar{background:var(--slate)}
+.data-steps{display:flex;gap:10px;margin-top:16px}
+.ds{flex:1;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.15);border-radius:10px;padding:12px;font-size:12px;line-height:1.4;text-align:center}
+.ds .ico{font-size:22px;display:block;margin-bottom:5px}
+.ds strong{display:block;font-size:13px;color:var(--gold);margin-bottom:3px}
+.assume-row{display:flex;gap:12px;margin-top:16px}
+.ar{flex:1;border-radius:12px;padding:14px;font-size:13px;line-height:1.5}
+.ar-ok{background:rgba(42,157,143,.12);border:1.5px solid rgba(42,157,143,.3)}
+.ar-bent{background:rgba(233,196,106,.1);border:1.5px solid rgba(233,196,106,.3)}
+.ar .tag{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.7;margin-bottom:6px;display:block;color:var(--gold)}
+.power-row{display:flex;gap:14px;margin-top:18px}
+.pw{flex:1;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.15);border-radius:12px;padding:14px;text-align:center;font-size:13px;line-height:1.5}
+.pw .ico{font-size:26px;display:block;margin-bottom:6px}
+.pw strong{display:block;font-size:14px;color:var(--gold);margin-bottom:4px}
+.np-list{list-style:none;display:flex;flex-direction:column;gap:8px;margin-top:14px}
+.np-list li{display:flex;align-items:flex-start;gap:10px;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.13);border-radius:10px;padding:10px 14px;font-size:13px;line-height:1.4}
+.np-list li .tag{background:var(--coral);color:white;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-radius:6px;padding:2px 7px;flex-shrink:0;margin-top:1px}
+.effect-row{display:flex;gap:14px;margin-top:18px}
+.ef{flex:1;border-radius:12px;padding:14px;text-align:center;font-size:13px;line-height:1.5}
+.ef-p{background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.2)}
+.ef-e{background:rgba(233,196,106,.15);border:1.5px solid rgba(233,196,106,.35)}
+.ef .val{font-size:22px;font-weight:800;display:block;margin-bottom:4px;color:var(--gold)}
+.quote-block{background:rgba(44,62,80,.08);border-left:4px solid var(--slate);border-radius:0 12px 12px 0;padding:18px 22px;margin-top:18px}
+.quote-block .q{font-size:20px;font-weight:700;font-style:italic;line-height:1.3;color:var(--navy)}
+.quote-block .attr{font-size:12px;opacity:.6;margin-top:8px}
+#progress-wrap{position:absolute;bottom:0;left:0;right:0;height:4px;background:rgba(255,255,255,.15)}
+#progress-bar{height:100%;background:var(--gold);width:0%;transition:width linear}
+#dots{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:8px}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35);cursor:pointer;transition:background .3s,transform .3s}
+.dot.active{background:var(--gold);transform:scale(1.35)}
+#controls{position:absolute;top:16px;right:20px;display:flex;gap:8px}
+.ctrl-btn{background:rgba(255,255,255,.15);border:none;border-radius:8px;color:#fff;font-size:13px;font-weight:600;padding:6px 14px;cursor:pointer;backdrop-filter:blur(4px);transition:background .2s}
+.ctrl-btn:hover{background:rgba(255,255,255,.28)}
+#counter{position:absolute;top:19px;left:22px;font-size:12px;color:rgba(255,255,255,.5);font-weight:600;letter-spacing:.05em}
+.slide.active .accent-bar{animation:fadeUp .5s .10s both}
+.slide.active .eyebrow{animation:fadeUp .5s .10s both}
+.slide.active h1,.slide.active h2{animation:fadeUp .5s .18s both}
+.slide.active .sub{animation:fadeUp .5s .28s both}
+.slide.active .data-steps,.slide.active .assume-row,.slide.active .power-row,.slide.active .np-list,.slide.active .effect-row,.slide.active .quote-block{animation:fadeUp .5s .38s both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+<div id="deck">
+  <div class="slide s-title active" data-duration="7000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">Lesson 11 &mdash; Statistics in the Real World</p>
+    <h1>With great power<br>comes&#8230; messy data.</h1>
+    <p class="sub">The real-world considerations that make or break a statistical analysis.</p>
+  </div>
+
+  <div class="slide s-data" data-duration="11000">
+    <div class="accent-bar"></div>
+    <h2>Data takes work</h2>
+    <p class="sub" style="margin-top:0">The statistical test is often the <em>easy part</em>. Getting clean, representative data is where most time goes.</p>
+    <div class="data-steps">
+      <div class="ds"><span class="ico">&#128203;</span><strong>Design</strong>Plan the experiment carefully</div>
+      <div class="ds"><span class="ico">&#128202;</span><strong>Collect</strong>Gather data systematically</div>
+      <div class="ds"><span class="ico">&#9999;</span><strong>Clean</strong>Remove outliers, fix errors</div>
+      <div class="ds"><span class="ico">&#128270;</span><strong>Analyze</strong>Finally: run the test!</div>
+    </div>
+  </div>
+
+  <div class="slide s-assume" data-duration="11000">
+    <div class="accent-bar"></div>
+    <h2>Bending the rules</h2>
+    <p class="sub" style="margin-top:0">Real data rarely meets all assumptions perfectly. That&rsquo;s okay &mdash; if you&rsquo;re transparent about it.</p>
+    <div class="assume-row">
+      <div class="ar ar-ok"><span class="tag">Acceptable</span>Distribution is slightly non-normal but close enough &mdash; use Pearson&rsquo;s and note the limitation.</div>
+      <div class="ar ar-bent"><span class="tag">Needs attention</span>Very non-normal or bimodal data &mdash; use a non-parametric test instead.</div>
+    </div>
+  </div>
+
+  <div class="slide s-power" data-duration="11000">
+    <div class="accent-bar"></div>
+    <h2>Sample size &amp; power</h2>
+    <div class="power-row">
+      <div class="pw"><span class="ico">&#128200;</span><strong>Small sample</strong>May miss real effects<br>(low power)</div>
+      <div class="pw"><span class="ico">&#128201;</span><strong>Large sample</strong>More reliable results<br>(high power)</div>
+      <div class="pw"><span class="ico">&#128172;</span><strong>Power calculation</strong>Plan <em>before</em> collecting data to know how many observations you need</div>
+    </div>
+    <p class="sub" style="font-size:13px;margin-top:14px">A low-powered study might find no effect even when a real one exists!</p>
+  </div>
+
+  <div class="slide s-nonparam" data-duration="11000">
+    <div class="accent-bar"></div>
+    <h2>Non-parametric alternatives</h2>
+    <p class="sub" style="margin-top:0;font-size:14px">When your data violates normality, use these distribution-free alternatives:</p>
+    <ul class="np-list">
+      <li><span class="tag">vs t-test</span><strong>Mann-Whitney U</strong> &mdash; compare two groups without assuming normality</li>
+      <li><span class="tag">vs ANOVA</span><strong>Kruskal-Wallis</strong> &mdash; compare 3+ groups without assuming normality</li>
+      <li><span class="tag">vs Pearson</span><strong>Spearman</strong> &mdash; correlation for non-normally distributed continuous data</li>
+    </ul>
+  </div>
+
+  <div class="slide s-effect" data-duration="11000">
+    <div class="accent-bar"></div>
+    <h2>P-value vs effect size</h2>
+    <p class="sub" style="margin-top:0">A small p-value means a result is <em>unlikely by chance</em> &mdash; not that it&rsquo;s <em>meaningful</em>.</p>
+    <div class="effect-row">
+      <div class="ef ef-p"><span class="val">p &lt; 0.001</span>Statistically significant &mdash; unlikely to be chance</div>
+      <div class="ef ef-e"><span class="val">d = 0.02</span>Effect size &mdash; tiny practical impact (e.g. drug reduces blood sugar by 1 mg/dl)</div>
+    </div>
+    <p class="sub" style="font-size:13px;margin-top:14px">Always report effect size alongside p-values for real-world decisions.</p>
+  </div>
+
+  <div class="slide s-quote" data-duration="10000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">The final word</p>
+    <h2>Statistics is a tool, not a truth machine</h2>
+    <div class="quote-block">
+      <div class="q">&ldquo;All models are wrong, some are useful.&rdquo;</div>
+      <div class="attr">&mdash; George Box, British statistician</div>
+    </div>
+    <p class="sub" style="font-size:14px;margin-top:14px;color:var(--navy)">One result doesn&rsquo;t establish a pattern. Consider context, replication, and limitations &mdash; then unlock the hidden patterns behind everything!</p>
+  </div>
+
+  <div id="progress-wrap"><div id="progress-bar"></div></div>
+  <div id="dots"></div>
+  <div id="counter">1 / 7</div>
+  <div id="controls">
+    <button class="ctrl-btn" id="btn-prev">&#8249; Prev</button>
+    <button class="ctrl-btn" id="btn-pause">&#9646;&#9646; Pause</button>
+    <button class="ctrl-btn" id="btn-next">Next &#8250;</button>
+  </div>
+</div>
+<script>
+const slides=Array.from(document.querySelectorAll('.slide'));
+const dotsEl=document.getElementById('dots');
+const bar=document.getElementById('progress-bar');
+const counter=document.getElementById('counter');
+const btnPause=document.getElementById('btn-pause');
+const btnNext=document.getElementById('btn-next');
+const btnPrev=document.getElementById('btn-prev');
+let current=0,paused=false,timer=null,startAt=null,elapsed=0;
+slides.forEach((_,i)=>{const d=document.createElement('div');d.className='dot'+(i===0?' active':'');d.addEventListener('click',()=>goTo(i));dotsEl.appendChild(d)});
+function duration(i){return parseInt(slides[i].dataset.duration,10)||6000}
+function updateDots(){document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===current));counter.textContent=`${current+1} / ${slides.length}`}
+function startBar(remaining){const total=duration(current);bar.style.transition='none';bar.style.width=((total-remaining)/total*100)+'%';bar.getBoundingClientRect();bar.style.transition=`width ${remaining}ms linear`;bar.style.width='100%'}
+function goTo(index,resetElapsed=true){clearTimeout(timer);slides[current].classList.remove('active');slides[current].classList.add('exit');const prev=current;setTimeout(()=>slides[prev].classList.remove('exit'),450);current=(index+slides.length)%slides.length;slides[current].classList.add('active');updateDots();if(resetElapsed)elapsed=0;if(!paused)scheduleNext()}
+function scheduleNext(){clearTimeout(timer);const remaining=duration(current)-elapsed;startAt=Date.now();startBar(remaining);timer=setTimeout(()=>{elapsed=0;goTo(current+1)},remaining)}
+function pause(){if(paused)return;paused=true;elapsed+=Date.now()-startAt;clearTimeout(timer);bar.style.transition='none';bar.style.width=(elapsed/duration(current)*100)+'%';btnPause.textContent='&#9654; Play'}
+function play(){if(!paused)return;paused=false;btnPause.innerHTML='&#9646;&#9646; Pause';scheduleNext()}
+btnPause.addEventListener('click',()=>paused?play():pause());
+btnNext.addEventListener('click',()=>{elapsed=0;goTo(current+1)});
+btnPrev.addEventListener('click',()=>{elapsed=0;goTo(current-1)});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' '){elapsed=0;goTo(current+1)}if(e.key==='ArrowLeft'){elapsed=0;goTo(current-1)}if(e.key==='p'||e.key==='P')paused?play():pause()});
+scheduleNext();
+</script>
+</body>
+</html>

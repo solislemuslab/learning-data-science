@@ -1,10 +1,16 @@
 ---
 layout: default
-title: With great power comes maybe good effect size
+title: Statistics in the real world
 nav_order: 12
 ---
 
 # With great power comes maybe good effect size
+
+<iframe src="../assets/videos/lesson11-stats-real-world-slideshow.html" 
+        width="100%" height="520" 
+        style="border:none; border-radius:16px;">
+</iframe>
+
 ## 11. Statistics in the real world
 
 As you’ve seen, choosing the right statistical test can depend on what question you are asking, the variables you have, and meeting the assumptions of each test. However, there are additional considerations that statisticians and data scientists take into account to ensure accurate and meaningful results. It’s also important to mention that all statistical tests help provide evidence for a hypothesis being tested, but real-world data are messy. Data collection and cleaning take up a significant amount of time in statistical work. Collecting accurate and representative data are crucial for meaningful analysis. Researchers must design appropriate experiments or surveys, gather data systematically, and ensure data quality by checking for errors and inconsistencies. Cleaning and preparing the data for analysis can be a time-consuming process, involving removing outliers (extreme values), resolving missing data problems, and organizing the variables. <br>
@@ -29,7 +35,11 @@ Many researchers care about the p-value of a statistical test, viewing a smaller
 <br>
 It is possible to have a statistically significant result, but low impact. We could find a statistically significant difference of a new pharmaceutical drug that lowers blood sugar, but we find out it only reduces blood sugar minimally. The American Diabetes Association defines normal fasting blood sugar at 100 mg/dl (milligrams per deciliter) or below and the diagnosis for diabetes starts at a fasting blood sugar of 126 mg/dl. We could find the drug significantly reduces fasting blood sugar… but only by 1 mg/dl. This would be a very small reduction in fast blood sugar. Do you think someone with diabetes would be willing to pay $400 per week for this marginal reduction? Maybe, but probably not if another drug on the market already could reduce fasting blood glucose by 5 mg/dl for the same price.<br>
 <br>
-To summarize all these lessons, statistical tests are incredibly important to gain insight and evidence into the hypotheses we have about the world. Our beliefs about dog breeds, crop production, health, finances, and so much more rely on decisions, which can be informed from research that rely on statistics for evidence. Statistical tests are amazing tools that can be leveraged for clearer interpretation of the world, but keep in mind that 1 result does not establish a pattern and that any study will have its strengths and weaknesses. One quote from a British statistician, George Box, is helpful to remember- “All models are wrong, some are useful.” Statistics can yield insightful results but they should be taken into the context of the subject being studied. Were there other studies that contradicted the results? Why could that be? Who and what were being studied? When and where? It’s impossible to create the perfect study, but using statistics helps us gain more knowledge about the world and unlock the hidden patterns behind everything! <br>
+To summarize all these lessons, statistical tests are incredibly important to gain insight and evidence into the hypotheses we have about the world. Our beliefs about dog breeds, crop production, health, finances, and so much more rely on decisions, which can be informed from research that rely on statistics for evidence. Statistical tests are amazing tools that can be leveraged for clearer interpretation of the world, but keep in mind that 1 result does not establish a pattern and that any study will have its strengths and weaknesses. One quote from a British statistician, George Box, is helpful to remember:
+
+> “All models are wrong, some are useful.” - George Box
+
+ Statistics can yield insightful results but they should be taken into the context of the subject being studied. Were there other studies that contradicted the results? Why could that be? Who and what were being studied? When and where? It’s impossible to create the perfect study, but using statistics helps us gain more knowledge about the world and unlock the hidden patterns behind everything! <br>
 
 {: .important } 
 In statistics, choosing the right test depends on the question, the variables, and meeting certain assumptions. Data collection and cleaning are crucial steps, and sometimes tests like the Pearson correlation can still be meaningful even if assumptions aren't perfectly met. Overall, statistics provide insights into the world, but each study has its own strengths and weaknesses.
@@ -44,4 +54,4 @@ Get inspired about how statistics can help change the world with the videos belo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oUs1uvsz0Ok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
 
 
-| [Home](https://benrushscience.github.io/learning-data-science/) |
+| [Home](https://solislemuslab.github.io/learning-data-science/) |
