@@ -1,17 +1,25 @@
 ---
 layout: default
-title: Things might be different now
+title: Comparing 2 groups
 nav_order: 8
 ---
 
 # Things might be different now
+
+<iframe src="../assets/videos/lesson7-comparing-2-groups-slideshow.html" 
+        width="100%" height="520" 
+        style="border:none; border-radius:16px;">
+</iframe>
+
 ## 7. Comparing 2 groups (t-tests)
 
 Finally! We’ve arrived at comparing a specific variable between two groups- we will compare heights between golden retrievers and pugs. The statistical test we will use to do this is called a t-test. Like other statistical tests, t-tests are a statistical tool that can help us compare data and determine if there are any significant differences. Below we can see what our samples look like with a height histogram of golden retrievers and pugs. <br>
 <br> 
 <div style="text-align:center"><img src="../images/golden_pug_histograms.png" height="350" width="525"/></div> <br>
 <br>
-There are also two types of t-tests: One-tailed and two-tailed t-tests. In a one-tailed t-test, we are interested in whether one group is significantly higher or lower than the other (are golden retrievers significantly taller than pugs?). For a real world example, we could be testing whether a new drug improves test scores and we might only care if scores are higher. In a two-tailed t-test, we're looking for any significant difference, whether one group is higher or lower (are pugs and golden retrievers different in height?). This is useful when we're investigating if a new drug affects test scores in any way. The choice between one-tailed and two-tailed t-tests depends on your research question and what you want to conclude from your data analysis. <br>
+There are also two types of t-tests: One-tailed and two-tailed t-tests. In a one-tailed t-test, we are interested in whether one group is significantly higher or lower than the other (are golden retrievers significantly taller than pugs?). For a real world example, we could be testing whether a new drug improves test scores and we might only care if scores are higher. 
+
+In a two-tailed t-test, we're looking for any significant difference, whether one group is higher or lower (are pugs and golden retrievers different in height?). This is useful when we're investigating if a new drug affects test scores in any way. The choice between one-tailed and two-tailed t-tests depends on your research question and what you want to conclude from your data analysis. <br>
 <br>
 Two-tailed T-tests are specifically designed to analyze the means of two groups and determine if they are significantly different from each other. They are very common in research. Like we’ve talked about many times (or too many?), we will focus on the average heights of golden retrievers and pugs. Like any statistical test, we need to check the types of variables being compared are appropriate for the test and that other requirements of the test, or assumptions, are met to properly analyze our comparison of interest. T-tests are used for comparing a continuous variable (height) between a categorical variable with 2 possible values (dog breeds: 1.golden retrievers vs 2. pugs). <br>
 <br>
@@ -45,5 +53,10 @@ The t-test is a versatile tool that can be applied to various scenarios. It can 
 {: .important }
 T-tests are a statistical method used to compare the average (mean) of a specific variable, like height, between two different groups, such as golden retrievers and pugs. This test helps us find out if the differences in averages between these groups are significant (not just due to chance) and supports our guesses with solid evidence.
 
+{: .plants }
+If you'd like to play around with vist t tests and box plots, you can play with the Wisconsin Fast Stats app which can give you sample data about plant baby leaf numbers (AKA cotyledons) by generation.
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Comparing more than 2 groups](https://benrushscience.github.io/learning-data-science/lecture-notes/8-comparing-2+-groups.html) |
+<iframe src="https://wi-fast-stats.wid.wisc.edu/cotyledon/" width="600" height="500"></iframe> <br>
+<br>
+
+| [Home](https://solislemuslab.github.io/learning-data-science/) | [Next: Comparing more than 2 groups](https://solislemuslab.github.io/learning-data-science/lecture-notes/8-comparing-2+-groups.html) |

@@ -6,7 +6,7 @@ nav_order: 7
 
 # I love being rejected!
 
-<iframe src="../assets/videos/llesson6-hypothesis-testing-slideshow.html" 
+<iframe src="../assets/videos/lesson6-hypothesis-testing-slideshow.html" 
         width="100%" height="520" 
         style="border:none; border-radius:16px;">
 </iframe>

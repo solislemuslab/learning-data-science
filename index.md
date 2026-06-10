@@ -78,7 +78,7 @@ Among the main topics, this website focuses on:
         * Describe and recognize a scientific hypothesis
         * Describe and form null and alternative hypotheses
         * Discuss how it’s impossible to know everything about all variables in space and time, so we reject the null hypothesis
-7. [Things might be different now](https://solislemuslab.github.io/learning-data-science/lecture-notes/7-comparing-2-groups.html): Comparing 2 groups
+7. [Comparing 2 groups](https://solislemuslab.github.io/learning-data-science/lecture-notes/7-comparing-2-groups.html):
     - By the end of this lesson, students will be able to:
         * Demonstratethe value of testing two groups statistically
         * Explain when and how to apply t-tests

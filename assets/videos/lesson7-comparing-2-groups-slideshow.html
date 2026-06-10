@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lesson 7: Comparing 2 Groups (t-tests)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1a2b4a;--gold:#e9c46a;--teal:#2a9d8f;--dark-teal:#1a5c54;--cyan:#0cb8b0;--light:#e8faf9;--white:#ffffff}
+body{font-family:'Inter',sans-serif;background:#111;display:flex;align-items:center;justify-content:center;height:100vh;overflow:hidden}
+#deck{width:900px;height:506px;position:relative;border-radius:16px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.slide{position:absolute;inset:0;padding:50px 64px;display:flex;flex-direction:column;justify-content:center;opacity:0;transform:translateX(60px);transition:opacity .55s ease,transform .55s ease;pointer-events:none}
+.slide.active{opacity:1;transform:translateX(0);pointer-events:all}
+.slide.exit{opacity:0;transform:translateX(-60px);transition:opacity .4s ease,transform .4s ease}
+.s-title{background:var(--dark-teal);color:var(--white)}
+.s-when{background:var(--navy);color:var(--white)}
+.s-tails{background:#0d2b28;color:var(--white)}
+.s-assume{background:#1a2b1a;color:var(--white)}
+.s-example{background:var(--teal);color:var(--white)}
+.s-result{background:var(--light);color:var(--navy)}
+.s-beyond{background:#1a1a2b;color:var(--white)}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;opacity:.6;margin-bottom:12px}
+h1{font-size:44px;font-weight:800;line-height:1.1}
+h2{font-size:32px;font-weight:700;line-height:1.2;margin-bottom:16px}
+.sub{font-size:15px;opacity:.88;line-height:1.65;margin-top:10px;max-width:660px}
+.accent-bar{width:52px;height:5px;border-radius:3px;background:var(--gold);margin-bottom:18px}
+.s-tails .accent-bar{background:var(--cyan)}
+.s-assume .accent-bar{background:var(--gold)}
+.s-example .accent-bar{background:rgba(255,255,255,.5)}
+.s-result .accent-bar{background:var(--teal)}
+.s-beyond .accent-bar{background:var(--gold)}
+.when-row{display:flex;gap:12px;margin-top:16px}
+.when-box{flex:1;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.2);border-radius:12px;padding:14px;font-size:13px;line-height:1.5;text-align:center}
+.when-box .ico{font-size:26px;display:block;margin-bottom:6px}
+.when-box strong{display:block;font-size:14px;color:var(--gold);margin-bottom:4px}
+.tails-col{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.tc{border-radius:12px;padding:14px;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.15);font-size:13px;line-height:1.5}
+.tc .tag{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);opacity:.8;margin-bottom:6px;display:block}
+.tc strong{display:block;font-size:15px;margin-bottom:4px}
+.assume-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.assume-list li{display:flex;align-items:flex-start;gap:12px;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.15);border-radius:10px;padding:10px 14px;font-size:13px;line-height:1.5}
+.assume-list li .ico{font-size:18px;flex-shrink:0}
+.groups{display:flex;gap:16px;margin-top:18px}
+.grp{flex:1;border-radius:12px;padding:16px;text-align:center}
+.grp-gold{background:rgba(233,196,106,.15);border:1.5px solid rgba(233,196,106,.4)}
+.grp-gray{background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.15)}
+.grp .ico{font-size:32px;display:block;margin-bottom:6px}
+.grp strong{display:block;font-size:14px;color:var(--gold);margin-bottom:6px}
+.grp .stat{font-size:13px;opacity:.85;line-height:1.5}
+.result-box{background:rgba(42,157,143,.1);border:1.5px solid rgba(42,157,143,.3);border-radius:12px;padding:16px 20px;margin-top:16px;color:var(--navy)}
+.result-box .big{font-size:28px;font-weight:800;color:var(--teal)}
+.result-box .detail{font-size:13px;margin-top:6px;line-height:1.5}
+#progress-wrap{position:absolute;bottom:0;left:0;right:0;height:4px;background:rgba(255,255,255,.15)}
+#progress-bar{height:100%;background:var(--gold);width:0%;transition:width linear}
+#dots{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:8px}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35);cursor:pointer;transition:background .3s,transform .3s}
+.dot.active{background:var(--gold);transform:scale(1.35)}
+#controls{position:absolute;top:16px;right:20px;display:flex;gap:8px}
+.ctrl-btn{background:rgba(255,255,255,.15);border:none;border-radius:8px;color:#fff;font-size:13px;font-weight:600;padding:6px 14px;cursor:pointer;backdrop-filter:blur(4px);transition:background .2s}
+.ctrl-btn:hover{background:rgba(255,255,255,.28)}
+#counter{position:absolute;top:19px;left:22px;font-size:12px;color:rgba(255,255,255,.5);font-weight:600;letter-spacing:.05em}
+.slide.active .accent-bar{animation:fadeUp .5s .10s both}
+.slide.active .eyebrow{animation:fadeUp .5s .10s both}
+.slide.active h1,.slide.active h2{animation:fadeUp .5s .18s both}
+.slide.active .sub{animation:fadeUp .5s .28s both}
+.slide.active .when-row,.slide.active .tails-col,.slide.active .assume-list,.slide.active .groups,.slide.active .result-box{animation:fadeUp .5s .38s both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+<div id="deck">
+  <div class="slide s-title active" data-duration="7000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">Lesson 7 &mdash; Comparing 2 Groups</p>
+    <h1>Things might be<br>different now</h1>
+    <p class="sub">The t-test: finally comparing golden retrievers vs pugs with proper statistical evidence.</p>
+  </div>
+
+  <div class="slide s-when" data-duration="10000">
+    <div class="accent-bar"></div>
+    <h2>When to use a t-test</h2>
+    <div class="when-row">
+      <div class="when-box"><span class="ico">&#128200;</span><strong>Continuous variable</strong>Height, weight, temperature</div>
+      <div class="when-box"><span class="ico">&#10010;</span><strong>vs.</strong></div>
+      <div class="when-box"><span class="ico">&#128049;&#128021;</span><strong>Categorical variable</strong>Exactly 2 groups (pug vs golden retriever)</div>
+    </div>
+    <p class="sub" style="font-size:13px;margin-top:14px">Is the average height different between the two breeds? That&rsquo;s a t-test question.</p>
+  </div>
+
+  <div class="slide s-tails" data-duration="11000">
+    <div class="accent-bar"></div>
+    <h2>One-tailed vs two-tailed</h2>
+    <div class="tails-col">
+      <div class="tc"><span class="tag">One-tailed</span><strong>Directional question</strong>Are golden retrievers <em>taller than</em> pugs? You only care about one direction.</div>
+      <div class="tc"><span class="tag">Two-tailed</span><strong>Any difference</strong>Are golden retrievers and pugs <em>different</em> in height? Either direction counts.</div>
+    </div>
+    <p class="sub" style="font-size:13px;margin-top:14px">Two-tailed t-tests are more common in research &mdash; they&rsquo;re more conservative.</p>
+  </div>
+
+  <div class="slide s-assume" data-duration="10000">
+    <div class="accent-bar"></div>
+    <h2>Key assumptions</h2>
+    <ul class="assume-list">
+      <li><span class="ico">&#9899;</span>Samples are <strong>independent</strong> (one dog&rsquo;s height doesn&rsquo;t affect another&rsquo;s)</li>
+      <li><span class="ico">&#128200;</span>Data within each group is <strong>roughly normally distributed</strong></li>
+      <li><span class="ico">&#9878;</span><strong>Similar variance</strong> in both groups (heights vary similarly in each breed)</li>
+    </ul>
+  </div>
+
+  <div class="slide s-example" data-duration="11000">
+    <div class="accent-bar"></div>
+    <h2>The example: n=30 per breed</h2>
+    <div class="groups">
+      <div class="grp grp-gold"><span class="ico">&#128021;</span><strong>Golden Retriever</strong><div class="stat">Mean: 24&Prime;<br>SD: &plusmn;2&Prime;</div></div>
+      <div class="grp grp-gray"><span class="ico">&#128049;</span><strong>Pug</strong><div class="stat">Mean: 11.5&Prime;<br>SD: &plusmn;1.5&Prime;</div></div>
+    </div>
+    <p class="sub" style="font-size:13px;margin-top:14px">The t-test calculates a <strong>t-statistic</strong> from these means and SDs, then maps it to a p-value.</p>
+  </div>
+
+  <div class="slide s-result" data-duration="10000">
+    <div class="accent-bar"></div>
+    <h2>The result &#127881;</h2>
+    <div class="result-box">
+      <div class="big">t = 5.2 &nbsp;|&nbsp; p &lt; 0.001</div>
+      <div class="detail">With df=59 and p &lt; 0.001, we reject H&#8320;. There <em>is</em> a statistically significant difference in height between golden retrievers and pugs. Less than 0.1% chance this is due to random chance.</div>
+    </div>
+  </div>
+
+  <div class="slide s-beyond" data-duration="9000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">What&rsquo;s next?</p>
+    <h2>What about 3+ groups?</h2>
+    <p class="sub">T-tests compare exactly 2 groups. Want to compare golden retrievers, pugs, AND St. Bernards?</p>
+    <p class="sub" style="margin-top:12px;font-size:15px;font-weight:700;color:var(--gold)">You need ANOVA &mdash; up next in Lesson 8!</p>
+  </div>
+
+  <div id="progress-wrap"><div id="progress-bar"></div></div>
+  <div id="dots"></div>
+  <div id="counter">1 / 7</div>
+  <div id="controls">
+    <button class="ctrl-btn" id="btn-prev">&#8249; Prev</button>
+    <button class="ctrl-btn" id="btn-pause">&#9646;&#9646; Pause</button>
+    <button class="ctrl-btn" id="btn-next">Next &#8250;</button>
+  </div>
+</div>
+<script>
+const slides=Array.from(document.querySelectorAll('.slide'));
+const dotsEl=document.getElementById('dots');
+const bar=document.getElementById('progress-bar');
+const counter=document.getElementById('counter');
+const btnPause=document.getElementById('btn-pause');
+const btnNext=document.getElementById('btn-next');
+const btnPrev=document.getElementById('btn-prev');
+let current=0,paused=false,timer=null,startAt=null,elapsed=0;
+slides.forEach((_,i)=>{const d=document.createElement('div');d.className='dot'+(i===0?' active':'');d.addEventListener('click',()=>goTo(i));dotsEl.appendChild(d)});
+function duration(i){return parseInt(slides[i].dataset.duration,10)||6000}
+function updateDots(){document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===current));counter.textContent=`${current+1} / ${slides.length}`}
+function startBar(remaining){const total=duration(current);bar.style.transition='none';bar.style.width=((total-remaining)/total*100)+'%';bar.getBoundingClientRect();bar.style.transition=`width ${remaining}ms linear`;bar.style.width='100%'}
+function goTo(index,resetElapsed=true){clearTimeout(timer);slides[current].classList.remove('active');slides[current].classList.add('exit');const prev=current;setTimeout(()=>slides[prev].classList.remove('exit'),450);current=(index+slides.length)%slides.length;slides[current].classList.add('active');updateDots();if(resetElapsed)elapsed=0;if(!paused)scheduleNext()}
+function scheduleNext(){clearTimeout(timer);const remaining=duration(current)-elapsed;startAt=Date.now();startBar(remaining);timer=setTimeout(()=>{elapsed=0;goTo(current+1)},remaining)}
+function pause(){if(paused)return;paused=true;elapsed+=Date.now()-startAt;clearTimeout(timer);bar.style.transition='none';bar.style.width=(elapsed/duration(current)*100)+'%';btnPause.textContent='&#9654; Play'}
+function play(){if(!paused)return;paused=false;btnPause.innerHTML='&#9646;&#9646; Pause';scheduleNext()}
+btnPause.addEventListener('click',()=>paused?play():pause());
+btnNext.addEventListener('click',()=>{elapsed=0;goTo(current+1)});
+btnPrev.addEventListener('click',()=>{elapsed=0;goTo(current-1)});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' '){elapsed=0;goTo(current+1)}if(e.key==='ArrowLeft'){elapsed=0;goTo(current-1)}if(e.key==='p'||e.key==='P')paused?play():pause()});
+scheduleNext();
+</script>
+</body>
+</html>
