@@ -95,7 +95,7 @@ Among the main topics, this website focuses on:
             2. F statistic
             3. How to reject the null hypothesis, and that this means there is a global group difference, but can’t tell which groups are different
         * Define a post-hoc analysis and explain how a post-hoc analysis yields additional results about multiple group comparisons
-9. [Chi-square marks the spot](https://solislemuslab.github.io/learning-data-science/lecture-notes/9-comparing-frequencies.html): Comparing frequencies
+9. [Comparing frequencies](https://solislemuslab.github.io/learning-data-science/lecture-notes/9-comparing-frequencies.html):
     - By the end of this lesson, students will be able to:
         * Discuss the value of testing frequencies statistically for both goodness of fit and tests of independence
         * Explain when and how to apply chi-squared tests

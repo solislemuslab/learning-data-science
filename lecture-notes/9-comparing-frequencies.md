@@ -1,10 +1,17 @@
 ---
 layout: default
-title: χ² marks the spot
+title: Comparing frequencies
 nav_order: 10
 ---
 
 # χ² marks the spot
+
+<iframe src="../assets/videos/lesson9-chi-square-slideshow.html" 
+        width="100%" height="520" 
+        style="border:none; border-radius:16px;">
+</iframe>
+
+
 ## 9. Comparing frequencies (chi-square)
 
 So far we’ve seen techniques to compare between group means, but what if we want to compare between groups using variables that aren’t continuous? What if we want to know that the hypothetical dog park has a higher number, or frequency, of golden retrievers than pugs and St. Bernards? Sure, we’ve seen 600 golden retrievers, but how do we really know that we aren’t just overlooking pugs because we hang out with the dogs that can run and don’t get winded from walking up 2 stairs? Maybe many pugs and St. Bernards don't know how to catch frisbees as well as golden retrievers? To answer these types of questions, we can use the chi-square test. 
@@ -46,4 +53,10 @@ You can find out how to calculate a chi-square test with [this video from Khan A
 {: .important }
 The chi-square test is a statistical method used to compare frequencies or counts in different categories, like seeing if one dog breed is more common than another at a park. It helps us understand if there's a significant difference in the frequency of categorical variables, such as dog breeds or plant types.
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Correlations](https://benrushscience.github.io/learning-data-science/lecture-notes/10-correlations.html) |
+{: .plants }
+If you'd like to play around with chi square tests and mosaic plots, you can play with the Wisconsin Fast Stats app which can give you sample data about plant baby leaf numbers (AKA cotyledons) by generation.
+
+<iframe src="https://wi-fast-stats.wid.wisc.edu/" width="600" height="500"></iframe> <br>
+<br>
+
+| [Home](https://solislemuslab.github.io/learning-data-science/) | [Next: Correlations](https://solislemuslab.github.io/learning-data-science/lecture-notes/10-correlations.html) |

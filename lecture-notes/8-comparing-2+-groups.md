@@ -53,4 +53,4 @@ In conclusion, the ANOVA test is a valuable statistical tool used to compare mea
 {: .important }
 ANOVA (Analysis Of Variance) is a statistical test used to compare the average (mean) of a variable, like height, across three or more different groups, such as different dog breeds. It helps us determine if there are any significant differences between these groups, but it doesn't tell us which specific groups are higher or lower than the others without additional analysis.
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Comparing frequencies](https://benrushscience.github.io/learning-data-science/lecture-notes/9-comparing-frequencies.html) |
+| [Home](https://solislemuslab.github.io/learning-data-science/) | [Next: Comparing frequencies](https://solislemuslab.github.io/learning-data-science/lecture-notes/9-comparing-frequencies.html) |

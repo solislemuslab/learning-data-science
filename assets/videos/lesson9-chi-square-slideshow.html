@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lesson 9: Chi-square</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1a2b4a;--gold:#e9c46a;--amber:#c97d0a;--warm:#3d2800;--cream:#fff8e6;--orange:#e07c24;--brown:#5c3a00;--white:#ffffff}
+body{font-family:'Inter',sans-serif;background:#111;display:flex;align-items:center;justify-content:center;height:100vh;overflow:hidden}
+#deck{width:900px;height:506px;position:relative;border-radius:16px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.slide{position:absolute;inset:0;padding:50px 64px;display:flex;flex-direction:column;justify-content:center;opacity:0;transform:translateX(60px);transition:opacity .55s ease,transform .55s ease;pointer-events:none}
+.slide.active{opacity:1;transform:translateX(0);pointer-events:all}
+.slide.exit{opacity:0;transform:translateX(-60px);transition:opacity .4s ease,transform .4s ease}
+.s-title{background:var(--warm);color:var(--white)}
+.s-what{background:var(--navy);color:var(--white)}
+.s-types{background:var(--brown);color:var(--white)}
+.s-example{background:#2b1a00;color:var(--white)}
+.s-stat{background:var(--amber);color:var(--white)}
+.s-posthoc{background:var(--cream);color:var(--navy)}
+.s-apps{background:#1a1a2b;color:var(--white)}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;opacity:.6;margin-bottom:12px}
+h1{font-size:44px;font-weight:800;line-height:1.1}
+h2{font-size:32px;font-weight:700;line-height:1.2;margin-bottom:16px}
+.sub{font-size:15px;opacity:.88;line-height:1.65;margin-top:10px;max-width:660px}
+.accent-bar{width:52px;height:5px;border-radius:3px;background:var(--gold);margin-bottom:18px}
+.s-types .accent-bar{background:var(--gold)}
+.s-example .accent-bar{background:var(--orange)}
+.s-stat .accent-bar{background:rgba(255,255,255,.5)}
+.s-posthoc .accent-bar{background:var(--amber)}
+.s-apps .accent-bar{background:var(--gold)}
+.diff-row{display:flex;gap:14px;margin-top:18px}
+.diff-box{flex:1;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.15);border-radius:12px;padding:14px;font-size:13px;line-height:1.5;text-align:center}
+.diff-box .ico{font-size:28px;display:block;margin-bottom:6px}
+.diff-box strong{display:block;font-size:14px;color:var(--gold);margin-bottom:4px}
+.types-col{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.tc{border-radius:12px;padding:14px;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.15);font-size:13px;line-height:1.5}
+.tc .tag{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);opacity:.8;margin-bottom:6px;display:block}
+.tc strong{display:block;font-size:14px;margin-bottom:4px}
+.table-wrap{margin-top:16px;overflow:hidden;border-radius:10px;border:1.5px solid rgba(255,255,255,.2)}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{background:rgba(255,255,255,.12);padding:8px 12px;text-align:left;font-weight:700;font-size:11px;letter-spacing:.08em}
+td{padding:8px 12px;border-top:1px solid rgba(255,255,255,.1)}
+.td-gold{color:var(--gold);font-weight:700}
+.stat-box{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.2);border-radius:12px;padding:16px 20px;margin-top:18px}
+.stat-box .big{font-size:30px;font-weight:800;color:var(--gold)}
+.stat-box .detail{font-size:13px;margin-top:6px;line-height:1.5}
+.posthoc-note{background:rgba(201,125,10,.1);border:1.5px solid rgba(201,125,10,.3);border-radius:12px;padding:14px 18px;margin-top:16px;font-size:14px;line-height:1.6;color:var(--navy)}
+.apps{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.app-pill{background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.2);border-radius:100px;padding:8px 16px;font-size:13px;font-weight:600}
+#progress-wrap{position:absolute;bottom:0;left:0;right:0;height:4px;background:rgba(255,255,255,.15)}
+#progress-bar{height:100%;background:var(--gold);width:0%;transition:width linear}
+#dots{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:8px}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35);cursor:pointer;transition:background .3s,transform .3s}
+.dot.active{background:var(--gold);transform:scale(1.35)}
+#controls{position:absolute;top:16px;right:20px;display:flex;gap:8px}
+.ctrl-btn{background:rgba(255,255,255,.15);border:none;border-radius:8px;color:#fff;font-size:13px;font-weight:600;padding:6px 14px;cursor:pointer;backdrop-filter:blur(4px);transition:background .2s}
+.ctrl-btn:hover{background:rgba(255,255,255,.28)}
+#counter{position:absolute;top:19px;left:22px;font-size:12px;color:rgba(255,255,255,.5);font-weight:600;letter-spacing:.05em}
+.slide.active .accent-bar{animation:fadeUp .5s .10s both}
+.slide.active .eyebrow{animation:fadeUp .5s .10s both}
+.slide.active h1,.slide.active h2{animation:fadeUp .5s .18s both}
+.slide.active .sub{animation:fadeUp .5s .28s both}
+.slide.active .diff-row,.slide.active .types-col,.slide.active .table-wrap,.slide.active .stat-box,.slide.active .posthoc-note,.slide.active .apps{animation:fadeUp .5s .38s both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+<div id="deck">
+  <div class="slide s-title active" data-duration="7000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">Lesson 9 &mdash; Chi-square</p>
+    <h1>&#967;&sup2; marks the spot</h1>
+    <p class="sub">When your data is categorical &mdash; counts and frequencies instead of measurements &mdash; chi-square is the test to use.</p>
+  </div>
+
+  <div class="slide s-what" data-duration="10000">
+    <div class="accent-bar"></div>
+    <h2>What&rsquo;s different here?</h2>
+    <div class="diff-row">
+      <div class="diff-box"><span class="ico">&#128200;</span><strong>T-test / ANOVA</strong>Continuous variable<br>(height in inches)</div>
+      <div class="diff-box" style="background:rgba(233,196,106,.12);border-color:rgba(233,196,106,.3)"><span class="ico">&#967;&sup2;</span><strong>Chi-square</strong>Categorical variable<br>(catches frisbee: yes / no)</div>
+    </div>
+    <p class="sub" style="font-size:13px;margin-top:14px">Chi-square compares <strong>frequencies / counts</strong> across groups, not means.</p>
+  </div>
+
+  <div class="slide s-types" data-duration="11000">
+    <div class="accent-bar"></div>
+    <h2>Two types of chi-square</h2>
+    <div class="types-col">
+      <div class="tc"><span class="tag">Goodness of fit</span><strong>One variable</strong>Are there more golden retrievers than pugs at the park? (Observed vs expected)</div>
+      <div class="tc"><span class="tag">Test of independence</span><strong>Two variables</strong>Is frisbee-catching ability related to dog breed? (Are they associated?)</div>
+    </div>
+  </div>
+
+  <div class="slide s-example" data-duration="12000">
+    <div class="accent-bar"></div>
+    <h2>The frisbee example</h2>
+    <div class="table-wrap">
+      <table>
+        <tr><th></th><th>Golden Retrievers</th><th>Pugs</th><th>St. Bernards</th></tr>
+        <tr><td>Catches frisbee</td><td class="td-gold">52</td><td>12</td><td>18</td></tr>
+        <tr><td>Drops frisbee</td><td>8</td><td class="td-gold">48</td><td>42</td></tr>
+      </table>
+    </div>
+    <p class="sub" style="font-size:13px;margin-top:12px">Golden retrievers catch frisbees at a much higher rate. But is this statistically significant? That&rsquo;s what &#967;&sup2; tests!</p>
+  </div>
+
+  <div class="slide s-stat" data-duration="10000">
+    <div class="accent-bar"></div>
+    <h2>The &#967;&sup2; statistic</h2>
+    <p class="sub" style="margin-top:0">Measures the difference between <em>observed</em> frequencies and what we&rsquo;d <em>expect</em> if there were no association.</p>
+    <div class="stat-box">
+      <div class="big">If p &lt; 0.05 &rarr; reject H&#8320;</div>
+      <div class="detail">Evidence that frisbee-catching ability <em>is</em> associated with breed. The test tells you a difference exists &mdash; but not <em>which</em> group is better (you need post-hoc for that).</div>
+    </div>
+  </div>
+
+  <div class="slide s-posthoc" data-duration="10000">
+    <div class="accent-bar"></div>
+    <h2>Post-hoc for chi-square</h2>
+    <p class="sub" style="margin-top:0;color:var(--navy)">Just like ANOVA, chi-square only tells you <em>a</em> difference exists. Post-hoc pairwise tests tell you which groups differ.</p>
+    <div class="posthoc-note">
+      &#128270; After a significant &#967;&sup2; result: compare golden retrievers vs pugs, golden retrievers vs St. Bernards, and pugs vs St. Bernards separately to find out <em>who catches more frisbees</em>.
+    </div>
+  </div>
+
+  <div class="slide s-apps" data-duration="9000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">Real-world uses</p>
+    <h2>Chi-square in the wild</h2>
+    <div class="apps">
+      <span class="app-pill">&#127807; Fertilized vs unfertilized plant color</span>
+      <span class="app-pill">&#127968; Car types at competing dealerships</span>
+      <span class="app-pill">&#128138; Drug side-effect rates by group</span>
+      <span class="app-pill">&#128249; Social media engagement by post type</span>
+    </div>
+    <p class="sub" style="font-size:13px;margin-top:16px">Any time you&rsquo;re counting things in categories &mdash; chi-square is your test.</p>
+  </div>
+
+  <div id="progress-wrap"><div id="progress-bar"></div></div>
+  <div id="dots"></div>
+  <div id="counter">1 / 7</div>
+  <div id="controls">
+    <button class="ctrl-btn" id="btn-prev">&#8249; Prev</button>
+    <button class="ctrl-btn" id="btn-pause">&#9646;&#9646; Pause</button>
+    <button class="ctrl-btn" id="btn-next">Next &#8250;</button>
+  </div>
+</div>
+<script>
+const slides=Array.from(document.querySelectorAll('.slide'));
+const dotsEl=document.getElementById('dots');
+const bar=document.getElementById('progress-bar');
+const counter=document.getElementById('counter');
+const btnPause=document.getElementById('btn-pause');
+const btnNext=document.getElementById('btn-next');
+const btnPrev=document.getElementById('btn-prev');
+let current=0,paused=false,timer=null,startAt=null,elapsed=0;
+slides.forEach((_,i)=>{const d=document.createElement('div');d.className='dot'+(i===0?' active':'');d.addEventListener('click',()=>goTo(i));dotsEl.appendChild(d)});
+function duration(i){return parseInt(slides[i].dataset.duration,10)||6000}
+function updateDots(){document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===current));counter.textContent=`${current+1} / ${slides.length}`}
+function startBar(remaining){const total=duration(current);bar.style.transition='none';bar.style.width=((total-remaining)/total*100)+'%';bar.getBoundingClientRect();bar.style.transition=`width ${remaining}ms linear`;bar.style.width='100%'}
+function goTo(index,resetElapsed=true){clearTimeout(timer);slides[current].classList.remove('active');slides[current].classList.add('exit');const prev=current;setTimeout(()=>slides[prev].classList.remove('exit'),450);current=(index+slides.length)%slides.length;slides[current].classList.add('active');updateDots();if(resetElapsed)elapsed=0;if(!paused)scheduleNext()}
+function scheduleNext(){clearTimeout(timer);const remaining=duration(current)-elapsed;startAt=Date.now();startBar(remaining);timer=setTimeout(()=>{elapsed=0;goTo(current+1)},remaining)}
+function pause(){if(paused)return;paused=true;elapsed+=Date.now()-startAt;clearTimeout(timer);bar.style.transition='none';bar.style.width=(elapsed/duration(current)*100)+'%';btnPause.textContent='&#9654; Play'}
+function play(){if(!paused)return;paused=false;btnPause.innerHTML='&#9646;&#9646; Pause';scheduleNext()}
+btnPause.addEventListener('click',()=>paused?play():pause());
+btnNext.addEventListener('click',()=>{elapsed=0;goTo(current+1)});
+btnPrev.addEventListener('click',()=>{elapsed=0;goTo(current-1)});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' '){elapsed=0;goTo(current+1)}if(e.key==='ArrowLeft'){elapsed=0;goTo(current-1)}if(e.key==='p'||e.key==='P')paused?play():pause()});
+scheduleNext();
+</script>
+</body>
+</html>
