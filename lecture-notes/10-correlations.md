@@ -1,10 +1,17 @@
 ---
 layout: default
-title: What goes up must go down, or up, or nowhere
+title: Correlations
 nav_order: 11
 ---
 
 # What goes up must go down, or up, or nowhere
+
+<iframe src="../assets/videos/lesson10-correlations-slideshow.html" 
+        width="100%" height="520" 
+        style="border:none; border-radius:16px;">
+</iframe>
+
+
 ## 10. Correlations
 
 Correlations are one of the most frequently used statistical tests and for good reason. They allow comparisons between continuous variables and yield how strongly these variables are related to one another in a dataset. You can test to see how much happiness and income are correlated, how much rain is associated with the number of wildfires, and how much carbon dioxide that a country produces is associated with the country’s gross domestic product (a typical measure of a country’s economic health). Many correlation tests exist and we will discuss a basic yet powerful test- the Pearson correlation test, named after Karl Pearson. (Interestingly, this test has many names including the correlation coefficient, Pearson’s correlation, Pearson correlation coefficient, Pearson’s product-moment correlation. We will call the test the Pearson correlation test for consistency. <br>
@@ -93,4 +100,10 @@ In our last lesson (hold back the tears), we’ll discuss how messy data can hal
 {: .important }
 Correlations in statistics measure the relationship between two continuous variables, indicating how closely they move together. However, they don't prove causation, meaning a high correlation doesn't necessarily mean one variable causes changes in the other.
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Statistics in the real world](https://benrushscience.github.io/learning-data-science/lecture-notes/11-statistics-in-the-real-world.html) |
+{: .plants }
+If you'd like to play around with correlations and scatterplots, you can check out the Wisconsin Fast Stats app where you can compare different plant measurements.
+
+<iframe src="https://wi-fast-stats.wid.wisc.edu/ecosystem/" width="600" height="500"></iframe> <br>
+<br>
+
+| [Home](https://solislemuslab.github.io/learning-data-science/) | [Next: Statistics in the real world](https://solislemuslab.github.io/learning-data-science/lecture-notes/11-statistics-in-the-real-world.html) |

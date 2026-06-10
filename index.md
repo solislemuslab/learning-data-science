@@ -103,7 +103,7 @@ Among the main topics, this website focuses on:
             1. Test results
             2. Chi-square statistic
             3. How to reject the null hypothesis, and that this means there is a global group difference, but can’t tell which groups are different
-10. [What goes up must go down, or up, or nowhere](https://solislemuslab.github.io/learning-data-science/lecture-notes/10-correlations.html): Correlations
+10. [Correlations](https://solislemuslab.github.io/learning-data-science/lecture-notes/10-correlations.html):
     - By the end of this lesson, students will be able to:
         * Discuss the value of testing two continuous variables statistically
         * Explain the difference between correlation and causation
