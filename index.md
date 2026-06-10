@@ -48,12 +48,12 @@ Among the main topics, this website focuses on:
 
 ## Topics and specific learning objectives
 
-1. [I've never seen a dog](https://solislemuslab.github.io/learning-data-science/lecture-notes/1-introduction.html): Why data science?
+1. [Introduction](https://solislemuslab.github.io/learning-data-science/lecture-notes/1-introduction.html): Why data science?
     - By the end of this lesson, students will be able to:
         * Identify why statistics is helpful in the real world for assessing differences and patterns
         * Describe the challenges of determining differences and patterns
         * Discuss a comparison model of genetic diversity (dogs) for reference when thinking through the following lessons
-2. [Genetic diversity](https://solislemuslab.github.io/learning-data-science/lecture-notes/2-genetic-diversity.html): Basics of DNA
+2. [Basics of DNA](https://solislemuslab.github.io/learning-data-science/lecture-notes/2-genetic-diversity.html): Basics of DNA
     - By the end of this lesson, students will be able to:
         * Restate what genes and DNA are with analogies to cooking
         * Define genetic diversity, genetic variation, and gene expression

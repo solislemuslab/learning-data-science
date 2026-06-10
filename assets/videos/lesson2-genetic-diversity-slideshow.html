@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lesson 2: Genetic Diversity</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --teal:   #2a9d8f;
+    --navy:   #1a2b4a;
+    --gold:   #e9c46a;
+    --coral:  #e76f51;
+    --green:  #2d6a4f;
+    --lime:   #52b788;
+    --moss:   #1b4332;
+    --cream:  #f8f4e8;
+    --white:  #ffffff;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #111;
+    display: flex; align-items: center; justify-content: center;
+    height: 100vh; overflow: hidden;
+  }
+
+  #deck {
+    width: 900px; height: 506px;
+    position: relative; border-radius: 16px;
+    overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,.6);
+  }
+
+  .slide {
+    position: absolute; inset: 0;
+    padding: 52px 64px;
+    display: flex; flex-direction: column; justify-content: center;
+    opacity: 0; transform: translateX(60px);
+    transition: opacity .55s ease, transform .55s ease;
+    pointer-events: none;
+  }
+  .slide.active { opacity: 1; transform: translateX(0); pointer-events: all; }
+  .slide.exit   { opacity: 0; transform: translateX(-60px); transition: opacity .4s ease, transform .4s ease; }
+
+  /* themes */
+  .s-title    { background: var(--moss);  color: var(--white); }
+  .s-dna      { background: var(--navy);  color: var(--white); }
+  .s-variation{ background: var(--green); color: var(--white); }
+  .s-expression{ background: var(--coral); color: var(--white); }
+  .s-dogs     { background: var(--cream); color: var(--navy); }
+  .s-plants   { background: var(--lime);  color: var(--moss); }
+  .s-why      { background: var(--gold);  color: var(--navy); }
+
+  /* typography */
+  .eyebrow {
+    font-size: 11px; font-weight: 700;
+    letter-spacing: .18em; text-transform: uppercase;
+    opacity: .6; margin-bottom: 12px;
+  }
+  h1 { font-size: 44px; font-weight: 800; line-height: 1.1; }
+  h2 { font-size: 32px; font-weight: 700; line-height: 1.2; margin-bottom: 18px; }
+  .sub { font-size: 16px; opacity: .88; line-height: 1.65; margin-top: 12px; max-width: 640px; }
+
+  .accent-bar {
+    width: 52px; height: 5px; border-radius: 3px;
+    background: var(--lime); margin-bottom: 18px;
+  }
+  .s-dna .accent-bar        { background: var(--lime); }
+  .s-variation .accent-bar  { background: var(--gold); }
+  .s-expression .accent-bar { background: rgba(255,255,255,.5); }
+  .s-dogs .accent-bar       { background: var(--green); }
+  .s-plants .accent-bar     { background: var(--moss); }
+  .s-why .accent-bar        { background: var(--navy); }
+
+  /* flow diagram */
+  .flow {
+    display: flex; align-items: center; gap: 8px;
+    margin-top: 22px; flex-wrap: wrap;
+  }
+  .flow-box {
+    background: rgba(255,255,255,.13);
+    border: 1.5px solid rgba(255,255,255,.25);
+    border-radius: 12px;
+    padding: 12px 18px;
+    text-align: center;
+    font-size: 13px; font-weight: 600; line-height: 1.4;
+  }
+  .flow-box .icon { font-size: 26px; display: block; margin-bottom: 6px; }
+  .flow-arrow { font-size: 22px; opacity: .5; }
+
+  /* analogy cards */
+  .analogy {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 14px; margin-top: 18px;
+  }
+  .analogy-card {
+    border-radius: 12px; padding: 16px;
+    font-size: 13px; line-height: 1.5;
+  }
+  .analogy-card .label {
+    font-size: 10px; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; opacity: .6; margin-bottom: 6px; display: block;
+  }
+  .analogy-card .title { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+  .card-bio  { background: rgba(255,255,255,.12); border: 1.5px solid rgba(255,255,255,.2); color: var(--white); }
+  .card-food { background: rgba(233,196,106,.15); border: 1.5px solid rgba(233,196,106,.35); color: var(--white); }
+  .card-bio-light  { background: rgba(45,106,79,.08); border: 1.5px solid rgba(45,106,79,.2); color: var(--navy); }
+  .card-food-light { background: rgba(233,196,106,.2); border: 1.5px solid rgba(233,196,106,.4); color: var(--navy); }
+
+  /* comparison row */
+  .compare { display: flex; gap: 16px; margin-top: 20px; }
+  .compare-box {
+    flex: 1; border-radius: 12px; padding: 16px;
+    text-align: center; font-size: 13px; line-height: 1.5;
+  }
+  .compare-box .icon { font-size: 36px; margin-bottom: 8px; display: block; }
+  .compare-box strong { display: block; font-size: 15px; margin-bottom: 4px; }
+  .cb-dark { background: rgba(255,255,255,.1); border: 1.5px solid rgba(255,255,255,.2); color: var(--white); }
+  .cb-light { background: rgba(45,106,79,.1); border: 1.5px solid rgba(45,106,79,.25); color: var(--navy); }
+
+  /* plants list */
+  .plant-grid {
+    display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px;
+  }
+  .plant-pill {
+    background: rgba(27,67,50,.15);
+    border: 1.5px solid rgba(27,67,50,.3);
+    border-radius: 100px;
+    padding: 8px 18px; font-size: 13px; font-weight: 600;
+  }
+
+  /* highlight stat */
+  .big-stat {
+    font-size: 48px; font-weight: 800; color: var(--lime);
+    line-height: 1; margin: 14px 0 6px;
+  }
+  .s-dogs .big-stat  { color: var(--green); }
+
+  /* progress + dots + controls */
+  #progress-wrap { position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: rgba(255,255,255,.15); }
+  #progress-bar  { height: 100%; background: var(--gold); width: 0%; transition: width linear; }
+  #dots { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; }
+  .dot  { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,.35); cursor: pointer; transition: background .3s, transform .3s; }
+  .dot.active { background: var(--gold); transform: scale(1.35); }
+  #controls { position: absolute; top: 16px; right: 20px; display: flex; gap: 8px; }
+  .ctrl-btn { background: rgba(255,255,255,.15); border: none; border-radius: 8px; color: #fff; font-size: 13px; font-weight: 600; padding: 6px 14px; cursor: pointer; backdrop-filter: blur(4px); transition: background .2s; }
+  .ctrl-btn:hover { background: rgba(255,255,255,.28); }
+  #counter { position: absolute; top: 19px; left: 22px; font-size: 12px; color: rgba(255,255,255,.5); font-weight: 600; letter-spacing: .05em; }
+
+  /* animations */
+  .slide.active .accent-bar  { animation: fadeUp .5s .10s both; }
+  .slide.active .eyebrow     { animation: fadeUp .5s .10s both; }
+  .slide.active h1,
+  .slide.active h2           { animation: fadeUp .5s .18s both; }
+  .slide.active .sub,
+  .slide.active .big-stat    { animation: fadeUp .5s .28s both; }
+  .slide.active .flow,
+  .slide.active .analogy,
+  .slide.active .compare,
+  .slide.active .plant-grid  { animation: fadeUp .5s .38s both; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+<div id="deck">
+
+  <!-- Slide 1: Title -->
+  <div class="slide s-title active" data-duration="7000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">Lesson 2 &mdash; Genetic Diversity</p>
+    <h1>In a world<br>of possibilities&#8230;</h1>
+    <p class="sub">How DNA explains why a golden retriever and a pug are the same species &mdash; and why your brassica plant is related to broccoli.</p>
+  </div>
+
+  <!-- Slide 2: DNA = Cookbook -->
+  <div class="slide s-dna" data-duration="11000">
+    <div class="accent-bar"></div>
+    <h2>DNA is a cookbook</h2>
+    <div class="flow">
+      <div class="flow-box"><span class="icon">&#127828;</span>DNA<br><small style="opacity:.6">Cookbook</small></div>
+      <span class="flow-arrow">&#8594;</span>
+      <div class="flow-box"><span class="icon">&#128196;</span>Genes<br><small style="opacity:.6">Recipes</small></div>
+      <span class="flow-arrow">&#8594;</span>
+      <div class="flow-box"><span class="icon">&#129374;</span>Proteins<br><small style="opacity:.6">The food</small></div>
+      <span class="flow-arrow">&#8594;</span>
+      <div class="flow-box"><span class="icon">&#127775;</span>You!<br><small style="opacity:.6">Hair, muscles, sight&#8230;</small></div>
+    </div>
+    <p class="sub" style="font-size:14px; margin-top:18px;">Every living thing has DNA. Genes are read to make proteins. Proteins make life happen.</p>
+  </div>
+
+  <!-- Slide 3: Genetic Variation -->
+  <div class="slide s-variation" data-duration="11000">
+    <div class="accent-bar"></div>
+    <h2>Genetic variation</h2>
+    <p class="sub" style="margin-top:0;">Same gene, slightly different recipe &mdash; like mac &amp; cheese with breadcrumbs vs. hot sauce.</p>
+    <div class="analogy">
+      <div class="analogy-card card-bio">
+        <span class="label">Biology</span>
+        <div class="title">Gene for hair color</div>
+        Small differences in the gene &rarr; blonde, brown, red, or black hair
+      </div>
+      <div class="analogy-card card-food">
+        <span class="label">Analogy</span>
+        <div class="title">Mac &amp; cheese recipe</div>
+        Same dish, but one family adds breadcrumbs, another adds hot sauce
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 4: Gene Expression -->
+  <div class="slide s-expression" data-duration="10000">
+    <div class="accent-bar"></div>
+    <h2>Gene expression</h2>
+    <p class="sub" style="margin-top:0; font-size:15px;">Having a recipe doesn&#39;t mean you cook it every day. Genes can be turned <strong>on or off</strong> &mdash; and at different levels.</p>
+    <div class="analogy" style="margin-top:16px;">
+      <div class="analogy-card card-bio">
+        <span class="label">Biology</span>
+        <div class="title">Vitamin C gene</div>
+        Humans have it, but it&#39;s turned <strong>off</strong> &mdash; we get it from food instead
+      </div>
+      <div class="analogy-card card-food">
+        <span class="label">Analogy</span>
+        <div class="title">Tamale recipe</div>
+        You have the recipe, but choose to make 0, 10, or 100 tamales
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 5: Dogs — same DNA -->
+  <div class="slide s-dogs" data-duration="10000">
+    <div class="accent-bar"></div>
+    <h2>Rhonda meets the pug &#128054;</h2>
+    <p class="sub" style="margin-top:0;">Despite looking completely different, golden retrievers and pugs have <strong>almost identical DNA</strong>.</p>
+    <div class="compare">
+      <div class="compare-box cb-light">
+        <span class="icon">&#128021;</span>
+        <strong>Golden retriever</strong>
+        Tall, long snout, thick coat
+      </div>
+      <div class="compare-box cb-light" style="background:rgba(233,196,106,.15); border-color:rgba(233,196,106,.4);">
+        <span class="icon">&#128008;</span>
+        <strong>Pug</strong>
+        Small, flat face, short coat
+      </div>
+    </div>
+    <p class="sub" style="font-size:13px; margin-top:14px;">A tiny amount of genetic variation + differences in gene expression = all those differences!</p>
+  </div>
+
+  <!-- Slide 6: Plants -->
+  <div class="slide s-plants" data-duration="11000">
+    <div class="accent-bar"></div>
+    <h2>Plants work the same way &#127807;</h2>
+    <p class="sub" style="margin-top:0; color: var(--moss);">Your brassica plant shares almost identical DNA with all of these:</p>
+    <div class="plant-grid">
+      <span class="plant-pill">&#129388; Broccoli</span>
+      <span class="plant-pill">&#129361; Cauliflower</span>
+      <span class="plant-pill">&#129382; Brussels sprouts</span>
+      <span class="plant-pill">&#127807; Bok choy</span>
+      <span class="plant-pill">&#127798; Mustard</span>
+      <span class="plant-pill">&#129361; Canola</span>
+      <span class="plant-pill">&#129379; Collard greens</span>
+    </div>
+    <p class="sub" style="font-size:13px; margin-top:14px; color:var(--moss);">Genetic variation and expression explain all the differences in taste, shape, and size.</p>
+  </div>
+
+  <!-- Slide 7: Why it matters -->
+  <div class="slide s-why" data-duration="9000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">Why this matters</p>
+    <h2>Diversity is data</h2>
+    <p class="sub">Understanding genetic diversity lets us spot what&#39;s <strong>typical</strong> vs. what&#39;s unusual &mdash; and that can save lives.</p>
+    <p class="sub" style="margin-top:10px; font-size:14px;">If a baby grows slower than typical, doctors can intervene. That conclusion only comes from measuring many individuals and using <strong>statistics</strong>.</p>
+  </div>
+
+  <div id="progress-wrap"><div id="progress-bar"></div></div>
+  <div id="dots"></div>
+  <div id="counter">1 / 7</div>
+  <div id="controls">
+    <button class="ctrl-btn" id="btn-prev">&#8249; Prev</button>
+    <button class="ctrl-btn" id="btn-pause">&#9646;&#9646; Pause</button>
+    <button class="ctrl-btn" id="btn-next">Next &#8250;</button>
+  </div>
+</div>
+
+<script>
+  const slides   = Array.from(document.querySelectorAll('.slide'));
+  const dotsEl   = document.getElementById('dots');
+  const bar      = document.getElementById('progress-bar');
+  const counter  = document.getElementById('counter');
+  const btnPause = document.getElementById('btn-pause');
+  const btnNext  = document.getElementById('btn-next');
+  const btnPrev  = document.getElementById('btn-prev');
+
+  let current = 0, paused = false, timer = null, startAt = null, elapsed = 0;
+
+  slides.forEach((_, i) => {
+    const d = document.createElement('div');
+    d.className = 'dot' + (i === 0 ? ' active' : '');
+    d.addEventListener('click', () => goTo(i));
+    dotsEl.appendChild(d);
+  });
+
+  function duration(i) { return parseInt(slides[i].dataset.duration, 10) || 6000; }
+
+  function updateDots() {
+    document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === current));
+    counter.textContent = `${current + 1} / ${slides.length}`;
+  }
+
+  function startBar(remaining) {
+    const total = duration(current);
+    bar.style.transition = 'none';
+    bar.style.width = ((total - remaining) / total * 100) + '%';
+    bar.getBoundingClientRect();
+    bar.style.transition = `width ${remaining}ms linear`;
+    bar.style.width = '100%';
+  }
+
+  function goTo(index, resetElapsed = true) {
+    clearTimeout(timer);
+    slides[current].classList.remove('active');
+    slides[current].classList.add('exit');
+    const prev = current;
+    setTimeout(() => slides[prev].classList.remove('exit'), 450);
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    updateDots();
+    if (resetElapsed) elapsed = 0;
+    if (!paused) scheduleNext();
+  }
+
+  function scheduleNext() {
+    clearTimeout(timer);
+    const remaining = duration(current) - elapsed;
+    startAt = Date.now();
+    startBar(remaining);
+    timer = setTimeout(() => { elapsed = 0; goTo(current + 1); }, remaining);
+  }
+
+  function pause() {
+    if (paused) return;
+    paused = true;
+    elapsed += Date.now() - startAt;
+    clearTimeout(timer);
+    bar.style.transition = 'none';
+    bar.style.width = (elapsed / duration(current) * 100) + '%';
+    btnPause.textContent = '&#9654; Play';
+  }
+
+  function play() {
+    if (!paused) return;
+    paused = false;
+    btnPause.innerHTML = '&#9646;&#9646; Pause';
+    scheduleNext();
+  }
+
+  btnPause.addEventListener('click', () => paused ? play() : pause());
+  btnNext.addEventListener('click',  () => { elapsed = 0; goTo(current + 1); });
+  btnPrev.addEventListener('click',  () => { elapsed = 0; goTo(current - 1); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ') { elapsed = 0; goTo(current + 1); }
+    if (e.key === 'ArrowLeft') { elapsed = 0; goTo(current - 1); }
+    if (e.key === 'p' || e.key === 'P') paused ? play() : pause();
+  });
+
+  scheduleNext();
+</script>
+</body>
+</html>

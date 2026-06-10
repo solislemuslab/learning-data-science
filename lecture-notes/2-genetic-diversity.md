@@ -1,10 +1,16 @@
 ---
 layout: default
-title: Genetic diversity
+title: Basics of DNA
 nav_order: 3
 ---
 
 # In a world of possibilities...
+
+<iframe src="../assets/videos/lesson2-genetic-diversity-slideshow.html" 
+        width="100%" height="520" 
+        style="border:none; border-radius:16px;">
+</iframe>
+
 ## 2. Genetic diversity
 
 You know dogs come in all shapes, sizes, and personalities, yet they are still one species- the domesticated dog (or if you prefer fancy Greek, _Canis familiaris_). How is this possible? The answer lies in dog DNA. DNA is the recipe book for any living thing. You have it. Dogs have it. Plants, your favorite TikToker- we all have DNA. Within our huge cookbook of DNA are individual recipes, or genes. 
@@ -43,15 +49,22 @@ So how does this all relate to Rhonda and the pug at the dog park? Despite looki
 [*A DNA comparison helped put 161 dog breeds into larger groups (various colors) based on their common ancestries from this article from the American Association for the Advancement of Science*](https://www.science.org/content/article/where-did-your-dog-come-new-tree-breeds-may-hold-answer). *Image credit: H. G.PARKER ET. AL. CELL REPORTS 19 (25 APRIL 2017) © ELSEVIER INC.* <br>
 
 So now we’ve talked about dogs and humans… but you may be learning about plants. It’s finally time to bring it all together. It’s the moment you’ve been waiting for. Just as soon as this sentence is over, it will all make sense. Just as soon as this sentence is over, too. Maybe another one to really build the tension. Okay. Are you ready? You’re still reading this, so you probably are. Good for you for reading this sentence as well and not just skipping this paragraph. <br>
-<br>
-Plants, just like humans and dogs, have DNA and that DNA has genetic variation and those genes vary in their expression. This is a deliciously wonderful fact! Because of genetic variation and gene expression, that little [brassica plant](https://en.wikipedia.org/wiki/Brassica_oleracea) you might be growing has almost identical DNA to broccoli, Brussel sprouts, bok choy, collard greens, mustard, and cauliflower. Your little brassica plant might be the pug in this case, but its relatives can carry intense flavor (mustard), be used to produce cooking oil (canola), or be a vegetable in foods around the world (broccoli). <br>
-<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2g9Fn8NTedA" frameborder="0" allowfullscreen></iframe> <br>
-<br>
+
+
+{: .plants}
+Plants, just like humans and dogs, have DNA and that DNA has genetic variation and those genes vary in their expression. This is a deliciously wonderful fact! Because of genetic variation and gene expression, that little [brassica plant](https://en.wikipedia.org/wiki/Brassica_oleracea) you might be growing has almost identical DNA to broccoli, Brussel sprouts, bok choy, collard greens, mustard, and cauliflower. Your little brassica plant might be the pug in this case, but its relatives can carry intense flavor (mustard), be used to produce cooking oil (canola), or be a vegetable in foods around the world (broccoli).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2g9Fn8NTedA" frameborder="0" allowfullscreen></iframe>
+
+
 To help illustrate the genetic diversity of the brassicas (and also what can happen in dogs and humans), you may have completed activities to count and measure physical characteristics of a plant. The physical characteristics, like hairiness, leaf size, leaf color, number of seeds, and more can be the morphological traits, or physical traits that we can observe, of an organism. The morphological traits are influenced by both the genetics of an organism and its environment. A species may typically grow to a certain size, but if it can’t find enough food, it might not be able to grow to the typical height. As you’ve learned a bit now and will continue to learn, what a “typical” height is takes some measuring and statistics to find out, but it can help us know if an organism is healthy. <br>
 <br>
 
-A typical height and growth rate for your fast plant is known [watch a beautiful time lapse of a fast plant growing](https://www.youtube.com/watch?v=kDpqafwz9pI), and so are typical growth rates for crops, dogs, and humans. Although many factors influence the typical growth rate, if a parent has a human baby that is smaller than the “typical” baby at a certain age, doctors may be able to intervene to address a nutritional deficiency, disease, or toxin that could be affecting the growth. <br>
+A typical height and growth rate for your fast plant is known. Watch the time lapse of a fast plant:
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=kDpqafwz9pI" frameborder="0" allowfullscreen></iframe>
+
+and so are typical growth rates for crops, dogs, and humans. Although many factors influence the typical growth rate, if a parent has a human baby that is smaller than the “typical” baby at a certain age, doctors may be able to intervene to address a nutritional deficiency, disease, or toxin that could be affecting the growth. <br>
 <br>
 
 {: .key}
@@ -62,4 +75,4 @@ Genetic diversity means that even though all dogs, like Rhonda and a pug, are th
 
 
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Averages and medians](https://benrushscience.github.io/learning-data-science//lecture-notes/3-averages-and-medians.html) |
+| [Home](https://solislemuslab.github.io/learning-data-science/) | [Next: Averages and medians](https://solislemuslab.github.io/learning-data-science//lecture-notes/3-averages-and-medians.html) |
