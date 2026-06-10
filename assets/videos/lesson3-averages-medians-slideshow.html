@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lesson 3: Averages and Medians</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:   #1a2b4a;
+    --gold:   #e9c46a;
+    --purple: #5e4b8b;
+    --violet: #7b5ea7;
+    --lilac:  #f0ebff;
+    --coral:  #e76f51;
+    --teal:   #2a9d8f;
+    --white:  #ffffff;
+    --ink:    #1a1a2e;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #111;
+    display: flex; align-items: center; justify-content: center;
+    height: 100vh; overflow: hidden;
+  }
+
+  #deck {
+    width: 900px; height: 506px;
+    position: relative; border-radius: 16px;
+    overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,.6);
+  }
+
+  .slide {
+    position: absolute; inset: 0;
+    padding: 50px 64px;
+    display: flex; flex-direction: column; justify-content: center;
+    opacity: 0; transform: translateX(60px);
+    transition: opacity .55s ease, transform .55s ease;
+    pointer-events: none;
+  }
+  .slide.active { opacity: 1; transform: translateX(0); pointer-events: all; }
+  .slide.exit   { opacity: 0; transform: translateX(-60px); transition: opacity .4s ease, transform .4s ease; }
+
+  /* themes */
+  .s-title   { background: var(--ink);    color: var(--white); }
+  .s-types   { background: var(--purple); color: var(--white); }
+  .s-define  { background: var(--navy);   color: var(--white); }
+  .s-mean    { background: var(--teal);   color: var(--white); }
+  .s-median  { background: #2d4a3e;       color: var(--white); }
+  .s-compare { background: var(--coral);  color: var(--white); }
+  .s-limits  { background: var(--lilac);  color: var(--navy); }
+
+  .eyebrow {
+    font-size: 11px; font-weight: 700;
+    letter-spacing: .18em; text-transform: uppercase;
+    opacity: .6; margin-bottom: 12px;
+  }
+  h1 { font-size: 44px; font-weight: 800; line-height: 1.1; }
+  h2 { font-size: 32px; font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
+  .sub { font-size: 15px; opacity: .88; line-height: 1.65; margin-top: 10px; max-width: 660px; }
+
+  .accent-bar { width: 52px; height: 5px; border-radius: 3px; background: var(--gold); margin-bottom: 18px; }
+  .s-types .accent-bar  { background: var(--gold); }
+  .s-define .accent-bar { background: var(--violet); }
+  .s-mean .accent-bar   { background: var(--gold); }
+  .s-median .accent-bar { background: var(--gold); }
+  .s-compare .accent-bar{ background: rgba(255,255,255,.5); }
+  .s-limits .accent-bar { background: var(--purple); }
+
+  /* two-col data types */
+  .type-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 18px; }
+  .type-col {
+    border-radius: 12px; padding: 16px 18px;
+    background: rgba(255,255,255,.1);
+    border: 1.5px solid rgba(255,255,255,.2);
+  }
+  .type-col .col-title { font-size: 14px; font-weight: 700; margin-bottom: 10px; color: var(--gold); }
+  .type-col ul { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+  .type-col ul li { font-size: 13px; opacity: .85; }
+  .type-col ul li::before { content: "&#8226; "; opacity: .5; }
+
+  /* formula box */
+  .formula {
+    background: rgba(255,255,255,.12);
+    border: 1.5px solid rgba(255,255,255,.25);
+    border-radius: 12px;
+    padding: 16px 22px;
+    margin-top: 16px;
+    font-size: 15px; line-height: 1.7;
+  }
+  .formula .f-label { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; opacity: .55; margin-bottom: 6px; }
+  .formula .f-eq { font-size: 18px; font-weight: 700; color: var(--gold); }
+
+  /* steps */
+  .steps { display: flex; gap: 12px; margin-top: 16px; }
+  .step-box {
+    flex: 1; border-radius: 12px; padding: 14px;
+    background: rgba(255,255,255,.1);
+    border: 1.5px solid rgba(255,255,255,.2);
+    text-align: center; font-size: 13px; line-height: 1.5;
+  }
+  .step-box .num { font-size: 24px; font-weight: 800; color: var(--gold); display: block; margin-bottom: 6px; }
+
+  /* median visual */
+  .number-line {
+    display: flex; align-items: center; gap: 6px;
+    margin-top: 18px; flex-wrap: wrap;
+  }
+  .num-box {
+    width: 38px; height: 38px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700;
+    background: rgba(255,255,255,.1);
+    border: 1.5px solid rgba(255,255,255,.2);
+  }
+  .num-box.mid {
+    background: var(--gold); color: var(--navy);
+    border-color: var(--gold); transform: scale(1.15);
+  }
+  .num-box.crossed {
+    opacity: .3; text-decoration: line-through;
+  }
+
+  /* billionaire comparison */
+  .bill-row { display: flex; gap: 16px; margin-top: 18px; }
+  .bill-box {
+    flex: 1; border-radius: 12px; padding: 16px;
+    text-align: center;
+  }
+  .bill-box .b-label { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; opacity: .6; margin-bottom: 8px; }
+  .bill-box .b-val { font-size: 26px; font-weight: 800; line-height: 1.1; margin-bottom: 4px; }
+  .bill-box .b-note { font-size: 12px; opacity: .75; }
+  .bb-mean   { background: rgba(255,255,255,.12); border: 1.5px solid rgba(255,255,255,.2); }
+  .bb-median { background: rgba(255,255,255,.2);  border: 1.5px solid rgba(255,255,255,.35); }
+
+  /* takeaway pill */
+  .takeaway {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: rgba(94,75,139,.15);
+    border: 1.5px solid rgba(94,75,139,.3);
+    border-radius: 12px; padding: 14px 20px;
+    margin-top: 18px; font-size: 14px; line-height: 1.5; color: var(--navy);
+  }
+  .takeaway .ico { font-size: 22px; flex-shrink: 0; }
+
+  /* progress + dots + controls */
+  #progress-wrap { position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: rgba(255,255,255,.15); }
+  #progress-bar  { height: 100%; background: var(--gold); width: 0%; transition: width linear; }
+  #dots { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; }
+  .dot  { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,.35); cursor: pointer; transition: background .3s, transform .3s; }
+  .dot.active { background: var(--gold); transform: scale(1.35); }
+  #controls { position: absolute; top: 16px; right: 20px; display: flex; gap: 8px; }
+  .ctrl-btn { background: rgba(255,255,255,.15); border: none; border-radius: 8px; color: #fff; font-size: 13px; font-weight: 600; padding: 6px 14px; cursor: pointer; backdrop-filter: blur(4px); transition: background .2s; }
+  .ctrl-btn:hover { background: rgba(255,255,255,.28); }
+  #counter { position: absolute; top: 19px; left: 22px; font-size: 12px; color: rgba(255,255,255,.5); font-weight: 600; letter-spacing: .05em; }
+
+  .slide.active .accent-bar  { animation: fadeUp .5s .10s both; }
+  .slide.active .eyebrow     { animation: fadeUp .5s .10s both; }
+  .slide.active h1,
+  .slide.active h2           { animation: fadeUp .5s .18s both; }
+  .slide.active .sub         { animation: fadeUp .5s .28s both; }
+  .slide.active .type-cols,
+  .slide.active .formula,
+  .slide.active .steps,
+  .slide.active .number-line,
+  .slide.active .bill-row,
+  .slide.active .takeaway    { animation: fadeUp .5s .38s both; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+<div id="deck">
+
+  <!-- Slide 1: Title -->
+  <div class="slide s-title active" data-duration="7000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">Lesson 3 &mdash; Averages &amp; Medians</p>
+    <h1>Finding average<br>ground</h1>
+    <p class="sub">Two powerful ways to summarize data &mdash; and why neither tells the whole story.</p>
+  </div>
+
+  <!-- Slide 2: Data types -->
+  <div class="slide s-types" data-duration="11000">
+    <div class="accent-bar"></div>
+    <h2>Two types of data</h2>
+    <div class="type-cols">
+      <div class="type-col">
+        <div class="col-title">&#9711; Continuous</div>
+        <ul>
+          <li>Infinite values on a spectrum</li>
+          <li>Examples: height, weight, temperature</li>
+          <li>Can be 23.4, 10.5, 45.009&#8230;</li>
+        </ul>
+      </div>
+      <div class="type-col">
+        <div class="col-title">&#9632; Categorical</div>
+        <ul>
+          <li>Distinct groups, no in-between</li>
+          <li>Examples: breed, blood type, species</li>
+          <li>No such thing as &ldquo;half pug&rdquo;</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 3: Define your variable -->
+  <div class="slide s-define" data-duration="10000">
+    <div class="accent-bar"></div>
+    <h2>Definitions matter</h2>
+    <p class="sub">Before measuring, you must agree on <em>what</em> you&rsquo;re measuring. How tall is a dog?</p>
+    <div class="steps">
+      <div class="step-box">
+        <span class="num">&#10067;</span>
+        Tip of snout to tail? Sitting? Lying down?
+      </div>
+      <div class="step-box">
+        <span class="num">&#10003;</span>
+        AKC standard: bottom of front paws to top of shoulder &mdash; no head!
+      </div>
+    </div>
+    <p class="sub" style="font-size:13px; margin-top:14px; opacity:.7;">NASA missions have failed over unit mix-ups (meters vs yards). Definitions save lives.</p>
+  </div>
+
+  <!-- Slide 4: The Mean -->
+  <div class="slide s-mean" data-duration="11000">
+    <div class="accent-bar"></div>
+    <h2>The Mean (average)</h2>
+    <p class="sub" style="margin-top:0;">Sum all values, divide by how many. Represents the &ldquo;typical&rdquo; value.</p>
+    <div class="formula">
+      <div class="f-label">Example &mdash; test scores: 85, 92, 78, 90, 88</div>
+      <div class="f-eq">85 + 92 + 78 + 90 + 88 = 433</div>
+      <div class="f-eq">433 &#247; 5 = <span style="color:#fff;">86.6</span></div>
+    </div>
+    <p class="sub" style="font-size:13px; margin-top:14px;">30 data points &#8594; 1 number. Much easier to reason about!</p>
+  </div>
+
+  <!-- Slide 5: The Median -->
+  <div class="slide s-median" data-duration="11000">
+    <div class="accent-bar"></div>
+    <h2>The Median</h2>
+    <p class="sub" style="margin-top:0;">Sort all values, find the middle one. With an even count, average the two middle values.</p>
+    <div class="number-line">
+      <div class="num-box crossed">12</div>
+      <div class="num-box crossed">15</div>
+      <div class="num-box crossed">18</div>
+      <div class="num-box mid">21</div>
+      <div class="num-box mid">22</div>
+      <div class="num-box crossed">25</div>
+      <div class="num-box crossed">28</div>
+      <div class="num-box crossed">30</div>
+      <span style="font-size:13px; opacity:.7; margin-left:8px;">&#8594; Median = (21+22) &#247; 2 = <strong style="color:var(--gold)">21.5</strong></span>
+    </div>
+    <p class="sub" style="font-size:13px; margin-top:16px;">The median is less sensitive to extreme values than the mean.</p>
+  </div>
+
+  <!-- Slide 6: Mean vs Median — billionaire -->
+  <div class="slide s-compare" data-duration="13000">
+    <div class="accent-bar"></div>
+    <h2>When they disagree &#129328;</h2>
+    <p class="sub" style="margin-top:0; font-size:14px;">Roseville: 999 people earn $60k/yr. One billionaire earns $2.3 billion/yr.</p>
+    <div class="bill-row">
+      <div class="bill-box bb-mean">
+        <div class="b-label">Mean income</div>
+        <div class="b-val">$2,359,940</div>
+        <div class="b-note">Skewed by the billionaire</div>
+      </div>
+      <div class="bill-box bb-median">
+        <div class="b-label">Median income</div>
+        <div class="b-val">$60,000</div>
+        <div class="b-note">Reflects 99% of people</div>
+      </div>
+    </div>
+    <p class="sub" style="font-size:13px; margin-top:14px;">Outliers pull the mean away from the typical value. The median holds steady.</p>
+  </div>
+
+  <!-- Slide 7: Limitations -->
+  <div class="slide s-limits" data-duration="9000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">The bigger picture</p>
+    <h2>Neither is the full story</h2>
+    <p class="sub">Mean and median summarize the <strong>center</strong> of your data &mdash; but they hide how spread out the data is.</p>
+    <div class="takeaway">
+      <span class="ico">&#128200;</span>
+      Next up: variance and distributions &mdash; actually <em>looking</em> at the shape of your data.
+    </div>
+  </div>
+
+  <div id="progress-wrap"><div id="progress-bar"></div></div>
+  <div id="dots"></div>
+  <div id="counter">1 / 7</div>
+  <div id="controls">
+    <button class="ctrl-btn" id="btn-prev">&#8249; Prev</button>
+    <button class="ctrl-btn" id="btn-pause">&#9646;&#9646; Pause</button>
+    <button class="ctrl-btn" id="btn-next">Next &#8250;</button>
+  </div>
+</div>
+
+<script>
+  const slides   = Array.from(document.querySelectorAll('.slide'));
+  const dotsEl   = document.getElementById('dots');
+  const bar      = document.getElementById('progress-bar');
+  const counter  = document.getElementById('counter');
+  const btnPause = document.getElementById('btn-pause');
+  const btnNext  = document.getElementById('btn-next');
+  const btnPrev  = document.getElementById('btn-prev');
+
+  let current = 0, paused = false, timer = null, startAt = null, elapsed = 0;
+
+  slides.forEach((_, i) => {
+    const d = document.createElement('div');
+    d.className = 'dot' + (i === 0 ? ' active' : '');
+    d.addEventListener('click', () => goTo(i));
+    dotsEl.appendChild(d);
+  });
+
+  function duration(i) { return parseInt(slides[i].dataset.duration, 10) || 6000; }
+
+  function updateDots() {
+    document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === current));
+    counter.textContent = `${current + 1} / ${slides.length}`;
+  }
+
+  function startBar(remaining) {
+    const total = duration(current);
+    bar.style.transition = 'none';
+    bar.style.width = ((total - remaining) / total * 100) + '%';
+    bar.getBoundingClientRect();
+    bar.style.transition = `width ${remaining}ms linear`;
+    bar.style.width = '100%';
+  }
+
+  function goTo(index, resetElapsed = true) {
+    clearTimeout(timer);
+    slides[current].classList.remove('active');
+    slides[current].classList.add('exit');
+    const prev = current;
+    setTimeout(() => slides[prev].classList.remove('exit'), 450);
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    updateDots();
+    if (resetElapsed) elapsed = 0;
+    if (!paused) scheduleNext();
+  }
+
+  function scheduleNext() {
+    clearTimeout(timer);
+    const remaining = duration(current) - elapsed;
+    startAt = Date.now();
+    startBar(remaining);
+    timer = setTimeout(() => { elapsed = 0; goTo(current + 1); }, remaining);
+  }
+
+  function pause() {
+    if (paused) return;
+    paused = true;
+    elapsed += Date.now() - startAt;
+    clearTimeout(timer);
+    bar.style.transition = 'none';
+    bar.style.width = (elapsed / duration(current) * 100) + '%';
+    btnPause.textContent = '&#9654; Play';
+  }
+
+  function play() {
+    if (!paused) return;
+    paused = false;
+    btnPause.innerHTML = '&#9646;&#9646; Pause';
+    scheduleNext();
+  }
+
+  btnPause.addEventListener('click', () => paused ? play() : pause());
+  btnNext.addEventListener('click',  () => { elapsed = 0; goTo(current + 1); });
+  btnPrev.addEventListener('click',  () => { elapsed = 0; goTo(current - 1); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ') { elapsed = 0; goTo(current + 1); }
+    if (e.key === 'ArrowLeft') { elapsed = 0; goTo(current - 1); }
+    if (e.key === 'p' || e.key === 'P') paused ? play() : pause();
+  });
+
+  scheduleNext();
+</script>
+</body>
+</html>
