@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lesson 4: Variance and Distributions</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1a2b4a;--gold:#e9c46a;--orange:#f4842a;--amber:#e07c24;--rust:#c1440e;--cream:#fff8f0;--white:#ffffff}
+body{font-family:'Inter',sans-serif;background:#111;display:flex;align-items:center;justify-content:center;height:100vh;overflow:hidden}
+#deck{width:900px;height:506px;position:relative;border-radius:16px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.slide{position:absolute;inset:0;padding:50px 64px;display:flex;flex-direction:column;justify-content:center;opacity:0;transform:translateX(60px);transition:opacity .55s ease,transform .55s ease;pointer-events:none}
+.slide.active{opacity:1;transform:translateX(0);pointer-events:all}
+.slide.exit{opacity:0;transform:translateX(-60px);transition:opacity .4s ease,transform .4s ease}
+.s-title{background:var(--navy);color:var(--white)}
+.s-why{background:var(--rust);color:var(--white)}
+.s-var{background:#3d2b1a;color:var(--white)}
+.s-sd{background:var(--amber);color:var(--white)}
+.s-bell{background:#1a2b3d;color:var(--white)}
+.s-skew{background:var(--cream);color:var(--navy)}
+.s-hist{background:#2b1a1a;color:var(--white)}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;opacity:.6;margin-bottom:12px}
+h1{font-size:44px;font-weight:800;line-height:1.1}
+h2{font-size:32px;font-weight:700;line-height:1.2;margin-bottom:16px}
+.sub{font-size:15px;opacity:.88;line-height:1.65;margin-top:10px;max-width:660px}
+.accent-bar{width:52px;height:5px;border-radius:3px;background:var(--gold);margin-bottom:18px}
+.s-why .accent-bar{background:rgba(255,255,255,.5)}
+.s-sd .accent-bar{background:rgba(255,255,255,.5)}
+.s-skew .accent-bar{background:var(--orange)}
+.s-hist .accent-bar{background:var(--gold)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.card{border-radius:12px;padding:16px;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.2)}
+.card-light{background:rgba(244,132,42,.1);border-color:rgba(244,132,42,.3);color:var(--navy)}
+.card .label{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.55;margin-bottom:6px;display:block}
+.card .val{font-size:22px;font-weight:800;color:var(--gold);margin-bottom:4px}
+.steps{display:flex;gap:10px;margin-top:16px}
+.step{flex:1;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.2);border-radius:10px;padding:12px;font-size:13px;line-height:1.5;text-align:center}
+.step .n{font-size:20px;font-weight:800;color:var(--gold);display:block;margin-bottom:5px}
+.bell-row{display:flex;gap:12px;margin-top:16px}
+.bell-box{flex:1;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.15);border-radius:10px;padding:12px 14px;font-size:12px;line-height:1.5}
+.bell-box .pct{font-size:20px;font-weight:800;color:var(--gold);display:block;margin-bottom:4px}
+.skew-row{display:flex;gap:14px;margin-top:18px}
+.skew-box{flex:1;border-radius:12px;padding:14px;text-align:center;font-size:13px;line-height:1.5}
+.sb-sym{background:rgba(42,157,143,.12);border:1.5px solid rgba(42,157,143,.3);color:var(--navy)}
+.sb-right{background:rgba(244,132,42,.12);border:1.5px solid rgba(244,132,42,.3);color:var(--navy)}
+.sb-left{background:rgba(193,68,14,.12);border:1.5px solid rgba(193,68,14,.3);color:var(--navy)}
+.skew-box .ico{font-size:28px;display:block;margin-bottom:6px}
+.skew-box strong{display:block;font-size:14px;margin-bottom:4px}
+#progress-wrap{position:absolute;bottom:0;left:0;right:0;height:4px;background:rgba(255,255,255,.15)}
+#progress-bar{height:100%;background:var(--gold);width:0%;transition:width linear}
+#dots{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:8px}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35);cursor:pointer;transition:background .3s,transform .3s}
+.dot.active{background:var(--gold);transform:scale(1.35)}
+#controls{position:absolute;top:16px;right:20px;display:flex;gap:8px}
+.ctrl-btn{background:rgba(255,255,255,.15);border:none;border-radius:8px;color:#fff;font-size:13px;font-weight:600;padding:6px 14px;cursor:pointer;backdrop-filter:blur(4px);transition:background .2s}
+.ctrl-btn:hover{background:rgba(255,255,255,.28)}
+#counter{position:absolute;top:19px;left:22px;font-size:12px;color:rgba(255,255,255,.5);font-weight:600;letter-spacing:.05em}
+.slide.active .accent-bar{animation:fadeUp .5s .10s both}
+.slide.active .eyebrow{animation:fadeUp .5s .10s both}
+.slide.active h1,.slide.active h2{animation:fadeUp .5s .18s both}
+.slide.active .sub{animation:fadeUp .5s .28s both}
+.slide.active .two-col,.slide.active .steps,.slide.active .bell-row,.slide.active .skew-row{animation:fadeUp .5s .38s both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+<div id="deck">
+  <div class="slide s-title active" data-duration="7000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">Lesson 4 &mdash; Variance &amp; Distributions</p>
+    <h1>Seeing (data) is<br>believing (data)</h1>
+    <p class="sub">Why the mean alone can fool you &mdash; and how spread, shape, and histograms tell the full story.</p>
+  </div>
+
+  <div class="slide s-why" data-duration="9000">
+    <div class="accent-bar"></div>
+    <h2>The mean can fool you</h2>
+    <p class="sub">A concert seller advertises an <strong>average ticket price of $20</strong>. But best seats are $100, worst are $5 &mdash; the mean hides the spread!</p>
+    <div class="two-col">
+      <div class="card"><span class="label">Mean alone</span><div class="val">$20</div>Sounds affordable</div>
+      <div class="card"><span class="label">With spread</span><div class="val">$5 &mdash; $100</div>Very different picture</div>
+    </div>
+  </div>
+
+  <div class="slide s-var" data-duration="11000">
+    <div class="accent-bar"></div>
+    <h2>Variance</h2>
+    <p class="sub" style="margin-top:0">How much do data points differ from the mean? Variance measures the average <em>squared</em> distance from the mean.</p>
+    <div class="steps">
+      <div class="step"><span class="n">1</span>Calculate the mean</div>
+      <div class="step"><span class="n">2</span>Subtract mean from each point &amp; square it</div>
+      <div class="step"><span class="n">3</span>Add them up &amp; divide by n&minus;1</div>
+    </div>
+    <p class="sub" style="font-size:13px;margin-top:14px">Example: heights [2,4,6,8,10] &rarr; mean=6 &rarr; variance = <strong style="color:var(--gold)">10</strong></p>
+  </div>
+
+  <div class="slide s-sd" data-duration="10000">
+    <div class="accent-bar"></div>
+    <h2>Standard deviation</h2>
+    <p class="sub" style="margin-top:0">The square root of variance. Easier to interpret: the &ldquo;typical distance&rdquo; a value sits from the mean.</p>
+    <div class="two-col">
+      <div class="card"><span class="label">From our example</span><div class="val">&#x221A;10 &asymp; 3.16</div>SD tells us typical spread</div>
+      <div class="card"><span class="label">Golden retrievers</span><div class="val">Mean 24&Prime;, SD 2&Prime;</div>Most dogs: 22&Prime;&ndash;26&Prime;</div>
+    </div>
+    <p class="sub" style="font-size:13px;margin-top:14px">Rhonda at 30&Prime; is 3 SD above the mean &mdash; only 0.1% of dogs are that tall!</p>
+  </div>
+
+  <div class="slide s-bell" data-duration="11000">
+    <div class="accent-bar"></div>
+    <h2>The normal distribution</h2>
+    <p class="sub" style="margin-top:0">Many real-world variables follow a bell-shaped curve. Most values cluster near the mean; fewer appear at the extremes.</p>
+    <div class="bell-row">
+      <div class="bell-box"><span class="pct">68%</span>Within <strong>1 SD</strong> of the mean</div>
+      <div class="bell-box"><span class="pct">95%</span>Within <strong>2 SD</strong> of the mean</div>
+      <div class="bell-box"><span class="pct">99.7%</span>Within <strong>3 SD</strong> of the mean</div>
+    </div>
+    <p class="sub" style="font-size:13px;margin-top:14px">Height, test scores, plant growth &mdash; all tend to follow a normal distribution.</p>
+  </div>
+
+  <div class="slide s-skew" data-duration="10000">
+    <div class="accent-bar"></div>
+    <h2>Not all distributions are normal</h2>
+    <p class="sub" style="margin-top:0;color:var(--navy)">Data can be skewed or have multiple peaks. Shape matters for choosing the right test.</p>
+    <div class="skew-row">
+      <div class="skew-box sb-sym"><span class="ico">&#9685;</span><strong>Symmetric</strong>Mean = Median<br>Classic bell curve</div>
+      <div class="skew-box sb-right"><span class="ico">&#9698;</span><strong>Right-skewed</strong>Long tail to the right<br>Mean &gt; Median</div>
+      <div class="skew-box sb-left"><span class="ico">&#9699;</span><strong>Left-skewed</strong>Long tail to the left<br>Mean &lt; Median</div>
+    </div>
+  </div>
+
+  <div class="slide s-hist" data-duration="9000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">Visualization tool</p>
+    <h2>Histograms</h2>
+    <p class="sub">Bars show how many data points fall in each range. Histograms reveal the shape of your data &mdash; symmetric, skewed, bimodal &mdash; at a glance.</p>
+    <p class="sub" style="font-size:13px;margin-top:14px;opacity:.7">The McDonald&rsquo;s Times Square example: Thursday traffic has two peaks (lunch + dinner), Saturday&rsquo;s is closer to normal. Same data, very different shapes!</p>
+  </div>
+
+  <div id="progress-wrap"><div id="progress-bar"></div></div>
+  <div id="dots"></div>
+  <div id="counter">1 / 7</div>
+  <div id="controls">
+    <button class="ctrl-btn" id="btn-prev">&#8249; Prev</button>
+    <button class="ctrl-btn" id="btn-pause">&#9646;&#9646; Pause</button>
+    <button class="ctrl-btn" id="btn-next">Next &#8250;</button>
+  </div>
+</div>
+<script>
+const slides=Array.from(document.querySelectorAll('.slide'));
+const dotsEl=document.getElementById('dots');
+const bar=document.getElementById('progress-bar');
+const counter=document.getElementById('counter');
+const btnPause=document.getElementById('btn-pause');
+const btnNext=document.getElementById('btn-next');
+const btnPrev=document.getElementById('btn-prev');
+let current=0,paused=false,timer=null,startAt=null,elapsed=0;
+slides.forEach((_,i)=>{const d=document.createElement('div');d.className='dot'+(i===0?' active':'');d.addEventListener('click',()=>goTo(i));dotsEl.appendChild(d)});
+function duration(i){return parseInt(slides[i].dataset.duration,10)||6000}
+function updateDots(){document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===current));counter.textContent=`${current+1} / ${slides.length}`}
+function startBar(remaining){const total=duration(current);bar.style.transition='none';bar.style.width=((total-remaining)/total*100)+'%';bar.getBoundingClientRect();bar.style.transition=`width ${remaining}ms linear`;bar.style.width='100%'}
+function goTo(index,resetElapsed=true){clearTimeout(timer);slides[current].classList.remove('active');slides[current].classList.add('exit');const prev=current;setTimeout(()=>slides[prev].classList.remove('exit'),450);current=(index+slides.length)%slides.length;slides[current].classList.add('active');updateDots();if(resetElapsed)elapsed=0;if(!paused)scheduleNext()}
+function scheduleNext(){clearTimeout(timer);const remaining=duration(current)-elapsed;startAt=Date.now();startBar(remaining);timer=setTimeout(()=>{elapsed=0;goTo(current+1)},remaining)}
+function pause(){if(paused)return;paused=true;elapsed+=Date.now()-startAt;clearTimeout(timer);bar.style.transition='none';bar.style.width=(elapsed/duration(current)*100)+'%';btnPause.textContent='&#9654; Play'}
+function play(){if(!paused)return;paused=false;btnPause.innerHTML='&#9646;&#9646; Pause';scheduleNext()}
+btnPause.addEventListener('click',()=>paused?play():pause());
+btnNext.addEventListener('click',()=>{elapsed=0;goTo(current+1)});
+btnPrev.addEventListener('click',()=>{elapsed=0;goTo(current-1)});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' '){elapsed=0;goTo(current+1)}if(e.key==='ArrowLeft'){elapsed=0;goTo(current-1)}if(e.key==='p'||e.key==='P')paused?play():pause()});
+scheduleNext();
+</script>
+</body>
+</html>

@@ -83,4 +83,4 @@ So, as you’ve seen, the mean and median are very useful and can give us good i
 {: .important }
 Averages are calculated by adding up all values in a group and dividing by the number of values, while medians are the middle value in a sorted list of numbers. These measures help us understand typical values in a group but don't always capture the full range of variation.
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Variance and distributions](https://benrushscience.github.io/learning-data-science/lecture-notes/4-variance-and-distributions.html) |
+| [Home](https://solislemuslab.github.io/learning-data-science/) | [Next: Variance and distributions](https://solislemuslab.github.io/learning-data-science/lecture-notes/4-variance-and-distributions.html) |

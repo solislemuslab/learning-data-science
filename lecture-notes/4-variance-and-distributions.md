@@ -1,10 +1,17 @@
 ---
 layout: default
-title: Seeing (data) is believing (data)
+title: Variance and distributions
 nav_order: 5
 ---
 
 # Seeing (data) is believing (data)
+
+<iframe src="../assets/videos/lesson4-variance-distributions-slideshow.html" 
+        width="100%" height="520" 
+        style="border:none; border-radius:16px;">
+</iframe>
+
+
 ## 4. Variance and distributions
 
 We’ve seen the use of means and medians, but could still get fooled by these one number summaries. You may have experienced this with concert tickets. A seller might list the average ticket price of a concert of 20 USD then on the website you see the best seats are actually 100 USD with terrible seats at 5 USD. The seller could easily change the number and price of tickets in all sorts of ways to make the average seem affordable. That’s why understanding the spread of ticket prices, or the spread of whatever data we might be interested in, can help us be smarter buyers.<br> 
@@ -77,7 +84,7 @@ For more about visualizing data curves, check out this [video from Khan Academy]
 We could get an idea of what a sample of data looks like based on means and standard deviations alone, but it can be easier to fully visualize what our data looks like based on its spread, or distribution. 
 
 {: .note }
-More visualization [here](https://www.khanacademy.org/math/statistics-probability/displaying-describing-data/quantitative-data-graphs/v/ways-to-represent-data). 
+More data visualization in this [video from Khan Academy](https://www.khanacademy.org/math/statistics-probability/displaying-describing-data/quantitative-data-graphs/v/ways-to-represent-data). 
 
 In many cases of how data is distributed, the pattern follows a concept called a “normal distribution”. Normal distributions are patterns that often appear in data and we have seen one already! They have a special bell-shaped curve, with the highest point in the middle. In a normal distribution, data is evenly spread around the average, with most values near the middle and fewer values as we move away from the average. Many real-world things, like heights for golden retrievers or humans, tend to follow a normal distribution. Understanding normal distributions helps us make predictions and compare data. <br>
 <br>
@@ -116,7 +123,7 @@ To summarize, variance and standard deviation help us measure how data points di
  
 Variance and standard deviation can even help us be smarter shoppers and buyers (or visitors to restaurants in busy areas!). The spread of data is often the first step of interpreting data and is also useful for when you begin to analyze data.
 
-{: .highlight }
+{: .plants }
 If you'd like to play around with visualizing distributions, and other plots and statistics, you can play with the Wisconsin Fast Stats app which can give you sample data about plant baby leaf numbers (AKA cotyledons) by generation.
 
 <iframe src="https://wi-fast-stats.wid.wisc.edu/cotyledon/" width="600" height="500"></iframe> <br>
@@ -126,4 +133,4 @@ If you'd like to play around with visualizing distributions, and other plots and
 In statistics, variance and standard deviation are measures used to understand how much data points differ from the average and the overall spread of the data. They help us see if data points are close together or spread out, like the range of heights in dogs or prices of concert tickets.
 
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Probability and Z scores](https://benrushscience.github.io/learning-data-science/lecture-notes/5-probability-and-z-scores.html) |
+| [Home](https://solislemuslab.github.io/learning-data-science/) | [Next: Probability and Z scores](https://solislemuslab.github.io/learning-data-science/lecture-notes/5-probability-and-z-scores.html) |
