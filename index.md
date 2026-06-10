@@ -63,12 +63,12 @@ Among the main topics, this website focuses on:
         * Calculate the mean and median
         * Illustrate why the mean and median is useful when critically thinking about data
         * Describe and recognize how the median and mean can be skewed 
-4. [Variance and distributions](https://solislemuslab.github.io/learning-data-science/lecture-notes/4-variance-and-distributions.html): Variances and distributions
+4. [Variance and distributions](https://solislemuslab.github.io/learning-data-science/lecture-notes/4-variance-and-distributions.html):
     - By the end of this lesson, students will be able to:
         * Restate how the mean is helpful but is aided by variance to critically think about data distribution and skew
         * Calculate and describe what standard deviation is for a sample
         * Explain what distributions are and why the normal distribution is used frequently
-5. [Catching z's](https://solislemuslab.github.io/learning-data-science/lecture-notes/5-probability-and-z-scores.html): Probabilities and z-scores
+5. [Probability and z-scores](https://solislemuslab.github.io/learning-data-science/lecture-notes/5-probability-and-z-scores.html):
     - By the end of this lesson, students will be able to:
         * Discuss the basics of events happening in terms of probability
         * Describe how z-scores of a individual data point explain how common that data point is
