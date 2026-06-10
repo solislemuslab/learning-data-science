@@ -12,7 +12,7 @@ nav_order: 1
 </iframe>
 
 <a href="https://solislemuslab.github.io/learning-data-science/lecture-notes/1-introduction.html" class="btn btn-outline">
-  Start Lesson 1 →
+  Start Lesson 1
 </a>
 
 
