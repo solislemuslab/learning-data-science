@@ -11,6 +11,16 @@ nav_order: 1
         style="border:none; border-radius:16px;">
 </iframe>
 
+<a href="lecture-notes/1-introduction.html" 
+   style="display:inline-block; margin-top:16px; padding:12px 28px; 
+          background:#2a9d8f; color:white; border-radius:8px; 
+          font-weight:600; text-decoration:none;">
+  Start Lesson 1 →
+</a>
+
+<details>
+<summary>📖 Read more about this course</summary>
+
 ## How to use this website
 
 This website
@@ -22,8 +32,6 @@ This website
 Each lesson 
 - covers a basic overview of concepts and aims to provide the theoretical take aways without being bogged down by the math,
 - has resources for students to learn more about the math behind each concept, but the main purpose of the website is to teach how to think about statistics. 
-
-
 
 ## Overall learning objectives
 
@@ -120,3 +128,7 @@ Images on this website are a mix of original and [AI-generated](https://www.mcki
 
 
 <div style="text-align:center"><img src="images/goldenretriever_logo.png" height="300" width="300"/></div>
+
+</details>
+
+
