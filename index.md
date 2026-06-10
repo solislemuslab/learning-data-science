@@ -73,7 +73,7 @@ Among the main topics, this website focuses on:
         * Discuss the basics of events happening in terms of probability
         * Describe how z-scores of a individual data point explain how common that data point is
         * Interpret how z-scores interact with distributions and how we obtain p-values from distribution and tables
-6. [I love being rejected](https://solislemuslab.github.io/learning-data-science/lecture-notes/6-hypothesis-testing.html): Hypothesis testing
+6. [Hypothesis testing](https://solislemuslab.github.io/learning-data-science/lecture-notes/6-hypothesis-testing.html):
     - By the end of this lesson, students will be able to:
         * Describe and recognize a scientific hypothesis
         * Describe and form null and alternative hypotheses

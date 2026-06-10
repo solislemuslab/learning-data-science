@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lesson 6: Hypothesis Testing</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1a2b4a;--gold:#e9c46a;--red:#c0392b;--dark-red:#7b1d14;--rose:#f8d7da;--teal:#2a9d8f;--white:#ffffff}
+body{font-family:'Inter',sans-serif;background:#111;display:flex;align-items:center;justify-content:center;height:100vh;overflow:hidden}
+#deck{width:900px;height:506px;position:relative;border-radius:16px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.slide{position:absolute;inset:0;padding:50px 64px;display:flex;flex-direction:column;justify-content:center;opacity:0;transform:translateX(60px);transition:opacity .55s ease,transform .55s ease;pointer-events:none}
+.slide.active{opacity:1;transform:translateX(0);pointer-events:all}
+.slide.exit{opacity:0;transform:translateX(-60px);transition:opacity .4s ease,transform .4s ease}
+.s-title{background:var(--dark-red);color:var(--white)}
+.s-hyp{background:var(--navy);color:var(--white)}
+.s-null{background:#2d1a1a;color:var(--white)}
+.s-pval{background:var(--red);color:var(--white)}
+.s-thresh{background:#1a2d1a;color:var(--white)}
+.s-stat{background:#1a1a2d;color:var(--white)}
+.s-flow{background:var(--rose);color:var(--navy)}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;opacity:.6;margin-bottom:12px}
+h1{font-size:44px;font-weight:800;line-height:1.1}
+h2{font-size:32px;font-weight:700;line-height:1.2;margin-bottom:16px}
+.sub{font-size:15px;opacity:.88;line-height:1.65;margin-top:10px;max-width:660px}
+.accent-bar{width:52px;height:5px;border-radius:3px;background:var(--gold);margin-bottom:18px}
+.s-null .accent-bar{background:var(--gold)}
+.s-pval .accent-bar{background:rgba(255,255,255,.5)}
+.s-thresh .accent-bar{background:var(--gold)}
+.s-stat .accent-bar{background:var(--teal)}
+.s-flow .accent-bar{background:var(--red)}
+.hyp-cols{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+.hyp-card{border-radius:12px;padding:16px;font-size:13px;line-height:1.5}
+.hc-null{background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.2)}
+.hc-alt{background:rgba(233,196,106,.12);border:1.5px solid rgba(233,196,106,.35)}
+.hyp-card .tag{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.6;margin-bottom:6px;display:block}
+.hyp-card .title{font-size:16px;font-weight:700;color:var(--gold);margin-bottom:6px}
+.pval-scale{display:flex;align-items:stretch;margin-top:18px;border-radius:12px;overflow:hidden;border:1.5px solid rgba(255,255,255,.2)}
+.ps-box{flex:1;padding:14px 12px;text-align:center;font-size:12px;line-height:1.5}
+.ps-sig{background:rgba(42,157,143,.25)}
+.ps-ns{background:rgba(255,255,255,.08)}
+.ps-box .val{font-size:18px;font-weight:800;display:block;margin-bottom:4px}
+.decision-row{display:flex;gap:14px;margin-top:18px}
+.dec-box{flex:1;border-radius:12px;padding:16px;text-align:center;font-size:13px;line-height:1.5}
+.db-reject{background:rgba(42,157,143,.15);border:1.5px solid rgba(42,157,143,.3);color:var(--white)}
+.db-fail{background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.15);color:var(--white)}
+.dec-box .ico{font-size:28px;display:block;margin-bottom:8px}
+.dec-box strong{display:block;font-size:14px;margin-bottom:4px;color:var(--gold)}
+.flow-steps{display:flex;align-items:center;gap:6px;margin-top:20px;flex-wrap:wrap}
+.fs-box{background:rgba(192,57,43,.12);border:1.5px solid rgba(192,57,43,.3);border-radius:10px;padding:10px 14px;font-size:12px;font-weight:600;line-height:1.4;color:var(--navy)}
+.fs-arrow{font-size:18px;opacity:.4;color:var(--navy)}
+#progress-wrap{position:absolute;bottom:0;left:0;right:0;height:4px;background:rgba(255,255,255,.15)}
+#progress-bar{height:100%;background:var(--gold);width:0%;transition:width linear}
+#dots{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:8px}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35);cursor:pointer;transition:background .3s,transform .3s}
+.dot.active{background:var(--gold);transform:scale(1.35)}
+#controls{position:absolute;top:16px;right:20px;display:flex;gap:8px}
+.ctrl-btn{background:rgba(255,255,255,.15);border:none;border-radius:8px;color:#fff;font-size:13px;font-weight:600;padding:6px 14px;cursor:pointer;backdrop-filter:blur(4px);transition:background .2s}
+.ctrl-btn:hover{background:rgba(255,255,255,.28)}
+#counter{position:absolute;top:19px;left:22px;font-size:12px;color:rgba(255,255,255,.5);font-weight:600;letter-spacing:.05em}
+.slide.active .accent-bar{animation:fadeUp .5s .10s both}
+.slide.active .eyebrow{animation:fadeUp .5s .10s both}
+.slide.active h1,.slide.active h2{animation:fadeUp .5s .18s both}
+.slide.active .sub{animation:fadeUp .5s .28s both}
+.slide.active .hyp-cols,.slide.active .pval-scale,.slide.active .decision-row,.slide.active .flow-steps{animation:fadeUp .5s .38s both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+<div id="deck">
+  <div class="slide s-title active" data-duration="7000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">Lesson 6 &mdash; Hypothesis Testing</p>
+    <h1>I love being<br>rejected!</h1>
+    <p class="sub">How we turn a hunch into statistical evidence &mdash; and why rejection is actually a win.</p>
+  </div>
+
+  <div class="slide s-hyp" data-duration="10000">
+    <div class="accent-bar"></div>
+    <h2>Two hypotheses</h2>
+    <div class="hyp-cols">
+      <div class="hyp-card hc-null">
+        <span class="tag">H&#8320; &mdash; Null hypothesis</span>
+        <div class="title">No difference</div>
+        Golden retrievers and pugs are the same height. Nothing interesting is happening.
+      </div>
+      <div class="hyp-card hc-alt">
+        <span class="tag">H&#8336; &mdash; Alternative hypothesis</span>
+        <div class="title">There IS a difference</div>
+        Golden retrievers and pugs have different heights. Something real is going on.
+      </div>
+    </div>
+  </div>
+
+  <div class="slide s-null" data-duration="9000">
+    <div class="accent-bar"></div>
+    <h2>Why start with the null?</h2>
+    <p class="sub">We can never prove something is true for <em>all</em> cases &mdash; we can only collect evidence that makes it unlikely to be false.</p>
+    <p class="sub" style="margin-top:14px">We test whether the data is so unlikely <em>under the null</em> that we can safely reject it. We can never be 100% certain &mdash; but we can be 95%, or 99%.</p>
+  </div>
+
+  <div class="slide s-pval" data-duration="10000">
+    <div class="accent-bar"></div>
+    <h2>The p-value</h2>
+    <p class="sub" style="margin-top:0">The probability of getting our result by random chance alone, <em>if the null were true</em>.</p>
+    <div class="pval-scale">
+      <div class="ps-box ps-sig"><span class="val" style="color:#6ef0d8">p &lt; 0.05</span>Statistically significant &mdash; reject H&#8320;</div>
+      <div class="ps-box ps-ns"><span class="val" style="color:rgba(255,255,255,.6)">p &ge; 0.05</span>Not significant &mdash; fail to reject H&#8320;</div>
+    </div>
+    <p class="sub" style="font-size:13px;margin-top:14px">0.05 means we accept a 5% chance of being wrong. That&rsquo;s not zero &mdash; but it beats guessing!</p>
+  </div>
+
+  <div class="slide s-thresh" data-duration="10000">
+    <div class="accent-bar"></div>
+    <h2>Reject or fail to reject?</h2>
+    <div class="decision-row">
+      <div class="dec-box db-reject">
+        <span class="ico">&#10004;</span>
+        <strong>p &lt; 0.05 &rarr; Reject H&#8320;</strong>
+        Evidence supports the alternative. The difference is real (probably).
+      </div>
+      <div class="dec-box db-fail">
+        <span class="ico">&#8987;</span>
+        <strong>p &ge; 0.05 &rarr; Fail to reject H&#8320;</strong>
+        Not enough evidence yet. Doesn&rsquo;t mean H&#8320; is true &mdash; just unproven.
+      </div>
+    </div>
+    <p class="sub" style="font-size:13px;margin-top:14px">Key: we never &ldquo;accept&rdquo; the null. We only reject it or fail to reject it.</p>
+  </div>
+
+  <div class="slide s-stat" data-duration="10000">
+    <div class="accent-bar"></div>
+    <h2>Test statistics</h2>
+    <p class="sub" style="margin-top:0">Every test produces a <strong>test statistic</strong> &mdash; a single number that summarizes the data and maps to a p-value.</p>
+    <p class="sub" style="margin-top:14px;font-size:14px">The test statistic follows a known distribution (z, t, F, &#967;&sup2;), so we can calculate exactly how rare our result is. The more extreme the statistic, the smaller the p-value.</p>
+  </div>
+
+  <div class="slide s-flow" data-duration="9000">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">The full workflow</p>
+    <h2>Hypothesis testing in 5 steps</h2>
+    <div class="flow-steps">
+      <div class="fs-box">1. State H&#8320; &amp; H&#8336;</div>
+      <span class="fs-arrow">&#8594;</span>
+      <div class="fs-box">2. Collect data</div>
+      <span class="fs-arrow">&#8594;</span>
+      <div class="fs-box">3. Calculate test statistic</div>
+      <span class="fs-arrow">&#8594;</span>
+      <div class="fs-box">4. Get p-value</div>
+      <span class="fs-arrow">&#8594;</span>
+      <div class="fs-box">5. Reject or fail to reject H&#8320;</div>
+    </div>
+  </div>
+
+  <div id="progress-wrap"><div id="progress-bar"></div></div>
+  <div id="dots"></div>
+  <div id="counter">1 / 7</div>
+  <div id="controls">
+    <button class="ctrl-btn" id="btn-prev">&#8249; Prev</button>
+    <button class="ctrl-btn" id="btn-pause">&#9646;&#9646; Pause</button>
+    <button class="ctrl-btn" id="btn-next">Next &#8250;</button>
+  </div>
+</div>
+<script>
+const slides=Array.from(document.querySelectorAll('.slide'));
+const dotsEl=document.getElementById('dots');
+const bar=document.getElementById('progress-bar');
+const counter=document.getElementById('counter');
+const btnPause=document.getElementById('btn-pause');
+const btnNext=document.getElementById('btn-next');
+const btnPrev=document.getElementById('btn-prev');
+let current=0,paused=false,timer=null,startAt=null,elapsed=0;
+slides.forEach((_,i)=>{const d=document.createElement('div');d.className='dot'+(i===0?' active':'');d.addEventListener('click',()=>goTo(i));dotsEl.appendChild(d)});
+function duration(i){return parseInt(slides[i].dataset.duration,10)||6000}
+function updateDots(){document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===current));counter.textContent=`${current+1} / ${slides.length}`}
+function startBar(remaining){const total=duration(current);bar.style.transition='none';bar.style.width=((total-remaining)/total*100)+'%';bar.getBoundingClientRect();bar.style.transition=`width ${remaining}ms linear`;bar.style.width='100%'}
+function goTo(index,resetElapsed=true){clearTimeout(timer);slides[current].classList.remove('active');slides[current].classList.add('exit');const prev=current;setTimeout(()=>slides[prev].classList.remove('exit'),450);current=(index+slides.length)%slides.length;slides[current].classList.add('active');updateDots();if(resetElapsed)elapsed=0;if(!paused)scheduleNext()}
+function scheduleNext(){clearTimeout(timer);const remaining=duration(current)-elapsed;startAt=Date.now();startBar(remaining);timer=setTimeout(()=>{elapsed=0;goTo(current+1)},remaining)}
+function pause(){if(paused)return;paused=true;elapsed+=Date.now()-startAt;clearTimeout(timer);bar.style.transition='none';bar.style.width=(elapsed/duration(current)*100)+'%';btnPause.textContent='&#9654; Play'}
+function play(){if(!paused)return;paused=false;btnPause.innerHTML='&#9646;&#9646; Pause';scheduleNext()}
+btnPause.addEventListener('click',()=>paused?play():pause());
+btnNext.addEventListener('click',()=>{elapsed=0;goTo(current+1)});
+btnPrev.addEventListener('click',()=>{elapsed=0;goTo(current-1)});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' '){elapsed=0;goTo(current+1)}if(e.key==='ArrowLeft'){elapsed=0;goTo(current-1)}if(e.key==='p'||e.key==='P')paused?play():pause()});
+scheduleNext();
+</script>
+</body>
+</html>

@@ -1,10 +1,17 @@
 ---
 layout: default
-title: I love being rejected!
+title: Hypothesis testing
 nav_order: 7
 ---
 
 # I love being rejected!
+
+<iframe src="../assets/videos/llesson6-hypothesis-testing-slideshow.html" 
+        width="100%" height="520" 
+        style="border:none; border-radius:16px;">
+</iframe>
+
+
 ## 6. Hypothesis testing
 
 We will be able to answer the most important question of the century- are golden retrievers taller than those strange things called pugs? We will gather evidence to answer this question through a method in statistics called hypothesis testing. A hypothesis is an educated guess or statement about a population or observation. It is often based on previous knowledge or observations (we saw a lot of golden retrievers that were taller than the one pug). In statistics, we determine support for evidence by hypothesis testing. 
@@ -49,4 +56,4 @@ PS- You’ve just read a lot of technical terms that leave you confused. You are
 {: .important }
 Hypothesis testing in statistics is like making an educated guess about something (like whether golden retrievers are taller than pugs) and then using data to see if the guess is probably true. It involves comparing a 'null hypothesis' (no difference) with an 'alternative hypothesis' (there is a difference), and using a p-value to decide if the results are significant enough to support the alternative hypothesis.
 
-| [Home](https://benrushscience.github.io/learning-data-science/) | [Next: Comparing two groups](https://benrushscience.github.io/learning-data-science/lecture-notes/7-comparing-2-groups.html) |
+| [Home](https://solislemuslab.github.io/learning-data-science/) | [Next: Comparing two groups](https://solislemuslab.github.io/learning-data-science/lecture-notes/7-comparing-2-groups.html) |
