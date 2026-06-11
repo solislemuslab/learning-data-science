@@ -6,6 +6,9 @@ tags:
   - R
   - Education
   - Multimedia
+author:
+  - "Ben Rush — WID & Radiology, UW-Madison"
+  - "Claudia Solis-Lemus — WID & Plant Pathology, UW-Madison"
 authors:
   - name: Ben Rush
     orcid: 0000-0002-9530-1927
@@ -39,29 +42,29 @@ bibliography: paper.bib
 - Name of software product (maybe PonderStats... ponderstats.wid.wisc.edu) -->
 
 # Summary
-We created a website on GitHub pages for containing introductory statistics learning materials accompanied by engaging media and R scripts for middle and high school students. The website and scripts are designed to mirror an introductory course to statistics and tie it to serveral realworld fields using statistics and data science. Similar to other education materials aimed at students in grade school [@Thompson:2022], the website, starts with an introduction that middle school and high school students can grasp: the diversity of dog breeds.
+We created a website on GitHub pages (_https://solislemuslab.github.io/learning-data-science/_) for containing introductory statistics learning materials accompanied by engaging media and R scripts for middle and high school students. The website and scripts are designed to mirror an introductory course to statistics and tie it to serveral realworld fields using statistics and data science. Similar to other education materials aimed at students in grade school [@thompson_data_2022], the website, starts with an introduction that middle school and high school students can grasp: the diversity of dog breeds.
 We introduce the character of Rhonda, a tall female golden retriever. We lead readers through the thinking "how do we actually know Rhonda
 is tall?". Next, readers read through comparisons of Rhonda to other golden retreivers based on personal observations, defining
 a metric of "tallness", types of variables, comparing Rhonda to other golden retreivers, and eventually other comparing to
-bog breeds. Thia approach helps lay the foundation for statistics and data science for students through self-paced exploration [@Chittora:2020]. 
+bog breeds. Thia approach helps lay the foundation for statistics and data science for students through self-paced exploration [@chittora_interactive_2020]. 
 Students read through these concepts all while provided humorous examples and comments, links for further learning, RShiny Apps for readers to 
 learn experientially, visuals, embedded videos, and the scripts for students to follow along. In sum, students have access to 11 different lessons to learn about introductory statistics and data science at their own pace.
 
 # Statement of Need
 In our experience, the introduction to statistics and data science rely heavily on the mathematical
-formulas instead of the applications of these formulas and without a humanist perspective in student learning [@Lee:2021]. In fact, the first author 
+formulas instead of the applications of these formulas and without a humanist perspective in student learning [@lee_call_2021]. In fact, the first author 
 struggled in calculus because the applications to the real-world seemed extremely distant. He stopped taking
 math classes until forced to take statistics to complete his undergraduate degree. Despite his hesitation,
 he fell in love with statistics and absorbed all of the information possible. The authors hope that 
 this website might be able to connect with and inspire younger learners to pursue the applied mathematics
 fields of statistics and data science. The website and open scripts are aimed to be fun and engaging through a mix 
 of media that focus on why these fields are important for individual decision making and
-potential career paths. The option to delve further into the formulas in statstics are available, which can encourage learning [@Lee:2021], but the
+potential career paths. The option to delve further into the formulas in statstics are available, which can encourage learning [@lee_call_2021], but the
 interpretations of statistical tests to real-world applications are prioritized. RShiny apps (Figure \ref{figwebapp}) and the code that
 generated many of the figures are available for students to interact with. We believe this website and script can
-serve to provide an intriguing first encounter with statistics and data scientists in a relevant way [@Weiland:2023], especially for those students
+serve to provide an intriguing first encounter with statistics and data scientists in a relevant way [@weiland_culturally_2023], especially for those students
 who might be conditioned to be math averse. We also plan to expand the website to include more topics on data science
-and machine learning, which seem possible to be introduced to younger students [@Sanusi:2023].
+and machine learning, which seem possible to be introduced to younger students [@sanusi_developing_2023].
 
 # Website description
 
@@ -159,14 +162,6 @@ We created an R script that accompanies the website. The script is designed to b
 they can create similar data and figures as those featured on the website. The script is sectioned according to the website lessons and
 states what will be learned in each section. The script is designed to be used by students who have no prior experience with R. The script
 can be found [here](https://github.com/solislemuslab/learning-data-science/blob/main/code/PonderStats_script.R).
-
-
-
-
-
-
-
-
 
 
 # Acknowledgements
