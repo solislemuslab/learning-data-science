@@ -46,7 +46,7 @@ We created a website on GitHub pages (_https://solislemuslab.github.io/learning-
 We introduce the character of Rhonda, a tall female golden retriever. We lead readers through the thinking "how do we actually know Rhonda
 is tall?". Next, readers read through comparisons of Rhonda to other golden retreivers based on personal observations, defining
 a metric of "tallness", types of variables, comparing Rhonda to other golden retreivers, and eventually other comparing to
-bog breeds. Thia approach helps lay the foundation for statistics and data science for students through self-paced exploration [@chittora_interactive_2020]. 
+bog breeds. This approach helps lay the foundation for statistics and data science for students through self-paced exploration [@chittora_interactive_2020]. 
 Students read through these concepts all while provided humorous examples and comments, links for further learning, RShiny Apps for readers to 
 learn experientially, visuals, embedded videos, and the scripts for students to follow along. In sum, students have access to 11 different lessons to learn about introductory statistics and data science at their own pace.
 
