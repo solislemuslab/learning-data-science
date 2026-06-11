@@ -53,7 +53,7 @@ Among the main topics, this website focuses on:
         * Identify why statistics is helpful in the real world for assessing differences and patterns
         * Describe the challenges of determining differences and patterns
         * Discuss a comparison model of genetic diversity (dogs) for reference when thinking through the following lessons
-2. [Basics of DNA](https://solislemuslab.github.io/learning-data-science/lecture-notes/2-genetic-diversity.html): Basics of DNA
+2. [Basics of DNA](https://solislemuslab.github.io/learning-data-science/lecture-notes/2-genetic-diversity.html):
     - By the end of this lesson, students will be able to:
         * Restate what genes and DNA are with analogies to cooking
         * Define genetic diversity, genetic variation, and gene expression
